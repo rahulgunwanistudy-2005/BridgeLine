@@ -1,0 +1,14 @@
+# Core functionality
+/apps/api/                 @priteshvirat24
+/packages/schemas/*.py     @priteshvirat24
+
+# Support layer
+/apps/web/                 @rahulgunwanistudy-2005
+/packages/schemas/*.json   @rahulgunwanistudy-2005 @priteshvirat24
+/data/                     @rahulgunwanistudy-2005
+/harness/                  @rahulgunwanistudy-2005
+/docs/                     @rahulgunwanistudy-2005
+
+# Shared — either can touch, both should review
+/packages/schemas/CHANGELOG.md   @rahulgunwanistudy-2005 @priteshvirat24
+/README.md                       @rahulgunwanistudy-2005 @priteshvirat24
