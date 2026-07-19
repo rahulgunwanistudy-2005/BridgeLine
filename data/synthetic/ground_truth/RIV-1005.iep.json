@@ -1,0 +1,135 @@
+{
+  "iep_record_id": "63cd2272-7074-5908-90de-dbe3de2c4655",
+  "student_ref": "RIV-1005",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "fea1aaab-1190-5ba8-88ff-2c2082459b2b",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "760446e8-3de5-5a1c-82c7-58f8272eaf15",
+      "text": "Seat with a clear line of sight to the speaker's face.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "clear line of sight to the speaker's face",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d6464128-2965-59e8-8a99-26e99af4a0b9",
+      "text": "Provide captions or a transcript for all audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for all audio and video media",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "6f2bd1c2-d5a0-54b4-8104-922d5b4de9fb",
+      "text": "Pair auditory alerts and directions with a visual cue.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "pair auditory alerts with a visual cue",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "15bff662-668c-54fc-ac86-0529e6d44738",
+      "text": "Provide a peer notetaker or copy of lecture notes.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "peer notetaker or copy of lecture notes",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "28a1b177-2cb5-5e62-bc08-c45d5d41e704",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "36cbaece-3238-5cb0-8bfd-c9665d26b844",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "95222a9d-17dd-51b9-ad8b-12cee48001f8",
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3fe3e62a-1288-5ee6-b0ef-99a974e2896a",
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2026-11-11",
+    "triennial_reeval": "2028-11-09",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "ce601f17-9e11-5caf-98ff-118a5bfe31d6",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.99,
+      0.98,
+      0.99
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

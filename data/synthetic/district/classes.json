@@ -1,0 +1,88 @@
+[
+  {
+    "id": "6208b918-8a6e-569a-8779-5aa31c947252",
+    "school_year": "2026-2027",
+    "teacher_ids": [
+      "e7c7c14e-81c6-564f-b0b6-940a4a1e3f23",
+      "121d95b4-35b0-5f1e-b5a0-020cc407f5fc"
+    ],
+    "class_ref": "ENG-101",
+    "name": "English 9 (Co-taught)",
+    "subject_ref": "ENG",
+    "period": 1,
+    "teachers_of_record": [
+      "T-DELGADO",
+      "T-LEE"
+    ]
+  },
+  {
+    "id": "78079801-d28e-5ec1-8f72-6a5cb6adc113",
+    "school_year": "2026-2027",
+    "teacher_ids": [
+      "635498ef-267e-5e71-91b0-428b47b30fa5"
+    ],
+    "class_ref": "MTH-101",
+    "name": "Algebra I",
+    "subject_ref": "MTH",
+    "period": 2,
+    "teachers_of_record": [
+      "T-OKAFOR"
+    ]
+  },
+  {
+    "id": "8946e715-f45d-5fef-8e19-54d1e8b7059c",
+    "school_year": "2026-2027",
+    "teacher_ids": [
+      "479bf5fe-5b88-5cd7-b907-61c5306b453c"
+    ],
+    "class_ref": "BIO-101",
+    "name": "Biology",
+    "subject_ref": "BIO",
+    "period": 3,
+    "teachers_of_record": [
+      "T-CHEN"
+    ]
+  },
+  {
+    "id": "80ad9057-90a3-5f8a-b7e7-13744307b553",
+    "school_year": "2026-2027",
+    "teacher_ids": [
+      "1dc2290e-a46d-53c0-886b-b4a4846cdde3"
+    ],
+    "class_ref": "HIS-101",
+    "name": "World History",
+    "subject_ref": "HIS",
+    "period": 4,
+    "teachers_of_record": [
+      "T-PORTER"
+    ]
+  },
+  {
+    "id": "4fb9cbf5-4c44-57a3-97ba-16735fe4ec5e",
+    "school_year": "2026-2027",
+    "teacher_ids": [
+      "9eeda9a2-1790-589a-9a9d-03e807c564d6"
+    ],
+    "class_ref": "PE-101",
+    "name": "Physical Education",
+    "subject_ref": "PE",
+    "period": 5,
+    "teachers_of_record": [
+      "T-RIVERA"
+    ]
+  },
+  {
+    "id": "1a3c1fee-f1bb-567e-8f25-667c91760050",
+    "school_year": "2026-2027",
+    "teacher_ids": [
+      "9ed525ef-1afb-5a77-993c-cd441370e414"
+    ],
+    "class_ref": "ART-101",
+    "name": "Art Foundations",
+    "subject_ref": "ART",
+    "period": 6,
+    "teachers_of_record": [
+      "T-FELDMAN"
+    ]
+  }
+]

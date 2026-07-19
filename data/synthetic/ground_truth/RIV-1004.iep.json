@@ -1,0 +1,122 @@
+{
+  "iep_record_id": "48887650-c662-5df8-a4e3-02da539771bc",
+  "student_ref": "RIV-1004",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "5f7a5e25-10f4-5811-99cb-018574b68447",
+      "text": "Provide 50% extended time on tests and long assignments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on tests and long assignments",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f075e004-27ed-5d7d-bbb4-5427bc40dfb3",
+      "text": "Seat near the point of instruction and away from high-traffic areas.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "preferential seating near the point of instruction",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9dbc3362-a057-5e5d-a732-154cc3b49261",
+      "text": "Permit brief movement breaks between tasks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief movement breaks between tasks",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9c47395b-27d0-59ca-8e4b-ddc1cd8c100b",
+      "text": "Provide a checklist to break long assignments into steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "checklist to break long assignments into steps",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ff3fbc6b-44a8-52a3-8b58-2e1e2c1cc2aa",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "d638162a-8424-52b1-9d98-e8cabde2d3e4",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "ab27a91e-c70b-5fe8-9ddd-e6f0fb1879c1",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "80d921da-1ba9-57c7-b053-290a3bfc8ba5",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "arrive to class with required materials in 8 of 10 class days",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2026-10-30",
+    "triennial_reeval": "2028-05-30",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "a939f91e-4030-5cf3-9a8a-7fa8cc31e802",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.97,
+      0.98,
+      0.99
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

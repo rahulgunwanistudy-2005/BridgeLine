@@ -1,0 +1,100 @@
+{
+  "iep_record_id": "cb75b9d5-96e4-5465-bf47-65579751755c",
+  "student_ref": "RIV-1008",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "fa209c27-6612-5ba7-ab7d-68e07318377d",
+      "text": "Provide 25% extended time on timed assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "25% extended time on timed assessments",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e01ae9d9-8614-5a65-9e3b-30ecc64f65f5",
+      "text": "Break long assignments into smaller submitted parts.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break long assignments into smaller parts",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "57b943be-d078-5edc-8c3a-28bcd9e9abbd",
+      "text": "Provide frequent check-ins for understanding.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "frequent check-ins for understanding",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "f45ec94e-14da-5691-b2d8-43e91d861796",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "e0146007-8ae5-514e-921e-3ea94e8a25e2",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "sustain attention to an independent task for 10 minutes",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "da67daad-bfa2-5047-8fcc-cfd78ff27516",
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "use a self-monitoring checklist to review work before submitting",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-01-27",
+    "triennial_reeval": "2029-03-14",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "7e9f0633-f473-57f8-9dec-04bb715e6177",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.99,
+      0.99
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

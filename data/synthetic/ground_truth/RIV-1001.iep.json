@@ -1,0 +1,134 @@
+{
+  "iep_record_id": "f2ac6075-03cd-57e2-ac71-d32c9d775068",
+  "student_ref": "RIV-1001",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "3b341238-caab-51d4-8b11-a3913e1fa7d7",
+      "text": "Provide 50% extended time on all classroom tests and quizzes.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on all classroom tests and quizzes",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c13c0665-e69c-55c6-9010-8ce00696a892",
+      "text": "Administer assessments in a small-group, reduced-distraction setting.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "small-group, reduced-distraction setting for assessments",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "260a9427-f927-560b-a65e-2869184296e0",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "09dad245-1d1b-5a68-8a8f-93a937ef7dd8",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4a0f2f62-26d4-5afd-8c89-ff81f7191a79",
+      "text": "Provide a word bank for written-response items in reading and history.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a word bank for written-response items",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "cf848659-dc5e-562c-ab7d-a40f0847818a",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "f216ce04-794d-5a26-bb0a-90cb2f110b82",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4b1d6211-e0d5-5f48-abcd-de1671516402",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "identify the main idea and two supporting details with 80% accuracy",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f585ab30-046d-5436-87c8-c420fc76a614",
+      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "baseline": "Writes two related sentences with inconsistent capitalization.",
+      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "write a five-sentence paragraph with a topic sentence",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-05-08",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "ef45509a-2569-5c0d-ae9e-0c9838d2025a",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.99
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

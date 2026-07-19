@@ -13,3 +13,7 @@ build/
 .DS_Store
 *.log
 .env
+
+# cc/02 data tooling
+.venv-synth/
+scripts/synthgen/__pycache__/

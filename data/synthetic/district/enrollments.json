@@ -1,0 +1,506 @@
+[
+  {
+    "id": "294060f5-fe0a-5298-9f81-04e20be0507c",
+    "student_ref": "RIV-1001",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "699c217d-aa53-5a9f-bef9-76371f57aee4",
+    "student_ref": "RIV-1001",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "dad9745a-d3e8-5b9f-8494-3c38a10faa7f",
+    "student_ref": "RIV-1001",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "7bcb7d59-ce8e-52e6-9e5e-fcdd21ab150e",
+    "student_ref": "RIV-1001",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "74e98f01-db80-5e9a-a3a2-6eb07f510131",
+    "student_ref": "RIV-1001",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "ffbe053c-60fd-51d8-9af3-4bd8fc633934",
+    "student_ref": "RIV-1001",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "0c5330a2-e5b7-5f54-90a6-af5b6cb09437",
+    "student_ref": "RIV-1002",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "3654bd5d-4279-5981-b3e3-f5e0fde995c7",
+    "student_ref": "RIV-1002",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "59ac2d9d-f67d-521a-971c-11827328461e",
+    "student_ref": "RIV-1002",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "8035bc63-9b6b-52f5-8209-c3c8a897ac1c",
+    "student_ref": "RIV-1002",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "919471aa-deb0-5a46-9040-53fb7038cd74",
+    "student_ref": "RIV-1002",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "97cbc6b2-9805-5b17-a0a3-b57fc950491f",
+    "student_ref": "RIV-1002",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "0c6ebbe6-d501-5add-9c47-c1fa341d6961",
+    "student_ref": "RIV-1003",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "46dec8f0-9df8-539c-8068-e83d0016712d",
+    "student_ref": "RIV-1003",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "d8300f67-8ed9-50db-89e9-851ebf2a26cc",
+    "student_ref": "RIV-1003",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "0879bafc-e5c7-5576-8cdf-c5566485a9c6",
+    "student_ref": "RIV-1003",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "22b22fa3-ed5a-5852-9ff6-cd3a52285d03",
+    "student_ref": "RIV-1003",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "a7be619f-60e4-5aaa-992b-38e5f9dce050",
+    "student_ref": "RIV-1003",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "d07bfa07-76de-5878-883f-47d84053ae00",
+    "student_ref": "RIV-1004",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "72db64e0-25f1-58b7-8d06-a5a9aeaf4d79",
+    "student_ref": "RIV-1004",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "766ba640-64a0-59e9-9698-7f50de821b89",
+    "student_ref": "RIV-1004",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "822df617-c034-5050-a37d-2fbac6045d86",
+    "student_ref": "RIV-1004",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "4063ca9b-935c-5bdd-8697-452d390fc5c4",
+    "student_ref": "RIV-1004",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "247fd5af-cbf3-56d7-ae5e-cd46cbb58695",
+    "student_ref": "RIV-1004",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "89a42c71-4044-51b4-9845-5df462745126",
+    "student_ref": "RIV-1005",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "caf07a5c-7fb6-56e1-bfe4-f56f9ee4a037",
+    "student_ref": "RIV-1005",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "f59d6555-ae96-5c62-b935-133797109cd1",
+    "student_ref": "RIV-1005",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "33d8c6a8-88d4-565f-9d04-cce67bee669e",
+    "student_ref": "RIV-1005",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "f96f1e53-aadd-508d-8784-8f7e81f303d3",
+    "student_ref": "RIV-1005",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "236c4b01-939a-514d-9f75-453dd34af6d4",
+    "student_ref": "RIV-1005",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "c08332d0-36b9-5ac1-9776-f82589326938",
+    "student_ref": "RIV-1006",
+    "class_ref": "ENG-101",
+    "start": "2026-10-05",
+    "end": null
+  },
+  {
+    "id": "8906a765-dad2-5a79-a747-0163c533d7a1",
+    "student_ref": "RIV-1006",
+    "class_ref": "MTH-101",
+    "start": "2026-10-05",
+    "end": null
+  },
+  {
+    "id": "9e47cc76-68a6-5eb6-ade5-5d81a0752da3",
+    "student_ref": "RIV-1006",
+    "class_ref": "BIO-101",
+    "start": "2026-10-05",
+    "end": null
+  },
+  {
+    "id": "21e8be8e-226f-5482-837f-a417b6f181e8",
+    "student_ref": "RIV-1006",
+    "class_ref": "HIS-101",
+    "start": "2026-10-05",
+    "end": null
+  },
+  {
+    "id": "1d1516c6-d53c-58bb-b906-ef5ab71a4013",
+    "student_ref": "RIV-1006",
+    "class_ref": "PE-101",
+    "start": "2026-10-05",
+    "end": null
+  },
+  {
+    "id": "65c9db78-41e6-50e6-9da0-fbb88607b530",
+    "student_ref": "RIV-1006",
+    "class_ref": "ART-101",
+    "start": "2026-10-05",
+    "end": null
+  },
+  {
+    "id": "b7c3d4ee-57bc-5edf-bc80-25a6a87bd1fe",
+    "student_ref": "RIV-1007",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "98d8adf3-e78a-5ad1-8f5c-51e684623dc3",
+    "student_ref": "RIV-1007",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "d61217c9-6aa6-5b6c-b062-ee2586cdf01f",
+    "student_ref": "RIV-1007",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "5365565f-1dd0-5318-8db9-6eed68249e30",
+    "student_ref": "RIV-1007",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "3ddd04dd-e42b-509d-a7b0-74d67ae6c637",
+    "student_ref": "RIV-1007",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "58ebafff-45a5-5c17-b42c-f1448ae2e234",
+    "student_ref": "RIV-1007",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "ab59e9d0-6f43-5871-9425-4fadb892d11b",
+    "student_ref": "RIV-1008",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "3e80336f-dafa-5537-a3d2-0a746b07d008",
+    "student_ref": "RIV-1008",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "cd1d61ee-0bd8-5db9-861f-e98ed72b1258",
+    "student_ref": "RIV-1008",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "f1aec17b-9ca0-5329-a9d4-d551dc0fda0d",
+    "student_ref": "RIV-1008",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "3ab9824e-e5da-54a9-be28-a70947348047",
+    "student_ref": "RIV-1008",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "cfa3a726-31a4-5f9d-9e3f-9b796e00cba7",
+    "student_ref": "RIV-1008",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "42174535-e7ca-5500-b177-f5373410bd73",
+    "student_ref": "RIV-1009",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "b899952c-68e6-54d3-8668-d851a42fcea3",
+    "student_ref": "RIV-1009",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "6de8a068-747a-529c-a518-f770b88b96c1",
+    "student_ref": "RIV-1009",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "8c6fd0be-283e-5bbd-b18c-f8ea97e3a8a7",
+    "student_ref": "RIV-1009",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "f044973a-c18d-5842-9fed-eec825102c00",
+    "student_ref": "RIV-1009",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "6c3bd5ab-ebc9-5fc7-a676-e111ce7ac328",
+    "student_ref": "RIV-1009",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "82d86153-308e-5bb6-bab6-2144151d2341",
+    "student_ref": "RIV-1010",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "ec473d47-868f-5676-9d8f-ba4717fc07eb",
+    "student_ref": "RIV-1010",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "52977c9f-0e3b-5805-8cb8-5c22dd14f0b1",
+    "student_ref": "RIV-1010",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "c65184a6-fd21-5c55-a7a1-2da3653f2464",
+    "student_ref": "RIV-1010",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "4a34f4fd-58b9-5b4a-9cc7-275577f1f442",
+    "student_ref": "RIV-1010",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "563dad8c-e85e-5003-9ec7-e9d609df8b76",
+    "student_ref": "RIV-1010",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "07838996-a7c9-5173-ac8b-5cd70bf7046b",
+    "student_ref": "RIV-1011",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "b5456de8-17df-5123-877d-04c4f900ff8b",
+    "student_ref": "RIV-1011",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "c3f4a3fa-a53e-5000-9772-60140baf37e0",
+    "student_ref": "RIV-1011",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "6b387297-574d-550c-8df9-df1329eea123",
+    "student_ref": "RIV-1011",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "7b634ff0-f60b-5d1d-9394-9bd89fb85b21",
+    "student_ref": "RIV-1011",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "94f998b4-edfd-54ad-9ccf-ee1fd558f997",
+    "student_ref": "RIV-1011",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "c2f479d4-3bf3-57e5-84ba-427d2ae43250",
+    "student_ref": "RIV-1012",
+    "class_ref": "ENG-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "23d16af5-1a96-58d4-b5a2-b12d9e649743",
+    "student_ref": "RIV-1012",
+    "class_ref": "MTH-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "7dd415b7-8dac-5aba-b9a1-cf10b8aec832",
+    "student_ref": "RIV-1012",
+    "class_ref": "BIO-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "d1e99f94-a76e-5ba0-9b03-37102e392cd7",
+    "student_ref": "RIV-1012",
+    "class_ref": "HIS-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "a774b2ce-0981-576e-9072-5c8b16241dab",
+    "student_ref": "RIV-1012",
+    "class_ref": "PE-101",
+    "start": "2026-08-17",
+    "end": null
+  },
+  {
+    "id": "6405565e-6f25-544c-b6c3-b5816988eba2",
+    "student_ref": "RIV-1012",
+    "class_ref": "ART-101",
+    "start": "2026-08-17",
+    "end": null
+  }
+]

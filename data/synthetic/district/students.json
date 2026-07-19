@@ -1,0 +1,98 @@
+[
+  {
+    "id": "391800e6-d371-5370-a8f0-4893da9204b6",
+    "student_ref": "RIV-1001",
+    "display_name": "Aanya Sharma",
+    "short_name": "A. Sharma",
+    "category": "Specific learning disability",
+    "note": "findings a+b"
+  },
+  {
+    "id": "f9c2ca80-f9c3-5ba3-9718-41c55c79c389",
+    "student_ref": "RIV-1002",
+    "display_name": "Marcus Bell",
+    "short_name": "M. Bell",
+    "category": "Autism",
+    "note": "finding c: service -20 min/wk"
+  },
+  {
+    "id": "f384257e-2c14-535c-bd8d-c6ff88f03774",
+    "student_ref": "RIV-1003",
+    "display_name": "Sofia Ramirez",
+    "short_name": "S. Ramirez",
+    "category": "Speech or language impairment",
+    "note": "unassigned provider; triennial mid-semester"
+  },
+  {
+    "id": "bb7d9702-a3dc-57c1-846f-57f08d00b3e5",
+    "student_ref": "RIV-1004",
+    "display_name": "Ethan Nakamura",
+    "short_name": "E. Nakamura",
+    "category": "Other health impairment (ADHD)",
+    "note": "overdue annual review"
+  },
+  {
+    "id": "e2e3b023-9168-59ff-9cb9-b6b7f532004b",
+    "student_ref": "RIV-1005",
+    "display_name": "Layla Hassan",
+    "short_name": "L. Hassan",
+    "category": "Hearing impairment",
+    "note": "annual review lands on a holiday"
+  },
+  {
+    "id": "1e790ede-a7d5-566c-bf7d-7b0bb7a522dd",
+    "student_ref": "RIV-1006",
+    "display_name": "Diego Torres",
+    "short_name": "D. Torres",
+    "category": "Specific learning disability",
+    "note": "mid-semester enrollment; co-taught class"
+  },
+  {
+    "id": "0a4299de-a214-530d-8adc-32d7e461e7ee",
+    "student_ref": "RIV-1007",
+    "display_name": "Grace Kim",
+    "short_name": "G. Kim",
+    "category": "Autism",
+    "note": "clean, no findings"
+  },
+  {
+    "id": "4b3b6e03-f9bd-586b-9307-8a255719bfb0",
+    "student_ref": "RIV-1008",
+    "display_name": "Noah Williams",
+    "short_name": "N. Williams",
+    "category": "Other health impairment (ADHD)",
+    "note": "clean, no findings"
+  },
+  {
+    "id": "c31d5e93-0614-52e5-9c9f-d921c0ec313c",
+    "student_ref": "RIV-1009",
+    "display_name": "Priya Patel",
+    "short_name": "P. Patel",
+    "category": "Speech or language impairment",
+    "note": "clean, no findings"
+  },
+  {
+    "id": "7c2de926-5d9a-58b5-a264-c96c87ea2a55",
+    "student_ref": "RIV-1010",
+    "display_name": "Jamal Carter",
+    "short_name": "J. Carter",
+    "category": "Specific learning disability",
+    "note": "clean, no findings"
+  },
+  {
+    "id": "2e4f1efa-b514-5f40-9451-fbdcc88f1d95",
+    "student_ref": "RIV-1011",
+    "display_name": "Emma Johansson",
+    "short_name": "E. Johansson",
+    "category": "Hearing impairment",
+    "note": "clean, no findings"
+  },
+  {
+    "id": "69ed9f80-6fd5-5750-9667-a9e10514b53b",
+    "student_ref": "RIV-1012",
+    "display_name": "Oscar Nguyen",
+    "short_name": "O. Nguyen",
+    "category": "Autism",
+    "note": "clean; one unmapped progress signal"
+  }
+]
