@@ -38,10 +38,11 @@ NOT MINE: apps/api/bridgeline/, Pydantic side of packages/schemas/ (paired-PR).
 - [x] **Slice B — STEP 2 ★PING 1**: gradebook/service-logs/notes/confirmations; all 3
       findings FIRE (40% conflict, 3/6 gap, −20 min/wk); noise + malformed rows present.
       VERIFIED. → PUSHED at ping 1.
-- [ ] **Slice C — STEP 3**: scripts/seed.py idempotent via proposed API (gated);
-      docs/seed-api-contract.md; docker-compose first-boot wiring with ordering.
-- [ ] **Slice D — STEP 4**: deterministic HTML→PDF district IEP form template + vector
-      PDF renderer; render the 12 demo students.
+- [x] **Slice C — STEP 3**: scripts/seed.py (stdlib-only, gated, idempotent) +
+      docs/seed-api-contract.md + docker-compose seed service (depends_on api healthy).
+      Gated no-op + 404-probe verified; compose config valid. DONE.
+- [x] **Slice D — STEP 4**: pdf.py (deterministic vector writer) + render.py (IEP form
+      PDF+HTML). 12 students rendered; sips/pymupdf confirm valid & form-like; byte-stable.
 - [ ] **Slice E — STEP 5 ★PING 2**: 5 hero messy scans via ONE parameterized
       degradation script (print-scan rot±3°/noise/contrast; handwriting overlays +
       crossed-out line; signature+stamp over text; one upside-down page; two-column +
