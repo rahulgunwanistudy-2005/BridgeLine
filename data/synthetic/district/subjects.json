@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1f31fc0b-1bff-5b97-8409-141cd2969875",
+    "subject_ref": "ENG",
+    "name": "English"
+  },
+  {
+    "id": "554c8a8b-390e-54ea-9b29-9f15314845a5",
+    "subject_ref": "MTH",
+    "name": "Mathematics"
+  },
+  {
+    "id": "a4769694-40e0-5377-ae95-5ca3b459cb43",
+    "subject_ref": "BIO",
+    "name": "Biology"
+  },
+  {
+    "id": "f62b2129-37e9-58b6-b80a-a989be8cf78b",
+    "subject_ref": "HIS",
+    "name": "World History"
+  },
+  {
+    "id": "5a03e7ea-22bd-555c-b67a-3010801e507f",
+    "subject_ref": "PE",
+    "name": "Physical Education"
+  },
+  {
+    "id": "b37ff9d1-6344-5457-ad24-eae5d69159b6",
+    "subject_ref": "ART",
+    "name": "Art"
+  }
+]

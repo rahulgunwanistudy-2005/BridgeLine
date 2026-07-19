@@ -1,0 +1,99 @@
+{
+  "iep_record_id": "39edcdbe-a506-530e-bae0-6a8c0f671cb4",
+  "student_ref": "RIV-1011",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "53967799-88be-55f3-a72d-9ca519d81902",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d1820183-0ac9-5eba-9813-0187aa62e4f6",
+      "text": "Provide captions or a transcript for audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for audio and video media",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "58947efe-6726-5f0f-851f-f610121b07d5",
+      "text": "Face the student when speaking and avoid covering the mouth.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "face the student when speaking",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "44f0979b-ff59-5fff-adeb-e599819d69d0",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "fbd161d4-684e-5a39-9158-246cd705f95b",
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d330fcaa-390d-50a3-8b5a-3954dc4ddc14",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "request clarification when she misses information",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-02",
+    "triennial_reeval": "2028-09-28",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "34a085bc-b144-5a2d-8883-6928c530e3a0",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.99,
+      0.99,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

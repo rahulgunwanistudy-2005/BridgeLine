@@ -1,0 +1,99 @@
+{
+  "iep_record_id": "30e43f3d-323d-5583-8e8b-96b9c7752cfe",
+  "student_ref": "RIV-1009",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "14f6942d-1c67-5562-b05b-0c9fabfd796c",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "21c9ab5c-f3b6-5dcf-9cfe-b702773a4550",
+      "text": "Pair new vocabulary with visuals and definitions.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "pair new vocabulary with visuals and definitions",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4e5724ef-d1fe-5e8f-94b4-f414ed1a3f11",
+      "text": "Repeat and rephrase spoken directions on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "repeat and rephrase spoken directions on request",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "f976aa27-3270-5b30-9022-6da42e47a974",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "16cb0258-aca1-5e37-81d8-d7a9c3914174",
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "use correct past-tense verbs with 80% accuracy",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "965eb2c2-4a51-5f95-a003-996dea0f111e",
+      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-06",
+    "triennial_reeval": "2028-12-01",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "877f892f-6f66-524f-a0c5-2837fd291253",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.99,
+      0.98,
+      0.99
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "iep_record_id": "66230252-be72-5e63-be5f-e5bcf5083662",
+  "student_ref": "RIV-1007",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "11a86c34-9f73-583a-8fbc-9f7d2e458328",
+      "text": "Provide visual supports and models for new tasks.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual supports and models for new tasks",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d8dc3596-726e-58a1-9a2f-9ed3cd712930",
+      "text": "Give a two-minute warning before transitions.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "two-minute warning before transitions",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e08f1da9-c2cc-52dd-be3e-0c8a8547440e",
+      "text": "Allow access to a designated quiet space when overwhelmed.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "access to a designated quiet space when overwhelmed",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "4ee888af-e53f-5a61-bf5f-02820141acb2",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "884af7de-a08f-51f9-962d-028fa47918cb",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Occupational therapy 30 minutes weekly",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "c976f9bf-bf9e-5f9b-b78f-89a8a8924aff",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "accept a change in routine using a coping strategy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7cdd64af-77df-59f6-8c23-1028f3d555e6",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "produce three organized sentences on a topic",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-18",
+    "triennial_reeval": "2028-10-05",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "be8b75f5-50ee-529f-84c2-cec2c9d67118",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.99,
+      0.99,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

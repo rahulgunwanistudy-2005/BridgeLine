@@ -1,0 +1,52 @@
+[
+  {
+    "note_id": "TN-0001",
+    "date": "2026-11-06",
+    "student_ref": "RIV-1001",
+    "class_ref": "ENG-101",
+    "teacher_ref": "T-DELGADO",
+    "text": "Aanya is doing well with reading comprehension this quarter \u2014 she is engaged in discussion and I am pleased with her progress toward her main-idea goal.",
+    "iep_goal_key": "g2-comprehension",
+    "iep_goal_id": "4b1d6211-e0d5-5f48-abcd-de1671516402"
+  },
+  {
+    "note_id": "TN-0002",
+    "date": "2026-11-06",
+    "student_ref": "RIV-1007",
+    "class_ref": "ENG-101",
+    "teacher_ref": "T-DELGADO",
+    "text": "Grace is meeting expectations and using her coping strategy during transitions.",
+    "iep_goal_key": "g1-flexibility",
+    "iep_goal_id": "c976f9bf-bf9e-5f9b-b78f-89a8a8924aff"
+  },
+  {
+    "note_id": "TN-0003",
+    "date": "2026-11-06",
+    "student_ref": "RIV-1010",
+    "class_ref": "ENG-101",
+    "teacher_ref": "T-DELGADO",
+    "text": "Jamal's reading fluency is improving steadily and matches his probe data.",
+    "iep_goal_key": "g1-fluency",
+    "iep_goal_id": "e6f232d7-ffb8-54b7-a41a-bd201a31b7e8"
+  },
+  {
+    "note_id": "TN-0004",
+    "date": "2026-11-06",
+    "student_ref": "RIV-1002",
+    "class_ref": "ENG-101",
+    "teacher_ref": "T-LEE",
+    "text": "Marcus is starting tasks more independently; his SAI minutes have been light some weeks and I have flagged scheduling with the provider.",
+    "iep_goal_key": "g1-initiation",
+    "iep_goal_id": "b1481bca-57e9-594a-b819-af100964d8be"
+  },
+  {
+    "note_id": "TN-0005",
+    "date": "2026-11-06",
+    "student_ref": "RIV-1012",
+    "class_ref": "ART-101",
+    "teacher_ref": "T-FELDMAN",
+    "text": "Oscar brought in a sketchbook from home and was proud to show it to the class.",
+    "iep_goal_key": null,
+    "iep_goal_id": null
+  }
+]

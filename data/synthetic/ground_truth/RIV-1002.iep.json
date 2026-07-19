@@ -1,0 +1,123 @@
+{
+  "iep_record_id": "d9d327cf-2aa3-519d-852c-1cbdfd4a6bf2",
+  "student_ref": "RIV-1002",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "ad9ca80e-e41c-5b43-845e-202192fddede",
+      "text": "Provide a written or visual schedule of each period's activities.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "written or visual schedule of each period's activities",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "464ea9ba-a14b-532a-b0e1-6d8a1b3319d5",
+      "text": "Give advance warning before transitions and changes in routine.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "advance warning before transitions and changes in routine",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e8391e8c-ca14-5425-8e38-73b67b0a8eac",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "78eda8ad-d6c0-58f0-86ce-1df2922cd48c",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "276f1e13-ffb3-57f4-87de-eb9945af661b",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e74d0f3f-340a-5d1b-ad6a-52a3a263f527",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "b1481bca-57e9-594a-b819-af100964d8be",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "independently begin a classroom task within two minutes",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c3b6af8f-ab31-5a0e-91b3-c365b40a91aa",
+      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
+      "target": "3 of 4 structured opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "use a taught script to join a peer activity",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-20",
+    "triennial_reeval": "2029-01-12",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "23725fe0-8efc-5d4e-9eff-08b89ba5700a",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.99,
+      0.98,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}
