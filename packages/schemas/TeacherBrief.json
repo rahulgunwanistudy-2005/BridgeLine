@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgeline.local/schemas/TeacherBrief.json",
+  "title": "TeacherBrief",
+  "description": "Authorized one-class teacher brief that preserves deterministic obligations while adding source-grounded implementation guidance.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "brief_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID identifying this teacher brief for delivery, confirmation, flagging, and audit events."
+    },
+    "teacher_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "District identifier of the teacher authorized to receive this brief."
+    },
+    "class_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "District or SIS identifier of the class to which every item in this brief applies."
+    },
+    "subject": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Instructional subject used to contextualize practice guidance without altering mandatory actions."
+    },
+    "school_year": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{4}$",
+      "description": "School year for this brief in YYYY-YYYY form, with application validation requiring consecutive years."
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$",
+      "description": "UTC RFC 3339 timestamp ending in Z when this brief payload was generated."
+    },
+    "rules_version": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Immutable rule-registry version that produced the mandatory actions included in the brief."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "released", "confirmed", "flagged"],
+      "description": "Lifecycle state showing whether the brief is awaiting release, available to the teacher, confirmed, or flagged."
+    },
+    "released_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "pattern": "Z$",
+      "description": "UTC RFC 3339 release timestamp ending in Z once a case manager releases the brief, otherwise null."
+    },
+    "confirmed_at": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "pattern": "Z$",
+      "description": "UTC RFC 3339 timestamp ending in Z when the teacher confirms the brief, otherwise null."
+    },
+    "flag_reason": {
+      "type": ["string", "null"],
+      "description": "Teacher-provided explanation when the brief is flagged, otherwise null."
+    },
+    "responsibility": {
+      "$ref": "#/$defs/Responsibility",
+      "description": "Plain-language statement of the teacher's implementation responsibility together with its legal citation."
+    },
+    "students": {
+      "type": "array",
+      "description": "Authorized student sections containing only the implementation information needed for this class.",
+      "items": { "$ref": "#/$defs/StudentBrief" }
+    }
+  },
+  "required": [
+    "brief_id",
+    "teacher_ref",
+    "class_ref",
+    "subject",
+    "school_year",
+    "generated_at",
+    "rules_version",
+    "status",
+    "released_at",
+    "confirmed_at",
+    "flag_reason",
+    "responsibility",
+    "students"
+  ],
+  "$defs": {
+    "Responsibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Actionable statement explaining the teacher's duty to provide the listed accommodations and supports."
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Legal citation supporting the responsibility statement, normally IDEA 34 CFR section 300.323(d)."
+        }
+      },
+      "required": ["text", "citation"]
+    },
+    "StudentBrief": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "student_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "District identifier of the student whose approved obligations are shown in this authorized class brief."
+        },
+        "student_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Authorized display name used by the teacher to identify the student in this class."
+        },
+        "obligations": {
+          "type": "array",
+          "description": "Mandatory actions and contextual practice guidance for this student, each retaining complete source and rule traceability.",
+          "items": { "$ref": "#/$defs/BriefObligation" }
+        }
+      },
+      "required": ["student_ref", "student_name", "obligations"]
+    },
+    "BriefObligation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "obligation_id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "UUID of the deterministic obligation represented by this brief item."
+        },
+        "accommodation_id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Stable UUID of the source accommodation, preserved across IEP re-extractions through reconciliation."
+        },
+        "accommodation_text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact approved accommodation language from the reviewed IEP record."
+        },
+        "action_text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Mandatory action copied unchanged from the deterministic obligation and protected from LLM modification."
+        },
+        "practice_text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "LLM-authored subject-specific guidance explaining a practical way to implement the mandatory action."
+        },
+        "source_page": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "One-based IEP source page supporting the accommodation shown in this brief item."
+        },
+        "source_quote": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verbatim IEP excerpt supporting the accommodation shown in this brief item."
+        },
+        "source_confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Approved extraction confidence from 0.0 to 1.0 inherited from the source accommodation."
+        },
+        "rule_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Identifier of the deterministic rule that produced the mandatory action."
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Legal or policy citation supporting the deterministic obligation."
+        }
+      },
+      "required": [
+        "obligation_id",
+        "accommodation_id",
+        "accommodation_text",
+        "action_text",
+        "practice_text",
+        "source_page",
+        "source_quote",
+        "source_confidence",
+        "rule_id",
+        "citation"
+      ]
+    }
+  }
+}

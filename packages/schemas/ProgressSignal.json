@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgeline.local/schemas/ProgressSignal.json",
+  "title": "ProgressSignal",
+  "description": "Normalized, source-linked observation used to reconcile classroom evidence, service delivery, and IEP goal progress.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "signal_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID identifying this normalized progress observation across reconciliation and audit workflows."
+    },
+    "student_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "District identifier for the student to whom this progress observation belongs."
+    },
+    "signal_type": {
+      "type": "string",
+      "enum": ["grade", "service_minutes", "teacher_check_in"],
+      "description": "Controlled category identifying whether the observation came from achievement data, delivered service minutes, or teacher narrative."
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$",
+      "description": "UTC RFC 3339 timestamp ending in Z representing when the underlying performance or service was observed."
+    },
+    "ingested_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$",
+      "description": "UTC RFC 3339 timestamp ending in Z representing when Bridgeline normalized the source record."
+    },
+    "recorded_by": {
+      "$ref": "#/$defs/SignalActor",
+      "description": "Human or system actor responsible for recording the underlying observation."
+    },
+    "measurement": {
+      "$ref": "#/$defs/Measurement",
+      "description": "Normalized numeric or textual observation, with application validation requiring exactly one populated value."
+    },
+    "source": {
+      "$ref": "#/$defs/SignalSource",
+      "description": "Traceable evidence locator for the original row, entry, or check-in from which the signal was normalized."
+    },
+    "goal_mapping": {
+      "$ref": "#/$defs/GoalMapping",
+      "description": "Reviewable mapping between this signal and an IEP goal, including confidence and rationale when mapped."
+    }
+  },
+  "required": [
+    "signal_id",
+    "student_ref",
+    "signal_type",
+    "observed_at",
+    "ingested_at",
+    "recorded_by",
+    "measurement",
+    "source",
+    "goal_mapping"
+  ],
+  "$defs": {
+    "SignalActor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "actor_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "District identifier of the responsible human, or the literal system identifier for automated imports."
+        },
+        "actor_role": {
+          "type": "string",
+          "enum": ["teacher", "provider", "case_manager", "system"],
+          "description": "Role under which the actor recorded or supplied the progress observation."
+        }
+      },
+      "required": ["actor_ref", "actor_role"]
+    },
+    "Measurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "metric": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable metric label such as assignment_percentage, rubric_score, minutes_delivered, or teacher_narrative."
+        },
+        "numeric_value": {
+          "type": ["number", "null"],
+          "description": "Normalized quantitative value when the source is numeric, otherwise null."
+        },
+        "text_value": {
+          "type": ["string", "null"],
+          "description": "Normalized narrative value when the source is textual, otherwise null."
+        },
+        "unit": {
+          "type": ["string", "null"],
+          "description": "Unit for a numeric measurement, such as percent, points, or minutes, otherwise null when not applicable."
+        }
+      },
+      "required": ["metric", "numeric_value", "text_value", "unit"],
+      "oneOf": [
+        {
+          "properties": {
+            "numeric_value": { "type": "number" },
+            "text_value": { "type": "null" }
+          }
+        },
+        {
+          "properties": {
+            "numeric_value": { "type": "null" },
+            "text_value": { "type": "string", "minLength": 1 }
+          }
+        }
+      ]
+    },
+    "SignalSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable file, form, or source-system name from which the progress observation originated."
+        },
+        "source_record_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable row, entry, or record identifier that permits retrieval of the original evidence."
+        },
+        "source_excerpt": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Raw source excerpt supporting the normalized measurement and displayed during reconciliation review."
+        }
+      },
+      "required": ["source_name", "source_record_ref", "source_excerpt"]
+    },
+    "GoalMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "goal_id": {
+          "type": ["string", "null"],
+          "format": "uuid",
+          "description": "Stable UUID of the mapped IEP goal, or null while the signal is unmapped."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["unmapped", "auto_mapped", "confirmed", "needs_review"],
+          "description": "Workflow state describing whether goal linkage is absent, automated, human-confirmed, or ambiguous."
+        },
+        "confidence": {
+          "type": ["number", "null"],
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Mapping confidence from 0.0 to 1.0 when a goal link has been proposed, otherwise null."
+        },
+        "rationale": {
+          "type": ["string", "null"],
+          "description": "Evidence-based explanation for the proposed or confirmed goal mapping, otherwise null when unmapped."
+        }
+      },
+      "required": ["goal_id", "status", "confidence", "rationale"]
+    }
+  }
+}

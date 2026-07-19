@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgeline.local/schemas/PipelineStatusEvent.json",
+  "title": "PipelineStatusEvent",
+  "description": "Persisted status event that is the sole data source for the resumable, human-readable pipeline visualization.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID of the pipeline run to which this event belongs."
+    },
+    "seq": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Strictly increasing sequence number within the run, used as the SSE Last-Event-ID resume cursor."
+    },
+    "stage": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable machine-readable slug of the pipeline stage emitting this event."
+    },
+    "agent_label": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-facing name of the agent or deterministic component displayed in the pipeline UI."
+    },
+    "state": {
+      "type": "string",
+      "enum": ["queued", "running", "done", "needs_review", "error"],
+      "description": "Controlled lifecycle state used by the UI to render stage status and human-review pauses."
+    },
+    "detail": {
+      "type": "string",
+      "minLength": 1,
+      "description": "User-facing explanation of what the stage is doing or why it needs attention; this is UX copy rather than an internal log line."
+    },
+    "progress": {
+      "type": ["number", "null"],
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Fractional stage completion from 0.0 to 1.0, or null when meaningful progress cannot be calculated."
+    },
+    "parent_stage": {
+      "type": ["string", "null"],
+      "description": "Machine-readable parent stage slug for a fan-out child lane, or null for a top-level stage."
+    },
+    "ts": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$",
+      "description": "UTC RFC 3339 timestamp ending in Z when the event was persisted."
+    }
+  },
+  "required": [
+    "run_id",
+    "seq",
+    "stage",
+    "agent_label",
+    "state",
+    "detail",
+    "progress",
+    "parent_stage",
+    "ts"
+  ]
+}

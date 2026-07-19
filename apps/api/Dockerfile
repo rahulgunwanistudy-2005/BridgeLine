@@ -13,6 +13,7 @@ COPY apps/api/migrations ./migrations
 FROM base AS test
 
 COPY apps/api/tests ./tests
+COPY packages/schemas ./packages/schemas
 
 RUN pip install --no-cache-dir ".[dev]"
 RUN ruff format --check bridgeline tests

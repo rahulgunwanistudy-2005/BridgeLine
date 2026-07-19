@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgeline.local/schemas/AuditEvent.json",
+  "title": "AuditEvent",
+  "description": "Immutable record of a consequential Bridgeline action with actor, timestamp, changed values, and supporting evidence.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID uniquely identifying this append-only audit event."
+    },
+    "event_type": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*(?:\\.[a-z][a-z0-9_]*)+$",
+      "description": "Lowercase dotted action name, such as iep.approved or brief.confirmed, used for typed event routing."
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$",
+      "description": "UTC RFC 3339 timestamp ending in Z when the audited action occurred."
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable factual summary of the action suitable for the compliance timeline."
+    },
+    "actor": {
+      "$ref": "#/$defs/AuditActor",
+      "description": "Human or system identity responsible for the audited action."
+    },
+    "subject": {
+      "$ref": "#/$defs/AuditSubject",
+      "description": "Primary domain record affected by the audited action."
+    },
+    "changes": {
+      "type": "array",
+      "description": "Field-level before-and-after values needed to reconstruct what changed without mutating prior events.",
+      "items": { "$ref": "#/$defs/AuditChange" }
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Source records and citations that substantiate the audited action or state transition.",
+      "items": { "$ref": "#/$defs/EvidenceReference" }
+    },
+    "correlation_id": {
+      "type": ["string", "null"],
+      "format": "uuid",
+      "description": "UUID grouping multiple audit events produced by one user operation, or null when no grouping applies."
+    },
+    "run_id": {
+      "type": ["string", "null"],
+      "format": "uuid",
+      "description": "Pipeline run UUID that caused this action, or null for actions outside a pipeline run."
+    }
+  },
+  "required": [
+    "event_id",
+    "event_type",
+    "occurred_at",
+    "summary",
+    "actor",
+    "subject",
+    "changes",
+    "evidence",
+    "correlation_id",
+    "run_id"
+  ],
+  "$defs": {
+    "AuditActor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "actor_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "District identifier of the responsible human, or the literal system identity for automated actions."
+        },
+        "actor_role": {
+          "type": "string",
+          "enum": ["case_manager", "teacher", "provider", "system"],
+          "description": "Authorized role under which the actor performed the audited action."
+        }
+      },
+      "required": ["actor_ref", "actor_role"]
+    },
+    "AuditSubject": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "subject_type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Domain type of the affected record, such as iep_record, obligation, brief, or pipeline_run."
+        },
+        "subject_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable identifier of the affected domain record."
+        }
+      },
+      "required": ["subject_type", "subject_ref"]
+    },
+    "AuditChange": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "field_path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "JSON-path-like location of the field affected by this change."
+        },
+        "previous_value": {
+          "$ref": "#/$defs/NullableJsonValue",
+          "description": "Typed JSON value before the action, or null when the field did not previously exist."
+        },
+        "new_value": {
+          "$ref": "#/$defs/NullableJsonValue",
+          "description": "Typed JSON value after the action, or null when the field was removed."
+        }
+      },
+      "required": ["field_path", "previous_value", "new_value"]
+    },
+    "EvidenceReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_type": {
+          "type": "string",
+          "enum": ["iep_source", "rule_citation", "progress_signal", "document", "audit_event"],
+          "description": "Controlled category identifying the kind of evidence that supports the audited action."
+        },
+        "evidence_ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable identifier or citation key used to retrieve the supporting evidence."
+        },
+        "locator": {
+          "type": ["string", "null"],
+          "description": "Page, row, section, or other precise location within the evidence, or null when the reference is already exact."
+        }
+      },
+      "required": ["evidence_type", "evidence_ref", "locator"]
+    },
+    "NullableJsonValue": {
+      "description": "JSON-compatible scalar, array, object, or null retained as the exact audited field value.",
+      "anyOf": [
+        { "type": "string" },
+        { "type": "number" },
+        { "type": "boolean" },
+        { "type": "array", "items": { "$ref": "#/$defs/NullableJsonValue" } },
+        { "type": "object", "additionalProperties": { "$ref": "#/$defs/NullableJsonValue" } },
+        { "type": "null" }
+      ]
+    }
+  }
+}

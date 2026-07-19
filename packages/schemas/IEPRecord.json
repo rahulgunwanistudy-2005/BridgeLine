@@ -1,0 +1,326 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgeline.local/schemas/IEPRecord.json",
+  "title": "IEPRecord",
+  "description": "Canonical, source-grounded extraction of one physical IEP document within a stable record lineage.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "iep_record_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Stable UUID for this physical IEP lineage; it is preserved when the same IEP is extracted again and differs from the per-run extraction identifier."
+    },
+    "student_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "District or SIS identifier for the student whose IEP was extracted; this external reference is not required to be a UUID."
+    },
+    "disability_category": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Eligibility or disability category stated in the approved IEP, preserved as document language rather than inferred by the system."
+    },
+    "school_year": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{4}$",
+      "description": "School year covered by the IEP in YYYY-YYYY form, with application validation requiring consecutive years."
+    },
+    "accommodations": {
+      "type": "array",
+      "description": "Approved accommodations extracted from the IEP, each with a stable identity and mandatory source evidence.",
+      "items": { "$ref": "#/$defs/Accommodation" }
+    },
+    "services": {
+      "type": "array",
+      "description": "Mandated services extracted from the IEP, including delivery schedule and mandatory source evidence.",
+      "items": { "$ref": "#/$defs/Service" }
+    },
+    "goals": {
+      "type": "array",
+      "description": "Measurable annual goals extracted from the IEP, including progress criteria and mandatory source evidence.",
+      "items": { "$ref": "#/$defs/Goal" }
+    },
+    "dates": {
+      "$ref": "#/$defs/IEPDates",
+      "description": "School-local compliance dates represented without times so timezone conversion cannot change a legal deadline."
+    },
+    "extraction_meta": {
+      "$ref": "#/$defs/ExtractionMeta",
+      "description": "Provenance for this particular extraction run; these values may change while the IEP record identity remains stable."
+    }
+  },
+  "required": [
+    "iep_record_id",
+    "student_ref",
+    "disability_category",
+    "school_year",
+    "accommodations",
+    "services",
+    "goals",
+    "dates",
+    "extraction_meta"
+  ],
+  "$defs": {
+    "Accommodation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Stable UUID carried forward by reconciliation when this accommodation reappears in a later extraction of the same IEP."
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Exact approved accommodation language, normalized only enough to remove extraction artifacts without changing meaning."
+        },
+        "applies_to": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Scopes used by the deterministic rules engine to distribute the accommodation by subject, instructional context, or every class.",
+          "items": {
+            "type": "string",
+            "enum": ["subject", "context", "all"]
+          }
+        },
+        "source_page": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "One-based page number containing the evidence for this accommodation in the normalized source document."
+        },
+        "source_quote": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verbatim source excerpt that supports the extracted accommodation and is shown during human review."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence from 0.0 to 1.0 for this accommodation, used by the confidence gate and evaluation harness."
+        },
+        "reconciliation_status": {
+          "type": ["string", "null"],
+          "enum": ["matched", "new", "ambiguous", null],
+          "description": "Identity-reconciliation result against the prior approved extraction: matched preserves a prior ID, new allocates a new stable ID, ambiguous requires human resolution, and null is reserved for the first extraction in an IEP lineage."
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "applies_to",
+        "source_page",
+        "source_quote",
+        "confidence",
+        "reconciliation_status"
+      ]
+    },
+    "Service": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Stable UUID carried forward by reconciliation when this service reappears in a later extraction of the same IEP."
+        },
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Type of mandated special-education or related service stated in the IEP."
+        },
+        "minutes_per_week": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total number of service minutes mandated per week, normalized for deterministic compliance accounting."
+        },
+        "frequency": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Service frequency or schedule language stated in the IEP, retained for reviewer verification."
+        },
+        "provider_role": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Role responsible for delivering the service, such as speech-language pathologist or special educator."
+        },
+        "start": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "School-local YYYY-MM-DD date on which service delivery begins, or null when the source does not provide a reliable date."
+        },
+        "end": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "School-local YYYY-MM-DD date on which service delivery ends, or null when the source does not provide a reliable date."
+        },
+        "source_page": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "One-based page number containing the evidence for this mandated service."
+        },
+        "source_quote": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verbatim source excerpt supporting the service type, schedule, minutes, and provider assignment."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence from 0.0 to 1.0 for this service, used by the confidence gate and evaluation harness."
+        },
+        "reconciliation_status": {
+          "type": ["string", "null"],
+          "enum": ["matched", "new", "ambiguous", null],
+          "description": "Identity-reconciliation result against the prior approved extraction: matched preserves a prior ID, new allocates a new stable ID, ambiguous requires human resolution, and null is reserved for the first extraction in an IEP lineage."
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "minutes_per_week",
+        "frequency",
+        "provider_role",
+        "start",
+        "end",
+        "source_page",
+        "source_quote",
+        "confidence",
+        "reconciliation_status"
+      ]
+    },
+    "Goal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Stable UUID carried forward by reconciliation when this goal reappears in a later extraction of the same IEP."
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Complete measurable annual goal language as approved in the IEP."
+        },
+        "baseline": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Present level or starting performance against which progress toward this goal is measured."
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Expected performance threshold or outcome that constitutes attainment of the goal."
+        },
+        "measure": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Assessment, observation, work sample, or other method specified for measuring progress."
+        },
+        "progress_cadence": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Required frequency for collecting or reporting progress evidence for this goal."
+        },
+        "source_page": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "One-based page number containing the evidence for this annual goal."
+        },
+        "source_quote": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verbatim source excerpt supporting the goal, baseline, target, measure, and cadence."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence from 0.0 to 1.0 for this goal, used by the confidence gate and evaluation harness."
+        },
+        "reconciliation_status": {
+          "type": ["string", "null"],
+          "enum": ["matched", "new", "ambiguous", null],
+          "description": "Identity-reconciliation result against the prior approved extraction: matched preserves a prior ID, new allocates a new stable ID, ambiguous requires human resolution, and null is reserved for the first extraction in an IEP lineage."
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "baseline",
+        "target",
+        "measure",
+        "progress_cadence",
+        "source_page",
+        "source_quote",
+        "confidence",
+        "reconciliation_status"
+      ]
+    },
+    "IEPDates": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "annual_review": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "School-local YYYY-MM-DD annual-review deadline, or null when reliable source evidence is unavailable."
+        },
+        "triennial_reeval": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "School-local YYYY-MM-DD triennial-reevaluation deadline, or null when reliable source evidence is unavailable."
+        },
+        "last_progress_report": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "School-local YYYY-MM-DD date of the most recent documented progress report, or null when none is available."
+        }
+      },
+      "required": ["annual_review", "triennial_reeval", "last_progress_report"]
+    },
+    "ExtractionMeta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "model": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Pinned model identifier used for the structured extraction, retained for reproducibility and audit."
+        },
+        "run_id": {
+          "type": "string",
+          "format": "uuid",
+          "description": "Unique identifier for this extraction attempt; unlike iep_record_id, it changes on every re-extraction."
+        },
+        "page_count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of normalized source pages processed during this extraction run."
+        },
+        "legibility_scores": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Per-page legibility scores from 0.0 to 1.0 in page order, with exactly one value for each source page.",
+          "items": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0
+          }
+        },
+        "extracted_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$",
+          "description": "UTC RFC 3339 timestamp ending in Z when this extraction run completed."
+        }
+      },
+      "required": ["model", "run_id", "page_count", "legibility_scores", "extracted_at"]
+    }
+  }
+}
