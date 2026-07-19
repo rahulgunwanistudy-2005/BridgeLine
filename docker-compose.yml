@@ -56,5 +56,26 @@ services:
       start_period: 5s
     restart: unless-stopped
 
+  # First-boot synthetic data loader. Runs once after the API is healthy, seeds the
+  # Riverside dataset idempotently via the public API, then exits. Gated: it cleanly
+  # no-ops until the endpoints in docs/seed-api-contract.md are implemented, so it never
+  # blocks `docker compose up`. Stdlib-only (urllib), so no extra image build is needed.
+  seed:
+    image: python:3.12-slim
+    working_dir: /app
+    environment:
+      BRIDGELINE_API_URL: http://api:8000
+      SEED_TOKEN: ${SEED_TOKEN:-}
+      SEED_STRICT: ${SEED_STRICT:-0}
+      SEED_MAX_WAIT_SECONDS: ${SEED_MAX_WAIT_SECONDS:-120}
+    volumes:
+      - ./scripts:/app/scripts:ro
+      - ./data:/app/data:ro
+    command: ["python", "scripts/seed.py"]
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: "no"
+
 volumes:
   postgres_data:
