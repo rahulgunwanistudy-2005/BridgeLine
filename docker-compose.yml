@@ -31,7 +31,11 @@ services:
       API_HOST: 0.0.0.0
       API_PORT: 8000
       DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-bridgeline}:${POSTGRES_PASSWORD:-bridgeline}@postgres:5432/${POSTGRES_DB:-bridgeline}
-      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+      LLM_MAX_CONCURRENCY: ${LLM_MAX_CONCURRENCY:-1}
+      LLM_MIN_INTERVAL_SECONDS: ${LLM_MIN_INTERVAL_SECONDS:-4.1}
+      LLM_MAX_ATTEMPTS: ${LLM_MAX_ATTEMPTS:-3}
+      LLM_RETRY_BASE_SECONDS: ${LLM_RETRY_BASE_SECONDS:-1.0}
     ports:
       - "8000:8000"
     depends_on:

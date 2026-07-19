@@ -16,8 +16,8 @@ COPY apps/api/tests ./tests
 COPY packages/schemas ./packages/schemas
 
 RUN pip install --no-cache-dir ".[dev]"
-RUN ruff format --check bridgeline tests
-RUN ruff check bridgeline tests
+RUN ruff format --check bridgeline tests migrations
+RUN ruff check bridgeline tests migrations
 RUN mypy bridgeline tests
 RUN pytest
 

@@ -3,7 +3,7 @@
 from functools import lru_cache
 from typing import Literal
 
-from pydantic import Field
+from pydantic import Field, SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -22,7 +22,11 @@ class Settings(BaseSettings):
     api_host: str = "0.0.0.0"
     api_port: int = Field(default=8000, ge=1, le=65535)
     database_url: str = "postgresql+asyncpg://bridgeline:bridgeline@localhost:5432/bridgeline"
-    openai_api_key: str | None = None
+    google_api_key: SecretStr | None = None
+    llm_max_concurrency: int = Field(default=1, ge=1, le=8)
+    llm_min_interval_seconds: float = Field(default=4.1, ge=0.0)
+    llm_max_attempts: int = Field(default=3, ge=1, le=10)
+    llm_retry_base_seconds: float = Field(default=1.0, gt=0.0)
 
 
 @lru_cache

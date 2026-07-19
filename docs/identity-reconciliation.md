@@ -32,3 +32,11 @@ before the extraction pipeline can persist re-extracted IEP records.
 
 This contract gives cx/04 version-diff logic stable item identities without allowing
 an uncertain match to silently inherit a legal obligation's history.
+
+Obligations and briefs foreign-key to `iep_records.id`, the specific version row;
+they never foreign-key directly to the `iep_record_id` lineage identifier.
+
+The future approval transaction must translate a violation of
+`uq_iep_records_current_approved` into a typed approval-conflict error. Until that
+service boundary exists, concurrent approval attempts surface as SQLAlchemy
+`IntegrityError` rather than a Bridgeline domain error.
