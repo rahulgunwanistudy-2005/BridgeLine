@@ -171,6 +171,47 @@ class IEPDates(ContractModel):
     )
 
 
+class FieldConfidences(ContractModel):
+    """Extraction confidence for canonical scalar and date fields."""
+
+    student_ref: UnitInterval = Field(
+        description=(
+            "Extraction confidence for student_ref; 0.0 required when the value is absent "
+            "or unreliable."
+        )
+    )
+    disability_category: UnitInterval = Field(
+        description=(
+            "Extraction confidence for disability_category; 0.0 required when the value is "
+            "absent or unreliable."
+        )
+    )
+    school_year: UnitInterval = Field(
+        description=(
+            "Extraction confidence for school_year; 0.0 required when the value is absent "
+            "or unreliable."
+        )
+    )
+    annual_review: UnitInterval = Field(
+        description=(
+            "Extraction confidence for annual_review; 0.0 required when the value is absent "
+            "or unreliable."
+        )
+    )
+    triennial_reeval: UnitInterval = Field(
+        description=(
+            "Extraction confidence for triennial_reeval; 0.0 required when the value is absent "
+            "or unreliable."
+        )
+    )
+    last_progress_report: UnitInterval = Field(
+        description=(
+            "Extraction confidence for last_progress_report; 0.0 required when the value is "
+            "absent or unreliable."
+        )
+    )
+
+
 class ExtractionMeta(ContractModel):
     """Provenance for one extraction attempt."""
 
@@ -207,6 +248,9 @@ class IEPRecord(ContractModel):
         description="Annual goals with stable identities and source evidence."
     )
     dates: IEPDates = Field(description="School-local compliance dates.")
+    field_confidences: FieldConfidences = Field(
+        description="Extraction confidence for canonical scalar and date fields."
+    )
     extraction_meta: ExtractionMeta = Field(description="Provenance for this extraction run.")
 
     @field_validator("school_year")

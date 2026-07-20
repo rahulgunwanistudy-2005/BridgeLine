@@ -27,6 +27,13 @@ class Settings(BaseSettings):
     llm_min_interval_seconds: float = Field(default=4.1, ge=0.0)
     llm_max_attempts: int = Field(default=3, ge=1, le=10)
     llm_retry_base_seconds: float = Field(default=1.0, gt=0.0)
+    ingest_max_upload_bytes: int = Field(default=50 * 1024 * 1024, ge=1)
+    ingest_pdf_dpi: int = Field(default=200, ge=72, le=600)
+    ingest_ocr_page_concurrency: int = Field(default=1, ge=1, le=2)
+    ingest_extraction_pages_per_chunk: int = Field(default=8, ge=1)
+    ingest_field_confidence_threshold: float = Field(default=0.85, ge=0.0, le=1.0)
+    ingest_legibility_threshold: float = Field(default=0.70, ge=0.0, le=1.0)
+    ingest_non_iep_rejection_confidence: float = Field(default=0.85, ge=0.0, le=1.0)
 
 
 @lru_cache

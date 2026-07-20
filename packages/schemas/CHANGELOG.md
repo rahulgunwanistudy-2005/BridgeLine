@@ -1,5 +1,14 @@
 # Schema Changelog
 
+## v1.1 — 2026-07-19 — IMPLEMENTED, PENDING PAIRED APPROVAL
+
+Added the required `IEPRecord.field_confidences` object for the six canonical
+scalar and date fields: `student_ref`, `disability_category`, `school_year`,
+`annual_review`, `triennial_reeval`, and `last_progress_report`. Every value is
+bounded from 0.0 to 1.0, and 0.0 is required when the corresponding value is
+absent or unreliable. This closes the silent-confidence gap for fields that do
+not carry item-level confidence.
+
 ## v1 — 2026-07-19 — IMPLEMENTED, PENDING PAIRED APPROVAL
 
 Initial contract: IEPRecord, ObligationSet, TeacherBrief, ProgressSignal,

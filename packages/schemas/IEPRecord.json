@@ -45,6 +45,10 @@
       "$ref": "#/$defs/IEPDates",
       "description": "School-local compliance dates represented without times so timezone conversion cannot change a legal deadline."
     },
+    "field_confidences": {
+      "$ref": "#/$defs/FieldConfidences",
+      "description": "Extraction confidence for canonical scalar and date fields that do not carry item-level confidence."
+    },
     "extraction_meta": {
       "$ref": "#/$defs/ExtractionMeta",
       "description": "Provenance for this particular extraction run; these values may change while the IEP record identity remains stable."
@@ -59,6 +63,7 @@
     "services",
     "goals",
     "dates",
+    "field_confidences",
     "extraction_meta"
   ],
   "$defs": {
@@ -283,6 +288,56 @@
         }
       },
       "required": ["annual_review", "triennial_reeval", "last_progress_report"]
+    },
+    "FieldConfidences": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "student_ref": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence for student_ref; 0.0 required when the value is absent or unreliable."
+        },
+        "disability_category": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence for disability_category; 0.0 required when the value is absent or unreliable."
+        },
+        "school_year": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence for school_year; 0.0 required when the value is absent or unreliable."
+        },
+        "annual_review": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence for annual_review; 0.0 required when the value is absent or unreliable."
+        },
+        "triennial_reeval": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence for triennial_reeval; 0.0 required when the value is absent or unreliable."
+        },
+        "last_progress_report": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence for last_progress_report; 0.0 required when the value is absent or unreliable."
+        }
+      },
+      "required": [
+        "student_ref",
+        "disability_category",
+        "school_year",
+        "annual_review",
+        "triennial_reeval",
+        "last_progress_report"
+      ]
     },
     "ExtractionMeta": {
       "type": "object",

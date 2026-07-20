@@ -182,7 +182,7 @@ class GeminiGateway:
         if max_output_tokens < 1:
             raise ValueError("max_output_tokens must be at least 1")
 
-        parts = [types.Part.from_text(text=prompt)]
+        parts: list[types.PartUnion] = [types.Part.from_text(text=prompt)]
         parts.extend(self._image_part(image) for image in images)
         config = types.GenerateContentConfig(
             response_mime_type="application/json",
@@ -226,7 +226,7 @@ class GeminiGateway:
 
     async def _request_with_retry(
         self,
-        parts: list[types.Part],
+        parts: list[types.PartUnion],
         config: types.GenerateContentConfig,
     ) -> tuple[types.GenerateContentResponse, int, int]:
         """Retry only transient provider failures using bounded exponential backoff."""

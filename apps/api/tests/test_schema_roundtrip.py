@@ -10,6 +10,7 @@ from pydantic import BaseModel, ValidationError
 from bridgeline.db.schemas import (
     Accommodation,
     AuditEvent,
+    FieldConfidences,
     Goal,
     IEPRecord,
     Measurement,
@@ -78,6 +79,14 @@ SAMPLES: dict[str, dict[str, Any]] = {
             "annual_review": "2027-05-10",
             "triennial_reeval": "2029-04-22",
             "last_progress_report": None,
+        },
+        "field_confidences": {
+            "student_ref": 0.99,
+            "disability_category": 0.97,
+            "school_year": 0.99,
+            "annual_review": 0.98,
+            "triennial_reeval": 0.96,
+            "last_progress_report": 0.0,
         },
         "extraction_meta": {
             "model": "gpt-5.6",
@@ -283,6 +292,63 @@ def test_measurement_requires_exactly_one_value(
                 "unit": "percent",
             }
         )
+
+
+def test_field_confidences_accepts_boundary_values() -> None:
+    """Both inclusive confidence boundaries round-trip without coercion."""
+
+    confidences = FieldConfidences(
+        student_ref=0.0,
+        disability_category=1.0,
+        school_year=0.0,
+        annual_review=1.0,
+        triennial_reeval=0.0,
+        last_progress_report=1.0,
+    )
+
+    assert FieldConfidences.model_validate_json(confidences.model_dump_json()) == confidences
+
+
+def test_field_confidences_rejects_missing_key() -> None:
+    """Every canonical scalar and date confidence is required."""
+
+    sample = dict(SAMPLES["IEPRecord"]["field_confidences"])
+    sample.pop("last_progress_report")
+
+    with pytest.raises(ValidationError, match="last_progress_report"):
+        FieldConfidences.model_validate(sample)
+
+
+def test_field_confidences_rejects_additional_property() -> None:
+    """Unknown confidence fields cannot silently drift the contract."""
+
+    sample = {
+        **SAMPLES["IEPRecord"]["field_confidences"],
+        "unreviewed_field": 0.9,
+    }
+
+    with pytest.raises(ValidationError, match="Extra inputs are not permitted"):
+        FieldConfidences.model_validate(sample)
+
+
+def test_field_confidences_rejects_value_below_zero() -> None:
+    """Confidence values below the inclusive lower bound are rejected."""
+
+    sample = dict(SAMPLES["IEPRecord"]["field_confidences"])
+    sample["student_ref"] = -0.01
+
+    with pytest.raises(ValidationError, match="greater than or equal to 0"):
+        FieldConfidences.model_validate(sample)
+
+
+def test_field_confidences_rejects_value_above_one() -> None:
+    """Confidence values above the inclusive upper bound are rejected."""
+
+    sample = dict(SAMPLES["IEPRecord"]["field_confidences"])
+    sample["annual_review"] = 1.01
+
+    with pytest.raises(ValidationError, match="less than or equal to 1"):
+        FieldConfidences.model_validate(sample)
 
 
 RECONCILIATION_CASES: list[tuple[type[BaseModel], dict[str, Any], str | None]] = [
