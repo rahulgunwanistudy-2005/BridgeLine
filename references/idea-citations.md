@@ -109,7 +109,7 @@ DERIVES: A baseline Finding if a student in the roster has no approved (is_curre
 
 ---
 
-RULE: triennial-reevaluation ⚠ UNVERIFIED THIS SESSION — CONFIRM BEFORE USE
+RULE: triennial-reevaluation
 CITE: 34 CFR §300.303(b)(2) [cite as commonly stated; verify literal text yourself]
 PLAIN: A reevaluation must occur at least once every 3 years, unless the parent and the
        public agency agree that a reevaluation is unnecessary.
