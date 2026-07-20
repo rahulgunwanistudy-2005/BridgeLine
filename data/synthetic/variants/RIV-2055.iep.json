@@ -1,0 +1,112 @@
+{
+  "iep_record_id": "50f7b34e-584f-5253-9628-735a6ecce279",
+  "student_ref": "RIV-2055",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "9faa9e13-d3f6-56fa-a372-e953056fceef",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "78970641-e6f0-5b95-86e2-0c50184cee82",
+      "text": "Provide visual supports and models for new tasks.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual supports and models for new tasks",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "845604d2-1733-54cf-9b95-e4a2a4b5d98c",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "308d3e07-227c-5c9a-87eb-fbd8199ea361",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3eacb695-dec7-5f17-a077-2e5a2058ee84",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "3eb67f8d-fc1c-57e2-8775-f7579278c3a8",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "041cda00-a274-553f-b184-66e2b22d2d38",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "25279674-89d0-5bcf-a26b-0a76d1d5d796",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

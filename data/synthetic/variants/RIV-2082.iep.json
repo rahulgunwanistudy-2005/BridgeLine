@@ -1,0 +1,148 @@
+{
+  "iep_record_id": "2f1c778e-665a-5adb-86ad-c243dc4d8ce3",
+  "student_ref": "RIV-2082",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "73136fc9-f54a-5e86-acdf-087979aa3a95",
+      "text": "Seat with a clear line of sight to the speaker's face.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "clear line of sight to the speaker's face",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4e7f76fd-421e-5221-8a16-64114148b06b",
+      "text": "Break long assignments into smaller submitted parts.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break long assignments into smaller parts",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "fcffbc7d-22c9-58af-88f4-6b6253085928",
+      "text": "Provide 50% extended time on reading-heavy assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on reading-heavy assessments",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4ced08fa-027d-5dad-b11f-a279f8364a1f",
+      "text": "Give a two-minute warning before transitions.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "two-minute warning before transitions",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "be577bf2-c0ba-57c6-8398-27ab8bf7795c",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1b8aebea-5c01-514b-865c-4acac97cacb1",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "e03ac811-fc86-58d1-b2ca-55ef98cf4f37",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "produce initial /r/ with 80% accuracy",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1dc80b30-e23f-5b14-98e2-410cde763dd1",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ed102fc4-72df-520d-a545-e14baf82f6a8",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "79caf257-fb54-51d3-9ea5-f17c0b691101",
+      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "d5db9028-c2e6-59b6-9522-6bfec2bfd19b",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

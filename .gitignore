@@ -12,18 +12,14 @@ dist/
 build/
 .DS_Store
 *.log
-.env
 
 # virtualenvs
 .venv*/
 venv/
 
-# python
-__pycache__/
-*.pyc
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
 # build artifacts
 *.egg-info/
+
+# cc/02 data tooling
+.venv-synth/
+scripts/synthgen/__pycache__/

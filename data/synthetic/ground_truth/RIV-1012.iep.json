@@ -1,0 +1,124 @@
+{
+  "iep_record_id": "79ef933c-7bd1-5f0e-b95c-061caa590c6e",
+  "student_ref": "RIV-1012",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "78812268-1382-5bad-8be7-bdbcee8168c0",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4f791a39-00eb-5dc7-8801-eaeae7ffe065",
+      "text": "State task expectations explicitly and in writing.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "state task expectations explicitly and in writing",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b3e54a65-0e56-5431-81b9-58eeae83c7dd",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b77d8b88-a183-532e-baeb-c4ee0ec3de12",
+      "text": "Allow brief scheduled sensory breaks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief scheduled sensory breaks",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "e6e4755b-938c-5b8d-9667-46bc3178c462",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "aa8655f6-b7b8-5784-9244-8e37839346b6",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "2a33378e-d0ff-53a7-b5fa-18c5f33a0477",
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "maintain a topic across three conversational turns",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "70f3e30e-e084-5d7f-94cb-604701825ddc",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2029-01-30",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "1f49041e-f69d-5907-8ace-afbd83863047",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.99,
+      0.97
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

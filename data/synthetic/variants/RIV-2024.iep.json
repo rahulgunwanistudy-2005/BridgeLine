@@ -1,0 +1,205 @@
+{
+  "iep_record_id": "160039c6-e2aa-5939-91a8-1fc8cfcb5aee",
+  "student_ref": "RIV-2024",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "c8043caf-ff2a-5a65-8f2b-976d8236a44c",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "943c744a-b1cf-54d3-b4e8-71183a1a6307",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7125fbdc-8bbc-5fe3-82a1-c720d24b47bb",
+      "text": "Permit brief movement breaks between tasks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief movement breaks between tasks",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8223785c-192e-5e68-9f09-f9922e8b1cda",
+      "text": "Provide 50% extended time on reading-heavy assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on reading-heavy assessments",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8c622784-e5c2-5450-aad1-acfa9695b52c",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8848f86e-c5f6-5413-ba89-64900ed8724e",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3e16dcb1-4d20-5151-a55a-3c8edb6b896c",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4688c586-771b-5709-85f9-2aeb4e3fd682",
+      "text": "Provide a word bank for written-response items in reading and history.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a word bank for written-response items",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "05e17e60-54fe-5b9c-9a7c-f36e3739d288",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "acc4a64a-c8a8-5fe1-af47-77ec8c08ec8f",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "b322b108-33d0-5fc3-9d8b-1df239525209",
+      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
+      "target": "3 of 4 structured opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a taught script to join a peer activity",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "88f44161-a8b5-5205-b187-cd2ec72e26e3",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "identify the main idea and two supporting details with 80% accuracy",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "eb948366-079c-52e9-a816-081d9da8cb28",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "aa3ac77e-3456-53fe-8a3d-7d672262aecb",
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4297bb04-3053-51ad-ba9f-ae97ec6a453b",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "request clarification when she misses information",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "401eedbb-1905-5c19-822d-a99745e7f8a6",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

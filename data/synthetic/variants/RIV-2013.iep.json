@@ -1,0 +1,205 @@
+{
+  "iep_record_id": "10800985-038e-5d68-a9ee-a70908d903d5",
+  "student_ref": "RIV-2013",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "21b572dd-73aa-5bd4-b685-c6b039d7a946",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ad9d3825-b039-53f6-ac22-6644611d5eb2",
+      "text": "Pair auditory alerts and directions with a visual cue.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "pair auditory alerts with a visual cue",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1cce8db8-b143-5de8-9008-440e3958d5a0",
+      "text": "Provide 50% extended time on tests and long assignments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on tests and long assignments",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b40f2adc-58ca-539e-8f56-53b481c6bad0",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a0dcfbd6-031a-503d-8d0e-cc9405064c71",
+      "text": "Pair new vocabulary with visuals and definitions.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "pair new vocabulary with visuals and definitions",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "85d493c8-0146-59c0-821b-5a1a2c161eb3",
+      "text": "Give advance warning before transitions and changes in routine.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "advance warning before transitions and changes in routine",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "28ddbe8b-fc0b-556c-b843-51da92451516",
+      "text": "Permit brief movement breaks between tasks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief movement breaks between tasks",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "39b2e463-593d-579b-87a5-185128e96cb0",
+      "text": "State task expectations explicitly and in writing.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "state task expectations explicitly and in writing",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "884920f4-e5f0-5a9d-af21-05d2dc79e3d6",
+      "text": "Provide graphic organizers for writing and note-taking.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "graphic organizers for writing and note-taking",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "ed646dd8-52d5-517e-9cda-a3c7593d32bc",
+      "type": "Language processing support (group)",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Unassigned",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "6301a936-5fad-5d90-aa52-b0f89c2530a9",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "21ee0693-ac60-5ae6-ad8e-a0985596fad2",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction reading 30 minutes 5 times weekly",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "b79a2e92-d166-5173-be4b-1c5e227f18dc",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "sustain attention to an independent task for 10 minutes",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2f1c7673-30b1-5bd1-a2d2-94fcb0715d13",
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "organize a multi-paragraph response using an outline",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b3eb88b8-42fe-55a3-86b0-c03e3d514d90",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "independently begin a classroom task within two minutes",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "08d3ecfa-4067-569d-9be0-a3d8429abb5a",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

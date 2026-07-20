@@ -1,0 +1,110 @@
+{
+  "iep_record_id": "508ec6f4-5d90-5758-a613-0bd945f1645f",
+  "student_ref": "RIV-2008",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "70c63afd-9079-5d2c-acb4-89e50f14fd6a",
+      "text": "Provide 50% extended time on tests and long assignments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on tests and long assignments",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "507728ec-6b3a-5627-abd0-673b726e178b",
+      "text": "Provide captions or a transcript for audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for audio and video media",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2d16759e-b6fd-5d0f-8cd0-0ae096d130c7",
+      "text": "Pair auditory alerts and directions with a visual cue.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "pair auditory alerts with a visual cue",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "fbc077a1-4cba-5d9b-97b4-2bf3c4310a27",
+      "text": "Provide 50% extended time on reading-heavy assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on reading-heavy assessments",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "6f841683-00fb-5be9-81ba-ef052a31f100",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "66fc8b90-8981-59be-9f3b-cc9cd459ac44",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b73922a5-fa0e-5460-8fb4-d87937fb2ce9",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "request clarification when she misses information",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2026-10-12",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "14911571-fd22-5dcc-b2c3-818df7d55b62",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

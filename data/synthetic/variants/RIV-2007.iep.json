@@ -1,0 +1,206 @@
+{
+  "iep_record_id": "ce3cb99a-958f-51d1-b18b-7b5f07d9da54",
+  "student_ref": "RIV-2007",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "1a1dc3fd-30ce-5759-9fa5-e6989b300468",
+      "text": "Permit brief movement breaks between tasks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief movement breaks between tasks",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "876ee676-eef0-54b5-96cc-1387ebaae114",
+      "text": "Provide frequent check-ins for understanding.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "frequent check-ins for understanding",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "236974d8-87ac-5bdd-af7a-37f04e39ccd6",
+      "text": "State task expectations explicitly and in writing.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "state task expectations explicitly and in writing",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3b2422f6-f51e-5134-957a-78a556b5298d",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "6625201d-5d03-5dc0-ade0-4be8b8e5feb6",
+      "text": "Provide a peer notetaker or copy of lecture notes.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "peer notetaker or copy of lecture notes",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3eb23660-0e2c-56df-a927-e4ac8891bf01",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "19b2acc8-4709-5006-9197-e4bfd2263648",
+      "text": "Provide a checklist to break long assignments into steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "checklist to break long assignments into steps",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e872ba8b-498d-562e-8800-5252de9aba24",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d6b48955-ce12-5936-bf33-e603a9917489",
+      "text": "Seat near the point of instruction and away from high-traffic areas.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "preferential seating near the point of instruction",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "554d9e4d-7296-5bd8-8749-efb39caa5add",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "94aa201d-c6bf-5fe5-86f1-039b4be82853",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "ee6d5899-fa0e-5882-ad29-72377a0f09cf",
+      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
+      "target": "3 of 4 structured opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a taught script to join a peer activity",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "caf365e3-95df-5071-b909-f3b09ee96d08",
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "use a self-monitoring checklist to review work before submitting",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "aca06fd2-04c4-5ba2-ae39-5d2d5817cfe8",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "6125379b-9c7d-592b-8aca-9b5afa74b3fc",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "421a18e0-5eab-5ff5-855d-bb255d9e9784",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

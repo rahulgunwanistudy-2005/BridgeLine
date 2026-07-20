@@ -1,0 +1,172 @@
+{
+  "iep_record_id": "67afd53c-b628-554f-b9f9-7783892fc4c5",
+  "student_ref": "RIV-2015",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "2391a96c-adf7-59dc-a872-2d88268e5016",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "29720ca0-35d0-550e-90ac-f2c40119e3c8",
+      "text": "Repeat and rephrase spoken directions on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "repeat and rephrase spoken directions on request",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3811f5c8-496e-5dcb-9139-68354a332981",
+      "text": "Do not grade spelling on first-draft written work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not grade spelling on first-draft written work",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "469cab11-c6ea-57ff-8170-10b6c01be5b0",
+      "text": "Pair new vocabulary with visuals and definitions.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "pair new vocabulary with visuals and definitions",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a23061e2-dd26-5973-98f2-31cd1f74ef29",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7d164ca4-f8df-5fb8-ba1f-f241b21b91d6",
+      "text": "Provide audio versions of grade-level texts.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "audio versions of grade-level texts",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "6867b272-9a83-589b-8782-d73961ae0159",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Occupational therapy 30 minutes weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "64048bd5-062c-5def-9d24-21a9e2322ec1",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7bf8ecaf-649a-54c7-85d7-9fafb41023cd",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "37f93f42-461d-57ae-b218-8d50a4ada265",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "produce initial /r/ with 80% accuracy",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "239b2eb1-1584-5efd-9d35-946e9d80c287",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b6994710-5ec5-5d9b-8284-ac425b5b50fa",
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "f147dcdc-0d69-5f9f-ae14-2c33b464f56c",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

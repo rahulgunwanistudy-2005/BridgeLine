@@ -1,0 +1,126 @@
+{
+  "iep_record_id": "71345169-a9e2-5642-8b9c-c0bd007a6bea",
+  "student_ref": "RIV-2003",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "7a3e6765-7a87-53f4-abc6-c3a57211d2de",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "34d7ab2d-1ff1-50fd-87f0-657bd71fc6a0",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "6d2e0cd7-cc41-528e-8d33-75a353e4ed5f",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "5cd68fb3-9fb5-5d30-9d5e-b61a73016409",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "beceb0c3-f686-5d90-967c-dc4995f65a48",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "76a37c29-9ae6-515c-bee3-bb2a84056bc9",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Occupational therapy 30 minutes weekly",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "6844df09-304d-5b3e-8f82-b7dedf6f2cd8",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3bc2724d-7947-5cd3-94ef-8ce238639baf",
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use correct past-tense verbs with 80% accuracy",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "79faaa51-c676-5dca-b20a-4519182f61ee",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

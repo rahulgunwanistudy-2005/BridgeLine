@@ -1,0 +1,194 @@
+{
+  "iep_record_id": "b021547c-933c-5ad3-9c60-89d3ac5a0fb9",
+  "student_ref": "RIV-2035",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "6ef0ce5c-cebe-5239-aa5f-42093a054e1a",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9acbdb96-13ed-5f6a-918b-d669d33b3487",
+      "text": "Provide 50% extended time on tests and long assignments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on tests and long assignments",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "14923fa7-7360-5f73-b527-d9278604b9eb",
+      "text": "Provide sentence starters for oral presentations.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "sentence starters for oral presentations",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2e2d2a4b-6248-5646-bd96-5aedf79f6c2b",
+      "text": "Break long assignments into smaller submitted parts.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break long assignments into smaller parts",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2d797bdf-459b-5f1b-8474-c93513dad896",
+      "text": "Seat with a clear line of sight to the speaker's face.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "clear line of sight to the speaker's face",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a6e9f9d9-97bd-5954-940c-bc7d5d606437",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "59592598-605d-5f4d-9d35-1a4dd703cebe",
+      "text": "Provide a copy of teacher notes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a copy of teacher notes",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c6b94f23-25cb-5aff-83b3-608ab15061d0",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "e19c7a99-b01e-5cdd-83df-43d73c790698",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "594af34e-227f-5136-900a-6e7755e31faa",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f55080fb-29af-54ab-a4a3-76105f1e7512",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "5514e762-3bf3-5b62-9787-8205625c1e99",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7c767b28-8324-560c-8918-a7d7ed52d8a5",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "independently begin a classroom task within two minutes",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "532e70de-6b62-518e-9ec7-86f207f7d8f9",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "accept a change in routine using a coping strategy",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "266f256c-aa65-55bf-ab68-ee93d136471a",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

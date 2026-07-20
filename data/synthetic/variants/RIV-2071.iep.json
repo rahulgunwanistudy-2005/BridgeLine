@@ -1,0 +1,159 @@
+{
+  "iep_record_id": "85f37166-0b2a-5d32-9961-a4b1b42d3938",
+  "student_ref": "RIV-2071",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "200d22e1-8977-5d38-9ead-bbf934417d22",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "83a85a27-d27d-5e1f-9eba-6a83e7f7b785",
+      "text": "Seat with a clear line of sight to the speaker's face.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "clear line of sight to the speaker's face",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1e727bfa-5a0a-5bf3-9c69-3d1a8dea2581",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "69225741-00ce-53ae-ae01-b0713c7b3948",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "793a90ea-3c2d-5d18-b43d-36911867b174",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "42df4231-9bde-5498-bd01-df2c64165425",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8e4ca1f9-049b-58b4-86bb-1864dbb4e263",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "afa02ff6-76eb-5f88-887a-b7e3ed1b12ab",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "produce three organized sentences on a topic",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cb0ee9f7-6133-5888-b89f-f727fbf42e97",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f34950f4-66ee-59c1-a510-54033d15d4f1",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "752ed376-15b4-59d1-8f1c-b6f3efb428f8",
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use correct past-tense verbs with 80% accuracy",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2026-10-27",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "c728710b-2b16-5c97-ae72-22ba436fbf35",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "iep_record_id": "ce46e1e1-18b8-5a3b-9450-600b34f83efa",
+  "student_ref": "RIV-2053",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "f214ee11-94bf-576b-be5d-45974754230e",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2824a084-e53f-5718-9c99-f7b3285e4d06",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "853cc32e-da1a-51eb-87c1-d8b83595c608",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "6605aa08-c9f2-58f5-820c-09a2550b7143",
+      "text": "Face the student when speaking and avoid covering the mouth.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "face the student when speaking",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "84c7b70d-1679-5836-8b6c-17e208440c14",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9e36a228-79ca-5e3b-897b-1a583fd19253",
+      "text": "Seat with a clear line of sight to the speaker's face.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "clear line of sight to the speaker's face",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ce4a293f-a218-5bd0-a7c3-e1f2ff0da05d",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "74c7979d-d4be-5c7c-b7ca-31b2ba554038",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Occupational therapy 30 minutes weekly",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "757259bc-8def-5afa-aa82-a896c6883496",
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "use a self-monitoring checklist to review work before submitting",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a5bbf0bc-8430-583a-a75a-0af37a4a9526",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "93805512-8494-5f4e-a48c-998d16536f7a",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

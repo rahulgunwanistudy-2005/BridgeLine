@@ -1,0 +1,102 @@
+row_id,date,student_ref,service_key,service_type,provider_role,minutes_delivered,status
+SL-00084,2026-08-17,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00085,2026-08-18,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00086,2026-08-19,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00087,2026-08-20,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00088,2026-08-21,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00089,2026-08-24,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00090,2026-08-25,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00091,2026-08-26,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00092,2026-08-27,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00093,2026-08-28,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00094,2026-08-31,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00095,2026-09-01,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00096,2026-09-02,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00097,2026-09-03,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00098,2026-09-04,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00099,2026-09-08,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00100,2026-09-09,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00101,2026-09-10,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00102,2026-09-11,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00103,2026-09-14,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00104,2026-09-15,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00105,2026-09-16,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00106,2026-09-17,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00107,2026-09-18,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00108,2026-09-21,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00109,2026-09-22,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00110,2026-09-23,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00111,2026-09-24,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00112,2026-09-25,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00113,2026-09-28,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00114,2026-09-29,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00115,2026-09-30,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00116,2026-10-01,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00117,2026-10-02,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00118,2026-10-05,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00119,2026-10-06,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00120,2026-10-07,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00121,2026-10-08,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00122,2026-10-13,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00123,2026-10-14,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00124,2026-10-15,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00125,2026-10-16,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00126,2026-10-19,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00127,2026-10-20,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00128,2026-10-21,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00129,2026-10-22,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00130,2026-10-23,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00131,2026-10-26,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00132,2026-10-27,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00133,2026-10-28,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00134,2026-10-29,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00135,2026-10-30,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00136,2026-11-02,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00137,2026-11-03,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00138,2026-11-04,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00139,2026-11-05,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00140,2026-11-06,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00141,2026-11-09,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00142,2026-11-10,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00143,2026-11-12,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00144,2026-11-13,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00145,2026-11-16,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00146,2026-11-17,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00147,2026-11-18,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00148,2026-11-19,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00149,2026-11-20,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00150,2026-11-23,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00151,2026-11-24,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00152,2026-11-30,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00153,2026-12-01,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00154,2026-12-02,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00155,2026-12-03,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00156,2026-12-04,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00157,2026-12-07,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00158,2026-12-08,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00159,2026-12-09,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00160,2026-12-10,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00161,2026-12-11,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00162,2026-12-14,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00163,2026-12-15,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00164,2026-12-16,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00165,2026-12-17,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00166,2026-12-18,RIV-1002,sai-support,Specialized academic instruction,Special education teacher,26,delivered
+SL-00167,2026-08-17,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00168,2026-08-24,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00169,2026-08-31,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00170,2026-09-08,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00171,2026-09-14,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00172,2026-09-21,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00173,2026-09-28,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00174,2026-10-05,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00175,2026-10-13,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00176,2026-10-19,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00177,2026-10-26,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00178,2026-11-02,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00179,2026-11-09,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00180,2026-11-16,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00181,2026-11-23,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00182,2026-11-30,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00183,2026-12-07,RIV-1002,counseling,Individual counseling,School counselor,30,delivered
+SL-00184,2026-12-14,RIV-1002,counseling,Individual counseling,School counselor,30,delivered

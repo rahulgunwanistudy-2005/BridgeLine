@@ -1,0 +1,147 @@
+{
+  "iep_record_id": "9abdfe1f-12b2-587d-b2d1-45f561621697",
+  "student_ref": "RIV-2030",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "2b69c276-caa2-5f06-8eff-db9ea1fb53fe",
+      "text": "Face the student when speaking and avoid covering the mouth.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "face the student when speaking",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "fc764b79-7154-55e6-8235-d7e5a9b58232",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3bea9d3e-1e70-5b6d-a1f5-4e2c2b4ad87c",
+      "text": "Provide 50% extended time on reading-heavy assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on reading-heavy assessments",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "222eca77-3a8d-5e9d-80bb-d049aa21377b",
+      "text": "Allow access to a designated quiet space when overwhelmed.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "access to a designated quiet space when overwhelmed",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "c04ba30c-b9bd-51aa-995d-0ec48c3eb2ac",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "569bea74-54cf-5bb4-88b9-eb17d31788f9",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "427687af-6650-5a8e-ba22-c304249c5166",
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f51561a0-7d10-596a-bb24-230b5e5d8df4",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "accept a change in routine using a coping strategy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cf601e5a-6610-58da-b717-0fdaabc5d5d5",
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "213b8ee4-ae62-5fcb-80de-cad643cdc7ca",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "cf861601-8aa5-5acb-974c-2063fe30ab5f",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

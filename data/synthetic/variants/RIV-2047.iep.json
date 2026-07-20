@@ -1,0 +1,137 @@
+{
+  "iep_record_id": "6e9f8c2d-f01a-567a-b611-cd9a0422a973",
+  "student_ref": "RIV-2047",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "2d090154-302c-594f-afe4-eb88f07362a8",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7379ba4c-3de8-549a-a366-3899f7d6cbbf",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "01079ab1-9832-5707-8348-18a1a4333e8d",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "bb73f768-bb75-5e5c-9c56-920c33124616",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a25a1e17-0484-5494-9963-f98ef846663d",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8a55c175-54ab-561f-af3a-b6734f73e3a8",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "0fc20472-6779-58e1-8c4f-6fd475514697",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "independently begin a classroom task within two minutes",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4e84fd51-329d-54b7-8b3b-af597aa1d712",
+      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
+      "target": "3 of 4 structured opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a taught script to join a peer activity",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3ea7a941-a480-53ba-9bee-55a9823c4ccd",
+      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "baseline": "Writes two related sentences with inconsistent capitalization.",
+      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "write a five-sentence paragraph with a topic sentence",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "b52f4089-6814-58d0-a5b4-f88f7398bf57",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "iep_record_id": "ad4af7ad-b2e2-5174-8e33-4d073d987598",
+  "student_ref": "RIV-2078",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "9028f7cf-3223-5e01-8ffc-8fd1675815cf",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ef34f367-7b19-55e3-b472-6e2f73557bcd",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ce7f698a-e866-5e78-9430-9162c607da2d",
+      "text": "Administer assessments in a small-group, reduced-distraction setting.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "small-group, reduced-distraction setting for assessments",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cc91949d-0eb5-5380-ad81-5af34c284816",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c1774c85-bf3f-5849-9204-e074d3c997fc",
+      "text": "Provide a written or visual schedule of each period's activities.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "written or visual schedule of each period's activities",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "dc8e3189-caa0-5392-8983-ddd7779ae839",
+      "text": "Allow access to a designated quiet space when overwhelmed.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "access to a designated quiet space when overwhelmed",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "df819000-716c-54c9-8436-fe2605677423",
+      "text": "Seat with a clear line of sight to the speaker's face.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "clear line of sight to the speaker's face",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "db54ab48-a58f-5ba6-99bb-07506a14ba7e",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Unassigned",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f35de69c-8f33-58d5-9e47-3a93108d453c",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "0ccdfa30-9e37-5e63-9882-10b5d469509e",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c71809c7-8faf-5534-afb8-4a6696ef5c63",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "sustain attention to an independent task for 10 minutes",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c0296a20-e651-5a84-b8e2-ef43f5521ddc",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "request clarification when she misses information",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0698ab63-ae4d-58ed-9ecb-e7ec1328d163",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "0a127c59-dba2-527a-81d5-8485a40685a9",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

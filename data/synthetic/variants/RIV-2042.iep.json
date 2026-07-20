@@ -1,0 +1,178 @@
+{
+  "iep_record_id": "157f9029-d3d6-533f-81c3-197f8a4b1bef",
+  "student_ref": "RIV-2042",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "6f8604d1-c687-52df-86a9-0faa7e5bf896",
+      "text": "Read test directions and math word problems aloud on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "read test directions and math word problems aloud",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "dccc0203-b302-5e27-b3bc-a0e0deb937bb",
+      "text": "State task expectations explicitly and in writing.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "state task expectations explicitly and in writing",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "81d918c1-387a-5772-b122-4742f8d7278a",
+      "text": "Pair new vocabulary with visuals and definitions.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "pair new vocabulary with visuals and definitions",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "da3bb3b3-e939-56fd-b35f-f9428fb06be9",
+      "text": "Administer assessments in a small-group, reduced-distraction setting.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "small-group, reduced-distraction setting for assessments",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bc241400-360c-50f2-8a85-adae26b4a2a2",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b196b863-1713-5cb3-b18d-2238ca982d9f",
+      "text": "Provide a checklist to break long assignments into steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "checklist to break long assignments into steps",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a907c630-eaf5-534f-a420-6de9120e4d17",
+      "text": "Provide 25% extended time on timed assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "25% extended time on timed assessments",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "865cc7a5-1653-58d2-91bb-753e50b19562",
+      "text": "Provide captions or a transcript for all audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for all audio and video media",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "51401434-25a2-586c-a6ad-54a64b4972d6",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "7bb29c9f-e21c-55d8-ac95-107afbe66eac",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "776b9dc1-92e2-52aa-93cd-49bffc4e619b",
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "organize a multi-paragraph response using an outline",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b15b184d-c536-5816-8490-8e8520049756",
+      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7490945f-d009-55e1-8b2e-e3e2bc46c5e6",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "a1279cc2-1f15-5954-b412-c98952669bdd",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

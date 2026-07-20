@@ -1,0 +1,122 @@
+{
+  "iep_record_id": "e4276acd-30fd-559d-82fd-da34c1854070",
+  "student_ref": "RIV-2038",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "86e85195-ddff-5fbc-8a0f-9e1aa650c0d7",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2d0ad489-8bfd-536b-8993-5360671ee95c",
+      "text": "Provide 50% extended time on tests and long assignments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on tests and long assignments",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "65ed4b43-27b0-5c44-8415-fa4a87232830",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2902a067-9c7a-54ab-940e-100a5c2c38ed",
+      "text": "Provide graphic organizers for writing and note-taking.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "graphic organizers for writing and note-taking",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "76c44019-69bc-5db7-99cc-1287f72eb1ba",
+      "text": "Provide captions or a transcript for all audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for all audio and video media",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "81cde77a-6ab3-5c00-90d2-a124b8e45296",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "02c70e17-4556-51ed-aa2c-e498a9501d9d",
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "use a self-monitoring checklist to review work before submitting",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c9d016ad-cf5a-541e-ba95-d310953d4225",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "e09a832f-cd2d-5876-bcac-79b817892805",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

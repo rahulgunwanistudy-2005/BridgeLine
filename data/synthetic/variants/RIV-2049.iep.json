@@ -1,0 +1,149 @@
+{
+  "iep_record_id": "b6bc28bf-6cf5-540a-8832-b518eaca833e",
+  "student_ref": "RIV-2049",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "753afc54-27c3-5865-bf44-99cefcf06217",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2e771814-8444-5bef-a318-9c44b93356b9",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a40e7aed-fb19-5651-8d55-11dcc4f4574a",
+      "text": "Face the student when speaking and avoid covering the mouth.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "face the student when speaking",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "5d1310a7-8c30-58d9-9d76-522da6f5214f",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c0b01794-4312-5e0b-a78a-07881450084a",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "032ab97f-2238-5cc3-9f2d-9536d57eec39",
+      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "write a paragraph with a clear topic sentence and three details",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7464d5b6-a395-5f9e-ae32-21ac4d93bcfd",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "sustain attention to an independent task for 10 minutes",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c17e9c51-603d-5140-b810-451b9bd3506c",
+      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
+      "target": "3 of 4 structured opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a taught script to join a peer activity",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bc8f7748-a835-55c9-9b3f-c0728b342519",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "independently begin a classroom task within two minutes",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7d363393-c141-583f-88b1-32dba028173b",
+      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "baseline": "Writes two related sentences with inconsistent capitalization.",
+      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "write a five-sentence paragraph with a topic sentence",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "ab226e19-6adb-55bb-ae0b-b2c76efca741",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

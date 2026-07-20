@@ -1,0 +1,192 @@
+{
+  "iep_record_id": "bf32bac9-7f24-56fc-8f1a-e05048451d34",
+  "student_ref": "RIV-2041",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "5241356d-2907-58e1-a869-10631b629c42",
+      "text": "Allow access to a designated quiet space when overwhelmed.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "access to a designated quiet space when overwhelmed",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5ba5b09c-4738-58fd-b57c-12331fff9e86",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "820c6e40-1140-529b-8de9-a7259dad748c",
+      "text": "Provide a written or visual schedule of each period's activities.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "written or visual schedule of each period's activities",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e4234543-126b-5a92-b89c-2dee0d431644",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e96d9ca5-5a76-580f-9b10-e13320fe2433",
+      "text": "Provide frequent check-ins for understanding.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "frequent check-ins for understanding",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a6495fd2-e581-5f24-a4f7-9608b105e807",
+      "text": "Provide audio versions of grade-level texts.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "audio versions of grade-level texts",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c557da66-4d13-5e93-969b-e1422b794f6c",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b6767971-7fa4-5622-92fb-c8f21015d234",
+      "text": "Provide captions or a transcript for audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for audio and video media",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "929e8e33-e6f7-5c66-955f-08a9390409f4",
+      "text": "State task expectations explicitly and in writing.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "state task expectations explicitly and in writing",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "61520c54-2c09-5037-afa4-79238d4b61d2",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "892347f3-cfd2-510d-b2b7-8263706c5d19",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Occupational therapy 30 minutes weekly",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "26125765-958d-5f5b-8146-fa773b5928ff",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "bb0b2e2c-80d7-5e9c-b07f-025cb644d837",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "accept a change in routine using a coping strategy",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f5804686-b5c6-567e-b139-27f6c22b52c3",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "934b7d84-da07-549c-97b2-4e7d9ab74a08",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

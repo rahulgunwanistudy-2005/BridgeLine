@@ -1,0 +1,136 @@
+{
+  "iep_record_id": "b772371d-393e-5d52-8632-e89760e06255",
+  "student_ref": "RIV-2059",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "eae0911e-1169-51ed-8c73-b317426f7dfb",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9bb436fa-2bb3-54ed-8eac-9e7b5c039775",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f4763c16-9356-54e8-aafa-d6ed8e99b572",
+      "text": "Provide 50% extended time on tests and long assignments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on tests and long assignments",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "8b5d4c10-0d46-560a-ae14-9571f02919b3",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "153f45c6-95b3-563f-878f-9c3f5ec01338",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "825b8ded-d082-546d-add1-b3aa38743f6a",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "accept a change in routine using a coping strategy",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bbfe86b1-9c88-5232-9242-475997f11f1c",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a9418023-bb71-5183-8139-3f6a4c13b347",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2e13ae06-74aa-5c36-aa16-e1518f90cd02",
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "fbe77ff7-7a62-53a8-ba5d-209db8eb6368",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

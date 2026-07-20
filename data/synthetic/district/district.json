@@ -1,0 +1,924 @@
+{
+  "district": {
+    "name": "Riverside Demo School District",
+    "synthetic": true
+  },
+  "school": {
+    "id": "70d06b64-64ab-502c-8ac5-610cd4959d2f",
+    "school_ref": "RIV-HS",
+    "name": "Riverside Demo High School",
+    "school_year": "2026-2027"
+  },
+  "subjects": [
+    {
+      "id": "1f31fc0b-1bff-5b97-8409-141cd2969875",
+      "subject_ref": "ENG",
+      "name": "English"
+    },
+    {
+      "id": "554c8a8b-390e-54ea-9b29-9f15314845a5",
+      "subject_ref": "MTH",
+      "name": "Mathematics"
+    },
+    {
+      "id": "a4769694-40e0-5377-ae95-5ca3b459cb43",
+      "subject_ref": "BIO",
+      "name": "Biology"
+    },
+    {
+      "id": "f62b2129-37e9-58b6-b80a-a989be8cf78b",
+      "subject_ref": "HIS",
+      "name": "World History"
+    },
+    {
+      "id": "5a03e7ea-22bd-555c-b67a-3010801e507f",
+      "subject_ref": "PE",
+      "name": "Physical Education"
+    },
+    {
+      "id": "b37ff9d1-6344-5457-ad24-eae5d69159b6",
+      "subject_ref": "ART",
+      "name": "Art"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "e7c7c14e-81c6-564f-b0b6-940a4a1e3f23",
+      "email": "delgado@riverside-demo.example",
+      "teacher_ref": "T-DELGADO",
+      "display_name": "Ms. Renata Delgado",
+      "role": "English teacher"
+    },
+    {
+      "id": "635498ef-267e-5e71-91b0-428b47b30fa5",
+      "email": "okafor@riverside-demo.example",
+      "teacher_ref": "T-OKAFOR",
+      "display_name": "Mr. Samuel Okafor",
+      "role": "Mathematics teacher"
+    },
+    {
+      "id": "479bf5fe-5b88-5cd7-b907-61c5306b453c",
+      "email": "chen@riverside-demo.example",
+      "teacher_ref": "T-CHEN",
+      "display_name": "Dr. Mia Chen",
+      "role": "Biology teacher"
+    },
+    {
+      "id": "1dc2290e-a46d-53c0-886b-b4a4846cdde3",
+      "email": "porter@riverside-demo.example",
+      "teacher_ref": "T-PORTER",
+      "display_name": "Ms. Ana Porter",
+      "role": "World History teacher"
+    },
+    {
+      "id": "9eeda9a2-1790-589a-9a9d-03e807c564d6",
+      "email": "rivera@riverside-demo.example",
+      "teacher_ref": "T-RIVERA",
+      "display_name": "Coach Luis Rivera",
+      "role": "Physical Education teacher"
+    },
+    {
+      "id": "9ed525ef-1afb-5a77-993c-cd441370e414",
+      "email": "feldman@riverside-demo.example",
+      "teacher_ref": "T-FELDMAN",
+      "display_name": "Mr. David Feldman",
+      "role": "Art teacher"
+    },
+    {
+      "id": "121d95b4-35b0-5f1e-b5a0-020cc407f5fc",
+      "email": "lee@riverside-demo.example",
+      "teacher_ref": "T-LEE",
+      "display_name": "Ms. Jordan Lee",
+      "role": "Special education teacher"
+    },
+    {
+      "id": "18b3bfe2-7ccd-57d8-98f7-81a344310e24",
+      "email": "alvarez@riverside-demo.example",
+      "teacher_ref": "T-ALVAREZ",
+      "display_name": "Ms. Carmen Alvarez",
+      "role": "Speech-language pathologist"
+    }
+  ],
+  "classes": [
+    {
+      "id": "6208b918-8a6e-569a-8779-5aa31c947252",
+      "school_year": "2026-2027",
+      "teacher_ids": [
+        "e7c7c14e-81c6-564f-b0b6-940a4a1e3f23",
+        "121d95b4-35b0-5f1e-b5a0-020cc407f5fc"
+      ],
+      "class_ref": "ENG-101",
+      "name": "English 9 (Co-taught)",
+      "subject_ref": "ENG",
+      "period": 1,
+      "teachers_of_record": [
+        "T-DELGADO",
+        "T-LEE"
+      ]
+    },
+    {
+      "id": "78079801-d28e-5ec1-8f72-6a5cb6adc113",
+      "school_year": "2026-2027",
+      "teacher_ids": [
+        "635498ef-267e-5e71-91b0-428b47b30fa5"
+      ],
+      "class_ref": "MTH-101",
+      "name": "Algebra I",
+      "subject_ref": "MTH",
+      "period": 2,
+      "teachers_of_record": [
+        "T-OKAFOR"
+      ]
+    },
+    {
+      "id": "8946e715-f45d-5fef-8e19-54d1e8b7059c",
+      "school_year": "2026-2027",
+      "teacher_ids": [
+        "479bf5fe-5b88-5cd7-b907-61c5306b453c"
+      ],
+      "class_ref": "BIO-101",
+      "name": "Biology",
+      "subject_ref": "BIO",
+      "period": 3,
+      "teachers_of_record": [
+        "T-CHEN"
+      ]
+    },
+    {
+      "id": "80ad9057-90a3-5f8a-b7e7-13744307b553",
+      "school_year": "2026-2027",
+      "teacher_ids": [
+        "1dc2290e-a46d-53c0-886b-b4a4846cdde3"
+      ],
+      "class_ref": "HIS-101",
+      "name": "World History",
+      "subject_ref": "HIS",
+      "period": 4,
+      "teachers_of_record": [
+        "T-PORTER"
+      ]
+    },
+    {
+      "id": "4fb9cbf5-4c44-57a3-97ba-16735fe4ec5e",
+      "school_year": "2026-2027",
+      "teacher_ids": [
+        "9eeda9a2-1790-589a-9a9d-03e807c564d6"
+      ],
+      "class_ref": "PE-101",
+      "name": "Physical Education",
+      "subject_ref": "PE",
+      "period": 5,
+      "teachers_of_record": [
+        "T-RIVERA"
+      ]
+    },
+    {
+      "id": "1a3c1fee-f1bb-567e-8f25-667c91760050",
+      "school_year": "2026-2027",
+      "teacher_ids": [
+        "9ed525ef-1afb-5a77-993c-cd441370e414"
+      ],
+      "class_ref": "ART-101",
+      "name": "Art Foundations",
+      "subject_ref": "ART",
+      "period": 6,
+      "teachers_of_record": [
+        "T-FELDMAN"
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": "391800e6-d371-5370-a8f0-4893da9204b6",
+      "student_ref": "RIV-1001",
+      "display_name": "Aanya Sharma",
+      "short_name": "A. Sharma",
+      "category": "Specific learning disability",
+      "note": "findings a+b"
+    },
+    {
+      "id": "f9c2ca80-f9c3-5ba3-9718-41c55c79c389",
+      "student_ref": "RIV-1002",
+      "display_name": "Marcus Bell",
+      "short_name": "M. Bell",
+      "category": "Autism",
+      "note": "finding c: service -20 min/wk"
+    },
+    {
+      "id": "f384257e-2c14-535c-bd8d-c6ff88f03774",
+      "student_ref": "RIV-1003",
+      "display_name": "Sofia Ramirez",
+      "short_name": "S. Ramirez",
+      "category": "Speech or language impairment",
+      "note": "unassigned provider; triennial mid-semester"
+    },
+    {
+      "id": "bb7d9702-a3dc-57c1-846f-57f08d00b3e5",
+      "student_ref": "RIV-1004",
+      "display_name": "Ethan Nakamura",
+      "short_name": "E. Nakamura",
+      "category": "Other health impairment (ADHD)",
+      "note": "overdue annual review"
+    },
+    {
+      "id": "e2e3b023-9168-59ff-9cb9-b6b7f532004b",
+      "student_ref": "RIV-1005",
+      "display_name": "Layla Hassan",
+      "short_name": "L. Hassan",
+      "category": "Hearing impairment",
+      "note": "annual review lands on a holiday"
+    },
+    {
+      "id": "1e790ede-a7d5-566c-bf7d-7b0bb7a522dd",
+      "student_ref": "RIV-1006",
+      "display_name": "Diego Torres",
+      "short_name": "D. Torres",
+      "category": "Specific learning disability",
+      "note": "mid-semester enrollment; co-taught class"
+    },
+    {
+      "id": "0a4299de-a214-530d-8adc-32d7e461e7ee",
+      "student_ref": "RIV-1007",
+      "display_name": "Grace Kim",
+      "short_name": "G. Kim",
+      "category": "Autism",
+      "note": "clean, no findings"
+    },
+    {
+      "id": "4b3b6e03-f9bd-586b-9307-8a255719bfb0",
+      "student_ref": "RIV-1008",
+      "display_name": "Noah Williams",
+      "short_name": "N. Williams",
+      "category": "Other health impairment (ADHD)",
+      "note": "clean, no findings"
+    },
+    {
+      "id": "c31d5e93-0614-52e5-9c9f-d921c0ec313c",
+      "student_ref": "RIV-1009",
+      "display_name": "Priya Patel",
+      "short_name": "P. Patel",
+      "category": "Speech or language impairment",
+      "note": "clean, no findings"
+    },
+    {
+      "id": "7c2de926-5d9a-58b5-a264-c96c87ea2a55",
+      "student_ref": "RIV-1010",
+      "display_name": "Jamal Carter",
+      "short_name": "J. Carter",
+      "category": "Specific learning disability",
+      "note": "clean, no findings"
+    },
+    {
+      "id": "2e4f1efa-b514-5f40-9451-fbdcc88f1d95",
+      "student_ref": "RIV-1011",
+      "display_name": "Emma Johansson",
+      "short_name": "E. Johansson",
+      "category": "Hearing impairment",
+      "note": "clean, no findings"
+    },
+    {
+      "id": "69ed9f80-6fd5-5750-9667-a9e10514b53b",
+      "student_ref": "RIV-1012",
+      "display_name": "Oscar Nguyen",
+      "short_name": "O. Nguyen",
+      "category": "Autism",
+      "note": "clean; one unmapped progress signal"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "294060f5-fe0a-5298-9f81-04e20be0507c",
+      "student_ref": "RIV-1001",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "699c217d-aa53-5a9f-bef9-76371f57aee4",
+      "student_ref": "RIV-1001",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "dad9745a-d3e8-5b9f-8494-3c38a10faa7f",
+      "student_ref": "RIV-1001",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "7bcb7d59-ce8e-52e6-9e5e-fcdd21ab150e",
+      "student_ref": "RIV-1001",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "74e98f01-db80-5e9a-a3a2-6eb07f510131",
+      "student_ref": "RIV-1001",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "ffbe053c-60fd-51d8-9af3-4bd8fc633934",
+      "student_ref": "RIV-1001",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "0c5330a2-e5b7-5f54-90a6-af5b6cb09437",
+      "student_ref": "RIV-1002",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "3654bd5d-4279-5981-b3e3-f5e0fde995c7",
+      "student_ref": "RIV-1002",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "59ac2d9d-f67d-521a-971c-11827328461e",
+      "student_ref": "RIV-1002",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "8035bc63-9b6b-52f5-8209-c3c8a897ac1c",
+      "student_ref": "RIV-1002",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "919471aa-deb0-5a46-9040-53fb7038cd74",
+      "student_ref": "RIV-1002",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "97cbc6b2-9805-5b17-a0a3-b57fc950491f",
+      "student_ref": "RIV-1002",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "0c6ebbe6-d501-5add-9c47-c1fa341d6961",
+      "student_ref": "RIV-1003",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "46dec8f0-9df8-539c-8068-e83d0016712d",
+      "student_ref": "RIV-1003",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "d8300f67-8ed9-50db-89e9-851ebf2a26cc",
+      "student_ref": "RIV-1003",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "0879bafc-e5c7-5576-8cdf-c5566485a9c6",
+      "student_ref": "RIV-1003",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "22b22fa3-ed5a-5852-9ff6-cd3a52285d03",
+      "student_ref": "RIV-1003",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "a7be619f-60e4-5aaa-992b-38e5f9dce050",
+      "student_ref": "RIV-1003",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "d07bfa07-76de-5878-883f-47d84053ae00",
+      "student_ref": "RIV-1004",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "72db64e0-25f1-58b7-8d06-a5a9aeaf4d79",
+      "student_ref": "RIV-1004",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "766ba640-64a0-59e9-9698-7f50de821b89",
+      "student_ref": "RIV-1004",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "822df617-c034-5050-a37d-2fbac6045d86",
+      "student_ref": "RIV-1004",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "4063ca9b-935c-5bdd-8697-452d390fc5c4",
+      "student_ref": "RIV-1004",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "247fd5af-cbf3-56d7-ae5e-cd46cbb58695",
+      "student_ref": "RIV-1004",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "89a42c71-4044-51b4-9845-5df462745126",
+      "student_ref": "RIV-1005",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "caf07a5c-7fb6-56e1-bfe4-f56f9ee4a037",
+      "student_ref": "RIV-1005",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "f59d6555-ae96-5c62-b935-133797109cd1",
+      "student_ref": "RIV-1005",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "33d8c6a8-88d4-565f-9d04-cce67bee669e",
+      "student_ref": "RIV-1005",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "f96f1e53-aadd-508d-8784-8f7e81f303d3",
+      "student_ref": "RIV-1005",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "236c4b01-939a-514d-9f75-453dd34af6d4",
+      "student_ref": "RIV-1005",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "c08332d0-36b9-5ac1-9776-f82589326938",
+      "student_ref": "RIV-1006",
+      "class_ref": "ENG-101",
+      "start": "2026-10-05",
+      "end": null
+    },
+    {
+      "id": "8906a765-dad2-5a79-a747-0163c533d7a1",
+      "student_ref": "RIV-1006",
+      "class_ref": "MTH-101",
+      "start": "2026-10-05",
+      "end": null
+    },
+    {
+      "id": "9e47cc76-68a6-5eb6-ade5-5d81a0752da3",
+      "student_ref": "RIV-1006",
+      "class_ref": "BIO-101",
+      "start": "2026-10-05",
+      "end": null
+    },
+    {
+      "id": "21e8be8e-226f-5482-837f-a417b6f181e8",
+      "student_ref": "RIV-1006",
+      "class_ref": "HIS-101",
+      "start": "2026-10-05",
+      "end": null
+    },
+    {
+      "id": "1d1516c6-d53c-58bb-b906-ef5ab71a4013",
+      "student_ref": "RIV-1006",
+      "class_ref": "PE-101",
+      "start": "2026-10-05",
+      "end": null
+    },
+    {
+      "id": "65c9db78-41e6-50e6-9da0-fbb88607b530",
+      "student_ref": "RIV-1006",
+      "class_ref": "ART-101",
+      "start": "2026-10-05",
+      "end": null
+    },
+    {
+      "id": "b7c3d4ee-57bc-5edf-bc80-25a6a87bd1fe",
+      "student_ref": "RIV-1007",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "98d8adf3-e78a-5ad1-8f5c-51e684623dc3",
+      "student_ref": "RIV-1007",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "d61217c9-6aa6-5b6c-b062-ee2586cdf01f",
+      "student_ref": "RIV-1007",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "5365565f-1dd0-5318-8db9-6eed68249e30",
+      "student_ref": "RIV-1007",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "3ddd04dd-e42b-509d-a7b0-74d67ae6c637",
+      "student_ref": "RIV-1007",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "58ebafff-45a5-5c17-b42c-f1448ae2e234",
+      "student_ref": "RIV-1007",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "ab59e9d0-6f43-5871-9425-4fadb892d11b",
+      "student_ref": "RIV-1008",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "3e80336f-dafa-5537-a3d2-0a746b07d008",
+      "student_ref": "RIV-1008",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "cd1d61ee-0bd8-5db9-861f-e98ed72b1258",
+      "student_ref": "RIV-1008",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "f1aec17b-9ca0-5329-a9d4-d551dc0fda0d",
+      "student_ref": "RIV-1008",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "3ab9824e-e5da-54a9-be28-a70947348047",
+      "student_ref": "RIV-1008",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "cfa3a726-31a4-5f9d-9e3f-9b796e00cba7",
+      "student_ref": "RIV-1008",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "42174535-e7ca-5500-b177-f5373410bd73",
+      "student_ref": "RIV-1009",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "b899952c-68e6-54d3-8668-d851a42fcea3",
+      "student_ref": "RIV-1009",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "6de8a068-747a-529c-a518-f770b88b96c1",
+      "student_ref": "RIV-1009",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "8c6fd0be-283e-5bbd-b18c-f8ea97e3a8a7",
+      "student_ref": "RIV-1009",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "f044973a-c18d-5842-9fed-eec825102c00",
+      "student_ref": "RIV-1009",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "6c3bd5ab-ebc9-5fc7-a676-e111ce7ac328",
+      "student_ref": "RIV-1009",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "82d86153-308e-5bb6-bab6-2144151d2341",
+      "student_ref": "RIV-1010",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "ec473d47-868f-5676-9d8f-ba4717fc07eb",
+      "student_ref": "RIV-1010",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "52977c9f-0e3b-5805-8cb8-5c22dd14f0b1",
+      "student_ref": "RIV-1010",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "c65184a6-fd21-5c55-a7a1-2da3653f2464",
+      "student_ref": "RIV-1010",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "4a34f4fd-58b9-5b4a-9cc7-275577f1f442",
+      "student_ref": "RIV-1010",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "563dad8c-e85e-5003-9ec7-e9d609df8b76",
+      "student_ref": "RIV-1010",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "07838996-a7c9-5173-ac8b-5cd70bf7046b",
+      "student_ref": "RIV-1011",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "b5456de8-17df-5123-877d-04c4f900ff8b",
+      "student_ref": "RIV-1011",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "c3f4a3fa-a53e-5000-9772-60140baf37e0",
+      "student_ref": "RIV-1011",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "6b387297-574d-550c-8df9-df1329eea123",
+      "student_ref": "RIV-1011",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "7b634ff0-f60b-5d1d-9394-9bd89fb85b21",
+      "student_ref": "RIV-1011",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "94f998b4-edfd-54ad-9ccf-ee1fd558f997",
+      "student_ref": "RIV-1011",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "c2f479d4-3bf3-57e5-84ba-427d2ae43250",
+      "student_ref": "RIV-1012",
+      "class_ref": "ENG-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "23d16af5-1a96-58d4-b5a2-b12d9e649743",
+      "student_ref": "RIV-1012",
+      "class_ref": "MTH-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "7dd415b7-8dac-5aba-b9a1-cf10b8aec832",
+      "student_ref": "RIV-1012",
+      "class_ref": "BIO-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "d1e99f94-a76e-5ba0-9b03-37102e392cd7",
+      "student_ref": "RIV-1012",
+      "class_ref": "HIS-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "a774b2ce-0981-576e-9072-5c8b16241dab",
+      "student_ref": "RIV-1012",
+      "class_ref": "PE-101",
+      "start": "2026-08-17",
+      "end": null
+    },
+    {
+      "id": "6405565e-6f25-544c-b6c3-b5816988eba2",
+      "student_ref": "RIV-1012",
+      "class_ref": "ART-101",
+      "start": "2026-08-17",
+      "end": null
+    }
+  ],
+  "calendar": {
+    "school_year": "2026-2027",
+    "semester": "Fall 2026",
+    "first_instructional_day": "2026-08-17",
+    "last_instructional_day": "2026-12-18",
+    "instructional_weekdays": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "as_of": "2026-11-13",
+    "holidays": [
+      {
+        "date": "2026-09-07",
+        "name": "Labor Day"
+      },
+      {
+        "date": "2026-10-09",
+        "name": "Staff Development Day (no school)"
+      },
+      {
+        "date": "2026-10-12",
+        "name": "Indigenous Peoples' Day"
+      },
+      {
+        "date": "2026-11-11",
+        "name": "Veterans Day"
+      },
+      {
+        "date": "2026-11-25",
+        "name": "Thanksgiving Break"
+      },
+      {
+        "date": "2026-11-26",
+        "name": "Thanksgiving Break"
+      },
+      {
+        "date": "2026-11-27",
+        "name": "Thanksgiving Break"
+      }
+    ],
+    "instructional_day_count": 83,
+    "instructional_days": [
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-09-28",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02",
+      "2026-10-05",
+      "2026-10-06",
+      "2026-10-07",
+      "2026-10-08",
+      "2026-10-13",
+      "2026-10-14",
+      "2026-10-15",
+      "2026-10-16",
+      "2026-10-19",
+      "2026-10-20",
+      "2026-10-21",
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-12",
+      "2026-11-13",
+      "2026-11-16",
+      "2026-11-17",
+      "2026-11-18",
+      "2026-11-19",
+      "2026-11-20",
+      "2026-11-23",
+      "2026-11-24",
+      "2026-11-30",
+      "2026-12-01",
+      "2026-12-02",
+      "2026-12-03",
+      "2026-12-04",
+      "2026-12-07",
+      "2026-12-08",
+      "2026-12-09",
+      "2026-12-10",
+      "2026-12-11",
+      "2026-12-14",
+      "2026-12-15",
+      "2026-12-16",
+      "2026-12-17",
+      "2026-12-18"
+    ]
+  }
+}

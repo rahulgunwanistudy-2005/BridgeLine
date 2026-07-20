@@ -1,0 +1,159 @@
+{
+  "iep_record_id": "f2802018-67c4-5eff-ab98-8bb7eab758de",
+  "student_ref": "RIV-2062",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "d870f1ac-80af-590b-8a46-74303807fa6e",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e2212bf5-2196-55da-bd87-6b281bb90c83",
+      "text": "Provide 50% extended time on all classroom tests and quizzes.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on all classroom tests and quizzes",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a5ce8a67-7b84-5f6b-ae54-451b30124c1c",
+      "text": "State task expectations explicitly and in writing.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "state task expectations explicitly and in writing",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3f8f322e-c177-5408-8f3d-c8f357c7fd2b",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d166a823-7052-51c2-8612-ccad0e4d0bcd",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "e10a51c0-11c4-5833-81c9-8f39feb4a438",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "159e0a2c-ca49-54b9-8426-becaf03a9e0f",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cb9a141d-c7bc-575f-9622-f5c5359d4dc5",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "2786eb0d-ef5c-54e9-8239-2b0236cfcbab",
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "638c3c88-30b2-5c56-96fd-7c9d3b6cab00",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "request clarification when she misses information",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b77dd7f1-5a23-5acf-91e6-c7b54e4e024b",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2026-09-30",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "2afca473-8550-506d-8efd-74e461049063",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

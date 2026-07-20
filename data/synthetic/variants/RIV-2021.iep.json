@@ -1,0 +1,162 @@
+{
+  "iep_record_id": "d01e1fcc-0b50-5e0d-b043-1299fe9755e1",
+  "student_ref": "RIV-2021",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "2018153d-8c13-5243-9c66-4eec0f973709",
+      "text": "Break long assignments into smaller submitted parts.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break long assignments into smaller parts",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "10ffc4fe-e24c-59ab-82c3-f2c8601601a4",
+      "text": "Allow access to a designated quiet space when overwhelmed.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "access to a designated quiet space when overwhelmed",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bad18f88-101d-50a3-84aa-a8bebba7d436",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "f0ae6261-a529-583b-b6b5-171acf0f1685",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a0313ab1-dc07-5190-a98e-f86954e19b0a",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "199a2952-a863-52be-b520-3ef9f50232be",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "9babc8f4-ff5b-5e37-a895-93f7e4d08b97",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "900acba3-2006-5499-a385-c51a0f78a6d1",
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1024127a-194a-5ab4-bc1b-a731a81c7383",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "produce initial /r/ with 80% accuracy",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "94941c60-af8e-5169-a97a-f9c7343b6756",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ae828e2f-3c03-5bd8-a013-13d1aa50bc2e",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "501d524c-e2c7-546b-8aa2-2ed80b974cf5",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

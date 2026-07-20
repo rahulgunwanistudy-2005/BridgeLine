@@ -1,0 +1,158 @@
+{
+  "iep_record_id": "c00b65ef-98f4-50d8-b7bc-39b1fc2fbce3",
+  "student_ref": "RIV-2017",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "c2e66eb4-51f0-5d8f-8112-43cfd43f4f09",
+      "text": "Provide a word bank for written-response items in reading and history.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a word bank for written-response items",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "56ff2b62-ca13-5733-b725-6871330fc600",
+      "text": "Give advance warning before transitions and changes in routine.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "advance warning before transitions and changes in routine",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e958887d-e146-5017-88b2-c2954ea5d7f1",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "310aa363-444b-5fd2-be83-1d16c8493fc8",
+      "text": "Provide a copy of teacher notes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a copy of teacher notes",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "73960ff1-de08-52c4-93d4-463a9d880c16",
+      "text": "Provide 50% extended time on reading-heavy assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on reading-heavy assessments",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "b3c7c3de-8e02-520f-bcb3-0d16b8da00ed",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f454a2af-0ff5-5f9d-9792-7741e7dc07aa",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "f6f707fb-d9cd-52bc-9146-9cad518021e8",
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "organize a multi-paragraph response using an outline",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8ec77f9f-91b4-5fd0-847b-02c309035df5",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "independently begin a classroom task within two minutes",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "33a1d5a6-b400-5c38-857f-d4063d245413",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "arrive to class with required materials in 8 of 10 class days",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "612068bf-051b-5bf8-8eb1-108c34b4658a",
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "use a self-monitoring checklist to review work before submitting",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "20092ef8-99d5-5349-a512-c438fb537f3f",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}
