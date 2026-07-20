@@ -1,0 +1,158 @@
+{
+  "iep_record_id": "ea0ff8be-0479-5ce6-9778-bbb1008a8e84",
+  "student_ref": "RIV-2043",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "48701af8-7ac6-55e6-ae2b-726b50e193a8",
+      "text": "Provide 50% extended time on reading-heavy assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on reading-heavy assessments",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8aad4c72-24ca-50de-b408-e30564e072c4",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "19721dd3-35e2-5a8a-8ce5-b42eb96235d1",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d9b7038b-fe14-59d1-9877-811b17af725f",
+      "text": "Read test directions and math word problems aloud on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "read test directions and math word problems aloud",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "260c7d12-da8e-5dc4-a8b2-eb7e53f64dda",
+      "text": "Provide visual supports and models for new tasks.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual supports and models for new tasks",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "7f3fe7b6-173f-5702-b294-e7cd8333bccb",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "4d5c99aa-aef8-501d-9b0e-c749377d5773",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f5c8655a-5eec-53f4-9378-e2e7e8b6964f",
+      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Language sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "retell a short narrative with a beginning, middle, and end",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c5838339-b2e9-57df-8232-fa30e47668c9",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0940d3f9-ae93-58ee-bfcc-3ba7ee6f60e6",
+      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "57c14b05-1f73-5a9a-98b5-945e898fbe82",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "4ec1f3ca-a043-57ca-81b0-9bc7c3975518",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

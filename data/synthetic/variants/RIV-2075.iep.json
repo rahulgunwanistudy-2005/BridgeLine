@@ -1,0 +1,147 @@
+{
+  "iep_record_id": "9a7180f1-a8ba-5048-82e0-cfbc5232b9d9",
+  "student_ref": "RIV-2075",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "e0cdc506-577d-520e-b481-3ee6f1a10114",
+      "text": "Seat with a clear line of sight to the speaker's face.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "clear line of sight to the speaker's face",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d72be21e-5be4-57b2-abb7-39c5f0ac0f53",
+      "text": "Provide graphic organizers for writing and note-taking.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "graphic organizers for writing and note-taking",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8365c8f4-d1c9-5834-8fdb-ca9797824e56",
+      "text": "Provide frequent check-ins for understanding.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "frequent check-ins for understanding",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "10005be6-5cd0-5ed4-9dd1-73559e243899",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4498c9cc-7770-5b43-a2aa-9a1ab62ad3fc",
+      "text": "Provide 25% extended time on timed assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "25% extended time on timed assessments",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0b8c898b-5c44-59d8-bbf0-b4516967b717",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "06432c01-769a-5935-a30d-ce6f9a68fbe9",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2f2b95b2-f2ec-5083-96d6-b1b337a829fd",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "90d3cbb1-22a1-5973-be44-a40aac58cd8a",
+      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "write a paragraph with a clear topic sentence and three details",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e4d38936-3510-5063-9d3e-a678ec10311d",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "produce three organized sentences on a topic",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "bb5f543d-2a09-596c-953f-8ff856a92bf1",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

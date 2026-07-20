@@ -1,0 +1,123 @@
+{
+  "iep_record_id": "3782c52d-dce0-5f1d-a601-de4e1dd67ce3",
+  "student_ref": "RIV-1010",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "d303714c-5702-5bdd-a10a-3a24699959c1",
+      "text": "Provide audio versions of grade-level texts.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "audio versions of grade-level texts",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "6373e4e0-6161-5cfd-8e79-36971b739705",
+      "text": "Do not grade spelling on first-draft written work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not grade spelling on first-draft written work",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8d067e2d-889c-5aa0-ab04-16a8c36e3e58",
+      "text": "Provide 50% extended time on reading-heavy assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on reading-heavy assessments",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1f4b1b8e-34ad-5d78-a8b8-b1a81b22b184",
+      "text": "Provide a copy of teacher notes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a copy of teacher notes",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "16e736a7-6509-5191-900d-4b35aa57efa9",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction reading 30 minutes 5 times weekly",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "e6f232d7-ffb8-54b7-a41a-bd201a31b7e8",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ff1c8da5-0873-58c9-8434-7f54cf91595a",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b2c44567-5ace-50d5-8661-d4760666e752",
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "organize a multi-paragraph response using an outline",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-24",
+    "triennial_reeval": "2029-04-18",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "56d0f410-6c28-5c8b-a498-b2d5184abf74",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.98,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "iep_record_id": "8ede65fa-e6b7-5e4d-9458-ff4ed0757007",
+  "student_ref": "RIV-1003",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "f3c13fa8-d88e-55e7-9421-fb6e2499d51f",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8c94912f-fcfc-5766-99b4-91c3434ed647",
+      "text": "Provide sentence starters for oral presentations.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "sentence starters for oral presentations",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7f44680f-8c1a-52f6-9eb9-774c980532b5",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "2d36f908-da41-5c99-bae6-f142d61fde55",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7471e1bc-5d61-55dc-8104-008457b7d79c",
+      "type": "Language processing support (group)",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Unassigned",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
+      "confidence": 0.72,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "59b16723-008b-5379-ad13-bc40c24c85a9",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "produce initial /r/ with 80% accuracy",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "fb10cc84-d961-5efd-af24-a17b0e5589df",
+      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Language sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "retell a short narrative with a beginning, middle, and end",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-03",
+    "triennial_reeval": "2026-11-20",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "1177bcfe-a9b4-53a7-b483-fec127ae15cc",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.99,
+      0.97
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

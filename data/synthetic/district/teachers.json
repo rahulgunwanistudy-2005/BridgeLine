@@ -1,0 +1,58 @@
+[
+  {
+    "id": "e7c7c14e-81c6-564f-b0b6-940a4a1e3f23",
+    "email": "delgado@riverside-demo.example",
+    "teacher_ref": "T-DELGADO",
+    "display_name": "Ms. Renata Delgado",
+    "role": "English teacher"
+  },
+  {
+    "id": "635498ef-267e-5e71-91b0-428b47b30fa5",
+    "email": "okafor@riverside-demo.example",
+    "teacher_ref": "T-OKAFOR",
+    "display_name": "Mr. Samuel Okafor",
+    "role": "Mathematics teacher"
+  },
+  {
+    "id": "479bf5fe-5b88-5cd7-b907-61c5306b453c",
+    "email": "chen@riverside-demo.example",
+    "teacher_ref": "T-CHEN",
+    "display_name": "Dr. Mia Chen",
+    "role": "Biology teacher"
+  },
+  {
+    "id": "1dc2290e-a46d-53c0-886b-b4a4846cdde3",
+    "email": "porter@riverside-demo.example",
+    "teacher_ref": "T-PORTER",
+    "display_name": "Ms. Ana Porter",
+    "role": "World History teacher"
+  },
+  {
+    "id": "9eeda9a2-1790-589a-9a9d-03e807c564d6",
+    "email": "rivera@riverside-demo.example",
+    "teacher_ref": "T-RIVERA",
+    "display_name": "Coach Luis Rivera",
+    "role": "Physical Education teacher"
+  },
+  {
+    "id": "9ed525ef-1afb-5a77-993c-cd441370e414",
+    "email": "feldman@riverside-demo.example",
+    "teacher_ref": "T-FELDMAN",
+    "display_name": "Mr. David Feldman",
+    "role": "Art teacher"
+  },
+  {
+    "id": "121d95b4-35b0-5f1e-b5a0-020cc407f5fc",
+    "email": "lee@riverside-demo.example",
+    "teacher_ref": "T-LEE",
+    "display_name": "Ms. Jordan Lee",
+    "role": "Special education teacher"
+  },
+  {
+    "id": "18b3bfe2-7ccd-57d8-98f7-81a344310e24",
+    "email": "alvarez@riverside-demo.example",
+    "teacher_ref": "T-ALVAREZ",
+    "display_name": "Ms. Carmen Alvarez",
+    "role": "Speech-language pathologist"
+  }
+]

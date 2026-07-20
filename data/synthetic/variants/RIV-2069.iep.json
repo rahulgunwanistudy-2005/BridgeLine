@@ -1,0 +1,146 @@
+{
+  "iep_record_id": "c1637da8-6118-555c-a574-5a78df87a4ba",
+  "student_ref": "RIV-2069",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "98236c17-ac77-5f85-97bc-703669c6551b",
+      "text": "Read test directions and math word problems aloud on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "read test directions and math word problems aloud",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7496bf63-2f58-5d49-a383-888a55cfc7fb",
+      "text": "Pair auditory alerts and directions with a visual cue.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "pair auditory alerts with a visual cue",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "389a5bab-713a-576a-a5d4-e8e4495bcc31",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b1df08f1-6dbb-51bf-aa9e-473251fee65d",
+      "text": "Seat with a clear line of sight to the speaker's face.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "clear line of sight to the speaker's face",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "2ba23650-fc2f-5f68-9faa-ffd33093bcfa",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "e2543450-5eed-5644-a4dc-8ba01207c0cb",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "produce initial /r/ with 80% accuracy",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d9f744c9-6dd6-57e2-b11e-a9035a206f3c",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "produce three organized sentences on a topic",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "96662137-e510-5d46-a4ea-d5176b096f91",
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "organize a multi-paragraph response using an outline",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "145ceeeb-3116-5b09-875e-5e91974334b3",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "953015f7-486b-5d3f-a632-51b431036efe",
+      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "write a paragraph with a clear topic sentence and three details",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "353e2e0a-e015-5a5f-8a0f-c6c7e1638d4b",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

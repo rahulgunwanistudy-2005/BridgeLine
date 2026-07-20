@@ -1,0 +1,181 @@
+{
+  "iep_record_id": "e5ab40ce-ab80-5b25-90d9-f507236ddf36",
+  "student_ref": "RIV-2072",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "0b8363c1-ca13-58e3-b1c9-9a1b9fdaa6a8",
+      "text": "Provide a word bank for written-response items in reading and history.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a word bank for written-response items",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "47260751-6dd7-5a9e-b69b-10a141c2c408",
+      "text": "Give advance warning before transitions and changes in routine.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "advance warning before transitions and changes in routine",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1e92685c-3e37-560e-bf8f-d63c095fde69",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d3bac86e-fd26-57de-9b25-d07a3696ed11",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3b799cff-531c-59d9-8ffa-1a4d812eb5d8",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1c5eb2a3-2f2c-59ee-8585-9a5cbd5acecc",
+      "text": "Provide audio versions of grade-level texts.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "audio versions of grade-level texts",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c87c7db2-5586-55bc-8eed-5f73cb1479c2",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8f05d01f-af90-533c-9f10-abfef227e0e6",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "b0aa0741-a083-50e9-84c7-eecdd57eef14",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "02930b54-666c-5202-8e68-928263ddc329",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "3950dbbf-2d74-52ee-b56f-be1cea35b32f",
+      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Language sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "retell a short narrative with a beginning, middle, and end",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "10b71592-82e5-51a5-b8c9-9fe1f3852d38",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c60c0ea6-0b60-52ca-b50a-84a8e24ebf45",
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "maintain a topic across three conversational turns",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "89dfc48f-0f4f-5631-9a5d-3cbef54d2d66",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "iep_record_id": "805fc4d9-c9fe-5639-ad48-68edbe3096c6",
+  "student_ref": "RIV-2060",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "0660e7c8-983c-5627-bc5c-c561d751a0ba",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f1f5d0e4-261c-5856-9c09-a23a4a8161f3",
+      "text": "Do not grade spelling on first-draft written work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not grade spelling on first-draft written work",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "dda53516-67b7-56ef-9f60-a2f738c1390b",
+      "text": "Provide a word bank for written-response items in reading and history.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a word bank for written-response items",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e497fb72-ece2-579d-87cb-535da6846daa",
+      "text": "Provide a copy of teacher notes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a copy of teacher notes",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "a13adf3e-d847-5e73-a66a-fafebd4265e2",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a46b5b53-1c1f-53c4-b907-9ca5e85d6afe",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a468c338-f3be-534a-a68e-228eb9cfd582",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "28d4665e-1fca-5e7c-8d9d-169d6b0e712b",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "independently begin a classroom task within two minutes",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f2d686bd-55be-573a-8308-fc83d8565b3a",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "144cf4bd-6c33-5b06-b9f4-0d45e39dcc12",
+      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "02b0b830-c7f9-5228-b21a-319255a3276f",
+      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Language sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "retell a short narrative with a beginning, middle, and end",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "855d7e37-1033-5f18-99fe-8bd9a0a7ee11",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "7e589ada-47c7-51ac-b38b-3982e9bebe2f",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

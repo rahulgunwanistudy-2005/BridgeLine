@@ -1,0 +1,170 @@
+{
+  "iep_record_id": "246e28ad-f89c-59a1-9510-9bce94794a60",
+  "student_ref": "RIV-2054",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "da2153b8-0e69-5491-80f1-470ffdec24b7",
+      "text": "Provide 50% extended time on all classroom tests and quizzes.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on all classroom tests and quizzes",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e80b0328-41e1-545e-9bc0-216e11575cb5",
+      "text": "Provide 50% extended time on reading-heavy assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on reading-heavy assessments",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "08113d17-c0da-5622-b290-9578a09c240c",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0a271391-78b7-50bf-9ad9-a9595d1b4425",
+      "text": "Provide graphic organizers for writing and note-taking.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "graphic organizers for writing and note-taking",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "69655109-7f17-5bf7-873a-06b9a3de2a20",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3ecccfad-7d37-59da-87a5-fd24bfe8f830",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "72f12675-eda8-5164-a3f0-d55f1f27b0c6",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "e4f158a5-65fa-5b1c-afa2-73ce3dc32566",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3cb6d782-5100-5b19-b23a-733d5d91fa9b",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "59a0092e-75e9-5845-8cdc-c98dd70a306b",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "0ee89190-2deb-5a9b-ab5d-13e5d8144faf",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ca1294ab-6369-5d5f-bebe-0eee7b69a27b",
+      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Language sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "retell a short narrative with a beginning, middle, and end",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "e6692a22-6d5d-5647-b6e9-dacdaffab67f",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

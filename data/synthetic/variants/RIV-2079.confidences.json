@@ -1,0 +1,12 @@
+{
+  "iep_record_id": "f01c9498-ebf1-530b-b848-6ede4d2ebb89",
+  "student_ref": "RIV-2079",
+  "field_confidences": {
+    "student_ref": 0.99,
+    "disability_category": 0.96,
+    "school_year": 0.99,
+    "annual_review": 0.91,
+    "triennial_reeval": 0.94,
+    "last_progress_report": 0.86
+  }
+}

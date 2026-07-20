@@ -1,0 +1,194 @@
+{
+  "iep_record_id": "78ef86de-1dc8-5b22-8a44-cf14a0dad221",
+  "student_ref": "RIV-2037",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "d89a1c39-dcd0-5021-aacc-fa66c563ae93",
+      "text": "Give advance warning before transitions and changes in routine.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "advance warning before transitions and changes in routine",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "10a76588-4b9e-54be-aba0-ca341ae9fac0",
+      "text": "Provide a checklist to break long assignments into steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "checklist to break long assignments into steps",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d80dc282-b9f5-5f8e-90f1-c8a6c61e0fe2",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5c88d797-cc8d-569f-8a91-b3d1cea7ae3b",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cdd0c181-b1b8-5a93-8be2-0eb815fcda3c",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "dcb10f75-8cdf-5694-a639-12434220964b",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0d9b49e5-e4b6-50da-8074-a70285182c4c",
+      "text": "Give a two-minute warning before transitions.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "two-minute warning before transitions",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4d275ef9-9954-5228-89a7-dd1240b1ffb4",
+      "text": "Provide captions or a transcript for all audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for all audio and video media",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "39c826c1-b144-52d1-a258-57ff1843d674",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f70fad8d-b129-53b3-8a4e-5c5c396d339f",
+      "type": "Language processing support (group)",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Unassigned",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "0b3ac052-98a5-5d94-9a44-720be8f0fea7",
+      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0651ea76-dbba-576f-9841-646a8c354a1a",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "identify the main idea and two supporting details with 80% accuracy",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "deba3f37-9805-5c48-b5fd-960f7470344b",
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c50a5222-4972-5fe8-9e94-1620d671ba2c",
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use correct past-tense verbs with 80% accuracy",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "95364abe-a1b7-5200-861d-09b80b5eb68e",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

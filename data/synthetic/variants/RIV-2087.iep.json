@@ -1,0 +1,157 @@
+{
+  "iep_record_id": "fa4fcda4-64a3-5f70-a6f7-d13ccc1f1d5f",
+  "student_ref": "RIV-2087",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "d1d925e2-995d-52d5-b974-bfcc70791227",
+      "text": "Provide graphic organizers for writing and note-taking.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "graphic organizers for writing and note-taking",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2ef96846-d6ec-5bd1-8e8b-ac8cbb875767",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b762c847-bb41-5af2-9e84-56913a655651",
+      "text": "Provide audio versions of grade-level texts.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "audio versions of grade-level texts",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "27a178f3-d4d4-5cac-97d6-ef651a9fe61a",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ffed9a8e-bec3-57b9-b7ab-3be17e4df0c0",
+      "text": "Allow access to a designated quiet space when overwhelmed.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "access to a designated quiet space when overwhelmed",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "729375af-1f5e-5b9a-a24f-4f96ddeb57b9",
+      "text": "Face the student when speaking and avoid covering the mouth.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "face the student when speaking",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "244fc4db-0dfe-54a5-a199-ae63e3e632ab",
+      "text": "Seat near the point of instruction and away from high-traffic areas.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "preferential seating near the point of instruction",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "cddc5af5-1765-574c-b353-2d579d81368e",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5f534139-6654-5ada-80a1-09c05d269e48",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "d77e8f19-ad8c-521a-a7e7-7eae7acd01e6",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "20cf5b3e-90f3-5445-ba32-1df672a074b6",
+      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "write a paragraph with a clear topic sentence and three details",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "644134d6-11bd-5971-8eba-3255df7692eb",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "iep_record_id": "4195d802-a903-526c-9515-7116dc82c662",
+  "student_ref": "RIV-2022",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "0a4de2e0-4672-53b5-8f34-888fe97e09f2",
+      "text": "Permit brief movement breaks between tasks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief movement breaks between tasks",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bb08c73c-fdda-586f-a6d1-872d88fe9271",
+      "text": "Provide 50% extended time on reading-heavy assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on reading-heavy assessments",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3e03e606-3fcf-5295-9475-ec2635f26665",
+      "text": "Give advance warning before transitions and changes in routine.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "advance warning before transitions and changes in routine",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a21b526b-6888-5b54-a72e-508a863480dc",
+      "text": "Seat near the point of instruction and away from high-traffic areas.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "preferential seating near the point of instruction",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "465bcc17-5583-5e3a-9b5a-b2fb8e4d1cec",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d6baad7f-3d8c-5423-9329-fba51656f684",
+      "text": "Provide captions or a transcript for audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for audio and video media",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "066a3f93-3448-5dc9-9538-0fa224373846",
+      "text": "Provide a word bank for written-response items in reading and history.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a word bank for written-response items",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e6df787f-2c3d-5f02-a526-548353277ee1",
+      "text": "Provide a copy of teacher notes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a copy of teacher notes",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "604de0c1-e33c-55c9-9ddf-b080d5018abf",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "4c52a5d7-53d1-505e-a6be-a73d3d8db388",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "accept a change in routine using a coping strategy",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "06fbcac7-5adb-54fa-8174-5c6ad7ed6dec",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "e2e47f98-0eec-54ff-b83e-6df00af7d2ab",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

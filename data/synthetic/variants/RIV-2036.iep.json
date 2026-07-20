@@ -1,0 +1,181 @@
+{
+  "iep_record_id": "3b8ca5e2-5ae6-54be-a292-830dd0e2c777",
+  "student_ref": "RIV-2036",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "cff1cce2-fd9e-5869-a7a8-8d9bfea0ee85",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "18c13146-cd24-5cfd-9a21-290ad3c23d2e",
+      "text": "Allow access to a designated quiet space when overwhelmed.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "access to a designated quiet space when overwhelmed",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "69d6d0ac-d62b-5917-af29-82bc15ddb65d",
+      "text": "Break long assignments into smaller submitted parts.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break long assignments into smaller parts",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "657ff9aa-a315-5c2c-9b7f-8c7613f1450f",
+      "text": "Allow brief scheduled sensory breaks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief scheduled sensory breaks",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "07d52d62-b8a6-5cdb-b698-db20995e9966",
+      "text": "Read test directions and math word problems aloud on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "read test directions and math word problems aloud",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1c677ae9-e79c-51c3-9f20-c331cc099df6",
+      "text": "Do not grade spelling on first-draft written work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not grade spelling on first-draft written work",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1b2d3186-dc60-5c70-ba7c-3d57497f8539",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "444871df-5860-5315-91df-64b9597a3ef6",
+      "text": "Permit brief movement breaks between tasks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief movement breaks between tasks",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "81e97bd0-8696-503b-82b6-497ad7fb7e3c",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "e6499970-a23f-5c1b-b8aa-3f53380b3e1c",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "produce initial /r/ with 80% accuracy",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "97148896-f121-57c9-a3d2-4c84e7c60712",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "request clarification when she misses information",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "af36bfef-479b-571e-91c7-23cc7adfd139",
+      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "49ee9d4a-9558-59ca-8665-7c3feb46a91b",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "dd417fa8-5a7d-542c-9e65-d2ae680ecf21",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

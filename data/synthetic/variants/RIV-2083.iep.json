@@ -1,0 +1,195 @@
+{
+  "iep_record_id": "6627dd69-65d7-56f2-ae9b-3d365681f6fc",
+  "student_ref": "RIV-2083",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "7f44b44a-14ce-5aba-8913-e25d28b92cb2",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1b2ca6f8-dc29-554e-9911-9bfd2756ec5a",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "6d9fdf2e-a49b-5678-ae9a-a466cee346e2",
+      "text": "Pair auditory alerts and directions with a visual cue.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "pair auditory alerts with a visual cue",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2ae7e0a7-6ff2-53f5-af73-5442e77e309e",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0425df1e-7339-53c1-826a-05aa1c0a4f5a",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d5bb103b-4b81-5c43-84b5-a2d8646fb3cd",
+      "text": "Repeat and rephrase spoken directions on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "repeat and rephrase spoken directions on request",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "a0d17d46-f401-59cc-b8b2-350acc7d40ff",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "619dced4-7cb0-5c00-834d-66f65e3034c3",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "08234c53-6fa1-53c5-bc29-af683f503a75",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "03ee1ad6-3ba2-5259-85bd-f4d28c5baea4",
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c0644317-040c-549d-b72c-3c5c5e84f921",
+      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "write a paragraph with a clear topic sentence and three details",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9966c100-5293-5d05-ab58-ff6a9dc5124d",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "independently begin a classroom task within two minutes",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "97a210aa-14a6-53e0-be1d-0b83f97e730f",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7f305ade-b5f2-5e94-90c1-ac4a48326324",
+      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "ff86d6c7-7ac8-56d3-8706-852186abeab1",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}
