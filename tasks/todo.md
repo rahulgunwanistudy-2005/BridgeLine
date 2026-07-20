@@ -43,11 +43,12 @@ NOT MINE: apps/api/bridgeline/, Pydantic side of packages/schemas/ (paired-PR).
       Gated no-op + 404-probe verified; compose config valid. DONE.
 - [x] **Slice D — STEP 4**: pdf.py (deterministic vector writer) + render.py (IEP form
       PDF+HTML). 12 students rendered; sips/pymupdf confirm valid & form-like; byte-stable.
-- [ ] **Slice E — STEP 5 ★PING 2**: 5 hero messy scans via ONE parameterized
-      degradation script (print-scan rot±3°/noise/contrast; handwriting overlays +
-      crossed-out line; signature+stamp over text; one upside-down page; two-column +
-      mixed clean/scanned). ≥1 visibly rough. → push + tell Rahul.
+- [x] **Slice E — STEP 5 ★PING 2**: 5 hero messy scans via ONE parameterized script
+      (degrade.py + scans.py + make_messy_scans.py --intensity light/medium/heavy).
+      All 5 types present + visually verified; scan1 visibly rough; byte-stable;
+      image-only PDFs (no text layer). → PUSHED at ping 2.
 - [ ] **Slice F — STEP 6**: 88 seeded variants (100 docs total), fixed seed, byte-stable.
+- [ ] **PROVENANCE**: data/synthetic/PROVENANCE.md.
 - [ ] **PROVENANCE**: data/synthetic/PROVENANCE.md — how generated + "no real student
       data exists in this repo".
 

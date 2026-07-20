@@ -191,6 +191,65 @@ def render_pdf(record: dict[str, Any]) -> bytes:
     return _FormRenderer(record).render()
 
 
+def render_two_column_pdf(record: dict[str, Any]) -> bytes:
+    """A two-column layout variant of the same record (harder to parse; for scan 5)."""
+
+    pdf = PDF()
+    # Full-width header.
+    pdf.text(_LEFT, _TOP + 14, DISTRICT_NAME, 14, bold=True)
+    pdf.text(_LEFT, _TOP + 30, "Individualized Education Program (IEP) - Alternate Layout", 10, bold=True)
+    pdf.rect(_LEFT, _TOP + 36, _WIDTH, 15, fill_gray=0.15, stroke=False)
+    pdf.text(_LEFT + 4, _TOP + 47, "CONFIDENTIAL - SYNTHETIC DEMO DATA - NOT A REAL STUDENT",
+             9, bold=True, gray=1.0)
+    r = record
+    d = r["dates"]
+    pdf.text(_LEFT, _TOP + 66, f"{_display_name(r['student_ref'])}  ({r['student_ref']})  -  "
+             f"{r['disability_category']}  -  SY {r['school_year']}", 9.5, bold=True)
+    pdf.text(_LEFT, _TOP + 80,
+             f"Annual review {d['annual_review']}   Triennial {d['triennial_reeval']}   "
+             f"Last progress {d['last_progress_report']}", 9)
+
+    mid = 300.0
+    gutter = 18.0
+    left_x, right_x = _LEFT, mid + gutter
+    left_w, right_w = mid - _LEFT, _RIGHT - (mid + gutter)
+    size = 8.5
+    lh = 11.0
+
+    def column(x: float, width: float, blocks: list[tuple[str, bool]], start_y: float) -> None:
+        y = start_y
+        for text, bold in blocks:
+            if not text:
+                y += lh * 0.5
+                continue
+            for line in wrap_text(text, size, width, bold=bold):
+                pdf.text(x, y, line, size, bold=bold)
+                y += lh
+
+    body_top = _TOP + 100
+    left_blocks: list[tuple[str, bool]] = [("MEASURABLE ANNUAL GOALS", True), ("", False)]
+    for i, g in enumerate(r["goals"], start=1):
+        left_blocks += [(f"Goal {i}: {g['text']}", True),
+                        (f"Baseline: {g['baseline']}", False),
+                        (f"Target: {g['target']}", False),
+                        (f"Measure: {g['measure']} | Cadence: {g['progress_cadence']}", False),
+                        ("", False)]
+    right_blocks: list[tuple[str, bool]] = [("ACCOMMODATIONS", True), ("", False)]
+    for a in r["accommodations"]:
+        right_blocks.append((f"- {a['text']} (applies to: {_scope(a['applies_to'])})", False))
+    right_blocks += [("", False), ("SERVICES", True), ("", False)]
+    for s in r["services"]:
+        right_blocks.append(
+            (f"- {s['type']}: {s['minutes_per_week']} min/wk, {s['frequency']}, {s['provider_role']}",
+             s["provider_role"] == "Unassigned"))
+
+    column(left_x, left_w, left_blocks, body_top)
+    column(right_x, right_w, right_blocks, body_top)
+    # Column divider.
+    pdf.line(mid + gutter / 2, body_top - 6, mid + gutter / 2, _BOTTOM)
+    return pdf.build()
+
+
 def render_html(record: dict[str, Any]) -> str:
     r = record
     d = r["dates"]

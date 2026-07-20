@@ -9,7 +9,12 @@ paginates automatically.
 
 from __future__ import annotations
 
+import io
 from dataclasses import dataclass, field
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from PIL import Image
 
 PAGE_WIDTH = 612.0   # US Letter
 PAGE_HEIGHT = 792.0
@@ -158,3 +163,69 @@ class PDF:
             f"trailer\n<< /Size {max_obj + 1} /Root 1 0 R >>\nstartxref\n{xref_pos}\n%%EOF\n".encode("latin-1")
         )
         return bytes(pdf)
+
+
+def build_image_pdf(images: list["Image.Image"], *, jpeg_quality: int = 80) -> bytes:
+    """Deterministic image-only ("scanned") PDF: one full-page JPEG per page.
+
+    No text layer (genuinely scan-like for OCR), no timestamps, no random IDs — byte-stable
+    given pinned Pillow. Each page's MediaBox equals the image's pixel size in points.
+    """
+
+    if not images:
+        raise ValueError("build_image_pdf requires at least one page image")
+
+    objects: dict[int, bytes] = {}
+    objects[1] = b"<< /Type /Catalog /Pages 2 0 R >>"
+
+    page_obj_numbers: list[int] = []
+    next_obj = 3
+    for image in images:
+        if image.mode not in ("L", "RGB"):
+            image = image.convert("RGB")
+        color_space = b"/DeviceGray" if image.mode == "L" else b"/DeviceRGB"
+        buffer = io.BytesIO()
+        image.save(buffer, format="JPEG", quality=jpeg_quality, optimize=False)
+        jpeg = buffer.getvalue()
+        w, h = image.size
+
+        image_num, content_num, page_num = next_obj, next_obj + 1, next_obj + 2
+        next_obj += 3
+
+        objects[image_num] = (
+            f"<< /Type /XObject /Subtype /Image /Width {w} /Height {h} "
+            f"/ColorSpace ".encode("latin-1") + color_space +
+            f" /BitsPerComponent 8 /Filter /DCTDecode /Length {len(jpeg)} >>\nstream\n".encode("latin-1")
+            + jpeg + b"\nendstream"
+        )
+        content = f"q {w} 0 0 {h} 0 0 cm /Im0 Do Q".encode("latin-1")
+        objects[content_num] = (
+            f"<< /Length {len(content)} >>\nstream\n".encode("latin-1") + content + b"\nendstream"
+        )
+        objects[page_num] = (
+            f"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 {w} {h}] "
+            f"/Resources << /XObject << /Im0 {image_num} 0 R >> >> "
+            f"/Contents {content_num} 0 R >>"
+        ).encode("latin-1")
+        page_obj_numbers.append(page_num)
+
+    kids = " ".join(f"{n} 0 R" for n in page_obj_numbers)
+    objects[2] = f"<< /Type /Pages /Kids [{kids}] /Count {len(page_obj_numbers)} >>".encode("latin-1")
+
+    max_obj = next_obj - 1
+    pdf = bytearray(b"%PDF-1.4\n%\xe2\xe3\xcf\xd3\n")
+    offsets: dict[int, int] = {}
+    for number in range(1, max_obj + 1):
+        offsets[number] = len(pdf)
+        pdf.extend(f"{number} 0 obj\n".encode("latin-1"))
+        pdf.extend(objects[number])
+        pdf.extend(b"\nendobj\n")
+    xref_pos = len(pdf)
+    pdf.extend(f"xref\n0 {max_obj + 1}\n".encode("latin-1"))
+    pdf.extend(b"0000000000 65535 f \n")
+    for number in range(1, max_obj + 1):
+        pdf.extend(f"{offsets[number]:010d} 00000 n \n".encode("latin-1"))
+    pdf.extend(
+        f"trailer\n<< /Size {max_obj + 1} /Root 1 0 R >>\nstartxref\n{xref_pos}\n%%EOF\n".encode("latin-1")
+    )
+    return bytes(pdf)
