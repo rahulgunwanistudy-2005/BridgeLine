@@ -46,7 +46,7 @@ def emit_district() -> None:
 
 def emit_and_validate_records() -> int:
     errors = 0
-    for record, sidecar in build_records():
+    for record in build_records():
         sref = record["student_ref"]
         try:
             validate_record(record, label=sref)
@@ -57,7 +57,6 @@ def emit_and_validate_records() -> int:
                 print(f"  - {message}", file=sys.stderr)
             continue
         write_json(GROUND_TRUTH_DIR / f"{sref}.iep.json", record)
-        write_json(GROUND_TRUTH_DIR / f"{sref}.confidences.json", sidecar)
         print(
             f"  {sref}: {len(record['accommodations'])} accommodations, "
             f"{len(record['services'])} services, {len(record['goals'])} goals — valid"

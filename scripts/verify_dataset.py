@@ -35,7 +35,7 @@ def main() -> int:
     failures = 0
 
     print("== schema validation ==")
-    for record, _ in build_records():
+    for record in build_records():
         try:
             validate_record(record, label=record["student_ref"])
         except RecordValidationError as exc:
@@ -59,7 +59,7 @@ def main() -> int:
 
     variants = build_variants()
     v_bad = 0
-    for record, _ in variants:
+    for record in variants:
         try:
             validate_record(record, label=record["student_ref"])
         except RecordValidationError as exc:
@@ -95,10 +95,9 @@ def main() -> int:
         # Re-emit into memory and compare against the on-disk hash by re-serializing.
         from synthgen.writer import write_json
 
-        for record, sidecar in build_records():
+        for record in build_records():
             sref = record["student_ref"]
             write_json(GROUND_TRUTH_DIR / f"{sref}.iep.json", record)
-            write_json(GROUND_TRUTH_DIR / f"{sref}.confidences.json", sidecar)
         after = _hash_tree(GROUND_TRUTH_DIR)
         if before == after:
             print(f"  stable (sha256 {after[:12]})")

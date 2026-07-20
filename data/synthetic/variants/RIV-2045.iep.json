@@ -165,6 +165,14 @@
     "triennial_reeval": "2029-01-22",
     "last_progress_report": "2026-10-30"
   },
+  "field_confidences": {
+    "student_ref": 0.99,
+    "disability_category": 0.98,
+    "school_year": 0.99,
+    "annual_review": 0.88,
+    "triennial_reeval": 0.87,
+    "last_progress_report": 0.94
+  },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",
     "run_id": "48cd65f6-4735-53f6-b1da-fb3efb01aa1a",

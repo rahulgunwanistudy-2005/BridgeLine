@@ -106,11 +106,8 @@ def seed_ieps() -> bool:
     ok = True
     for iep_path in sorted(gt_dir.glob("*.iep.json")):
         record = json.loads(iep_path.read_text(encoding="utf-8"))
-        sidecar_path = gt_dir / iep_path.name.replace(".iep.json", ".confidences.json")
-        field_conf = None
-        if sidecar_path.exists():
-            field_conf = json.loads(sidecar_path.read_text(encoding="utf-8")).get("field_confidences")
-        body = {"record": record, "approve": True, "field_confidences": field_conf}
+        # field_confidences is embedded in the record (schema v1.1); no sidecar to merge.
+        body = {"record": record, "approve": True}
         ok = _post_gated("/ieps/import", body, f"iep {record['student_ref']}") and ok
         if not ok and not STRICT:
             # First 404 means the endpoint is absent; stop hammering it.

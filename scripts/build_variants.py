@@ -58,9 +58,9 @@ def main() -> int:
             "pdf_path": f"documents/pdf/{ref}.pdf", "degraded": False, "degradation": None,
         })
 
-    # 88 variants: validate, write record + sidecar, render (subset degraded).
+    # 88 variants: validate, write record, render (subset degraded).
     errors = 0
-    for i, (record, sidecar) in enumerate(build_variants(), start=1):
+    for i, record in enumerate(build_variants(), start=1):
         ref = record["student_ref"]
         try:
             validate_record(record, label=ref)
@@ -69,7 +69,6 @@ def main() -> int:
             print(f"INVALID {ref}: {exc.messages}", file=sys.stderr)
             continue
         write_json(VARIANTS_DIR / f"{ref}.iep.json", record)
-        write_json(VARIANTS_DIR / f"{ref}.confidences.json", sidecar)
         pdf_bytes, degraded, degradation = _render(record, i)
         write_bytes(PDF_DIR / f"{ref}.pdf", pdf_bytes)
         manifest.append({

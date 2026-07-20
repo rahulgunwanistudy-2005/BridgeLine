@@ -46,7 +46,7 @@ def _pools() -> dict[str, list[dict[str, Any]]]:
     acc: list[dict[str, Any]] = []
     svc: list[dict[str, Any]] = []
     gol: list[dict[str, Any]] = []
-    for record, _ in build_records():
+    for record in build_records():
         acc.extend(record["accommodations"])
         svc.extend(record["services"])
         gol.extend(record["goals"])
@@ -77,7 +77,7 @@ def _dates(rng: random.Random) -> tuple[str, str, str]:
     return annual, triennial, last_progress
 
 
-def _build_one(i: int, pools: dict[str, list[dict[str, Any]]]) -> tuple[dict[str, Any], dict[str, Any]]:
+def _build_one(i: int, pools: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
     ref = _variant_ref(i)
     rng = random.Random(f"{RANDOM_SEED}:variant:{i}")
 
@@ -110,23 +110,22 @@ def _build_one(i: int, pools: dict[str, list[dict[str, Any]]]) -> tuple[dict[str
             confidence=round(rng.uniform(0.78, 0.96), 2)))
 
     annual, triennial, last_progress = _dates(rng)
-    record = iep_record(
-        student_ref=ref, disability_category=_CATEGORIES[i % len(_CATEGORIES)],
-        school_year=SCHOOL_YEAR, accommodations=accommodations, services=services, goals=goals,
-        annual_review=annual, triennial_reeval=triennial, last_progress_report=last_progress,
-        page_count=4, legibility_scores=[1.0, 0.98, 0.97, 0.98])
-
-    sidecar = field_confidences(
-        student_ref=ref, student_ref_conf=0.99,
+    confidences = field_confidences(
+        student_ref=0.99,
         disability_category=round(rng.uniform(0.9, 0.98), 2), school_year=0.99,
         annual_review=round(rng.uniform(0.85, 0.96), 2),
         triennial_reeval=round(rng.uniform(0.82, 0.94), 2),
         last_progress_report=round(rng.uniform(0.85, 0.95), 2))
-    return record, sidecar
+    return iep_record(
+        student_ref=ref, disability_category=_CATEGORIES[i % len(_CATEGORIES)],
+        school_year=SCHOOL_YEAR, accommodations=accommodations, services=services, goals=goals,
+        annual_review=annual, triennial_reeval=triennial, last_progress_report=last_progress,
+        field_confidences=confidences,
+        page_count=4, legibility_scores=[1.0, 0.98, 0.97, 0.98])
 
 
-def build_variants() -> list[tuple[dict[str, Any], dict[str, Any]]]:
-    """Return [(record, sidecar), ...] for all 88 variants, deterministically."""
+def build_variants() -> list[dict[str, Any]]:
+    """Return the 88 variant IEPRecords (field_confidences embedded), deterministically."""
 
     pools = _pools()
     return [_build_one(i, pools) for i in range(1, VARIANT_COUNT + 1)]

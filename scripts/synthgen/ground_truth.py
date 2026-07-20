@@ -13,6 +13,11 @@ Edge cases (see also district.STUDENTS notes):
   - RIV-1005 L. Hassan  : annual review lands on a holiday (2026-11-11 Veterans Day)
   - RIV-1006 D. Torres  : mid-semester enrollment; member of the co-taught class
   - RIV-1007..1012      : clean records (no findings) so the dashboard is not all red
+  - RIV-1012 O. (clean) : no progress report on file — last_progress_report is null with
+                          field_confidences.last_progress_report = 0.0 (absent-field rule)
+
+Each record embeds field_confidences (schema v1.1): six 0.0–1.0 scores for the canonical
+scalar/date fields. A null date scores 0.0.
 """
 
 from __future__ import annotations
@@ -92,15 +97,12 @@ def _riv_1001() -> dict[str, Any]:
                   "write a five-sentence paragraph with a topic sentence", 0.84),
         ],
         annual_review="2027-05-08", triennial_reeval="2028-09-15",
-        last_progress_report="2026-10-30", page_count=4,
+        last_progress_report="2026-10-30",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.97,
+            school_year=0.99, annual_review=0.94, triennial_reeval=0.9, last_progress_report=0.93),
+        page_count=4,
         legibility_scores=[1.0, 0.98, 0.97, 0.99],
     )
-
-
-def _sc_1001():
-    return field_confidences(student_ref="RIV-1001", student_ref_conf=0.99,
-        disability_category=0.97, school_year=0.99, annual_review=0.94,
-        triennial_reeval=0.9, last_progress_report=0.93)
 
 
 # ── RIV-1002  Marcus Bell — Autism (finding c: service runs 20 min/wk short) ──
@@ -146,15 +148,12 @@ def _riv_1002() -> dict[str, Any]:
                   "use a taught script to join a peer activity", 0.85),
         ],
         annual_review="2027-04-20", triennial_reeval="2029-01-12",
-        last_progress_report="2026-10-16", page_count=4,
+        last_progress_report="2026-10-16",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.96,
+            school_year=0.99, annual_review=0.92, triennial_reeval=0.89, last_progress_report=0.9),
+        page_count=4,
         legibility_scores=[1.0, 0.99, 0.98, 0.98],
     )
-
-
-def _sc_1002():
-    return field_confidences(student_ref="RIV-1002", student_ref_conf=0.99,
-        disability_category=0.96, school_year=0.99, annual_review=0.92,
-        triennial_reeval=0.89, last_progress_report=0.9)
 
 
 # ── RIV-1003  Sofia Ramirez — Speech/language (Unassigned provider; triennial mid-sem)
@@ -199,15 +198,12 @@ def _riv_1003() -> dict[str, Any]:
         ],
         annual_review="2027-03-03",
         triennial_reeval="2026-11-20",  # triennial due mid-semester
-        last_progress_report="2026-10-09", page_count=4,
+        last_progress_report="2026-10-09",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.95,
+            school_year=0.99, annual_review=0.9, triennial_reeval=0.93, last_progress_report=0.88),
+        page_count=4,
         legibility_scores=[1.0, 0.98, 0.99, 0.97],
     )
-
-
-def _sc_1003():
-    return field_confidences(student_ref="RIV-1003", student_ref_conf=0.99,
-        disability_category=0.95, school_year=0.99, annual_review=0.9,
-        triennial_reeval=0.93, last_progress_report=0.88)
 
 
 # ── RIV-1004  Ethan Nakamura — OHI/ADHD (overdue annual review) ───────────────
@@ -251,15 +247,12 @@ def _riv_1004() -> dict[str, Any]:
         ],
         annual_review="2026-10-30",  # OVERDUE relative to as_of 2026-11-13
         triennial_reeval="2028-05-30",
-        last_progress_report="2026-09-25", page_count=4,
+        last_progress_report="2026-09-25",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.94,
+            school_year=0.99, annual_review=0.95, triennial_reeval=0.88, last_progress_report=0.91),
+        page_count=4,
         legibility_scores=[1.0, 0.97, 0.98, 0.99],
     )
-
-
-def _sc_1004():
-    return field_confidences(student_ref="RIV-1004", student_ref_conf=0.99,
-        disability_category=0.94, school_year=0.99, annual_review=0.95,
-        triennial_reeval=0.88, last_progress_report=0.91)
 
 
 # ── RIV-1005  Layla Hassan — Hearing impairment (review lands on a holiday) ───
@@ -307,15 +300,12 @@ def _riv_1005() -> dict[str, Any]:
         ],
         annual_review="2026-11-11",  # lands on Veterans Day (a holiday)
         triennial_reeval="2028-11-09",
-        last_progress_report="2026-10-16", page_count=4,
+        last_progress_report="2026-10-16",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.96,
+            school_year=0.99, annual_review=0.93, triennial_reeval=0.89, last_progress_report=0.9),
+        page_count=4,
         legibility_scores=[1.0, 0.99, 0.98, 0.99],
     )
-
-
-def _sc_1005():
-    return field_confidences(student_ref="RIV-1005", student_ref_conf=0.99,
-        disability_category=0.96, school_year=0.99, annual_review=0.93,
-        triennial_reeval=0.89, last_progress_report=0.9)
 
 
 # ── RIV-1006  Diego Torres — SLD (mid-semester enrollment; co-taught class) ───
@@ -356,15 +346,12 @@ def _riv_1006() -> dict[str, Any]:
                   "write a paragraph with a clear topic sentence and three details", 0.84),
         ],
         annual_review="2027-05-15", triennial_reeval="2029-02-27",
-        last_progress_report="2026-10-30", page_count=4,
+        last_progress_report="2026-10-30",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.95,
+            school_year=0.99, annual_review=0.92, triennial_reeval=0.88, last_progress_report=0.9),
+        page_count=4,
         legibility_scores=[1.0, 0.98, 0.98, 0.97],
     )
-
-
-def _sc_1006():
-    return field_confidences(student_ref="RIV-1006", student_ref_conf=0.99,
-        disability_category=0.95, school_year=0.99, annual_review=0.92,
-        triennial_reeval=0.88, last_progress_report=0.9)
 
 
 # ── RIV-1007..1012 : clean records, no findings ──────────────────────────────
@@ -403,7 +390,10 @@ def _riv_1007() -> dict[str, Any]:
                   "produce three organized sentences on a topic", 0.85),
         ],
         annual_review="2027-02-18", triennial_reeval="2028-10-05",
-        last_progress_report="2026-10-16", page_count=4,
+        last_progress_report="2026-10-16",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.96,
+            school_year=0.99, annual_review=0.93, triennial_reeval=0.9, last_progress_report=0.92),
+        page_count=4,
         legibility_scores=[1.0, 0.99, 0.99, 0.98],
     )
 
@@ -439,7 +429,10 @@ def _riv_1008() -> dict[str, Any]:
                   "use a self-monitoring checklist to review work before submitting", 0.85),
         ],
         annual_review="2027-01-27", triennial_reeval="2029-03-14",
-        last_progress_report="2026-10-16", page_count=4,
+        last_progress_report="2026-10-16",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.96,
+            school_year=0.99, annual_review=0.93, triennial_reeval=0.9, last_progress_report=0.92),
+        page_count=4,
         legibility_scores=[1.0, 0.98, 0.99, 0.99],
     )
 
@@ -475,7 +468,10 @@ def _riv_1009() -> dict[str, Any]:
                   "follow two-step spoken directions in 4 of 5 opportunities", 0.86),
         ],
         annual_review="2027-04-06", triennial_reeval="2028-12-01",
-        last_progress_report="2026-10-30", page_count=4,
+        last_progress_report="2026-10-30",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.96,
+            school_year=0.99, annual_review=0.93, triennial_reeval=0.9, last_progress_report=0.92),
+        page_count=4,
         legibility_scores=[1.0, 0.99, 0.98, 0.99],
     )
 
@@ -518,7 +514,10 @@ def _riv_1010() -> dict[str, Any]:
                   "organize a multi-paragraph response using an outline", 0.83),
         ],
         annual_review="2027-03-24", triennial_reeval="2029-04-18",
-        last_progress_report="2026-10-30", page_count=4,
+        last_progress_report="2026-10-30",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.96,
+            school_year=0.99, annual_review=0.93, triennial_reeval=0.9, last_progress_report=0.92),
+        page_count=4,
         legibility_scores=[1.0, 0.98, 0.98, 0.98],
     )
 
@@ -554,7 +553,10 @@ def _riv_1011() -> dict[str, Any]:
                   "request clarification when she misses information", 0.85),
         ],
         annual_review="2027-02-02", triennial_reeval="2028-09-28",
-        last_progress_report="2026-10-16", page_count=4,
+        last_progress_report="2026-10-16",
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.96,
+            school_year=0.99, annual_review=0.93, triennial_reeval=0.9, last_progress_report=0.92),
+        page_count=4,
         legibility_scores=[1.0, 0.99, 0.99, 0.98],
     )
 
@@ -596,35 +598,23 @@ def _riv_1012() -> dict[str, Any]:
                   "use a checklist to organize materials for each class", 0.84),
         ],
         annual_review="2027-05-19", triennial_reeval="2029-01-30",
-        last_progress_report="2026-10-30", page_count=4,
+        # No progress report on file yet: absent date scores 0.0 confidence (schema rule).
+        last_progress_report=None,
+        field_confidences=field_confidences(student_ref=0.99, disability_category=0.96,
+            school_year=0.99, annual_review=0.93, triennial_reeval=0.9, last_progress_report=0.0),
+        page_count=4,
         legibility_scores=[1.0, 0.98, 0.99, 0.97],
     )
 
 
-def _sc_clean(student_ref: str) -> dict[str, Any]:
-    return field_confidences(student_ref=student_ref, student_ref_conf=0.99,
-        disability_category=0.96, school_year=0.99, annual_review=0.93,
-        triennial_reeval=0.9, last_progress_report=0.92)
-
-
-# Ordered registry: (record builder, sidecar builder)
-_BUILDERS: list[tuple[Any, Any]] = [
-    (_riv_1001, _sc_1001),
-    (_riv_1002, _sc_1002),
-    (_riv_1003, _sc_1003),
-    (_riv_1004, _sc_1004),
-    (_riv_1005, _sc_1005),
-    (_riv_1006, _sc_1006),
-    (_riv_1007, lambda: _sc_clean("RIV-1007")),
-    (_riv_1008, lambda: _sc_clean("RIV-1008")),
-    (_riv_1009, lambda: _sc_clean("RIV-1009")),
-    (_riv_1010, lambda: _sc_clean("RIV-1010")),
-    (_riv_1011, lambda: _sc_clean("RIV-1011")),
-    (_riv_1012, lambda: _sc_clean("RIV-1012")),
+# Ordered registry of the 12 record builders (confidences are embedded in each record).
+_BUILDERS: list[Any] = [
+    _riv_1001, _riv_1002, _riv_1003, _riv_1004, _riv_1005, _riv_1006,
+    _riv_1007, _riv_1008, _riv_1009, _riv_1010, _riv_1011, _riv_1012,
 ]
 
 
-def build_records() -> list[tuple[dict[str, Any], dict[str, Any]]]:
-    """Return [(iep_record, confidence_sidecar), ...] for all 12 students, in order."""
+def build_records() -> list[dict[str, Any]]:
+    """Return the 12 canonical IEPRecords (field_confidences embedded), in order."""
 
-    return [(record(), sidecar()) for record, sidecar in _BUILDERS]
+    return [build() for build in _BUILDERS]

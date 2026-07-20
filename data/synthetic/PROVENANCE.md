@@ -50,9 +50,9 @@ steps depend on those exact versions.
 
 ```
 district/     school, subjects, teachers, classes, students, enrollments, calendar (+ split views)
-ground_truth/ 12 <ref>.iep.json (schema-valid IEPRecords) + <ref>.confidences.json sidecars
+ground_truth/ 12 <ref>.iep.json (schema-valid IEPRecords, field_confidences embedded)
 progress/     gradebook/*.csv, service_logs/*.csv, teacher_notes/*.json, accommodation_confirmations.csv
-variants/     88 <ref>.iep.json + sidecars (RIV-2001..RIV-2088)
+variants/     88 <ref>.iep.json (RIV-2001..RIV-2088)
 documents/pdf/   100 rendered IEP PDFs (12 demo + 88 variants; 22 variants degraded)
 documents/html/  12 demo IEP forms as HTML
 documents/messy/ 5 hero messy scans
@@ -61,10 +61,10 @@ manifest.json    index of all 100 documents
 
 ## Key decisions
 
-- **`field_confidences` is a sidecar**, not embedded in the IEPRecord. The frozen
-  `packages/schemas/IEPRecord.json` is v1 with `additionalProperties:false`, so embedding
-  would fail schema validation. The six per-field confidences live in
-  `ground_truth/<ref>.confidences.json` (and per variant), keyed to the same `iep_record_id`.
+- **`field_confidences` is embedded in the IEPRecord** (schema v1.1). Each record carries a
+  top-level `field_confidences` object with six 0.0–1.0 scores for the canonical scalar/date
+  fields; an absent field scores 0.0 (RIV-1012 `last_progress_report` is null → 0.0). No
+  separate sidecar files.
 - **No provider = `"Unassigned"`** — the schema requires a non-empty `provider_role`, so an
   unstaffed service uses this explicit sentinel (RIV-1003).
 - **Reference date `as_of = 2026-11-13`** (in `district/calendar.json`) — deadlines evaluate
