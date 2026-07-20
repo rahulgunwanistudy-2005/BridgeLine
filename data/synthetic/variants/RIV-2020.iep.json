@@ -1,0 +1,181 @@
+{
+  "iep_record_id": "45b0ddf3-4556-5bfc-bbb2-e512516b9367",
+  "student_ref": "RIV-2020",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "6e863cf6-1d31-5e2f-b8c8-15a88b76e153",
+      "text": "Permit brief movement breaks between tasks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief movement breaks between tasks",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "de0d7b79-ca80-5c89-a306-78d22043b0b3",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3a7a83a3-cbf8-5a7d-82d7-76b70122464e",
+      "text": "Provide frequent check-ins for understanding.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "frequent check-ins for understanding",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1b1a4572-1f27-5d52-a609-829cd1973c02",
+      "text": "Face the student when speaking and avoid covering the mouth.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "face the student when speaking",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f598385e-dfdd-5711-ae07-aa663bbfed02",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3e9dfaef-af15-5fea-adfc-4191c576d03d",
+      "text": "Pair auditory alerts and directions with a visual cue.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "pair auditory alerts with a visual cue",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "fe924a68-444b-5e26-953e-9f9b8c22cd19",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "533783ac-5507-556f-b051-c26878cb1402",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b2b49793-434e-57fc-bc88-60060f4bb950",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2714e304-4e79-5de8-a2cc-8d6812273daa",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Occupational therapy 30 minutes weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "a6f2c9d6-1e83-5839-8bc6-09271c2626fe",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "53ece188-3c03-51e0-a6df-e9bf63a8069e",
+      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "write a paragraph with a clear topic sentence and three details",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a65cd08a-eb4b-54d7-a895-5b8ad3b967bd",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "produce initial /r/ with 80% accuracy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "18cd315e-213a-53a7-b15c-1761822316bc",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

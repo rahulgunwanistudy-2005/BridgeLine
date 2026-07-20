@@ -1,0 +1,941 @@
+{
+  "document_count": 100,
+  "demo_count": 12,
+  "variant_count": 88,
+  "degraded_count": 22,
+  "seed": 20260719,
+  "documents": [
+    {
+      "doc_id": "RIV-1001",
+      "kind": "demo",
+      "student_ref": "RIV-1001",
+      "record_path": "ground_truth/RIV-1001.iep.json",
+      "pdf_path": "documents/pdf/RIV-1001.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1002",
+      "kind": "demo",
+      "student_ref": "RIV-1002",
+      "record_path": "ground_truth/RIV-1002.iep.json",
+      "pdf_path": "documents/pdf/RIV-1002.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1003",
+      "kind": "demo",
+      "student_ref": "RIV-1003",
+      "record_path": "ground_truth/RIV-1003.iep.json",
+      "pdf_path": "documents/pdf/RIV-1003.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1004",
+      "kind": "demo",
+      "student_ref": "RIV-1004",
+      "record_path": "ground_truth/RIV-1004.iep.json",
+      "pdf_path": "documents/pdf/RIV-1004.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1005",
+      "kind": "demo",
+      "student_ref": "RIV-1005",
+      "record_path": "ground_truth/RIV-1005.iep.json",
+      "pdf_path": "documents/pdf/RIV-1005.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1006",
+      "kind": "demo",
+      "student_ref": "RIV-1006",
+      "record_path": "ground_truth/RIV-1006.iep.json",
+      "pdf_path": "documents/pdf/RIV-1006.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1007",
+      "kind": "demo",
+      "student_ref": "RIV-1007",
+      "record_path": "ground_truth/RIV-1007.iep.json",
+      "pdf_path": "documents/pdf/RIV-1007.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1008",
+      "kind": "demo",
+      "student_ref": "RIV-1008",
+      "record_path": "ground_truth/RIV-1008.iep.json",
+      "pdf_path": "documents/pdf/RIV-1008.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1009",
+      "kind": "demo",
+      "student_ref": "RIV-1009",
+      "record_path": "ground_truth/RIV-1009.iep.json",
+      "pdf_path": "documents/pdf/RIV-1009.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1010",
+      "kind": "demo",
+      "student_ref": "RIV-1010",
+      "record_path": "ground_truth/RIV-1010.iep.json",
+      "pdf_path": "documents/pdf/RIV-1010.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1011",
+      "kind": "demo",
+      "student_ref": "RIV-1011",
+      "record_path": "ground_truth/RIV-1011.iep.json",
+      "pdf_path": "documents/pdf/RIV-1011.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-1012",
+      "kind": "demo",
+      "student_ref": "RIV-1012",
+      "record_path": "ground_truth/RIV-1012.iep.json",
+      "pdf_path": "documents/pdf/RIV-1012.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2001",
+      "kind": "variant",
+      "student_ref": "RIV-2001",
+      "record_path": "variants/RIV-2001.iep.json",
+      "pdf_path": "documents/pdf/RIV-2001.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2002",
+      "kind": "variant",
+      "student_ref": "RIV-2002",
+      "record_path": "variants/RIV-2002.iep.json",
+      "pdf_path": "documents/pdf/RIV-2002.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2003",
+      "kind": "variant",
+      "student_ref": "RIV-2003",
+      "record_path": "variants/RIV-2003.iep.json",
+      "pdf_path": "documents/pdf/RIV-2003.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2004",
+      "kind": "variant",
+      "student_ref": "RIV-2004",
+      "record_path": "variants/RIV-2004.iep.json",
+      "pdf_path": "documents/pdf/RIV-2004.pdf",
+      "degraded": true,
+      "degradation": "print_scan/medium"
+    },
+    {
+      "doc_id": "RIV-2005",
+      "kind": "variant",
+      "student_ref": "RIV-2005",
+      "record_path": "variants/RIV-2005.iep.json",
+      "pdf_path": "documents/pdf/RIV-2005.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2006",
+      "kind": "variant",
+      "student_ref": "RIV-2006",
+      "record_path": "variants/RIV-2006.iep.json",
+      "pdf_path": "documents/pdf/RIV-2006.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2007",
+      "kind": "variant",
+      "student_ref": "RIV-2007",
+      "record_path": "variants/RIV-2007.iep.json",
+      "pdf_path": "documents/pdf/RIV-2007.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2008",
+      "kind": "variant",
+      "student_ref": "RIV-2008",
+      "record_path": "variants/RIV-2008.iep.json",
+      "pdf_path": "documents/pdf/RIV-2008.pdf",
+      "degraded": true,
+      "degradation": "print_scan/heavy"
+    },
+    {
+      "doc_id": "RIV-2009",
+      "kind": "variant",
+      "student_ref": "RIV-2009",
+      "record_path": "variants/RIV-2009.iep.json",
+      "pdf_path": "documents/pdf/RIV-2009.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2010",
+      "kind": "variant",
+      "student_ref": "RIV-2010",
+      "record_path": "variants/RIV-2010.iep.json",
+      "pdf_path": "documents/pdf/RIV-2010.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2011",
+      "kind": "variant",
+      "student_ref": "RIV-2011",
+      "record_path": "variants/RIV-2011.iep.json",
+      "pdf_path": "documents/pdf/RIV-2011.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2012",
+      "kind": "variant",
+      "student_ref": "RIV-2012",
+      "record_path": "variants/RIV-2012.iep.json",
+      "pdf_path": "documents/pdf/RIV-2012.pdf",
+      "degraded": true,
+      "degradation": "print_scan/light"
+    },
+    {
+      "doc_id": "RIV-2013",
+      "kind": "variant",
+      "student_ref": "RIV-2013",
+      "record_path": "variants/RIV-2013.iep.json",
+      "pdf_path": "documents/pdf/RIV-2013.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2014",
+      "kind": "variant",
+      "student_ref": "RIV-2014",
+      "record_path": "variants/RIV-2014.iep.json",
+      "pdf_path": "documents/pdf/RIV-2014.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2015",
+      "kind": "variant",
+      "student_ref": "RIV-2015",
+      "record_path": "variants/RIV-2015.iep.json",
+      "pdf_path": "documents/pdf/RIV-2015.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2016",
+      "kind": "variant",
+      "student_ref": "RIV-2016",
+      "record_path": "variants/RIV-2016.iep.json",
+      "pdf_path": "documents/pdf/RIV-2016.pdf",
+      "degraded": true,
+      "degradation": "print_scan/medium"
+    },
+    {
+      "doc_id": "RIV-2017",
+      "kind": "variant",
+      "student_ref": "RIV-2017",
+      "record_path": "variants/RIV-2017.iep.json",
+      "pdf_path": "documents/pdf/RIV-2017.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2018",
+      "kind": "variant",
+      "student_ref": "RIV-2018",
+      "record_path": "variants/RIV-2018.iep.json",
+      "pdf_path": "documents/pdf/RIV-2018.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2019",
+      "kind": "variant",
+      "student_ref": "RIV-2019",
+      "record_path": "variants/RIV-2019.iep.json",
+      "pdf_path": "documents/pdf/RIV-2019.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2020",
+      "kind": "variant",
+      "student_ref": "RIV-2020",
+      "record_path": "variants/RIV-2020.iep.json",
+      "pdf_path": "documents/pdf/RIV-2020.pdf",
+      "degraded": true,
+      "degradation": "print_scan/heavy"
+    },
+    {
+      "doc_id": "RIV-2021",
+      "kind": "variant",
+      "student_ref": "RIV-2021",
+      "record_path": "variants/RIV-2021.iep.json",
+      "pdf_path": "documents/pdf/RIV-2021.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2022",
+      "kind": "variant",
+      "student_ref": "RIV-2022",
+      "record_path": "variants/RIV-2022.iep.json",
+      "pdf_path": "documents/pdf/RIV-2022.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2023",
+      "kind": "variant",
+      "student_ref": "RIV-2023",
+      "record_path": "variants/RIV-2023.iep.json",
+      "pdf_path": "documents/pdf/RIV-2023.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2024",
+      "kind": "variant",
+      "student_ref": "RIV-2024",
+      "record_path": "variants/RIV-2024.iep.json",
+      "pdf_path": "documents/pdf/RIV-2024.pdf",
+      "degraded": true,
+      "degradation": "print_scan/light"
+    },
+    {
+      "doc_id": "RIV-2025",
+      "kind": "variant",
+      "student_ref": "RIV-2025",
+      "record_path": "variants/RIV-2025.iep.json",
+      "pdf_path": "documents/pdf/RIV-2025.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2026",
+      "kind": "variant",
+      "student_ref": "RIV-2026",
+      "record_path": "variants/RIV-2026.iep.json",
+      "pdf_path": "documents/pdf/RIV-2026.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2027",
+      "kind": "variant",
+      "student_ref": "RIV-2027",
+      "record_path": "variants/RIV-2027.iep.json",
+      "pdf_path": "documents/pdf/RIV-2027.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2028",
+      "kind": "variant",
+      "student_ref": "RIV-2028",
+      "record_path": "variants/RIV-2028.iep.json",
+      "pdf_path": "documents/pdf/RIV-2028.pdf",
+      "degraded": true,
+      "degradation": "print_scan/medium"
+    },
+    {
+      "doc_id": "RIV-2029",
+      "kind": "variant",
+      "student_ref": "RIV-2029",
+      "record_path": "variants/RIV-2029.iep.json",
+      "pdf_path": "documents/pdf/RIV-2029.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2030",
+      "kind": "variant",
+      "student_ref": "RIV-2030",
+      "record_path": "variants/RIV-2030.iep.json",
+      "pdf_path": "documents/pdf/RIV-2030.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2031",
+      "kind": "variant",
+      "student_ref": "RIV-2031",
+      "record_path": "variants/RIV-2031.iep.json",
+      "pdf_path": "documents/pdf/RIV-2031.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2032",
+      "kind": "variant",
+      "student_ref": "RIV-2032",
+      "record_path": "variants/RIV-2032.iep.json",
+      "pdf_path": "documents/pdf/RIV-2032.pdf",
+      "degraded": true,
+      "degradation": "print_scan/heavy"
+    },
+    {
+      "doc_id": "RIV-2033",
+      "kind": "variant",
+      "student_ref": "RIV-2033",
+      "record_path": "variants/RIV-2033.iep.json",
+      "pdf_path": "documents/pdf/RIV-2033.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2034",
+      "kind": "variant",
+      "student_ref": "RIV-2034",
+      "record_path": "variants/RIV-2034.iep.json",
+      "pdf_path": "documents/pdf/RIV-2034.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2035",
+      "kind": "variant",
+      "student_ref": "RIV-2035",
+      "record_path": "variants/RIV-2035.iep.json",
+      "pdf_path": "documents/pdf/RIV-2035.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2036",
+      "kind": "variant",
+      "student_ref": "RIV-2036",
+      "record_path": "variants/RIV-2036.iep.json",
+      "pdf_path": "documents/pdf/RIV-2036.pdf",
+      "degraded": true,
+      "degradation": "print_scan/light"
+    },
+    {
+      "doc_id": "RIV-2037",
+      "kind": "variant",
+      "student_ref": "RIV-2037",
+      "record_path": "variants/RIV-2037.iep.json",
+      "pdf_path": "documents/pdf/RIV-2037.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2038",
+      "kind": "variant",
+      "student_ref": "RIV-2038",
+      "record_path": "variants/RIV-2038.iep.json",
+      "pdf_path": "documents/pdf/RIV-2038.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2039",
+      "kind": "variant",
+      "student_ref": "RIV-2039",
+      "record_path": "variants/RIV-2039.iep.json",
+      "pdf_path": "documents/pdf/RIV-2039.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2040",
+      "kind": "variant",
+      "student_ref": "RIV-2040",
+      "record_path": "variants/RIV-2040.iep.json",
+      "pdf_path": "documents/pdf/RIV-2040.pdf",
+      "degraded": true,
+      "degradation": "print_scan/medium"
+    },
+    {
+      "doc_id": "RIV-2041",
+      "kind": "variant",
+      "student_ref": "RIV-2041",
+      "record_path": "variants/RIV-2041.iep.json",
+      "pdf_path": "documents/pdf/RIV-2041.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2042",
+      "kind": "variant",
+      "student_ref": "RIV-2042",
+      "record_path": "variants/RIV-2042.iep.json",
+      "pdf_path": "documents/pdf/RIV-2042.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2043",
+      "kind": "variant",
+      "student_ref": "RIV-2043",
+      "record_path": "variants/RIV-2043.iep.json",
+      "pdf_path": "documents/pdf/RIV-2043.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2044",
+      "kind": "variant",
+      "student_ref": "RIV-2044",
+      "record_path": "variants/RIV-2044.iep.json",
+      "pdf_path": "documents/pdf/RIV-2044.pdf",
+      "degraded": true,
+      "degradation": "print_scan/heavy"
+    },
+    {
+      "doc_id": "RIV-2045",
+      "kind": "variant",
+      "student_ref": "RIV-2045",
+      "record_path": "variants/RIV-2045.iep.json",
+      "pdf_path": "documents/pdf/RIV-2045.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2046",
+      "kind": "variant",
+      "student_ref": "RIV-2046",
+      "record_path": "variants/RIV-2046.iep.json",
+      "pdf_path": "documents/pdf/RIV-2046.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2047",
+      "kind": "variant",
+      "student_ref": "RIV-2047",
+      "record_path": "variants/RIV-2047.iep.json",
+      "pdf_path": "documents/pdf/RIV-2047.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2048",
+      "kind": "variant",
+      "student_ref": "RIV-2048",
+      "record_path": "variants/RIV-2048.iep.json",
+      "pdf_path": "documents/pdf/RIV-2048.pdf",
+      "degraded": true,
+      "degradation": "print_scan/light"
+    },
+    {
+      "doc_id": "RIV-2049",
+      "kind": "variant",
+      "student_ref": "RIV-2049",
+      "record_path": "variants/RIV-2049.iep.json",
+      "pdf_path": "documents/pdf/RIV-2049.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2050",
+      "kind": "variant",
+      "student_ref": "RIV-2050",
+      "record_path": "variants/RIV-2050.iep.json",
+      "pdf_path": "documents/pdf/RIV-2050.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2051",
+      "kind": "variant",
+      "student_ref": "RIV-2051",
+      "record_path": "variants/RIV-2051.iep.json",
+      "pdf_path": "documents/pdf/RIV-2051.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2052",
+      "kind": "variant",
+      "student_ref": "RIV-2052",
+      "record_path": "variants/RIV-2052.iep.json",
+      "pdf_path": "documents/pdf/RIV-2052.pdf",
+      "degraded": true,
+      "degradation": "print_scan/medium"
+    },
+    {
+      "doc_id": "RIV-2053",
+      "kind": "variant",
+      "student_ref": "RIV-2053",
+      "record_path": "variants/RIV-2053.iep.json",
+      "pdf_path": "documents/pdf/RIV-2053.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2054",
+      "kind": "variant",
+      "student_ref": "RIV-2054",
+      "record_path": "variants/RIV-2054.iep.json",
+      "pdf_path": "documents/pdf/RIV-2054.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2055",
+      "kind": "variant",
+      "student_ref": "RIV-2055",
+      "record_path": "variants/RIV-2055.iep.json",
+      "pdf_path": "documents/pdf/RIV-2055.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2056",
+      "kind": "variant",
+      "student_ref": "RIV-2056",
+      "record_path": "variants/RIV-2056.iep.json",
+      "pdf_path": "documents/pdf/RIV-2056.pdf",
+      "degraded": true,
+      "degradation": "print_scan/heavy"
+    },
+    {
+      "doc_id": "RIV-2057",
+      "kind": "variant",
+      "student_ref": "RIV-2057",
+      "record_path": "variants/RIV-2057.iep.json",
+      "pdf_path": "documents/pdf/RIV-2057.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2058",
+      "kind": "variant",
+      "student_ref": "RIV-2058",
+      "record_path": "variants/RIV-2058.iep.json",
+      "pdf_path": "documents/pdf/RIV-2058.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2059",
+      "kind": "variant",
+      "student_ref": "RIV-2059",
+      "record_path": "variants/RIV-2059.iep.json",
+      "pdf_path": "documents/pdf/RIV-2059.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2060",
+      "kind": "variant",
+      "student_ref": "RIV-2060",
+      "record_path": "variants/RIV-2060.iep.json",
+      "pdf_path": "documents/pdf/RIV-2060.pdf",
+      "degraded": true,
+      "degradation": "print_scan/light"
+    },
+    {
+      "doc_id": "RIV-2061",
+      "kind": "variant",
+      "student_ref": "RIV-2061",
+      "record_path": "variants/RIV-2061.iep.json",
+      "pdf_path": "documents/pdf/RIV-2061.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2062",
+      "kind": "variant",
+      "student_ref": "RIV-2062",
+      "record_path": "variants/RIV-2062.iep.json",
+      "pdf_path": "documents/pdf/RIV-2062.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2063",
+      "kind": "variant",
+      "student_ref": "RIV-2063",
+      "record_path": "variants/RIV-2063.iep.json",
+      "pdf_path": "documents/pdf/RIV-2063.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2064",
+      "kind": "variant",
+      "student_ref": "RIV-2064",
+      "record_path": "variants/RIV-2064.iep.json",
+      "pdf_path": "documents/pdf/RIV-2064.pdf",
+      "degraded": true,
+      "degradation": "print_scan/medium"
+    },
+    {
+      "doc_id": "RIV-2065",
+      "kind": "variant",
+      "student_ref": "RIV-2065",
+      "record_path": "variants/RIV-2065.iep.json",
+      "pdf_path": "documents/pdf/RIV-2065.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2066",
+      "kind": "variant",
+      "student_ref": "RIV-2066",
+      "record_path": "variants/RIV-2066.iep.json",
+      "pdf_path": "documents/pdf/RIV-2066.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2067",
+      "kind": "variant",
+      "student_ref": "RIV-2067",
+      "record_path": "variants/RIV-2067.iep.json",
+      "pdf_path": "documents/pdf/RIV-2067.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2068",
+      "kind": "variant",
+      "student_ref": "RIV-2068",
+      "record_path": "variants/RIV-2068.iep.json",
+      "pdf_path": "documents/pdf/RIV-2068.pdf",
+      "degraded": true,
+      "degradation": "print_scan/heavy"
+    },
+    {
+      "doc_id": "RIV-2069",
+      "kind": "variant",
+      "student_ref": "RIV-2069",
+      "record_path": "variants/RIV-2069.iep.json",
+      "pdf_path": "documents/pdf/RIV-2069.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2070",
+      "kind": "variant",
+      "student_ref": "RIV-2070",
+      "record_path": "variants/RIV-2070.iep.json",
+      "pdf_path": "documents/pdf/RIV-2070.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2071",
+      "kind": "variant",
+      "student_ref": "RIV-2071",
+      "record_path": "variants/RIV-2071.iep.json",
+      "pdf_path": "documents/pdf/RIV-2071.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2072",
+      "kind": "variant",
+      "student_ref": "RIV-2072",
+      "record_path": "variants/RIV-2072.iep.json",
+      "pdf_path": "documents/pdf/RIV-2072.pdf",
+      "degraded": true,
+      "degradation": "print_scan/light"
+    },
+    {
+      "doc_id": "RIV-2073",
+      "kind": "variant",
+      "student_ref": "RIV-2073",
+      "record_path": "variants/RIV-2073.iep.json",
+      "pdf_path": "documents/pdf/RIV-2073.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2074",
+      "kind": "variant",
+      "student_ref": "RIV-2074",
+      "record_path": "variants/RIV-2074.iep.json",
+      "pdf_path": "documents/pdf/RIV-2074.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2075",
+      "kind": "variant",
+      "student_ref": "RIV-2075",
+      "record_path": "variants/RIV-2075.iep.json",
+      "pdf_path": "documents/pdf/RIV-2075.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2076",
+      "kind": "variant",
+      "student_ref": "RIV-2076",
+      "record_path": "variants/RIV-2076.iep.json",
+      "pdf_path": "documents/pdf/RIV-2076.pdf",
+      "degraded": true,
+      "degradation": "print_scan/medium"
+    },
+    {
+      "doc_id": "RIV-2077",
+      "kind": "variant",
+      "student_ref": "RIV-2077",
+      "record_path": "variants/RIV-2077.iep.json",
+      "pdf_path": "documents/pdf/RIV-2077.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2078",
+      "kind": "variant",
+      "student_ref": "RIV-2078",
+      "record_path": "variants/RIV-2078.iep.json",
+      "pdf_path": "documents/pdf/RIV-2078.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2079",
+      "kind": "variant",
+      "student_ref": "RIV-2079",
+      "record_path": "variants/RIV-2079.iep.json",
+      "pdf_path": "documents/pdf/RIV-2079.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2080",
+      "kind": "variant",
+      "student_ref": "RIV-2080",
+      "record_path": "variants/RIV-2080.iep.json",
+      "pdf_path": "documents/pdf/RIV-2080.pdf",
+      "degraded": true,
+      "degradation": "print_scan/heavy"
+    },
+    {
+      "doc_id": "RIV-2081",
+      "kind": "variant",
+      "student_ref": "RIV-2081",
+      "record_path": "variants/RIV-2081.iep.json",
+      "pdf_path": "documents/pdf/RIV-2081.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2082",
+      "kind": "variant",
+      "student_ref": "RIV-2082",
+      "record_path": "variants/RIV-2082.iep.json",
+      "pdf_path": "documents/pdf/RIV-2082.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2083",
+      "kind": "variant",
+      "student_ref": "RIV-2083",
+      "record_path": "variants/RIV-2083.iep.json",
+      "pdf_path": "documents/pdf/RIV-2083.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2084",
+      "kind": "variant",
+      "student_ref": "RIV-2084",
+      "record_path": "variants/RIV-2084.iep.json",
+      "pdf_path": "documents/pdf/RIV-2084.pdf",
+      "degraded": true,
+      "degradation": "print_scan/light"
+    },
+    {
+      "doc_id": "RIV-2085",
+      "kind": "variant",
+      "student_ref": "RIV-2085",
+      "record_path": "variants/RIV-2085.iep.json",
+      "pdf_path": "documents/pdf/RIV-2085.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2086",
+      "kind": "variant",
+      "student_ref": "RIV-2086",
+      "record_path": "variants/RIV-2086.iep.json",
+      "pdf_path": "documents/pdf/RIV-2086.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2087",
+      "kind": "variant",
+      "student_ref": "RIV-2087",
+      "record_path": "variants/RIV-2087.iep.json",
+      "pdf_path": "documents/pdf/RIV-2087.pdf",
+      "degraded": false,
+      "degradation": null
+    },
+    {
+      "doc_id": "RIV-2088",
+      "kind": "variant",
+      "student_ref": "RIV-2088",
+      "record_path": "variants/RIV-2088.iep.json",
+      "pdf_path": "documents/pdf/RIV-2088.pdf",
+      "degraded": true,
+      "degradation": "print_scan/medium"
+    }
+  ],
+  "hero_scans": [
+    {
+      "doc_id": "scan1-print-scan",
+      "student_ref": "RIV-1001",
+      "pdf_path": "documents/messy/scan1-print-scan.pdf",
+      "description": "Print-and-scan: rotation +/-3 deg, gaussian noise, contrast drift"
+    },
+    {
+      "doc_id": "scan2-handwriting",
+      "student_ref": "RIV-1004",
+      "pdf_path": "documents/messy/scan2-handwriting.pdf",
+      "description": "Handwritten margin annotations and a crossed-out line"
+    },
+    {
+      "doc_id": "scan3-stamp-signature",
+      "student_ref": "RIV-1005",
+      "pdf_path": "documents/messy/scan3-stamp-signature.pdf",
+      "description": "District stamp and signature overlapping printed text"
+    },
+    {
+      "doc_id": "scan4-upside-down",
+      "student_ref": "RIV-1002",
+      "pdf_path": "documents/messy/scan4-upside-down.pdf",
+      "description": "One page upside down within an otherwise clean document"
+    },
+    {
+      "doc_id": "scan5-two-column-mixed",
+      "student_ref": "RIV-1010",
+      "pdf_path": "documents/messy/scan5-two-column-mixed.pdf",
+      "description": "Two-column layout variant with mixed clean/scanned pages"
+    }
+  ]
+}

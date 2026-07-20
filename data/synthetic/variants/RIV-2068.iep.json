@@ -1,0 +1,193 @@
+{
+  "iep_record_id": "f8c005ca-5399-5e3c-bd8f-2ad25b0d45e8",
+  "student_ref": "RIV-2068",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "e51b824e-f7c5-5367-bcc2-9568950e74b0",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f1fb6d67-874e-5924-bd5b-ab33596d16df",
+      "text": "Administer assessments in a small-group, reduced-distraction setting.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "small-group, reduced-distraction setting for assessments",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bbc82c91-5ab9-597a-a454-ba49f57d1923",
+      "text": "Repeat and rephrase spoken directions on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "repeat and rephrase spoken directions on request",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7c81f0b4-6532-5dc2-8810-0fea9b34c0ad",
+      "text": "Seat near the point of instruction and away from high-traffic areas.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "preferential seating near the point of instruction",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7a0b9ff7-f85d-5865-b6a8-ac35f91dcce1",
+      "text": "Provide visual supports and models for new tasks.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual supports and models for new tasks",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cc664e49-9ae5-5327-9e5b-96944b228a6e",
+      "text": "Allow brief scheduled sensory breaks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief scheduled sensory breaks",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7d911ae9-b700-5737-bb27-7415dd1270ca",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "12d7ae0d-a2ee-5d7d-b6a6-fe0e457024b5",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Occupational therapy 30 minutes weekly",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "436198d5-8bb2-54f6-808c-1a70f9706636",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2082ff36-4d52-50b7-aa45-0ab5e6baca13",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "fb58320a-8e24-59cc-91b1-7e58160ab5f0",
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3d45da63-023b-5fb2-8f64-8d1ebbf6a5fb",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "924e28db-573f-5049-96a5-b8ac3f57066a",
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "566e9468-3c5d-564c-a002-d9bb1187d28c",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "identify the main idea and two supporting details with 80% accuracy",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "03512f4a-2c0e-57ab-b606-6cbae3009d69",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "iep_record_id": "8bbb7cd8-a752-5ab4-aa8b-e6b47504b84e",
+  "student_ref": "RIV-2046",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "feb5cf63-a32d-59b3-b229-da1a22f29c91",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "18fe0436-d5d7-5868-b954-a5c18c9e2b2d",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0a4a3d70-aacf-53c4-b8e7-d6d412ee1096",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "576f8478-7b35-5beb-9b78-da0db518dd5b",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "abc138d6-d3a1-5063-bca5-a393968352a9",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "206a5299-eb3e-5954-92e0-57b23d002502",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "433c96fb-0ca2-5b96-b106-62f4995a1f3b",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c6a821d6-6de0-5786-a53d-1ba2331c55e8",
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "maintain a topic across three conversational turns",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "849f6f3d-ffc2-587a-a708-1d660d362666",
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "organize a multi-paragraph response using an outline",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "072374be-ff60-5f68-a307-6df6f56050d2",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "arrive to class with required materials in 8 of 10 class days",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a8437314-406d-5355-bb7c-1fc9b4045f64",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "a7678a93-9a06-5db0-ab6c-8cfcd3c57b73",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

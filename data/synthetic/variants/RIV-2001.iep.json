@@ -1,0 +1,194 @@
+{
+  "iep_record_id": "3d4ef19f-603e-5fda-aa1a-87baf84931db",
+  "student_ref": "RIV-2001",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "6a455510-ff29-5534-ac24-6622a8f78cb2",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4b8f8170-ce4d-5ec8-952a-c3882089f96d",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2d12b0b8-41d4-5065-af1d-7cc9f86646ac",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "743ebedf-6ec1-57cf-a7b7-6ec650af5bc7",
+      "text": "Pair new vocabulary with visuals and definitions.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "pair new vocabulary with visuals and definitions",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d7bd94ee-fe29-5479-9faf-b208ebcb94dd",
+      "text": "Seat near the point of instruction and away from high-traffic areas.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "preferential seating near the point of instruction",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e5eb09d9-2853-5799-809e-c33bad85968f",
+      "text": "Do not grade spelling on first-draft written work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not grade spelling on first-draft written work",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e3f5235e-e4d9-57ee-a842-078b143c5fec",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bd24763d-e12a-5292-bc53-5166b41cee3b",
+      "text": "Provide captions or a transcript for all audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for all audio and video media",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "99162572-440f-524a-b72e-61f1596edfd6",
+      "text": "Read test directions and math word problems aloud on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "read test directions and math word problems aloud",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "f78485e6-ccf6-5ec5-979f-0bfe67a1fb19",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "37f36779-bdcb-5e5d-a8d2-0008cc4f549a",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3557bbb7-b366-5c78-9def-ae674a3ca90a",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction reading 30 minutes 5 times weekly",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "5f05f44c-99ba-563c-86bb-769e050c2ca2",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "56ffe0e6-a0ed-513e-9eee-c72ef6615124",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "arrive to class with required materials in 8 of 10 class days",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "76da7608-4353-56aa-804e-13c643965533",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

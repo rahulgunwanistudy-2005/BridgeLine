@@ -1,0 +1,173 @@
+{
+  "iep_record_id": "a3218871-7df8-572f-83a7-a6d7e5cb268f",
+  "student_ref": "RIV-2064",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "69440cb0-222c-5325-98fd-f228389cbad3",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a3d4132f-5bc0-5f09-b700-d60939218af0",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e4a3618c-f8a5-5be6-97d1-49a589a816fa",
+      "text": "Provide captions or a transcript for audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for audio and video media",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "03abcd1a-8756-59c3-a16c-e6a3470ff6db",
+      "text": "Pair new vocabulary with visuals and definitions.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "pair new vocabulary with visuals and definitions",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5d877186-b72d-50ab-8c84-b696fed6aa60",
+      "text": "Provide sentence starters for oral presentations.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "sentence starters for oral presentations",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "ce4bf1b2-b423-5770-8d79-ba7942cca147",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction reading 30 minutes 5 times weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5c48ef21-04ae-5524-8072-7170314f5cfa",
+      "type": "Language processing support (group)",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Unassigned",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9acf760a-7dfc-57a7-9991-585b35b4e922",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "14388d6a-04d2-5ced-827f-69d6e742fe08",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "independently begin a classroom task within two minutes",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4145eccd-e713-5a8d-b83d-edf266b94218",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "627080be-0355-5d6e-a635-9e4b71e730e2",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c48fbec3-5420-5083-b602-6a49c491a00e",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "c782076e-256c-53e9-abda-1bebb5521463",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

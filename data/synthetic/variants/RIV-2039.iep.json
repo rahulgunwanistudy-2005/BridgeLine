@@ -1,0 +1,229 @@
+{
+  "iep_record_id": "b71ddaa5-8df8-5d64-aadf-a6389de636f9",
+  "student_ref": "RIV-2039",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "d47596f8-18b6-53dd-925c-8c03d2e44fec",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "77033c04-f26e-5d52-afbe-7358bec7adb2",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5608727c-8670-5b3d-aa95-2ebde7bcab48",
+      "text": "Seat near the point of instruction and away from high-traffic areas.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "preferential seating near the point of instruction",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ada6a05c-624c-5e3a-8862-314e1dca6293",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5fc17de5-5abd-5000-8e3e-878d1d102f47",
+      "text": "Provide sentence starters for oral presentations.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "sentence starters for oral presentations",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b1afdcb5-f48c-58bc-92ff-18706a20184d",
+      "text": "Provide 50% extended time on tests and long assignments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on tests and long assignments",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "400075ab-85c9-5e0d-a48f-87df72698516",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e2490c06-5337-5ad8-84ae-8efe1b728edf",
+      "text": "Provide 50% extended time on classroom assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on classroom assessments",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "58fa7297-b5be-5fee-a7c5-d1b142516012",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "4ec0f76e-a7ce-5c67-b283-fa3219176927",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Unassigned",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "50a70ea0-e75c-5dc7-b9f9-7f0e92b27e00",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9994c2d9-061f-5fc5-b906-fff5b41a1f84",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction reading 30 minutes 5 times weekly",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "442ed4eb-3935-537f-bc4d-051e1ad220ad",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "request clarification when she misses information",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f256f7b9-9304-584b-91a3-c54a335321de",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "accept a change in routine using a coping strategy",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "40dc2fb6-d175-5c16-abb3-e2dd432dc97a",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4e4e8882-a196-5c35-8bc7-963bda147739",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9e13ee50-2218-505e-b70d-51c8191dbab7",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "arrive to class with required materials in 8 of 10 class days",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "c73561df-1960-5ee2-b435-c4034aec376e",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

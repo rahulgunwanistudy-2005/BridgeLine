@@ -1,0 +1,205 @@
+{
+  "iep_record_id": "412a63e3-1af5-52fc-9f84-fd3aee8abd4f",
+  "student_ref": "RIV-2073",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "ac1a1019-963d-56d1-aea0-3e1c209fbdac",
+      "text": "Provide sentence starters for oral presentations.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "sentence starters for oral presentations",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5d49eb7d-d058-5436-b678-0b82e207975d",
+      "text": "Provide a checklist to break long assignments into steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "checklist to break long assignments into steps",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9894107b-49bb-58ae-b7fc-1d156b6369eb",
+      "text": "Provide a word bank for written-response items in reading and history.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a word bank for written-response items",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "40a68708-3097-54b9-80c1-755bfaccd77a",
+      "text": "Read test directions and math word problems aloud on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "read test directions and math word problems aloud",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b03e034b-5fb5-571a-ae5a-9eb89e6cf1b8",
+      "text": "Provide visual supports and models for new tasks.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual supports and models for new tasks",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7f1aac9c-ac67-5474-bc0e-8c2f72fd6356",
+      "text": "Provide 25% extended time on timed assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "25% extended time on timed assessments",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0acd9f04-73ba-5184-986b-54fd2b755fa5",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8a152c2d-0bb5-557f-ae9d-9a6a9d5d2cdd",
+      "text": "Face the student when speaking and avoid covering the mouth.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "face the student when speaking",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "102bb0c7-976d-5958-8375-764a8b4966d0",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "6e959b1e-3585-5458-9da0-bcf6de0c2d67",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "314b4a4c-ccba-561a-b893-fcb874f6aa43",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e0b7e381-b81a-5b96-b7ba-5fe72398f380",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "b280d20a-da9b-5bf2-b45a-5e1138ff9585",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "identify the main idea and two supporting details with 80% accuracy",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0384e03b-8092-57d6-8672-9d9c600bebb2",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2dfb277f-d87b-5bad-bb69-3c9c73185d04",
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "092271d6-e997-51ab-810e-58a4654a8a26",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

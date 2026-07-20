@@ -1,0 +1,192 @@
+{
+  "iep_record_id": "46f7e07c-d803-52aa-bae3-597d6e0e4a57",
+  "student_ref": "RIV-2061",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "8eb70257-556f-57b0-9c81-1a6c2780e54d",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2c4e7cfc-69d6-51ac-b861-85135dcedf6c",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "14815cc3-f4db-5af7-b5c9-d615dc65d05e",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "fe14f702-5c71-5f77-bd16-b65ac3f686d3",
+      "text": "Provide frequent check-ins for understanding.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "frequent check-ins for understanding",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d591f11c-4bb2-564d-b540-d43b0db14d5e",
+      "text": "Provide 25% extended time on timed assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "25% extended time on timed assessments",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4734a28f-3da3-52a6-9f72-f48d47b6dfe0",
+      "text": "Provide 50% extended time on all classroom tests and quizzes.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on all classroom tests and quizzes",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cddcf898-68a4-555e-af6e-4c1f5575a0ab",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "23da9e46-45ea-5ca1-81b9-403a5007ed14",
+      "text": "Break long assignments into smaller submitted parts.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break long assignments into smaller parts",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cc63870a-6193-5d9b-9763-aa10c594510b",
+      "text": "Provide captions or a transcript for all audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for all audio and video media",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "40594dea-ae01-5142-b273-c3b7e71de515",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7b79509a-499c-5688-947d-e0ab06f0ee17",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "ddcc95e6-e38f-5e62-8d36-76e135618179",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7dcd2e38-ca6c-5b63-8f6a-905bb644234c",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "produce initial /r/ with 80% accuracy",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d44635e1-4e76-53d9-89bd-65936ebe9a58",
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "bad9bbbe-67d6-5c5c-9b50-426858059962",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

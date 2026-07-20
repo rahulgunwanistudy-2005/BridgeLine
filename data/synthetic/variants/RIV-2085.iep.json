@@ -1,0 +1,195 @@
+{
+  "iep_record_id": "08f86073-af4b-5343-85b8-00b23cf4c9f1",
+  "student_ref": "RIV-2085",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "f68848e3-3755-50aa-8364-ed5c27b16129",
+      "text": "Provide 50% extended time on tests and long assignments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on tests and long assignments",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "78a3328e-b5f1-5f71-b7c6-d457c80cc447",
+      "text": "Seat near the point of instruction and away from high-traffic areas.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "preferential seating near the point of instruction",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f2a6ea1f-07d3-5864-951c-96b3906028f6",
+      "text": "Provide 25% extended time on timed assessments.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "25% extended time on timed assessments",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d86ebc16-39bf-5b8b-9df0-da58bcedbadf",
+      "text": "Break long assignments into smaller submitted parts.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break long assignments into smaller parts",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2cf2bf05-d018-55ce-b2ec-63560a988b49",
+      "text": "Provide 50% extended time on all classroom tests and quizzes.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on all classroom tests and quizzes",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "26abdf8f-1793-5277-9478-0ca72e6bf356",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "e2b04910-bfef-5cab-9973-ccc46da74ef0",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4a1c3cc2-2c57-5496-b9a1-3559c53d7234",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "eae824b1-7de5-5a10-b1ef-ce95b2a7435a",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Occupational therapy 30 minutes weekly",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "3a818b6f-fad4-51fd-b369-c7f489e55cb7",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f5afd98b-e99b-539a-9d36-79396c10d537",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "94ff83ed-8600-59e7-a8d5-dd98e2b6ff3a",
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "65bbdbf8-a3c8-5e81-a68e-ce400e60b208",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "sustain attention to an independent task for 10 minutes",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "43805088-f417-502b-9280-d98188140483",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "2ea6aabe-b746-5556-a7df-c5373aff0922",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

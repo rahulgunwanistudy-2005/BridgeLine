@@ -47,8 +47,11 @@ NOT MINE: apps/api/bridgeline/, Pydantic side of packages/schemas/ (paired-PR).
       (degrade.py + scans.py + make_messy_scans.py --intensity light/medium/heavy).
       All 5 types present + visually verified; scan1 visibly rough; byte-stable;
       image-only PDFs (no text layer). → PUSHED at ping 2.
-- [ ] **Slice F — STEP 6**: 88 seeded variants (100 docs total), fixed seed, byte-stable.
-- [ ] **PROVENANCE**: data/synthetic/PROVENANCE.md.
+- [x] **Slice F — STEP 6**: variants.py + build_variants.py — 88 variant records
+      (recombined authored pools), 100 PDFs total (22 degraded), manifest.json. All
+      88 schema-valid; byte-stable. build_all.py orchestrates full regeneration.
+- [x] **PROVENANCE**: data/synthetic/PROVENANCE.md — generation record + plainly states
+      no real student data exists.
 - [ ] **PROVENANCE**: data/synthetic/PROVENANCE.md — how generated + "no real student
       data exists in this repo".
 
@@ -70,4 +73,20 @@ NOT MINE: apps/api/bridgeline/, Pydantic side of packages/schemas/ (paired-PR).
 - [ ] PROVENANCE.md present and states no real student data exists
 
 ### Review
-(filled after completion)
+**Shipped (all 6 steps + PROVENANCE):** deterministic Riverside district + 12 schema-valid
+hand-authored IEPRecords (+confidence sidecars); engineered progress firing all 3 findings
+with noise; gated idempotent seed.py + proposed API contract + compose wiring; byte-stable
+vector-PDF + HTML IEP form renderer (12 students); 5 parameterized hero messy scans (all
+degradation types, scan1 visibly rough); 88 seeded variants → 100 documents + manifest;
+build_all.py orchestrator.
+
+**Verified:** 12/12 + 88/88 schema-valid; 3 findings fire (asserted); internal consistency
+(roster↔gradebook↔service-log↔IEP); full dataset byte-stable across clean rebuilds; lint +
+compile clean. Idempotency: seed.py is stateless/upsert-by-design; gated no-op + 404-probe
+paths tested (true DB idempotency awaits the backend endpoints).
+
+**Deferred / filed to Rahul (backend territory):** (1) extract.py FieldConfidences ImportError;
+(2) schema/CHANGELOG v1.1 drift; (3) missing seed endpoints (spec in docs/seed-api-contract.md).
+
+**Notes:** field_confidences delivered as sidecars (frozen schema forbids embedding);
+provider "Unassigned" sentinel; reference date as_of=2026-11-13 baked into calendar.json.

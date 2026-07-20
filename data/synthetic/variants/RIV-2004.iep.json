@@ -1,0 +1,147 @@
+{
+  "iep_record_id": "8ccc4139-6180-5f13-9045-d79a2c1bb2c9",
+  "student_ref": "RIV-2004",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "1612032e-6191-563b-ae89-d5143a9db0d5",
+      "text": "Provide visual supports and models for new tasks.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual supports and models for new tasks",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "248814e5-91ff-54e8-91f1-5455db93acb9",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7180b440-40be-5081-bb66-4309253f9ee3",
+      "text": "Read test directions and math word problems aloud on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "read test directions and math word problems aloud",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "16b5d1ba-4de1-5229-9de5-87c630bf1c06",
+      "text": "Do not grade spelling on first-draft written work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not grade spelling on first-draft written work",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "f1963e0b-c408-5885-b1fd-8af56bc5f7e7",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "f4f0037d-848c-55b0-ad1b-49fdf76c05fb",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "request clarification when she misses information",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c7e14bf5-2e94-5c24-a25f-a46ddfe17656",
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "organize a multi-paragraph response using an outline",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d587b03e-ad0b-5416-b1f4-66caf9792f80",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "arrive to class with required materials in 8 of 10 class days",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "fa0f1db9-d497-5886-b117-043a6139f3f6",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "identify the main idea and two supporting details with 80% accuracy",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e5febec4-d08d-527d-92c7-9df4e4f33aec",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "produce three organized sentences on a topic",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "aa8f30cc-9da6-5143-a62e-3d84f532886a",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}
