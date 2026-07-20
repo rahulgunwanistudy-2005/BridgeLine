@@ -12,7 +12,8 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from bridgeline.db.schemas import (
     Accommodation,
-    AppliesTo,
+    AccommodationScope,
+    AccommodationScopeReference,
     ExtractionMeta,
     FieldConfidences,
     Goal,
@@ -41,13 +42,25 @@ class IncompleteExtractionError(ExtractionError):
         self.missing_paths = missing_paths
 
 
+class ExtractedAccommodationScopeReference(BaseModel):
+    """Potentially incomplete scope evidence before canonical validation."""
+
+    model_config = ConfigDict(extra="forbid", strict=True)
+
+    scope: AccommodationScope | None
+    ref: str | None
+    source_page: int | None = Field(ge=1)
+    source_quote: str | None
+    confidence: Confidence
+
+
 class ExtractedAccommodation(BaseModel):
     """Source-grounded accommodation before stable ID assignment."""
 
     model_config = ConfigDict(extra="forbid", strict=True)
 
     text: str | None
-    applies_to: list[AppliesTo]
+    applies_to_refs: list[ExtractedAccommodationScopeReference] = Field(default_factory=list)
     source_page: int | None = Field(ge=1)
     source_quote: str | None
     confidence: Confidence
@@ -176,13 +189,22 @@ class IEPExtractor:
         )
 
 
+ScopeFingerprint = tuple[tuple[str, str], ...]
+AccommodationKey = tuple[str, ScopeFingerprint, int, str]
+
+
 def deduplicate_accommodations(items: list[Accommodation]) -> list[Accommodation]:
     """Collapse formatting-only duplicates and retain the strongest grounded item."""
 
-    best: dict[tuple[str, tuple[str, ...]], Accommodation] = {}
-    order: list[tuple[str, tuple[str, ...]]] = []
+    best: dict[AccommodationKey, Accommodation] = {}
+    order: list[AccommodationKey] = []
     for item in items:
-        key = (_normalize_text(item.text), tuple(sorted(scope.value for scope in item.applies_to)))
+        key = (
+            _normalize_text(item.text),
+            _scope_fingerprint(item),
+            item.source_page,
+            _normalize_text(item.source_quote),
+        )
         if key not in best:
             order.append(key)
             best[key] = item
@@ -217,8 +239,37 @@ def _build_output(
         if any(value is None or (isinstance(value, str) and not value.strip()) for value in values):
             missing.append(f"accommodations[{index}]")
             continue
-        if not accommodation_draft.applies_to:
-            missing.append(f"accommodations[{index}].applies_to")
+        if not accommodation_draft.applies_to_refs:
+            missing.append(f"accommodations[{index}].applies_to_refs")
+            continue
+        scope_references: list[AccommodationScopeReference] = []
+        for ref_index, scope_draft in enumerate(accommodation_draft.applies_to_refs):
+            scope_values = (
+                scope_draft.scope,
+                scope_draft.ref,
+                scope_draft.source_page,
+                scope_draft.source_quote,
+            )
+            if any(
+                value is None or (isinstance(value, str) and not value.strip())
+                for value in scope_values
+            ):
+                missing.append(f"accommodations[{index}].applies_to_refs[{ref_index}]")
+                continue
+            assert scope_draft.scope is not None
+            assert scope_draft.ref is not None
+            assert scope_draft.source_page is not None
+            assert scope_draft.source_quote is not None
+            scope_references.append(
+                AccommodationScopeReference(
+                    scope=scope_draft.scope,
+                    ref=scope_draft.ref,
+                    source_page=scope_draft.source_page,
+                    source_quote=scope_draft.source_quote,
+                    confidence=scope_draft.confidence,
+                )
+            )
+        if len(scope_references) != len(accommodation_draft.applies_to_refs):
             continue
         assert accommodation_draft.text is not None
         assert accommodation_draft.source_page is not None
@@ -227,7 +278,7 @@ def _build_output(
             Accommodation(
                 id=uuid4(),
                 text=accommodation_draft.text,
-                applies_to=accommodation_draft.applies_to,
+                applies_to_refs=scope_references,
                 source_page=accommodation_draft.source_page,
                 source_quote=accommodation_draft.source_quote,
                 confidence=accommodation_draft.confidence,
@@ -348,3 +399,12 @@ def _serialize_pages(pages: tuple[OCRPage, ...]) -> str:
 
 def _normalize_text(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip().casefold()
+
+
+def _scope_fingerprint(item: Accommodation) -> ScopeFingerprint:
+    return tuple(
+        sorted(
+            (reference.scope.value, _normalize_text(reference.ref))
+            for reference in item.applies_to_refs
+        )
+    )

@@ -25,9 +25,7 @@ def reconcile_identities(draft: IEPRecord, prior: IEPRecord | None) -> IEPRecord
         _assign_first_extraction(result.goals)
         return result
 
-    result.accommodations = _reconcile(
-        result.accommodations, prior.accommodations, _accommodation_signature
-    )
+    result.accommodations = _reconcile_accommodations(result.accommodations, prior.accommodations)
     result.services = _reconcile(result.services, prior.services, _service_signature)
     result.goals = _reconcile(result.goals, prior.goals, _goal_signature)
     return result
@@ -65,15 +63,52 @@ def _reconcile[Item: Accommodation | Service | Goal](
     return current
 
 
+def _reconcile_accommodations(
+    current: list[Accommodation], previous: list[Accommodation]
+) -> list[Accommodation]:
+    exact_matches: dict[tuple[object, ...], list[Accommodation]] = {}
+    base_matches: dict[tuple[object, ...], list[Accommodation]] = {}
+    for item in previous:
+        exact_matches.setdefault(_accommodation_signature(item), []).append(item)
+        base_matches.setdefault(_accommodation_base_signature(item), []).append(item)
+
+    for item in current:
+        exact = exact_matches.get(_accommodation_signature(item), [])
+        if len(exact) == 1:
+            item.id = exact[0].id
+            item.reconciliation_status = ReconciliationStatus.MATCHED
+        elif len(exact) > 1 or base_matches.get(_accommodation_base_signature(item)):
+            _ensure_id(item)
+            item.reconciliation_status = ReconciliationStatus.AMBIGUOUS
+        else:
+            _ensure_id(item)
+            item.reconciliation_status = ReconciliationStatus.NEW
+    return current
+
+
+def _ensure_id(item: Accommodation) -> None:
+    if item.id.int == 0:
+        item.id = uuid4()
+
+
 def _anchor(item: Accommodation | Service | Goal) -> tuple[int, str]:
     return item.source_page, _text(item.source_quote)
 
 
 def _accommodation_signature(item: Accommodation) -> tuple[object, ...]:
+    return (*_accommodation_base_signature(item), _scope_fingerprint(item))
+
+
+def _accommodation_base_signature(item: Accommodation) -> tuple[object, ...]:
     return (
         _text(item.text),
-        tuple(sorted(scope.value for scope in item.applies_to)),
         *_anchor(item),
+    )
+
+
+def _scope_fingerprint(item: Accommodation) -> tuple[tuple[str, str], ...]:
+    return tuple(
+        sorted((reference.scope.value, _text(reference.ref)) for reference in item.applies_to_refs)
     )
 
 

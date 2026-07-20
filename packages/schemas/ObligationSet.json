@@ -2,24 +2,38 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://bridgeline.local/schemas/ObligationSet.json",
   "title": "ObligationSet",
-  "description": "Deterministically derived legal implementation obligations assigned to one teacher for one class.",
+  "description": "Deterministically derived legal implementation obligations grouped by responsible assignee and implementation context.",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "teacher_ref": {
+    "assignee_kind": {
       "type": "string",
-      "minLength": 1,
-      "description": "District identifier for the teacher responsible for this obligation set; it is not required to be a UUID."
+      "enum": ["teacher", "provider"],
+      "description": "Kind of person responsible for the obligations in this set."
     },
-    "class_ref": {
+    "assignee_ref": {
       "type": "string",
       "minLength": 1,
-      "description": "District or SIS identifier for the class in which these obligations must be implemented."
+      "description": "District identifier for the teacher or provider responsible for this set."
+    },
+    "assignee_role": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable implementation role of the responsible assignee."
+    },
+    "context_kind": {
+      "type": "string",
+      "enum": ["student", "class", "service"],
+      "description": "Kind of implementation context shared by the obligations in this set."
+    },
+    "context_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable district or domain identifier for the implementation context."
     },
     "subject": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Instructional subject used to select and contextualize obligations for this class."
+      "type": ["string", "null"],
+      "description": "Instructional subject for a class context, or null for student and service contexts."
     },
     "generated_at": {
       "type": "string",
@@ -38,7 +52,7 @@
       "items": { "$ref": "#/$defs/Obligation" }
     }
   },
-  "required": ["teacher_ref", "class_ref", "subject", "generated_at", "rules_version", "obligations"],
+  "required": ["assignee_kind", "assignee_ref", "assignee_role", "context_kind", "context_ref", "subject", "generated_at", "rules_version", "obligations"],
   "$defs": {
     "Obligation": {
       "type": "object",
@@ -54,10 +68,20 @@
           "minLength": 1,
           "description": "District identifier for the student whose approved accommodation creates this obligation."
         },
-        "accommodation_id": {
+        "source_kind": {
+          "type": "string",
+          "enum": ["iep_record", "accommodation", "service"],
+          "description": "Kind of approved IEP source from which the obligation was derived."
+        },
+        "source_ref": {
           "type": "string",
           "format": "uuid",
-          "description": "Stable UUID of the source IEP accommodation, preserved across re-extractions through identity reconciliation."
+          "description": "Stable UUID of the approved IEP version, accommodation, or service identified by source_kind."
+        },
+        "scope_provenance": {
+          "type": "array",
+          "description": "Exact approved scope references that caused this obligation. Empty only for obligations sourced from an IEP record or service rather than an accommodation.",
+          "items": { "$ref": "#/$defs/ObligationScopeProvenance" }
         },
         "rule_id": {
           "type": "string",
@@ -97,7 +121,9 @@
       "required": [
         "id",
         "student_ref",
-        "accommodation_id",
+        "source_kind",
+        "source_ref",
+        "scope_provenance",
         "rule_id",
         "citation",
         "action_text",
@@ -118,6 +144,39 @@
           "else": { "properties": { "flag_reason": { "type": "null" } } }
         }
       ]
+    },
+    "ObligationScopeProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scope": {
+          "type": "string",
+          "enum": ["subject", "context", "all"],
+          "description": "Applicability dimension that contributed to this obligation."
+        },
+        "ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scope name or phrase copied from the approved IEPRecord."
+        },
+        "source_page": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "One-based source page supporting this scope."
+        },
+        "source_quote": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verbatim source excerpt supporting this scope."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Approved extraction confidence for this scope reference."
+        }
+      },
+      "required": ["scope", "ref", "source_page", "source_quote", "confidence"]
     }
   }
 }

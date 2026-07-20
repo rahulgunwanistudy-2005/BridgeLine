@@ -22,6 +22,7 @@ class Settings(BaseSettings):
     api_host: str = "0.0.0.0"
     api_port: int = Field(default=8000, ge=1, le=65535)
     database_url: str = "postgresql+asyncpg://bridgeline:bridgeline@localhost:5432/bridgeline"
+    school_timezone: str = "Asia/Kolkata"
     google_api_key: SecretStr | None = None
     llm_max_concurrency: int = Field(default=1, ge=1, le=8)
     llm_min_interval_seconds: float = Field(default=4.1, ge=0.0)
@@ -34,6 +35,7 @@ class Settings(BaseSettings):
     ingest_field_confidence_threshold: float = Field(default=0.85, ge=0.0, le=1.0)
     ingest_legibility_threshold: float = Field(default=0.70, ge=0.0, le=1.0)
     ingest_non_iep_rejection_confidence: float = Field(default=0.85, ge=0.0, le=1.0)
+    service_start_delay_school_days: int = Field(default=5, ge=0, le=60)
 
 
 @lru_cache

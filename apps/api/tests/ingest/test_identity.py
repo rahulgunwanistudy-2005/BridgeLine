@@ -4,7 +4,11 @@ import ast
 from pathlib import Path
 from uuid import UUID
 
-from bridgeline.db.schemas import ReconciliationStatus
+from bridgeline.db.schemas import (
+    AccommodationScope,
+    AccommodationScopeReference,
+    ReconciliationStatus,
+)
 from bridgeline.ingest import identity as identity_module
 from bridgeline.ingest.identity import reconcile_identities
 
@@ -70,3 +74,60 @@ def test_multiple_credible_duplicate_matches_are_ambiguous() -> None:
 
     assert reconciled.accommodations[0].id == provisional
     assert reconciled.accommodations[0].reconciliation_status is ReconciliationStatus.AMBIGUOUS
+
+
+def test_scope_change_on_same_content_and_anchor_requires_review() -> None:
+    """A teacher-affecting scope change cannot silently inherit the prior identity."""
+
+    prior = sample_record()
+    draft = sample_record().model_copy(deep=True)
+    provisional = UUID("aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa")
+    draft.accommodations[0].id = provisional
+    draft.accommodations[0].applies_to_refs = [
+        AccommodationScopeReference(
+            scope=AccommodationScope.SUBJECT,
+            ref="Mathematics",
+            source_page=5,
+            source_quote="in Mathematics",
+            confidence=0.98,
+        )
+    ]
+
+    reconciled = reconcile_identities(draft, prior=prior)
+
+    assert reconciled.accommodations[0].id == provisional
+    assert reconciled.accommodations[0].reconciliation_status is ReconciliationStatus.AMBIGUOUS
+
+
+def test_same_text_clauses_match_their_distinct_scope_fingerprints() -> None:
+    """Two disjunctive clauses carry the correct prior IDs independently."""
+
+    prior = sample_record().model_copy(deep=True)
+    subject_clause = prior.accommodations[0].model_copy(
+        update={
+            "id": UUID("bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb"),
+            "applies_to_refs": [
+                AccommodationScopeReference(
+                    scope=AccommodationScope.SUBJECT,
+                    ref="Mathematics",
+                    source_page=5,
+                    source_quote="in Mathematics",
+                    confidence=0.98,
+                )
+            ],
+        }
+    )
+    prior.accommodations.append(subject_clause)
+    draft = prior.model_copy(deep=True)
+    for accommodation in draft.accommodations:
+        accommodation.id = UUID(int=0)
+
+    reconciled = reconcile_identities(draft, prior=prior)
+
+    assert [item.id for item in reconciled.accommodations] == [
+        item.id for item in prior.accommodations
+    ]
+    assert all(
+        item.reconciliation_status is ReconciliationStatus.MATCHED
+        for item in reconciled.accommodations
+    )

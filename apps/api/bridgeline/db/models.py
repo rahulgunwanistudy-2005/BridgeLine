@@ -27,9 +27,15 @@ from bridgeline.db.base import Base
 
 IEPApprovalState = Literal["draft", "approved"]
 ObligationState = Literal["pending", "confirmed", "flagged"]
+ObligationAssigneeKind = Literal["teacher", "provider"]
+ObligationContextKind = Literal["student", "class", "service"]
+ObligationSourceKind = Literal["iep_record", "accommodation", "service"]
+FindingState = Literal["open", "resolved"]
+DeadlineState = Literal["upcoming", "due", "overdue"]
+SchoolTermKind = Literal["semester", "grading_period"]
 BriefState = Literal["draft", "released", "confirmed", "flagged"]
 PipelineRunState = Literal["queued", "running", "needs_review", "done", "error"]
-AuditActorRole = Literal["case_manager", "teacher", "provider", "system"]
+AuditActorRole = Literal["case_manager", "compliance_admin", "teacher", "provider", "system"]
 
 
 class Student(Base):
@@ -87,6 +93,183 @@ class Class(Base):
             "school_year ~ '^[0-9]{4}-[0-9]{4}$'", name="ck_classes_school_year_format"
         ),
         Index("ix_classes_teacher_id", "teacher_id"),
+    )
+
+
+class ClassStaff(Base):
+    """A teacher-of-record assignment, including co-teachers."""
+
+    __tablename__ = "class_staff"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    class_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("classes.id", ondelete="RESTRICT"), nullable=False
+    )
+    teacher_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("teachers.id", ondelete="RESTRICT"), nullable=False
+    )
+    role: Mapped[str] = mapped_column(String(100), nullable=False, default="teacher-of-record")
+    active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+
+    __table_args__ = (
+        UniqueConstraint("class_id", "teacher_id", name="uq_class_staff_assignment"),
+        Index("ix_class_staff_teacher_id", "teacher_id"),
+    )
+
+
+class ScopeReferenceAlias(Base):
+    """District-approved document phrase mapped to one roster vocabulary value."""
+
+    __tablename__ = "scope_reference_aliases"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    school_year: Mapped[str] = mapped_column(String(9), nullable=False)
+    scope: Mapped[str] = mapped_column(String(16), nullable=False)
+    document_ref: Mapped[str] = mapped_column(Text, nullable=False)
+    normalized_ref: Mapped[str] = mapped_column(Text, nullable=False)
+    target_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
+    created_by_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    revoked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    revoked_by_ref: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+
+    __table_args__ = (
+        UniqueConstraint(
+            "school_year",
+            "scope",
+            "normalized_ref",
+            "target_ref",
+            name="uq_scope_reference_alias_target",
+        ),
+        CheckConstraint("scope IN ('subject', 'context')", name="ck_scope_alias_scope"),
+        CheckConstraint(
+            "(active = true AND revoked_at IS NULL AND revoked_by_ref IS NULL) OR "
+            "(active = false AND revoked_at IS NOT NULL AND revoked_by_ref IS NOT NULL)",
+            name="ck_scope_alias_lifecycle",
+        ),
+        Index("ix_scope_alias_lookup", "school_year", "scope", "normalized_ref", "active"),
+    )
+
+
+class ScopeReferenceResolution(Base):
+    """Case-manager mapping for one approved accommodation scope reference."""
+
+    __tablename__ = "scope_reference_resolutions"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    iep_record_version_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("iep_records.id", ondelete="RESTRICT"), nullable=False
+    )
+    accommodation_id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), nullable=False)
+    scope: Mapped[str] = mapped_column(String(16), nullable=False)
+    document_ref: Mapped[str] = mapped_column(Text, nullable=False)
+    normalized_ref: Mapped[str] = mapped_column(Text, nullable=False)
+    target_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
+    created_by_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    revoked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    revoked_by_ref: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+
+    __table_args__ = (
+        UniqueConstraint(
+            "iep_record_version_id",
+            "accommodation_id",
+            "scope",
+            "normalized_ref",
+            name="uq_scope_reference_resolution",
+        ),
+        CheckConstraint("scope IN ('subject', 'context')", name="ck_scope_resolution_scope"),
+        CheckConstraint(
+            "(active = true AND revoked_at IS NULL AND revoked_by_ref IS NULL) OR "
+            "(active = false AND revoked_at IS NOT NULL AND revoked_by_ref IS NOT NULL)",
+            name="ck_scope_resolution_lifecycle",
+        ),
+        Index("ix_scope_resolution_version", "iep_record_version_id", "active"),
+    )
+
+
+class Provider(Base):
+    """Related-service provider who may receive IEP obligations."""
+
+    __tablename__ = "providers"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    provider_ref: Mapped[str] = mapped_column(String(255), nullable=False, unique=True)
+    display_name: Mapped[str] = mapped_column(String(255), nullable=False)
+    role: Mapped[str] = mapped_column(String(255), nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+
+
+class SchoolCalendarDay(Base):
+    """One district school-local date used for deterministic date adjustment."""
+
+    __tablename__ = "school_calendar_days"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    school_year: Mapped[str] = mapped_column(String(9), nullable=False)
+    day: Mapped[date] = mapped_column(Date, nullable=False)
+    instructional: Mapped[bool] = mapped_column(Boolean, nullable=False)
+
+    __table_args__ = (
+        UniqueConstraint("school_year", "day", name="uq_school_calendar_day"),
+        CheckConstraint(
+            "school_year ~ '^[0-9]{4}-[0-9]{4}$'",
+            name="ck_school_calendar_days_year_format",
+        ),
+        Index("ix_school_calendar_days_year_day", "school_year", "day"),
+    )
+
+
+class SchoolTerm(Base):
+    """Named semester or grading period within a school year."""
+
+    __tablename__ = "school_terms"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    term_ref: Mapped[str] = mapped_column(String(255), nullable=False, unique=True)
+    school_year: Mapped[str] = mapped_column(String(9), nullable=False)
+    kind: Mapped[SchoolTermKind] = mapped_column(String(32), nullable=False)
+    start_on: Mapped[date] = mapped_column(Date, nullable=False)
+    end_on: Mapped[date] = mapped_column(Date, nullable=False)
+
+    __table_args__ = (
+        CheckConstraint("kind IN ('semester', 'grading_period')", name="ck_school_terms_kind"),
+        CheckConstraint("end_on >= start_on", name="ck_school_terms_date_order"),
+        Index("ix_school_terms_year_kind", "school_year", "kind"),
+    )
+
+
+class StudentComplianceProfile(Base):
+    """Student deadline facts outside approved existing-IEP payloads."""
+
+    __tablename__ = "student_compliance_profiles"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    student_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("students.id", ondelete="RESTRICT"), nullable=False
+    )
+    school_year: Mapped[str] = mapped_column(String(9), nullable=False)
+    initial_eligibility: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
+    eligibility_determined_on: Mapped[date | None] = mapped_column(Date, nullable=True)
+
+    __table_args__ = (
+        UniqueConstraint("student_id", "school_year", name="uq_student_compliance_profile"),
+        CheckConstraint(
+            "initial_eligibility = true OR eligibility_determined_on IS NULL",
+            name="ck_compliance_profile_eligibility_date",
+        ),
+        Index("ix_student_compliance_profiles_year", "school_year"),
     )
 
 
@@ -214,24 +397,28 @@ class IEPRecord(Base):
 
 
 class Obligation(Base):
-    """Teacher obligation derived from one approved IEP version."""
+    """Assignee obligation derived from one approved IEP version."""
 
     __tablename__ = "obligations"
 
-    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True)
     iep_record_version_id: Mapped[UUID] = mapped_column(
         Uuid(as_uuid=True), ForeignKey("iep_records.id", ondelete="RESTRICT"), nullable=False
     )
     student_id: Mapped[UUID] = mapped_column(
         Uuid(as_uuid=True), ForeignKey("students.id", ondelete="RESTRICT"), nullable=False
     )
-    teacher_id: Mapped[UUID] = mapped_column(
-        Uuid(as_uuid=True), ForeignKey("teachers.id", ondelete="RESTRICT"), nullable=False
+    assignee_kind: Mapped[ObligationAssigneeKind] = mapped_column(String(16), nullable=False)
+    assignee_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    assignee_role: Mapped[str] = mapped_column(String(255), nullable=False)
+    context_kind: Mapped[ObligationContextKind] = mapped_column(String(16), nullable=False)
+    context_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    subject: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    source_kind: Mapped[ObligationSourceKind] = mapped_column(String(32), nullable=False)
+    source_ref: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), nullable=False)
+    scope_provenance: Mapped[list[dict[str, JsonValue]]] = mapped_column(
+        JSONB, nullable=False, default=list
     )
-    class_id: Mapped[UUID] = mapped_column(
-        Uuid(as_uuid=True), ForeignKey("classes.id", ondelete="RESTRICT"), nullable=False
-    )
-    accommodation_id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), nullable=False)
     rule_id: Mapped[str] = mapped_column(String(255), nullable=False)
     citation: Mapped[str] = mapped_column(Text, nullable=False)
     action_text: Mapped[str] = mapped_column(Text, nullable=False)
@@ -246,11 +433,25 @@ class Obligation(Base):
     __table_args__ = (
         UniqueConstraint(
             "iep_record_version_id",
-            "teacher_id",
-            "class_id",
-            "accommodation_id",
+            "assignee_kind",
+            "assignee_ref",
+            "context_kind",
+            "context_ref",
+            "source_kind",
+            "source_ref",
             "rule_id",
             name="uq_obligations_derivation",
+        ),
+        CheckConstraint(
+            "assignee_kind IN ('teacher', 'provider')", name="ck_obligations_assignee_kind"
+        ),
+        CheckConstraint(
+            "context_kind IN ('student', 'class', 'service')",
+            name="ck_obligations_context_kind",
+        ),
+        CheckConstraint(
+            "source_kind IN ('iep_record', 'accommodation', 'service')",
+            name="ck_obligations_source_kind",
         ),
         CheckConstraint(
             "status IN ('pending', 'confirmed', 'flagged')", name="ck_obligations_status"
@@ -261,9 +462,181 @@ class Obligation(Base):
             "(status = 'pending' AND confirmed_at IS NULL AND flag_reason IS NULL)",
             name="ck_obligations_status_details",
         ),
-        Index("ix_obligations_teacher_status", "teacher_id", "status"),
-        Index("ix_obligations_class_id", "class_id"),
-        Index("ix_obligations_accommodation_id", "accommodation_id"),
+        Index("ix_obligations_assignee_status", "assignee_kind", "assignee_ref", "status"),
+        Index("ix_obligations_context", "context_kind", "context_ref"),
+        Index("ix_obligations_source", "source_kind", "source_ref"),
+    )
+
+
+class ServiceAssignment(Base):
+    """Provider-of-record assignment for a service in one approved IEP version."""
+
+    __tablename__ = "service_assignments"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    iep_record_version_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("iep_records.id", ondelete="RESTRICT"), nullable=False
+    )
+    service_id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), nullable=False)
+    provider_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("providers.id", ondelete="RESTRICT"), nullable=False
+    )
+    active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+
+    __table_args__ = (
+        UniqueConstraint(
+            "iep_record_version_id",
+            "service_id",
+            "provider_id",
+            name="uq_service_assignments_provider",
+        ),
+        Index("ix_service_assignments_service", "iep_record_version_id", "service_id"),
+    )
+
+
+class ServiceDeliveryLog(Base):
+    """Immutable record of delivered service minutes or targeted make-up minutes."""
+
+    __tablename__ = "service_delivery_logs"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    iep_record_version_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("iep_records.id", ondelete="RESTRICT"), nullable=False
+    )
+    service_id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), nullable=False)
+    delivered_on: Mapped[date] = mapped_column(Date, nullable=False)
+    minutes: Mapped[int] = mapped_column(Integer, nullable=False)
+    provider_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    substitute_for_ref: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    makeup_for_week_start: Mapped[date | None] = mapped_column(Date, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+
+    __table_args__ = (
+        CheckConstraint("minutes > 0", name="ck_service_delivery_logs_positive_minutes"),
+        CheckConstraint(
+            "makeup_for_week_start IS NULL OR EXTRACT(ISODOW FROM makeup_for_week_start) = 1",
+            name="ck_service_delivery_logs_makeup_monday",
+        ),
+        Index(
+            "ix_service_delivery_logs_service_date",
+            "iep_record_version_id",
+            "service_id",
+            "delivered_on",
+        ),
+        Index("ix_service_delivery_logs_makeup_week", "makeup_for_week_start"),
+    )
+
+
+class ServiceDelayReason(Base):
+    """Documented reason that suppresses the operational service-start lag check."""
+
+    __tablename__ = "service_delay_reasons"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    iep_record_version_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("iep_records.id", ondelete="RESTRICT"), nullable=False
+    )
+    service_id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), nullable=False)
+    reason: Mapped[str] = mapped_column(Text, nullable=False)
+    created_by_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
+    revoked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    revoked_by_ref: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+
+    __table_args__ = (
+        UniqueConstraint("iep_record_version_id", "service_id", name="uq_service_delay_reason"),
+        CheckConstraint("length(trim(reason)) > 0", name="ck_service_delay_reason_nonempty"),
+        CheckConstraint(
+            "(active = true AND revoked_at IS NULL AND revoked_by_ref IS NULL) OR "
+            "(active = false AND revoked_at IS NOT NULL AND revoked_by_ref IS NOT NULL)",
+            name="ck_service_delay_reason_lifecycle",
+        ),
+    )
+
+
+class Finding(Base):
+    """Deterministic compliance finding tied to a cited registered rule."""
+
+    __tablename__ = "findings"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True)
+    iep_record_version_id: Mapped[UUID | None] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("iep_records.id", ondelete="RESTRICT"), nullable=True
+    )
+    student_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    rule_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    citation: Mapped[str] = mapped_column(Text, nullable=False)
+    finding_type: Mapped[str] = mapped_column(String(100), nullable=False)
+    severity: Mapped[str] = mapped_column(String(32), nullable=False)
+    detected_on: Mapped[date] = mapped_column(Date, nullable=False)
+    title: Mapped[str] = mapped_column(Text, nullable=False)
+    detail: Mapped[str] = mapped_column(Text, nullable=False)
+    related_refs: Mapped[dict[str, JsonValue]] = mapped_column(JSONB, nullable=False)
+    measurements: Mapped[dict[str, JsonValue]] = mapped_column(JSONB, nullable=False)
+    status: Mapped[FindingState] = mapped_column(String(16), nullable=False, default="open")
+    resolved_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+
+    __table_args__ = (
+        CheckConstraint("status IN ('open', 'resolved')", name="ck_findings_status"),
+        CheckConstraint(
+            "(status = 'open' AND resolved_at IS NULL) OR "
+            "(status = 'resolved' AND resolved_at IS NOT NULL)",
+            name="ck_findings_status_details",
+        ),
+        Index("ix_findings_status_detected", "status", "detected_on"),
+        Index("ix_findings_student_ref", "student_ref"),
+    )
+
+
+class ComplianceDeadline(Base):
+    """Persisted cited deadline derived from one approved IEP version."""
+
+    __tablename__ = "compliance_deadlines"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True)
+    iep_record_version_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("iep_records.id", ondelete="RESTRICT"), nullable=False
+    )
+    student_ref: Mapped[str] = mapped_column(String(255), nullable=False)
+    rule_id: Mapped[str] = mapped_column(String(255), nullable=False)
+    citation: Mapped[str] = mapped_column(Text, nullable=False)
+    source_kind: Mapped[str] = mapped_column(String(32), nullable=False)
+    source_ref: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), nullable=False)
+    legal_due_on: Mapped[date] = mapped_column(Date, nullable=False)
+    action_due_on: Mapped[date] = mapped_column(Date, nullable=False)
+    warning_30_on: Mapped[date] = mapped_column(Date, nullable=False)
+    warning_14_on: Mapped[date] = mapped_column(Date, nullable=False)
+    warning_3_on: Mapped[date] = mapped_column(Date, nullable=False)
+    status: Mapped[DeadlineState] = mapped_column(String(16), nullable=False)
+    description: Mapped[str] = mapped_column(Text, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+
+    __table_args__ = (
+        UniqueConstraint(
+            "iep_record_version_id",
+            "rule_id",
+            "source_kind",
+            "source_ref",
+            name="uq_compliance_deadline_derivation",
+        ),
+        CheckConstraint(
+            "status IN ('upcoming', 'due', 'overdue')", name="ck_compliance_deadlines_status"
+        ),
+        Index("ix_compliance_deadlines_status_due", "status", "legal_due_on"),
+        Index("ix_compliance_deadlines_student_ref", "student_ref"),
     )
 
 
@@ -332,7 +705,7 @@ class AuditEvent(Base):
 
     __table_args__ = (
         CheckConstraint(
-            "actor_role IN ('case_manager', 'teacher', 'provider', 'system')",
+            "actor_role IN ('case_manager', 'compliance_admin', 'teacher', 'provider', 'system')",
             name="ck_audit_events_actor_role",
         ),
         Index("ix_audit_events_occurred_at", "occurred_at"),

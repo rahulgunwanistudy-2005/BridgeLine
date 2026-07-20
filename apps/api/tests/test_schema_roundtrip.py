@@ -39,7 +39,15 @@ SAMPLES: dict[str, dict[str, Any]] = {
             {
                 "id": "11111111-1111-4111-8111-111111111112",
                 "text": "Provide 50 percent extended time on classroom assessments.",
-                "applies_to": ["all"],
+                "applies_to_refs": [
+                    {
+                        "scope": "all",
+                        "ref": "across all classes",
+                        "source_page": 7,
+                        "source_quote": "50% extended time across all classes",
+                        "confidence": 0.98,
+                    }
+                ],
                 "source_page": 7,
                 "source_quote": "50% extended time on classroom assessments",
                 "confidence": 0.98,
@@ -97,8 +105,11 @@ SAMPLES: dict[str, dict[str, Any]] = {
         },
     },
     "ObligationSet": {
-        "teacher_ref": "teacher-nguyen",
-        "class_ref": "class-ela-03",
+        "assignee_kind": "teacher",
+        "assignee_ref": "teacher-nguyen",
+        "assignee_role": "teacher-of-record",
+        "context_kind": "class",
+        "context_ref": "class-ela-03",
         "subject": "English language arts",
         "generated_at": "2026-07-19T03:01:00Z",
         "rules_version": "2026.07.1",
@@ -106,9 +117,19 @@ SAMPLES: dict[str, dict[str, Any]] = {
             {
                 "id": "22222222-2222-4222-8222-222222222221",
                 "student_ref": "student-rivera",
-                "accommodation_id": "11111111-1111-4111-8111-111111111112",
-                "rule_id": "distribution.all-classes",
-                "citation": "34 CFR §300.323(d)",
+                "source_kind": "accommodation",
+                "source_ref": "11111111-1111-4111-8111-111111111112",
+                "scope_provenance": [
+                    {
+                        "scope": "all",
+                        "ref": "across all classes",
+                        "source_page": 7,
+                        "source_quote": "50% extended time across all classes",
+                        "confidence": 0.98,
+                    }
+                ],
+                "rule_id": "teacher-informed-accommodations",
+                "citation": "34 CFR §300.323(d)(2)(ii)",
                 "action_text": "Provide 50 percent extended time on classroom assessments.",
                 "practice_text": None,
                 "status": "pending",
@@ -349,6 +370,84 @@ def test_field_confidences_rejects_value_above_one() -> None:
 
     with pytest.raises(ValidationError, match="less than or equal to 1"):
         FieldConfidences.model_validate(sample)
+
+
+def test_accommodation_scope_references_are_required() -> None:
+    """An absent scope cannot silently broaden to every class."""
+
+    sample = {**SAMPLES["IEPRecord"]["accommodations"][0], "applies_to_refs": []}
+
+    with pytest.raises(ValidationError, match="at least 1 item"):
+        Accommodation.model_validate_json(json.dumps(sample))
+
+
+def test_all_scope_is_exclusive() -> None:
+    """Unconstrained all cannot coexist with a narrowing reference."""
+
+    sample = dict(SAMPLES["IEPRecord"]["accommodations"][0])
+    sample["applies_to_refs"] = [
+        *sample["applies_to_refs"],
+        {
+            "scope": "subject",
+            "ref": "Mathematics",
+            "source_page": 7,
+            "source_quote": "in Mathematics",
+            "confidence": 0.98,
+        },
+    ]
+
+    with pytest.raises(ValidationError, match="all scope must be the only"):
+        Accommodation.model_validate_json(json.dumps(sample))
+
+
+def test_scope_references_reject_normalized_duplicates() -> None:
+    """Case and whitespace variants cannot create duplicate applicability evidence."""
+
+    sample = dict(SAMPLES["IEPRecord"]["accommodations"][0])
+    sample["applies_to_refs"] = [
+        {
+            "scope": "subject",
+            "ref": "Mathematics",
+            "source_page": 7,
+            "source_quote": "in Mathematics",
+            "confidence": 0.98,
+        },
+        {
+            "scope": "subject",
+            "ref": "  MATHEMATICS ",
+            "source_page": 8,
+            "source_quote": "Mathematics classes",
+            "confidence": 0.95,
+        },
+    ]
+
+    with pytest.raises(ValidationError, match="semantically unique"):
+        Accommodation.model_validate_json(json.dumps(sample))
+
+
+def test_structured_output_schema_has_no_conditionals() -> None:
+    """Cross-field applicability rules live only in the Pydantic validator."""
+
+    schema = json.loads((SCHEMA_DIRECTORY / "IEPRecord.json").read_text())
+
+    def keys(node: object) -> set[str]:
+        if isinstance(node, dict):
+            return set(node) | set().union(*(keys(value) for value in node.values()))
+        if isinstance(node, list):
+            return set().union(*(keys(value) for value in node))
+        return set()
+
+    assert not {"allOf", "if", "then", "else"} & keys(schema)
+
+
+def test_accommodation_obligation_requires_scope_provenance() -> None:
+    """An accommodation UUID alone cannot explain why an assignee acquired the duty."""
+
+    sample = json.loads(json.dumps(SAMPLES["ObligationSet"]))
+    sample["obligations"][0]["scope_provenance"] = []
+
+    with pytest.raises(ValidationError, match="require scope_provenance"):
+        ObligationSet.model_validate_json(json.dumps(sample))
 
 
 RECONCILIATION_CASES: list[tuple[type[BaseModel], dict[str, Any], str | None]] = [

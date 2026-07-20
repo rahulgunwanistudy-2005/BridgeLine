@@ -80,7 +80,7 @@
         },
         "actor_role": {
           "type": "string",
-          "enum": ["case_manager", "teacher", "provider", "system"],
+          "enum": ["case_manager", "compliance_admin", "teacher", "provider", "system"],
           "description": "Authorized role under which the actor performed the audited action."
         }
       },

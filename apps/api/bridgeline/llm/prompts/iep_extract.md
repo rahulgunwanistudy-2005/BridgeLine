@@ -18,5 +18,19 @@ Safety contract:
    service-minute table row before normalizing frequency into total weekly minutes.
 6. Keep repeated wording as separate only when separate source anchors show distinct approvals.
 7. Dates may use mixed source formats; normalize only unambiguous dates to YYYY-MM-DD.
+8. For every accommodation, extract `applies_to_refs` from the document wording itself. Each
+   reference must contain its own `scope`, verbatim `ref`, `source_page`, `source_quote`, and
+   `confidence`. Never emit district course codes or infer a scope from roster data.
+9. Scope references within the same scope are alternatives. Subject and context scopes together
+   mean intersection: the accommodation applies only where both constraints hold. If the document
+   instead states separate alternatives, preserve them as separately anchored accommodation
+   clauses. Do not merge their scope fingerprints merely because their accommodation text matches.
+10. Use `scope: "all"` only when the IEP states genuinely unconstrained applicability, such as
+    “in all settings” or “across all classes.” `all` means no subject or context constraint. Any
+    qualifier—including “all academic subjects,” “core classes,” or “general education
+    settings”—makes the reference a subject or context scope, never `all`. If a qualified phrase
+    cannot be resolved to subjects explicitly enumerated in the document, preserve the phrase,
+    lower its confidence, and let human review resolve it. Never default missing or ambiguous
+    scope to `all`.
 
 $pages

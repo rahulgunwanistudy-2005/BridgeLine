@@ -10,7 +10,13 @@ from bridgeline.db.schemas import IEPRecord, ReconciliationStatus
 from bridgeline.ingest.ocr import OCRPage, StructuredGateway
 from bridgeline.llm.prompts import PromptRegistry
 
-__all__ = ["ConfidenceGate", "GateResult", "GateState", "ReviewField"]
+__all__ = [
+    "ConfidenceGate",
+    "GateResult",
+    "GateState",
+    "ReviewField",
+    "review_incomplete_paths",
+]
 
 
 class NonIEPDocumentError(ValueError):
@@ -100,6 +106,19 @@ class ConfidenceGate:
                             reason="Multiple prior identities are credible matches",
                         )
                     )
+                if collection_name == "accommodations":
+                    for ref_index, scope_reference in enumerate(item.applies_to_refs):
+                        if scope_reference.confidence < self._field_threshold:
+                            review.append(
+                                ReviewField(
+                                    path=(f"accommodations[{index}].applies_to_refs[{ref_index}]"),
+                                    confidence=scope_reference.confidence,
+                                    reason=(
+                                        "Scope-reference confidence is below the configured "
+                                        "threshold"
+                                    ),
+                                )
+                            )
         for path, confidence in (
             ("student_ref", record.field_confidences.student_ref),
             ("disability_category", record.field_confidences.disability_category),
@@ -128,6 +147,22 @@ class ConfidenceGate:
             )
         state = GateState.NEEDS_REVIEW if review else GateState.ACCEPTED
         return GateResult(state=state, review_fields=tuple(review))
+
+
+def review_incomplete_paths(paths: tuple[str, ...]) -> GateResult:
+    """Convert incomplete canonical extraction paths into a typed review result."""
+
+    return GateResult(
+        state=GateState.NEEDS_REVIEW,
+        review_fields=tuple(
+            ReviewField(
+                path=path,
+                confidence=None,
+                reason="Required source-grounded extraction is absent or invalid",
+            )
+            for path in paths
+        ),
+    )
 
 
 async def reject_non_iep(

@@ -9,8 +9,13 @@ from uuid import UUID, uuid4
 
 from bridgeline.config import Settings
 from bridgeline.db.schemas import IEPRecord, PipelineState
-from bridgeline.ingest.extract import IEPExtractor
-from bridgeline.ingest.gate import ConfidenceGate, GateResult, reject_non_iep
+from bridgeline.ingest.extract import IEPExtractor, IncompleteExtractionError
+from bridgeline.ingest.gate import (
+    ConfidenceGate,
+    GateResult,
+    reject_non_iep,
+    review_incomplete_paths,
+)
 from bridgeline.ingest.identity import reconcile_identities
 from bridgeline.ingest.normalize import normalize_document
 from bridgeline.ingest.ocr import OCRProcessor, StructuredGateway
@@ -27,6 +32,15 @@ class PipelineResult:
     record: IEPRecord
     gate: GateResult
     persisted_id: UUID
+
+
+@dataclass(frozen=True, slots=True)
+class PipelineNeedsReview:
+    """Typed terminal outcome when no valid canonical draft can be persisted."""
+
+    gate: GateResult
+    record: None = None
+    persisted_id: None = None
 
 
 class IngestPipeline:
@@ -67,8 +81,8 @@ class IngestPipeline:
         filename: str,
         run_id: UUID,
         lineage_hint: UUID | None = None,
-    ) -> PipelineResult:
-        """Run all ingest slices and surface every failure as an error event."""
+    ) -> PipelineResult | PipelineNeedsReview:
+        """Run all ingest slices and distinguish reviewable incompleteness from errors."""
 
         stage = "normalize"
         try:
@@ -199,6 +213,25 @@ class IngestPipeline:
                 1.0,
             )
             return PipelineResult(record=record, gate=gate, persisted_id=persisted_id)
+        except IncompleteExtractionError as exc:
+            stage = "confidence_gate"
+            gate = review_incomplete_paths(exc.missing_paths)
+            detail = f"Flagged {len(gate.review_fields)} incomplete field(s) for review."
+            await self._store.set_run_state(
+                run_id,
+                state="needs_review",
+                stage=stage,
+                detail=detail,
+            )
+            await self._emit(
+                run_id,
+                stage,
+                "Confidence Gate",
+                PipelineState.NEEDS_REVIEW,
+                detail,
+                1.0,
+            )
+            return PipelineNeedsReview(gate=gate)
         except Exception as exc:
             safe_detail = str(exc) or type(exc).__name__
             await self._store.set_run_state(run_id, state="error", stage=stage, detail=safe_detail)
