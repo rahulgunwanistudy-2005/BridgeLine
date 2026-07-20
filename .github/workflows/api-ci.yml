@@ -4,11 +4,17 @@ on:
   pull_request:
     paths:
       - "apps/api/**"
+      - "packages/schemas/IEPRecord.json"
+      - "packages/schemas/ObligationSet.json"
+      - "references/idea-citations.md"
       - ".github/workflows/api-ci.yml"
   push:
     branches: [main]
     paths:
       - "apps/api/**"
+      - "packages/schemas/IEPRecord.json"
+      - "packages/schemas/ObligationSet.json"
+      - "references/idea-citations.md"
       - ".github/workflows/api-ci.yml"
 
 permissions:
@@ -32,4 +38,5 @@ jobs:
       - run: ruff format --check bridgeline tests migrations
       - run: ruff check bridgeline tests migrations
       - run: mypy bridgeline tests
+      - run: python -m bridgeline.rules.generate_docs --check
       - run: pytest

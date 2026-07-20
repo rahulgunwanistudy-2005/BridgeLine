@@ -5,6 +5,8 @@ that JSON Schema cannot expose as ergonomic Python errors are repeated here as
 model validators.
 """
 
+import re
+import unicodedata
 from datetime import date, datetime, timedelta
 from enum import StrEnum
 from typing import Annotated, Self
@@ -41,12 +43,17 @@ class ContractModel(BaseModel):
     model_config = ConfigDict(extra="forbid", strict=True)
 
 
-class AppliesTo(StrEnum):
-    """Scope used by the rules engine to distribute an accommodation."""
+class AccommodationScope(StrEnum):
+    """Source-grounded applicability dimension for an accommodation."""
 
     SUBJECT = "subject"
     CONTEXT = "context"
     ALL = "all"
+
+
+def _scope_match_key(value: str) -> str:
+    normalized = unicodedata.normalize("NFKC", value)
+    return re.sub(r"\s+", " ", normalized).strip().casefold()
 
 
 class ReconciliationStatus(StrEnum):
@@ -55,6 +62,20 @@ class ReconciliationStatus(StrEnum):
     MATCHED = "matched"
     NEW = "new"
     AMBIGUOUS = "ambiguous"
+
+
+class AccommodationScopeReference(ContractModel):
+    """One verbatim, independently grounded applicability reference."""
+
+    scope: AccommodationScope = Field(description="Applicability dimension stated in the IEP.")
+    ref: NonEmptyString = Field(description="Scope name or phrase stated in the document.")
+    source_page: PositiveInteger = Field(description="One-based page containing scope evidence.")
+    source_quote: NonEmptyString = Field(
+        description="Verbatim source excerpt supporting the scope reference."
+    )
+    confidence: UnitInterval = Field(
+        description="Extraction confidence from 0.0 to 1.0 for this scope reference."
+    )
 
 
 class Accommodation(ContractModel):
@@ -66,8 +87,8 @@ class Accommodation(ContractModel):
         )
     )
     text: NonEmptyString = Field(description="Exact approved accommodation language.")
-    applies_to: Annotated[list[AppliesTo], Field(min_length=1)] = Field(
-        description="Scopes used by the rules engine to distribute this accommodation."
+    applies_to_refs: Annotated[list[AccommodationScopeReference], Field(min_length=1)] = Field(
+        description="Source-grounded applicability references used for deterministic fan-out."
     )
     source_page: PositiveInteger = Field(
         description="One-based page containing the accommodation evidence."
@@ -84,6 +105,24 @@ class Accommodation(ContractModel):
             "extraction in the IEP lineage."
         )
     )
+
+    @model_validator(mode="after")
+    def validate_scope_references(self) -> Self:
+        """Make unconstrained scope exclusive and reject semantic duplicate references."""
+
+        all_references = [
+            reference
+            for reference in self.applies_to_refs
+            if reference.scope is AccommodationScope.ALL
+        ]
+        if all_references and len(self.applies_to_refs) != 1:
+            raise ValueError("all scope must be the only scope reference")
+        normalized_keys = {
+            (reference.scope, _scope_match_key(reference.ref)) for reference in self.applies_to_refs
+        }
+        if len(normalized_keys) != len(self.applies_to_refs):
+            raise ValueError("scope references must be semantically unique")
+        return self
 
 
 class Service(ContractModel):
@@ -280,12 +319,51 @@ class ObligationStatus(StrEnum):
     FLAGGED = "flagged"
 
 
+class AssigneeKind(StrEnum):
+    """Kinds of people who can receive implementation obligations."""
+
+    TEACHER = "teacher"
+    PROVIDER = "provider"
+
+
+class ObligationContextKind(StrEnum):
+    """Contexts in which an assignee implements an obligation."""
+
+    STUDENT = "student"
+    CLASS = "class"
+    SERVICE = "service"
+
+
+class ObligationSourceKind(StrEnum):
+    """Approved IEP source objects supporting an obligation."""
+
+    IEP_RECORD = "iep_record"
+    ACCOMMODATION = "accommodation"
+    SERVICE = "service"
+
+
+class ObligationScopeProvenance(ContractModel):
+    """Approved scope evidence that caused one accommodation obligation."""
+
+    scope: AccommodationScope = Field(description="Contributing applicability dimension.")
+    ref: NonEmptyString = Field(description="Scope phrase copied from the approved IEPRecord.")
+    source_page: PositiveInteger = Field(description="One-based source page for the scope.")
+    source_quote: NonEmptyString = Field(
+        description="Verbatim source excerpt supporting the scope."
+    )
+    confidence: UnitInterval = Field(description="Approved extraction confidence for the scope.")
+
+
 class Obligation(ContractModel):
     """Deterministically derived implementation requirement."""
 
     id: UUID = Field(description="Stable UUID identifying this teacher obligation.")
     student_ref: NonEmptyString = Field(description="District identifier for the student.")
-    accommodation_id: UUID = Field(description="Stable UUID of the source accommodation.")
+    source_kind: ObligationSourceKind = Field(description="Kind of approved IEP source object.")
+    source_ref: UUID = Field(description="Stable UUID of the approved source object.")
+    scope_provenance: list[ObligationScopeProvenance] = Field(
+        description="Approved scope references that caused this obligation."
+    )
     rule_id: NonEmptyString = Field(description="Identifier of the deterministic rule used.")
     citation: NonEmptyString = Field(description="Legal or policy citation for the rule.")
     action_text: NonEmptyString = Field(
@@ -304,6 +382,11 @@ class Obligation(ContractModel):
     def validate_status_details(self) -> Self:
         """Keep confirmation and flag details consistent with the obligation state."""
 
+        if self.source_kind is ObligationSourceKind.ACCOMMODATION:
+            if not self.scope_provenance:
+                raise ValueError("accommodation obligations require scope_provenance")
+        elif self.scope_provenance:
+            raise ValueError("scope_provenance is valid only for accommodation obligations")
         if self.status is ObligationStatus.CONFIRMED:
             if self.confirmed_at is None:
                 raise ValueError("confirmed obligations require confirmed_at")
@@ -318,11 +401,14 @@ class Obligation(ContractModel):
 
 
 class ObligationSet(ContractModel):
-    """Legal implementation obligations assigned to one teacher and class."""
+    """Legal implementation obligations grouped by assignee and context."""
 
-    teacher_ref: NonEmptyString = Field(description="District identifier for the teacher.")
-    class_ref: NonEmptyString = Field(description="District identifier for the class.")
-    subject: NonEmptyString = Field(description="Instructional subject for the class.")
+    assignee_kind: AssigneeKind = Field(description="Kind of responsible assignee.")
+    assignee_ref: NonEmptyString = Field(description="District identifier for the assignee.")
+    assignee_role: NonEmptyString = Field(description="Implementation role of the assignee.")
+    context_kind: ObligationContextKind = Field(description="Kind of implementation context.")
+    context_ref: NonEmptyString = Field(description="Stable identifier for the context.")
+    subject: str | None = Field(description="Class subject, or null outside a class context.")
     generated_at: UTCDateTime = Field(description="UTC timestamp of deterministic generation.")
     rules_version: NonEmptyString = Field(description="Rule-registry version used.")
     obligations: list[Obligation] = Field(description="Derived teacher obligations.")
@@ -543,6 +629,7 @@ class AuditActorRole(StrEnum):
     """Roles that may perform consequential audited actions."""
 
     CASE_MANAGER = "case_manager"
+    COMPLIANCE_ADMIN = "compliance_admin"
     TEACHER = "teacher"
     PROVIDER = "provider"
     SYSTEM = "system"

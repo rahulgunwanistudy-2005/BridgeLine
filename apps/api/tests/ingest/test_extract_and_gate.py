@@ -1,6 +1,10 @@
 """Tests for source-grounded extraction and fail-closed confidence gating."""
 
-from bridgeline.db.schemas import ReconciliationStatus
+from bridgeline.db.schemas import (
+    AccommodationScope,
+    AccommodationScopeReference,
+    ReconciliationStatus,
+)
 from bridgeline.ingest.extract import deduplicate_accommodations
 from bridgeline.ingest.gate import ConfidenceGate, GateState
 from bridgeline.llm.prompts import PromptRegistry
@@ -18,6 +22,11 @@ def test_extraction_prompt_is_verbatim_first_and_fail_closed() -> None:
     assert "NEVER invent" in prompt
     assert "null" in prompt and "confidence 0" in prompt
     assert "two-column" in prompt and "service-minute" in prompt
+    assert 'scope: "all"' in prompt
+    assert "all academic subjects" in prompt
+    assert "never `all`" in prompt
+    assert "Never default missing or ambiguous" in prompt
+    assert "scope to `all`" in prompt
 
 
 def test_duplicate_accommodation_phrasing_is_not_silently_duplicated() -> None:
@@ -50,6 +59,43 @@ def test_low_confidence_and_ambiguous_fields_always_need_review() -> None:
     assert "accommodations[0]" in paths
     assert "goals[0].reconciliation_status" in paths
     assert "dates.annual_review" in paths
+
+
+def test_one_low_confidence_scope_reference_routes_the_record_to_review() -> None:
+    """A partially trusted scope cannot distribute an otherwise trusted accommodation."""
+
+    record = sample_record().model_copy(deep=True)
+    record.accommodations[0].applies_to_refs[0].confidence = 0.84
+
+    result = ConfidenceGate(field_threshold=0.85).evaluate(record)
+
+    assert result.state is GateState.NEEDS_REVIEW
+    assert "accommodations[0].applies_to_refs[0]" in {item.path for item in result.review_fields}
+
+
+def test_identical_text_with_different_scope_fingerprints_is_not_deduplicated() -> None:
+    """Disjunctive clauses remain distinct even when their action text is identical."""
+
+    original = sample_record().accommodations[0]
+    subject_clause = original.model_copy(
+        update={
+            "id": "22222222-2222-4222-8222-222222222222",
+            "applies_to_refs": [
+                AccommodationScopeReference(
+                    scope=AccommodationScope.SUBJECT,
+                    ref="Mathematics",
+                    source_page=2,
+                    source_quote="in Mathematics",
+                    confidence=0.98,
+                )
+            ],
+        }
+    )
+
+    assert deduplicate_accommodations([original, subject_clause]) == [
+        original,
+        subject_clause,
+    ]
 
 
 def test_low_legibility_handwriting_or_stamp_overlap_needs_review() -> None:

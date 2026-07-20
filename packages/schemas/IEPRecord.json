@@ -67,6 +67,39 @@
     "extraction_meta"
   ],
   "$defs": {
+    "AccommodationScopeReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scope": {
+          "type": "string",
+          "enum": ["subject", "context", "all"],
+          "description": "Applicability dimension stated in the IEP. References within one scope are alternatives, subject and context scopes combine by intersection, and all is exclusive."
+        },
+        "ref": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Scope name or phrase as stated in the document, such as Mathematics, during testing, or across all classes. Never a district identifier."
+        },
+        "source_page": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "One-based page number containing the evidence for this scope reference."
+        },
+        "source_quote": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verbatim source excerpt supporting this scope reference."
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraction confidence from 0.0 to 1.0 for this scope reference."
+        }
+      },
+      "required": ["scope", "ref", "source_page", "source_quote", "confidence"]
+    },
     "Accommodation": {
       "type": "object",
       "additionalProperties": false,
@@ -81,15 +114,10 @@
           "minLength": 1,
           "description": "Exact approved accommodation language, normalized only enough to remove extraction artifacts without changing meaning."
         },
-        "applies_to": {
+        "applies_to_refs": {
           "type": "array",
-          "minItems": 1,
-          "uniqueItems": true,
-          "description": "Scopes used by the deterministic rules engine to distribute the accommodation by subject, instructional context, or every class.",
-          "items": {
-            "type": "string",
-            "enum": ["subject", "context", "all"]
-          }
+          "description": "Source-grounded applicability references. References within one scope are alternatives; subject and context scopes combine by intersection. An all reference is exclusive and means no subject or context constraint.",
+          "items": { "$ref": "#/$defs/AccommodationScopeReference" }
         },
         "source_page": {
           "type": "integer",
@@ -116,7 +144,7 @@
       "required": [
         "id",
         "text",
-        "applies_to",
+        "applies_to_refs",
         "source_page",
         "source_quote",
         "confidence",

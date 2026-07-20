@@ -5,7 +5,8 @@ from uuid import UUID
 
 from bridgeline.db.schemas import (
     Accommodation,
-    AppliesTo,
+    AccommodationScope,
+    AccommodationScopeReference,
     ExtractionMeta,
     FieldConfidences,
     Goal,
@@ -27,7 +28,15 @@ def sample_record(*, accommodation_confidence: float = 0.98) -> IEPRecord:
             Accommodation(
                 id=UUID("11111111-1111-4111-8111-111111111112"),
                 text="Provide 50 percent extended time on classroom assessments.",
-                applies_to=[AppliesTo.ALL],
+                applies_to_refs=[
+                    AccommodationScopeReference(
+                        scope=AccommodationScope.ALL,
+                        ref="across all classes",
+                        source_page=2,
+                        source_quote="50% extended time across all classes",
+                        confidence=accommodation_confidence,
+                    )
+                ],
                 source_page=2,
                 source_quote="50% extended time on classroom assessments",
                 confidence=accommodation_confidence,
