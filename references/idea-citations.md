@@ -110,13 +110,11 @@ DERIVES: A baseline Finding if a student in the roster has no approved (is_curre
 ---
 
 RULE: triennial-reevaluation
-CITE: 34 CFR §300.303(b)(2) [cite as commonly stated; verify literal text yourself]
+CITE: 34 CFR §300.303(b)(2)
 PLAIN: A reevaluation must occur at least once every 3 years, unless the parent and the
        public agency agree that a reevaluation is unnecessary.
 DERIVES: A calendar entry per student: triennial_reeval deadline = last evaluation date + 3
          years. 30/14/3-day lead-time warnings, same pattern as annual-review.
-ACTION REQUIRED: Fetch the live text of 34 CFR §300.303 (Cornell LII or eCFR) yourself,
-confirm the exact subsection number and wording, then delete this warning line.
 
 ---
 
@@ -125,7 +123,7 @@ confirm the exact subsection number and wording, then delete this warning line.
 - 34 CFR §300.323 (When IEPs must be in effect) — https://www.law.cornell.edu/cfr/text/34/300.323
 - 34 CFR §300.320 (Definition of IEP) — https://www.law.cornell.edu/cfr/text/34/300.320
 - 34 CFR §300.324 (Development, review, and revision of IEP) — https://www.law.cornell.edu/cfr/text/34/300.324
-- §300.303 (Reevaluations) — NOT fetched this session; verify before use.
+- - 34 CFR §300.303 (Reevaluations) — https://www.law.cornell.edu/cfr/text/34/300.303
 
 ## What's deliberately out of scope for cx/02's rule families
 
