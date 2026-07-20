@@ -1,0 +1,101 @@
+{
+  "iep_record_id": "eea47261-632f-5548-ba07-c5cbb1cd0eb4",
+  "student_ref": "RIV-2032",
+  "disability_category": "Other health impairment (ADHD)",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "20376f40-6071-524d-bad7-4ab9ac3536b9",
+      "text": "Do not grade spelling on first-draft written work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not grade spelling on first-draft written work",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "7de62e32-22b8-5325-81c0-cc4be274dd86",
+      "text": "Provide graphic organizers for writing and note-taking.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "graphic organizers for writing and note-taking",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "713b52e5-9211-5146-a589-32de2fcf43fc",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "a5884c78-9f00-5de7-b77a-ab1c2d2e86f2",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "ddbc33c5-c5ad-519e-b991-e1a68beea5e5",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f39e4301-7d8f-5638-aa23-0c0d63a0283c",
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-09"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "98e8ba59-dde9-501e-967e-a0aea196d605",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

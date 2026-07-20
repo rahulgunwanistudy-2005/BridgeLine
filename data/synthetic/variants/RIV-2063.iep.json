@@ -1,0 +1,148 @@
+{
+  "iep_record_id": "b37c6278-3ea5-50d8-9a56-c5fb200326ac",
+  "student_ref": "RIV-2063",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "5d0f01ed-c0ac-522e-a4ed-e14915e1d754",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c65546d4-10c0-5506-894a-8f4b023e02f6",
+      "text": "Give a two-minute warning before transitions.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "two-minute warning before transitions",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5ef69792-d11c-509d-b70f-d1cad15908e0",
+      "text": "Provide a checklist to break long assignments into steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "checklist to break long assignments into steps",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "80748e0c-ca6b-5934-a0f1-c8233dadbfae",
+      "text": "Administer assessments in a small-group, reduced-distraction setting.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "small-group, reduced-distraction setting for assessments",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4c5621df-e3e8-5acc-819a-7ffa25a8cd31",
+      "text": "Permit brief movement breaks between tasks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief movement breaks between tasks",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "9b6c093e-7249-51a9-b5df-8021327b73fe",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction reading 30 minutes 5 times weekly",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8a892ceb-81b3-5d65-a98d-8f9260bfb9c7",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "dd1a5ee0-8b00-5c48-b3d1-71908839598a",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "d7f44edd-15e9-5e65-bdc4-d8057bf1c060",
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "maintain a topic across three conversational turns",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a2ce82a5-6c1e-5972-8600-7a3c63826168",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2026-11-03",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "c395cfc9-0959-53f4-bd78-a995f6de4b78",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

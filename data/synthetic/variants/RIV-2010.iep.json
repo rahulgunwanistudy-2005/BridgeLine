@@ -1,0 +1,202 @@
+{
+  "iep_record_id": "bd0742af-ba65-5887-8e68-33d74507b0a3",
+  "student_ref": "RIV-2010",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "cb4b087c-7f93-5bb8-a6fd-998d4d5965b8",
+      "text": "Allow scheduled sensory breaks of up to five minutes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "scheduled sensory breaks of up to five minutes",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "86eb0140-63a4-51da-9d02-6d174add4ec6",
+      "text": "Pair auditory alerts and directions with a visual cue.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "pair auditory alerts with a visual cue",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f7fbdde6-387c-598a-af0a-73e0d11885ac",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9ea0e281-a1ee-583b-9a39-990bc4ccc614",
+      "text": "Face the student when speaking and avoid covering the mouth.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "face the student when speaking",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bf34cb36-7726-50ee-8f59-0823017a351f",
+      "text": "Provide a checklist to break long assignments into steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "checklist to break long assignments into steps",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b3952b96-9f27-5356-aed7-7890267457bc",
+      "text": "Provide a copy of teacher notes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a copy of teacher notes",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "955f0059-b68f-5cf5-8fa3-ebb2df328df1",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d469012a-66f5-5f56-93e3-b9f45eb56b0e",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "929377b2-3e9a-56e0-8520-d0b295d1dc5b",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "5a5419c7-471d-5792-8c31-fa69f3874784",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "8529623d-5e84-5150-b8bb-c0702e0631b8",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "029d6aaf-fc3e-5152-a28b-be5dd4a23d67",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "sustain attention to an independent task for 10 minutes",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "33769162-8e51-5464-a96a-ef0d2ed016ef",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "091edf31-e6b7-5715-91c4-661b2cf0c8d9",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1e8977e0-187c-550b-9960-81a375608001",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "produce three organized sentences on a topic",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-16"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "a81a97dc-639c-5fdb-a19d-377d7ce459ef",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

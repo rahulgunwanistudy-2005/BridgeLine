@@ -1,0 +1,171 @@
+{
+  "iep_record_id": "7c1a0c0d-fdd6-5b9f-a50a-3322a2549e75",
+  "student_ref": "RIV-2031",
+  "disability_category": "Autism",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "736d29e6-74ca-5f79-aaed-85f30f7dc090",
+      "text": "Provide frequent check-ins for understanding.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "frequent check-ins for understanding",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "db702d5e-f64f-552b-97b4-328c863dae16",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "aa4db0a1-aed1-55c4-8dab-8e058925d0f2",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9a3bf76b-d15e-5e55-a96e-f5043cf03ef8",
+      "text": "Give advance warning before transitions and changes in routine.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "advance warning before transitions and changes in routine",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "84b46ab4-ff7a-5264-a52a-cd9e7f240b5f",
+      "text": "Repeat and rephrase spoken directions on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "repeat and rephrase spoken directions on request",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "1d26105e-ee12-5721-b571-fe7588221761",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "52c817bb-8aa7-5ddf-baae-4ba6f4d9e35a",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "27da2ba8-339d-56b3-a2da-832dc6b7874b",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "c1163874-dd9d-50c6-a242-05f5b3375fde",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "produce three organized sentences on a topic",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "20489685-d071-5185-8590-1f12284bf9db",
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "use a self-monitoring checklist to review work before submitting",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "267c479d-ce9a-500b-aa30-c8236049ea7d",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use a checklist to organize materials for each class",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2911fce3-9ec0-5f95-b98c-637ad207c22d",
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "maintain a topic across three conversational turns",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2026-10-27",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "59e587ef-3d8d-5f25-a9d4-2761083da7cc",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

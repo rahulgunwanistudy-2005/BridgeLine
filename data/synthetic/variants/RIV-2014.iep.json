@@ -1,0 +1,168 @@
+{
+  "iep_record_id": "4044dc0e-7ab7-5b72-bfb2-27b3f65540a7",
+  "student_ref": "RIV-2014",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "26653a1e-1649-5c60-bc1d-b1bacfe31963",
+      "text": "Permit brief movement breaks between tasks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief movement breaks between tasks",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ac55fba1-5636-5eb2-8068-7821906af983",
+      "text": "Face the student when speaking and avoid covering the mouth.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "face the student when speaking",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5b2dcd89-6b10-5a2c-a061-36d62b2cbdef",
+      "text": "Provide audio versions of grade-level texts.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "audio versions of grade-level texts",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "17bc7928-858b-5542-937d-54e48a0f3992",
+      "text": "Allow text-to-speech for grade-level reading passages.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "text-to-speech for grade-level reading passages",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5b898320-63a5-5898-961c-e8f1956d3914",
+      "text": "Provide a word bank for written-response items in reading and history.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a word bank for written-response items",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bf21d019-6d35-5f83-92c5-e8515eaaa9a9",
+      "text": "Allow additional wait time for verbal responses.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "additional wait time for verbal responses",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "dfeb6d6e-c54b-50f5-9b3d-9505c8367055",
+      "text": "Provide a checklist to break long assignments into steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "checklist to break long assignments into steps",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cf13eaf4-5451-57b6-8de4-9aae97429090",
+      "text": "Do not grade spelling on first-draft written work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not grade spelling on first-draft written work",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "369d4333-f3e2-5289-b0ac-44c2a1a230a6",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "26613930-fadb-5e3d-904f-dcaf8215a985",
+      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "baseline": "Writes two related sentences with inconsistent capitalization.",
+      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "write a five-sentence paragraph with a topic sentence",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5b371a10-12e4-5e97-bce4-7ac11510e607",
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use correct past-tense verbs with 80% accuracy",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "37fcc146-e8d2-55f1-b066-5b3b56cb1a67",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2026-09-30",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "4424d97e-8085-580f-9a5b-f35e3be57e8e",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

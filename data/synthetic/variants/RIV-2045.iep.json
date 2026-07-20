@@ -1,0 +1,180 @@
+{
+  "iep_record_id": "372e28ba-ca1d-5ef2-be3a-e9629f0dc55c",
+  "student_ref": "RIV-2045",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "9b9e7a32-a9cb-5f31-a9dd-139f95026730",
+      "text": "Give a two-minute warning before transitions.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "two-minute warning before transitions",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c3023971-29d7-57ae-9f66-1a8d18879337",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5105e5e7-f2fc-567d-a943-8009f0bc1c73",
+      "text": "Allow access to a designated quiet space when overwhelmed.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "access to a designated quiet space when overwhelmed",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "fdfeb6d2-54d1-59f7-8ca3-301bf3ea6d78",
+      "text": "Provide captions or a transcript for all audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for all audio and video media",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b05de1b6-910f-578d-b566-86f9babb2041",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e03ef2be-7281-572a-9e8b-9954c795d9df",
+      "text": "Provide graphic organizers for writing and note-taking.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "graphic organizers for writing and note-taking",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5119045f-0231-5cd0-afb3-bdc3bb35d4df",
+      "text": "Provide a checklist to break long assignments into steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "checklist to break long assignments into steps",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "46f98113-094c-5a27-b102-9f802430c056",
+      "text": "Provide visual supports and models for new tasks.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual supports and models for new tasks",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "644c80f4-4b8e-515b-85de-bbeaebf8c224",
+      "text": "Check the daily planner for recorded homework before dismissal.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "check the daily planner before dismissal",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "e2de9a06-36f7-5b2e-af00-8fa218c67d6a",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "68d26c8a-1368-563d-82d6-3d7723f3e671",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "arrive to class with required materials in 8 of 10 class days",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3e5b837c-1576-5a47-9b66-809acdf6e9f0",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "accept a change in routine using a coping strategy",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "13b3813e-e6ce-5173-813d-4126c79b3f2d",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "request clarification when she misses information",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "48cd65f6-4735-53f6-b1da-fb3efb01aa1a",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

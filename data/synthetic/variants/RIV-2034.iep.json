@@ -1,0 +1,216 @@
+{
+  "iep_record_id": "911a712c-5b4a-5d11-b0da-d5269bf35783",
+  "student_ref": "RIV-2034",
+  "disability_category": "Hearing impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "499538b5-811f-59f2-8e87-0038b1ff6fa2",
+      "text": "Allow access to a designated quiet space when overwhelmed.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "access to a designated quiet space when overwhelmed",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "418ec720-102f-5a67-b19e-dff830da2e24",
+      "text": "Provide a word bank for written-response items in reading and history.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a word bank for written-response items",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "890a0d91-1aa6-5938-8289-ad226c00a233",
+      "text": "Provide audio versions of grade-level texts.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "audio versions of grade-level texts",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5d387c7c-1e53-5aeb-9d99-64a94b709ff8",
+      "text": "Do not penalize articulation errors in graded oral work.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "do not penalize articulation errors in graded oral work",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8ef0c2b4-fdc0-58eb-b46c-0b8d7a8c2ba8",
+      "text": "Allow brief scheduled sensory breaks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief scheduled sensory breaks",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f472fa81-d50d-5838-b7cd-30b6b722fddc",
+      "text": "Provide captions or a transcript for all audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for all audio and video media",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4ba741b6-3fb2-5dd2-813c-8987276b5df3",
+      "text": "Provide 50% extended time on all classroom tests and quizzes.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on all classroom tests and quizzes",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5c1c7531-33f8-570b-8be6-4996ccb33f12",
+      "text": "Provide captions or a transcript for audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for audio and video media",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b1c0978b-e4b5-5341-ae84-1b444efa379e",
+      "text": "Give a two-minute warning before transitions.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "two-minute warning before transitions",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "c0f3c87c-7268-52fb-b43d-8c186a0769ef",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Individual counseling 30 minutes weekly",
+      "confidence": 0.92,
+      "reconciliation_status": null
+    },
+    {
+      "id": "bfb91a7d-2d80-5bcc-a1f7-e3a9ba1bc6a1",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0f2da0ff-5794-5e52-b95b-c204dcb83153",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "f4352485-ba20-54af-a693-b6ac65cfb444",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "produce three organized sentences on a topic",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3abe0042-9460-5da8-81ae-fd5979f1e586",
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "use correct past-tense verbs with 80% accuracy",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "a678f8df-d1bc-591f-b316-17c79b2e358b",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "sustain attention to an independent task for 10 minutes",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "448e4fdc-b74b-5142-9820-96f35294a99a",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "solve two-step equations with 80% accuracy",
+      "confidence": 0.82,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "ee35b468-6ca4-5cd3-88cb-d934ba3708e3",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

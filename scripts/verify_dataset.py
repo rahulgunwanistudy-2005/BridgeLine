@@ -54,6 +54,32 @@ def main() -> int:
         if not f.fired:
             failures += 1
 
+    print("== variant records (STEP 6) ==")
+    from synthgen.variants import build_variants
+
+    variants = build_variants()
+    v_bad = 0
+    for record, _ in variants:
+        try:
+            validate_record(record, label=record["student_ref"])
+        except RecordValidationError as exc:
+            v_bad += 1
+            print(f"  INVALID {exc.label}: {exc.messages}", file=sys.stderr)
+    failures += v_bad
+    manifest_path = DATA_DIR / "manifest.json"
+    if manifest_path.exists():
+        import json as _json
+
+        manifest = _json.loads(manifest_path.read_text())
+        total = manifest["document_count"]
+        print(f"  {len(variants)} variants valid; manifest lists {total} documents "
+              f"({manifest['degraded_count']} degraded)")
+        if total != 100:
+            failures += 1
+            print(f"  EXPECTED 100 documents, manifest has {total}", file=sys.stderr)
+    else:
+        print("  (manifest missing: run build_variants.py)")
+
     print("== internal consistency ==")
     problems = check_district_and_ground_truth()
     if problems:

@@ -1,0 +1,169 @@
+{
+  "iep_record_id": "0262a745-a022-5b2f-8e03-85d6a84992db",
+  "student_ref": "RIV-2058",
+  "disability_category": "Speech or language impairment",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "fe87380e-b094-51d4-89a1-2d6689a61448",
+      "text": "Provide a visual schedule for each class period.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual schedule for each class period",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1756c2d0-3876-5d4b-bd73-219f52db7836",
+      "text": "Administer assessments in a small-group, reduced-distraction setting.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "small-group, reduced-distraction setting for assessments",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "2d26fa75-31ba-5b87-b11a-2d54c2e29825",
+      "text": "Break multi-step directions into chunked, numbered steps.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "break multi-step directions into numbered steps",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "63e456e2-6461-5963-a036-99d625959759",
+      "text": "Provide a copy of teacher notes.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "provide a copy of teacher notes",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d239b092-0dcb-5e90-80df-5c65ec46e828",
+      "text": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "08ec0f93-c5ef-548f-beed-f12943165ea7",
+      "text": "Use the personal FM/DM listening system in every class.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "personal FM/DM listening system in every class",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "fe7015c0-4a57-5fa4-831e-08f6ef381792",
+      "text": "Provide audio versions of grade-level texts.",
+      "applies_to": [
+        "subject"
+      ],
+      "source_page": 2,
+      "source_quote": "audio versions of grade-level texts",
+      "confidence": 0.96,
+      "reconciliation_status": null
+    },
+    {
+      "id": "027f1df1-451a-5029-858a-9297e977fcb1",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "ba52cc01-51ad-5edd-9168-de66fef70631",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "9175efdd-7f41-59aa-b6d4-8166b9c9130c",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.78,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "a0b0ec8d-bd1a-5759-9324-12b7258c5497",
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "cb5731a3-1a46-5ecd-96f4-1bb8bf81f788",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "produce three organized sentences on a topic",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2026-10-27",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-09-25"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "0f60f60c-5ae2-5717-9d71-9a7e39ac2a8b",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}

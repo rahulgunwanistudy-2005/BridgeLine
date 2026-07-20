@@ -1,0 +1,203 @@
+{
+  "iep_record_id": "725feefe-200f-5e6d-9620-d5cf31580427",
+  "student_ref": "RIV-2040",
+  "disability_category": "Specific learning disability",
+  "school_year": "2026-2027",
+  "accommodations": [
+    {
+      "id": "6580de6d-d69e-5e73-87ab-230fe1b60070",
+      "text": "Accept typed responses in place of extended handwriting.",
+      "applies_to": [
+        "subject",
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "accept typed responses in place of extended handwriting",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "93808736-e32f-5a3a-b847-d55d74d0ff69",
+      "text": "Provide captions or a transcript for audio and video media.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "captions or a transcript for audio and video media",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d0af69c1-ad15-5cc6-95d7-86b17c47cce7",
+      "text": "Provide visual supports and models for new tasks.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "visual supports and models for new tasks",
+      "confidence": 0.97,
+      "reconciliation_status": null
+    },
+    {
+      "id": "74cdb31e-23a4-5e4a-a8d9-70d5d273a326",
+      "text": "Seat near the point of instruction and away from high-traffic areas.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "preferential seating near the point of instruction",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "41c22e00-ae66-5a6d-85c7-698ec8cdbd17",
+      "text": "Provide 50% extended time on all classroom tests and quizzes.",
+      "applies_to": [
+        "all"
+      ],
+      "source_page": 2,
+      "source_quote": "50% extended time on all classroom tests and quizzes",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
+      "id": "eed38b23-4d0b-54e4-9a58-61c18c772a03",
+      "text": "Allow brief scheduled sensory breaks.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "brief scheduled sensory breaks",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f32493dd-06ab-5f04-873f-c9ba33b7b867",
+      "text": "Administer assessments in a small-group, reduced-distraction setting.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "small-group, reduced-distraction setting for assessments",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "282cd2f3-9c7e-5748-a7ea-27158946334b",
+      "text": "Do not require unplanned oral responses in front of the class.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "no unplanned oral responses in front of the class",
+      "confidence": 0.91,
+      "reconciliation_status": null
+    },
+    {
+      "id": "25b925a3-a3d6-5601-aa27-475672c10c87",
+      "text": "Read test directions and math word problems aloud on request.",
+      "applies_to": [
+        "context"
+      ],
+      "source_page": 2,
+      "source_quote": "read test directions and math word problems aloud",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    }
+  ],
+  "services": [
+    {
+      "id": "307312d2-bc0a-58c4-afa9-56802509353d",
+      "type": "Language processing support (group)",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Unassigned",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "748a33ef-3291-5cf1-baaa-861a5c071a33",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    }
+  ],
+  "goals": [
+    {
+      "id": "60b130b4-682a-5241-ae45-0293ebb3ae82",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "accept a change in routine using a coping strategy",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "e389544c-28bd-5963-966f-3e845dd7b4ef",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 3,
+      "source_quote": "arrive to class with required materials in 8 of 10 class days",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d5b71388-f6ef-53ee-b543-c0f5becd3961",
+      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Language sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 3,
+      "source_quote": "retell a short narrative with a beginning, middle, and end",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "6320131e-d297-56b6-b726-045313df8681",
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 3,
+      "source_quote": "organize a multi-paragraph response using an outline",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    }
+  ],
+  "dates": {
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-30"
+  },
+  "extraction_meta": {
+    "model": "ground-truth/hand-authored-v1",
+    "run_id": "774a4990-6282-5d26-afae-b0cf2f411c0e",
+    "page_count": 4,
+    "legibility_scores": [
+      1.0,
+      0.98,
+      0.97,
+      0.98
+    ],
+    "extracted_at": "2026-07-19T00:00:00Z"
+  }
+}
