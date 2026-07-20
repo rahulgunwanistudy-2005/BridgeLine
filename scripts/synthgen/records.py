@@ -106,10 +106,11 @@ def iep_record(
     annual_review: str | None,
     triennial_reeval: str | None,
     last_progress_report: str | None,
+    field_confidences: dict[str, float],
     page_count: int,
     legibility_scores: list[float],
 ) -> dict[str, Any]:
-    """Assemble a full canonical IEPRecord (frozen v1 schema, no field_confidences)."""
+    """Assemble a full canonical IEPRecord (schema v1.1, field_confidences embedded)."""
 
     return {
         "iep_record_id": stable_uuid("iep", student_ref),
@@ -124,6 +125,7 @@ def iep_record(
             "triennial_reeval": triennial_reeval,
             "last_progress_report": last_progress_report,
         },
+        "field_confidences": field_confidences,
         "extraction_meta": {
             "model": GROUND_TRUTH_MODEL,
             "run_id": stable_uuid("run", student_ref),
@@ -136,30 +138,25 @@ def iep_record(
 
 def field_confidences(
     *,
-    student_ref: str,
+    student_ref: float,
     disability_category: float,
     school_year: float,
     annual_review: float,
     triennial_reeval: float,
     last_progress_report: float,
-    student_ref_conf: float,
-) -> dict[str, Any]:
-    """Sidecar object: the six per-field confidences, kept OUT of the canonical record.
+) -> dict[str, float]:
+    """The six per-field extraction confidences carried inside the canonical record.
 
-    Mirrors the six keys the ingest ExtractionDraft carries. Stored alongside each record
-    as ``<student_ref>.confidences.json`` so the canonical IEPRecord stays pure v1 while
-    the confidence signal remains available to the confidence gate and harness.
+    Mirrors the FieldConfidences object in packages/schemas/IEPRecord.json: one 0.0–1.0
+    score per canonical scalar/date field. 0.0 signals an absent or unreliable value (a
+    field whose date is null must score 0.0). Embedded via ``iep_record(field_confidences=...)``.
     """
 
     return {
-        "iep_record_id": stable_uuid("iep", student_ref),
         "student_ref": student_ref,
-        "field_confidences": {
-            "student_ref": student_ref_conf,
-            "disability_category": disability_category,
-            "school_year": school_year,
-            "annual_review": annual_review,
-            "triennial_reeval": triennial_reeval,
-            "last_progress_report": last_progress_report,
-        },
+        "disability_category": disability_category,
+        "school_year": school_year,
+        "annual_review": annual_review,
+        "triennial_reeval": triennial_reeval,
+        "last_progress_report": last_progress_report,
     }

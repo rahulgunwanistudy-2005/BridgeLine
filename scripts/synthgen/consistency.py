@@ -17,7 +17,7 @@ from synthgen.ground_truth import build_records
 def check_district_and_ground_truth() -> list[str]:
     problems: list[str] = []
     district = build_district()
-    records = [rec for rec, _ in build_records()]
+    records = list(build_records())
 
     student_refs = {s["student_ref"] for s in district["students"]}
     holiday_dates = {h["date"] for h in district["calendar"]["holidays"]}

@@ -42,12 +42,10 @@ approved version.
 
 ```
 Body: { record: <IEPRecord, valid against packages/schemas/IEPRecord.json>,
-        approve: true,
-        field_confidences?: { student_ref, disability_category, school_year,
-                              annual_review, triennial_reeval, last_progress_report } }
+        approve: true }
 Behavior: validate against the IEPRecord Pydantic model; upsert lineage by iep_record_id;
-          if approve, mark is_current_approved. field_confidences is optional sidecar
-          metadata (the frozen record schema does not carry it).
+          if approve, mark is_current_approved. field_confidences is a required top-level
+          object inside record (schema v1.1) — no separate body field.
 Returns: { iep_record_id, id, created: bool }
 ```
 

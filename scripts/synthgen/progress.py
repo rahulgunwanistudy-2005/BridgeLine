@@ -140,7 +140,7 @@ def build_gradebook() -> tuple[dict[str, list[dict[str, Any]]], list[tuple[str, 
     Malformed lines are returned as (class_ref, raw_csv_line) pairs.
     """
 
-    records_by_ref = {r["student_ref"]: r for r, _ in build_records()}
+    records_by_ref = {r["student_ref"]: r for r in build_records()}
     district = build_district()
     enrolled: dict[str, list[str]] = {c: [] for c in CORE_CLASS_REFS}
     for e in district["enrollments"]:

@@ -206,8 +206,9 @@ def render_two_column_pdf(record: dict[str, Any]) -> bytes:
     pdf.text(_LEFT, _TOP + 66, f"{_display_name(r['student_ref'])}  ({r['student_ref']})  -  "
              f"{r['disability_category']}  -  SY {r['school_year']}", 9.5, bold=True)
     pdf.text(_LEFT, _TOP + 80,
-             f"Annual review {d['annual_review']}   Triennial {d['triennial_reeval']}   "
-             f"Last progress {d['last_progress_report']}", 9)
+             f"Annual review {d['annual_review'] or 'Not stated'}   "
+             f"Triennial {d['triennial_reeval'] or 'Not stated'}   "
+             f"Last progress {d['last_progress_report'] or 'Not stated'}", 9)
 
     mid = 300.0
     gutter = 18.0

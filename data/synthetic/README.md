@@ -15,8 +15,7 @@ district/        School, 6 subjects, 8 teachers, 6 classes (1 co-taught), 12 stu
                  72 enrollments (1 mid-semester), Fall-2026 calendar incl. holidays.
                  district.json is the whole thing; the rest are split views for seeding.
 ground_truth/    12 hand-authored canonical IEPRecords (<ref>.iep.json), each valid
-                 against packages/schemas/IEPRecord.json, plus per-student confidence
-                 sidecars (<ref>.confidences.json — see note below).
+                 against packages/schemas/IEPRecord.json (field_confidences embedded).
 progress/        gradebook/<class>.csv, service_logs/<ref>.csv,
                  teacher_notes/teacher_notes.json, accommodation_confirmations.csv
 documents/       Rendered IEP PDFs (STEP 4) and messy scans (STEP 5) — later slices.
@@ -28,12 +27,14 @@ The dashboard/deadline math evaluates against a fixed **`as_of` = 2026-11-13** (
 `district/calendar.json`), not the wall clock, so the demo and harness are reproducible
 on any day. The Fall 2026 semester runs 2026-08-17 → 2026-12-18.
 
-## field_confidences is a sidecar, not in the record
+## field_confidences is embedded in the record
 
-The frozen `IEPRecord.json` (v1, `additionalProperties:false`) has no `field_confidences`,
-so embedding it would fail schema validation. The six per-field confidences therefore live
-in `ground_truth/<ref>.confidences.json`, keyed to the same `iep_record_id`. (If/when the
-schema is promoted to v1.1 via paired PR, these can fold into the record.)
+`IEPRecord.json` (schema v1.1) requires a top-level `field_confidences` object: six
+0.0–1.0 scores for the canonical scalar/date fields (`student_ref`, `disability_category`,
+`school_year`, `annual_review`, `triennial_reeval`, `last_progress_report`). A field whose
+value is absent scores 0.0 — e.g. RIV-1012 has `last_progress_report: null` with confidence
+0.0. Values are authored in `scripts/synthgen/ground_truth.py` and emitted inside each
+record; there are no separate sidecar files.
 
 ## The three scripted findings (STEP 2 — rules-engine acceptance fixtures)
 

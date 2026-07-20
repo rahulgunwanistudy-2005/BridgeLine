@@ -86,6 +86,14 @@
     "triennial_reeval": "2026-11-18",
     "last_progress_report": "2026-09-25"
   },
+  "field_confidences": {
+    "student_ref": 0.99,
+    "disability_category": 0.95,
+    "school_year": 0.99,
+    "annual_review": 0.9,
+    "triennial_reeval": 0.9,
+    "last_progress_report": 0.92
+  },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",
     "run_id": "bd431567-a079-566b-a7db-ccfb783d5193",

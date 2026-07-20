@@ -42,20 +42,40 @@ paired `_sc_XXXX()` builders. So I update the *generators*, then regenerate the 
   `data/synthetic/variants/*.confidences.json` (88).
 
 ## Steps (cc/02b)
-- [ ] 1. Merge prior cc/02 work onto this branch (DONE: merge commit, .gitignore resolved).
-- [ ] 2. Refactor generators to embed field_confidences; delete sidecar code.
-- [ ] 3. Update seed.py + contract doc + PROVENANCE/README wording.
-- [ ] 4. Regenerate: `build_all.py` (records, docs, 88 variants, scans).
-- [ ] 5. Delete stale `*.confidences.json` files from disk.
-- [ ] 6. Validate every generated document vs CURRENT schema (programmatic, verify_dataset.py).
-- [ ] 7. Confirm byte-stability (double-build diff clean) + all 3 findings fire.
+- [x] 1. Merge prior cc/02 work onto this branch (merge commit ab53a56, .gitignore resolved).
+- [x] 2. Refactor generators to embed field_confidences; delete sidecar code
+      (records.py, ground_truth.py, variants.py; consumers build_dataset/build_variants/
+      verify_dataset/consistency/progress).
+- [x] 3. Update seed.py + contract doc + PROVENANCE/README wording.
+- [x] 4. Regenerate: `build_all.py` (12 records, docs, 88 variants, 5 scans).
+- [x] 5. Delete stale `*.confidences.json` files from disk (100 removed).
+- [x] 6. Validate every generated document vs CURRENT schema (100/100 on-disk .iep.json valid).
+- [x] 7. Confirm byte-stability (full-tree double-build hash identical) + all 3 findings fire.
 
-## Done criteria (cc/02b)
-- [ ] Every record (12 + 88) has an embedded, schema-valid `field_confidences`.
-- [ ] ≥1 record has `last_progress_report: null` with confidence 0.0.
-- [ ] No `*.confidences.json` files remain; no code reads/writes them.
-- [ ] `verify_dataset.py` green: 12/12 + 88/88 valid, 3 findings fire, byte-stable.
-- [ ] Double-build produces byte-identical output.
+## Done criteria (cc/02b) — ALL MET
+- [x] Every record (12 + 88) has an embedded, schema-valid `field_confidences`.
+- [x] ≥1 record has `last_progress_report: null` with confidence 0.0 (RIV-1012).
+- [x] No `*.confidences.json` files remain; no code reads/writes them.
+- [x] `verify_dataset.py` green: 12/12 + 88/88 valid, 3 findings fire, byte-stable.
+- [x] Double-build produces byte-identical output (full data/synthetic tree hash identical).
+
+## Review (cc/02b)
+**Shipped:** field_confidences embedded in all 100 IEPRecords (schema v1.1); the six
+authored confidences per ground-truth record folded from the old `_sc_*` sidecar builders
+into each `_riv_*` builder via `iep_record(field_confidences=...)`; RIV-1012 given the
+absent-field edge case (last_progress_report null → confidence 0.0). Sidecar concept fully
+removed: `field_confidences()` now returns the embedded six-key block, 100 `*.confidences.json`
+deleted, and all writers/consumers (build_dataset, build_variants, verify_dataset,
+variants._pools, consistency, progress) iterate records-only. seed.py sends the
+self-describing record; docs (seed-api-contract, README, PROVENANCE) updated. render.py
+two-column path hardened for null dates.
+**Verified:** 100/100 on-disk records valid vs current packages/schemas/IEPRecord.json;
+3 findings fire (40% conflict, 3/6 gap, −20 min/wk); internal consistency green; full-tree
+byte-stable across a clean rebuild; ruff clean. Only RIV-1012's rendered PDF/HTML changed
+(field_confidences is not printed on the form; its null date renders "Not stated").
+**Backend note (filed, not fixed — teammate territory):** none required. The Pydantic side
+already requires field_confidences inside the record (ingest/gate.py, ingest/extract.py,
+db/schemas.py), so embedding is backend-aligned.
 
 ---
 
