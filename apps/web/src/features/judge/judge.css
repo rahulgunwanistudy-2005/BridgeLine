@@ -92,6 +92,7 @@
 .judge-shared-object { grid-area:2 / 1; align-self:center; width:min(76vw,62rem); margin:0 auto; view-transition-name:obligation-transfer; transition:transform 1200ms cubic-bezier(.2,.75,.2,1),opacity 700ms ease; }
 .judge-narrative { position:relative; top:auto; left:auto; grid-area:1 / 1; z-index:16; width:min(100%,52rem); min-height:4.5rem; margin:0 auto; transform:none; display:grid; place-items:center; text-align:center; pointer-events:none; }
 .judge-narrative h1 { margin:0; max-width:18ch; font-family:var(--bl-font-document); font-size:clamp(1.65rem,3vw,3.2rem); line-height:1.05; text-wrap:balance; }
+.judge-narrative > p { max-width:42rem; margin:.6rem auto 0; color:color-mix(in srgb,var(--bl-paper-cream) 72%,transparent); font-family:var(--bl-font-body); font-size:.78rem; line-height:1.45; letter-spacing:0; text-transform:none; }
 .judge-phase-1 .judge-shared-object { transform:scale(1.04) translateY(-1rem); }
 .judge-phase-2 .judge-shared-object,.judge-phase-3 .judge-shared-object { transform:scale(.78) translateY(2.5rem); opacity:.28; }
 .judge-phase-4 .judge-shared-object { transform:scale(.9); opacity:.3; }

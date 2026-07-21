@@ -1,4 +1,4 @@
-import { ChevronRight, Pause, Play, RotateCcw, SkipForward, X } from "lucide-react";
+import { ChevronRight, FileCheck2, Pause, Play, RotateCcw, SkipForward, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -76,7 +76,7 @@ export function JudgeModePage(): React.JSX.Element {
   return (
     <main className={`judge-mode judge-phase-${phase}`}>
       <header className="judge-topbar">
-        <Link to="/" className="judge-brand"><span>§</span> Bridgeline</Link>
+        <Link to="/" className="judge-brand"><span><FileCheck2 aria-hidden="true" size={18} /></span> Bridgeline</Link>
         <div className="judge-stage-label">Following one verified obligation</div>
         <button aria-label="Exit Judge Mode" className="judge-icon-button" onClick={() => navigate("/dashboard")} type="button"><X size={18} /></button>
       </header>
@@ -95,6 +95,7 @@ export function JudgeModePage(): React.JSX.Element {
 
         <div className="judge-narrative">
           <h1>{narratives[phase]?.title}</h1>
+          {phase === 6 ? <p>An IEP is not implemented until its obligations reach the classroom.</p> : null}
         </div>
       </section>
 
