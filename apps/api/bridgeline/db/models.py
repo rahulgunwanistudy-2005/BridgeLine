@@ -10,6 +10,7 @@ from sqlalchemy import (
     CheckConstraint,
     Date,
     DateTime,
+    Float,
     ForeignKey,
     Index,
     Integer,
@@ -312,6 +313,7 @@ class PipelineRun(Base):
     state: Mapped[PipelineRunState] = mapped_column(String(32), nullable=False, default="queued")
     current_stage: Mapped[str | None] = mapped_column(String(100), nullable=True)
     detail: Mapped[str] = mapped_column(Text, nullable=False)
+    next_event_seq: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
     started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(
@@ -327,6 +329,39 @@ class PipelineRun(Base):
             name="ck_pipeline_runs_state",
         ),
         Index("ix_pipeline_runs_state_created", "state", "created_at"),
+    )
+
+
+class PipelineStatusEvent(Base):
+    """One append-only, resumable status event for a pipeline run."""
+
+    __tablename__ = "pipeline_status_events"
+
+    id: Mapped[UUID] = mapped_column(Uuid(as_uuid=True), primary_key=True, default=uuid4)
+    run_id: Mapped[UUID] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("pipeline_runs.id", ondelete="RESTRICT"), nullable=False
+    )
+    seq: Mapped[int] = mapped_column(Integer, nullable=False)
+    stage: Mapped[str] = mapped_column(String(100), nullable=False)
+    agent_label: Mapped[str] = mapped_column(String(255), nullable=False)
+    state: Mapped[str] = mapped_column(String(32), nullable=False)
+    detail: Mapped[str] = mapped_column(Text, nullable=False)
+    progress: Mapped[float | None] = mapped_column(Float, nullable=True)
+    parent_stage: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    ts: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+
+    __table_args__ = (
+        CheckConstraint("seq >= 1", name="ck_pipeline_status_events_positive_seq"),
+        CheckConstraint(
+            "state IN ('queued', 'running', 'done', 'needs_review', 'error')",
+            name="ck_pipeline_status_events_state",
+        ),
+        CheckConstraint(
+            "progress IS NULL OR (progress >= 0.0 AND progress <= 1.0)",
+            name="ck_pipeline_status_events_progress",
+        ),
+        UniqueConstraint("run_id", "seq", name="uq_pipeline_status_events_run_seq"),
+        Index("ix_pipeline_status_events_run_seq", "run_id", "seq"),
     )
 
 
