@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 from datetime import UTC, datetime
-from typing import Protocol, cast
+from typing import Literal, Protocol, cast
 from uuid import UUID
 
+from pydantic import JsonValue
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 
+from bridgeline.db.models import IEPRecord as IEPRecordRow
 from bridgeline.db.models import PipelineRun
 from bridgeline.db.models import PipelineStatusEvent as PipelineStatusEventRow
 from bridgeline.db.schemas import PipelineState, PipelineStatusEvent
@@ -40,6 +42,50 @@ class PipelineStore(Protocol):
     ) -> tuple[PipelineStatusEvent, ...]: ...
 
     async def run_state(self, run_id: UUID) -> str | None: ...
+
+    async def set_attention(
+        self,
+        run_id: UUID,
+        *,
+        kind: Literal["human_approval", "model_uncertainty", "system_failure"],
+        payload: dict[str, object],
+        retryable: bool,
+    ) -> None: ...
+
+
+class PipelineRunNotFoundError(LookupError):
+    """A requested pipeline run does not exist."""
+
+
+class PipelineApprovalStateError(ValueError):
+    """The run is not parked at an approvable human-review stage."""
+
+
+class PipelineDraftNotFoundError(LookupError):
+    """A paused run is missing its persisted draft record."""
+
+
+class PipelineRunSummary:
+    """Typed GET /pipeline payload, including the safety-significant attention class."""
+
+    def __init__(
+        self,
+        *,
+        run_id: UUID,
+        state: str,
+        current_stage: str | None,
+        detail: str,
+        attention_kind: str | None,
+        attention_payload: dict[str, object] | None,
+        retryable: bool,
+    ) -> None:
+        self.run_id = run_id
+        self.state = state
+        self.current_stage = current_stage
+        self.detail = detail
+        self.attention_kind = attention_kind
+        self.attention_payload = attention_payload
+        self.retryable = retryable
 
 
 class SQLAlchemyPipelineStore:
@@ -126,6 +172,89 @@ class SQLAlchemyPipelineStore:
         async with self._session_factory() as session:
             state = await session.scalar(select(PipelineRun.state).where(PipelineRun.id == run_id))
         return None if state is None else cast(str, state)
+
+    async def set_attention(
+        self,
+        run_id: UUID,
+        *,
+        kind: Literal["human_approval", "model_uncertainty", "system_failure"],
+        payload: dict[str, object],
+        retryable: bool,
+    ) -> None:
+        async with self._session_factory.begin() as session:
+            run = await session.get(PipelineRun, run_id)
+            if run is None:
+                raise PipelineRunNotFoundError(f"pipeline run {run_id} does not exist")
+            run.attention_kind = kind
+            run.attention_payload = cast(dict[str, JsonValue], payload)
+            run.retryable = retryable
+
+    async def summary(self, run_id: UUID) -> PipelineRunSummary:
+        async with self._session_factory() as session:
+            run = await session.get(PipelineRun, run_id)
+        if run is None:
+            raise PipelineRunNotFoundError(f"pipeline run {run_id} does not exist")
+        return PipelineRunSummary(
+            run_id=run.id,
+            state=run.state,
+            current_stage=run.current_stage,
+            detail=run.detail,
+            attention_kind=run.attention_kind,
+            attention_payload=cast(dict[str, object] | None, run.attention_payload),
+            retryable=run.retryable,
+        )
+
+    async def approve(self, run_id: UUID) -> tuple[UUID, bool]:
+        """Atomically approve the parked draft; repeated submissions are no-ops."""
+
+        now = datetime.now(UTC)
+        async with self._session_factory.begin() as session:
+            run = (
+                await session.execute(
+                    select(PipelineRun).where(PipelineRun.id == run_id).with_for_update()
+                )
+            ).scalar_one_or_none()
+            if run is None:
+                raise PipelineRunNotFoundError(f"pipeline run {run_id} does not exist")
+            draft = (
+                await session.execute(
+                    select(IEPRecordRow)
+                    .where(IEPRecordRow.pipeline_run_id == run_id)
+                    .with_for_update()
+                )
+            ).scalar_one_or_none()
+            if draft is None:
+                raise PipelineDraftNotFoundError(f"pipeline run {run_id} has no persisted draft")
+            if draft.approval_state == "approved":
+                return draft.iep_record_id, True
+            if run.state != "awaiting_approval" or run.attention_kind != "human_approval":
+                raise PipelineApprovalStateError(
+                    "pipeline run is not awaiting case-manager approval"
+                )
+            prior = (
+                await session.scalars(
+                    select(IEPRecordRow)
+                    .where(
+                        IEPRecordRow.iep_record_id == draft.iep_record_id,
+                        IEPRecordRow.is_current_approved.is_(True),
+                    )
+                    .with_for_update()
+                )
+            ).all()
+            for record in prior:
+                record.is_current_approved = False
+                record.superseded_at = now
+            draft.approval_state = "approved"
+            draft.is_current_approved = True
+            draft.approved_at = now
+            run.state = "done"
+            run.current_stage = "human_approval"
+            run.detail = "Case-manager approval recorded; the draft is ready for rules derivation."
+            run.attention_kind = None
+            run.attention_payload = None
+            run.retryable = False
+            run.completed_at = now
+            return draft.iep_record_id, False
 
 
 def _event_from_row(row: PipelineStatusEventRow) -> PipelineStatusEvent:

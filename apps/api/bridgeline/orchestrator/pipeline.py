@@ -5,7 +5,7 @@ from __future__ import annotations
 import asyncio
 import logging
 from dataclasses import dataclass, field
-from typing import Protocol
+from typing import Literal, Protocol
 from uuid import UUID
 
 from bridgeline.db.schemas import PipelineState
@@ -31,6 +31,24 @@ class PipelineContext:
     values: dict[str, object] = field(default_factory=dict)
 
 
+@dataclass(frozen=True, slots=True)
+class StageCompleted:
+    """A stage result that can surface reviewable findings without stopping the DAG."""
+
+    detail: str
+    state: PipelineState = PipelineState.DONE
+
+
+@dataclass(frozen=True, slots=True)
+class StagePaused:
+    """An intentional human-in-the-loop pause with durable review instructions."""
+
+    detail: str
+    attention_kind: Literal["human_approval", "model_uncertainty", "system_failure"]
+    attention_payload: dict[str, object]
+    retryable: bool = False
+
+
 class PipelineStage(Protocol):
     """A named DAG node with UI copy and explicit failure semantics."""
 
@@ -46,7 +64,7 @@ class PipelineStage(Protocol):
     @property
     def on_error(self) -> StageErrorPolicy: ...
 
-    async def run(self, ctx: PipelineContext) -> None: ...
+    async def run(self, ctx: PipelineContext) -> StageCompleted | StagePaused: ...
 
 
 @dataclass(frozen=True, slots=True)
@@ -59,9 +77,10 @@ class StubStage:
     on_error: StageErrorPolicy = StageErrorPolicy()
     delay_seconds: float = 0.35
 
-    async def run(self, ctx: PipelineContext) -> None:
+    async def run(self, ctx: PipelineContext) -> StageCompleted:
         await asyncio.sleep(self.delay_seconds)
         ctx.values[self.name] = "completed"
+        return StageCompleted(detail=f"{self.agent_label} completed its work.")
 
 
 class PipelineDefinition:
@@ -129,10 +148,10 @@ class PipelineRunner:
                 detail=f"{stage.agent_label} is ready to begin.",
             )
 
-    async def run(self, run_id: UUID) -> None:
+    async def run(self, run_id: UUID, *, values: dict[str, object] | None = None) -> None:
         """Run each current DAG node; real stage recovery is added in slice two."""
 
-        ctx = PipelineContext(run_id=run_id)
+        ctx = PipelineContext(run_id=run_id, values={} if values is None else values)
         for stage in self._definition.stages:
             await self._store.set_run_state(
                 run_id,
@@ -147,28 +166,50 @@ class PipelineRunner:
                 state=PipelineState.RUNNING,
                 detail=f"{stage.agent_label} is working.",
             )
-            await stage.run(ctx)
+            result = await stage.run(ctx)
+            if isinstance(result, StagePaused):
+                await self._store.set_attention(
+                    run_id,
+                    kind=result.attention_kind,
+                    payload=result.attention_payload,
+                    retryable=result.retryable,
+                )
+                await self._store.set_run_state(
+                    run_id,
+                    state="awaiting_approval",
+                    stage=stage.name,
+                    detail=result.detail,
+                )
+                await self._bus.emit(
+                    run_id=run_id,
+                    stage=stage.name,
+                    agent_label=stage.agent_label,
+                    state=PipelineState.NEEDS_REVIEW,
+                    detail=result.detail,
+                    progress=1.0,
+                )
+                return
             is_last = stage is self._definition.stages[-1]
             await self._store.set_run_state(
                 run_id,
                 state="done" if is_last else "running",
                 stage=stage.name,
-                detail=f"{stage.agent_label} completed its work.",
+                detail=result.detail,
             )
             await self._bus.emit(
                 run_id=run_id,
                 stage=stage.name,
                 agent_label=stage.agent_label,
-                state=PipelineState.DONE,
-                detail=f"{stage.agent_label} completed its work.",
+                state=result.state,
+                detail=result.detail,
                 progress=1.0,
             )
 
-    async def run_safely(self, run_id: UUID) -> None:
+    async def run_safely(self, run_id: UUID, *, values: dict[str, object] | None = None) -> None:
         """Ensure a background-task failure is logged rather than disappearing."""
 
         try:
-            await self.run(run_id)
+            await self.run(run_id, values=values)
         except Exception:
             logger.exception("pipeline runner failed run_id=%s", run_id)
             raise

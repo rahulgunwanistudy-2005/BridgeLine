@@ -25,6 +25,8 @@ from bridgeline.ingest.persistence import SQLAlchemyIngestStore
 from bridgeline.ingest.pipeline import IngestPipeline
 from bridgeline.ingest.status import LoggingStatusEventBus
 from bridgeline.llm.client import GeminiGateway
+from bridgeline.orchestrator.composition import get_pipeline_runner
+from bridgeline.orchestrator.pipeline import PipelineRunner
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/ieps", tags=["ieps"])
@@ -54,7 +56,7 @@ def get_ingest_pipeline() -> IngestPipeline:
 async def upload_iep(
     background_tasks: BackgroundTasks,
     file: Annotated[UploadFile, File(description="PDF, DOCX, or page image")],
-    pipeline: Annotated[IngestPipeline, Depends(get_ingest_pipeline)],
+    pipeline: Annotated[PipelineRunner, Depends(get_pipeline_runner)],
     lineage_hint: Annotated[
         UUID | None,
         Form(description="Existing iep_record_id selected by the case manager"),
@@ -78,12 +80,13 @@ async def upload_iep(
     run_id = uuid4()
     await pipeline.create_run(run_id)
     background_tasks.add_task(
-        _run_in_background,
-        pipeline,
-        data,
-        filename=file.filename or "upload",
-        run_id=run_id,
-        lineage_hint=lineage_hint,
+        pipeline.run_safely,
+        run_id,
+        values={
+            "upload_data": data,
+            "filename": file.filename or "upload",
+            "lineage_hint": lineage_hint,
+        },
     )
     return UploadResponse(run_id=run_id)
 

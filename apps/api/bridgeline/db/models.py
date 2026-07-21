@@ -35,7 +35,9 @@ FindingState = Literal["open", "resolved"]
 DeadlineState = Literal["upcoming", "due", "overdue"]
 SchoolTermKind = Literal["semester", "grading_period"]
 BriefState = Literal["draft", "released", "confirmed", "flagged"]
-PipelineRunState = Literal["queued", "running", "needs_review", "done", "error"]
+PipelineRunState = Literal[
+    "queued", "running", "awaiting_approval", "needs_review", "done", "error"
+]
 AuditActorRole = Literal["case_manager", "compliance_admin", "teacher", "provider", "system"]
 
 
@@ -314,6 +316,9 @@ class PipelineRun(Base):
     current_stage: Mapped[str | None] = mapped_column(String(100), nullable=True)
     detail: Mapped[str] = mapped_column(Text, nullable=False)
     next_event_seq: Mapped[int] = mapped_column(Integer, nullable=False, default=0)
+    attention_kind: Mapped[str | None] = mapped_column(String(32), nullable=True)
+    attention_payload: Mapped[dict[str, JsonValue] | None] = mapped_column(JSONB, nullable=True)
+    retryable: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
     started_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     completed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(
@@ -325,7 +330,7 @@ class PipelineRun(Base):
 
     __table_args__ = (
         CheckConstraint(
-            "state IN ('queued', 'running', 'needs_review', 'done', 'error')",
+            "state IN ('queued', 'running', 'awaiting_approval', 'needs_review', 'done', 'error')",
             name="ck_pipeline_runs_state",
         ),
         Index("ix_pipeline_runs_state_created", "state", "created_at"),

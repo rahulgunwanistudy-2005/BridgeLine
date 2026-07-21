@@ -5,11 +5,11 @@ from uuid import UUID, uuid4
 
 from httpx import ASGITransport, AsyncClient
 
-from bridgeline.api.ieps import get_ingest_pipeline
 from bridgeline.db.schemas import PipelineState
-from bridgeline.ingest.pipeline import IngestPipeline
 from bridgeline.ingest.status import LoggingStatusEventBus
 from bridgeline.main import create_app
+from bridgeline.orchestrator.composition import get_pipeline_runner
+from bridgeline.orchestrator.pipeline import PipelineRunner
 
 
 class RecordingPipeline:
@@ -22,15 +22,8 @@ class RecordingPipeline:
     async def create_run(self, run_id: UUID) -> None:
         self.created.append(run_id)
 
-    async def run(
-        self,
-        data: bytes,
-        *,
-        filename: str,
-        run_id: UUID,
-        lineage_hint: UUID | None = None,
-    ) -> None:
-        self.lineage_hints.append(lineage_hint)
+    async def run_safely(self, run_id: UUID, *, values: dict[str, object]) -> None:
+        self.lineage_hints.append(cast(UUID | None, values["lineage_hint"]))
 
 
 async def test_upload_forwards_explicit_lineage_hint() -> None:
@@ -38,7 +31,7 @@ async def test_upload_forwards_explicit_lineage_hint() -> None:
 
     fake = RecordingPipeline()
     app = create_app()
-    app.dependency_overrides[get_ingest_pipeline] = lambda: cast(IngestPipeline, fake)
+    app.dependency_overrides[get_pipeline_runner] = lambda: cast(PipelineRunner, fake)
     lineage = uuid4()
 
     async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:

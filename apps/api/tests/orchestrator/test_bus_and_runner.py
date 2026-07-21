@@ -8,12 +8,14 @@ from uuid import UUID, uuid4
 import pytest
 
 from bridgeline.db.schemas import PipelineState, PipelineStatusEvent
+from bridgeline.ingest.gate import GateResult, GateState, ReviewField
 from bridgeline.orchestrator.bus import PipelineEventBus
 from bridgeline.orchestrator.pipeline import (
     PipelineDefinition,
     PipelineRunner,
     StubStage,
 )
+from bridgeline.orchestrator.stages import HumanApprovalStage
 
 
 class InMemoryPipelineStore:
@@ -22,6 +24,7 @@ class InMemoryPipelineStore:
     def __init__(self) -> None:
         self.states: dict[UUID, str] = {}
         self.events: dict[UUID, list[PipelineStatusEvent]] = {}
+        self.attention: dict[UUID, tuple[str, dict[str, object], bool]] = {}
 
     async def create_run(self, run_id: UUID, *, detail: str) -> None:
         self.states[run_id] = "queued"
@@ -66,6 +69,11 @@ class InMemoryPipelineStore:
 
     async def run_state(self, run_id: UUID) -> str | None:
         return self.states.get(run_id)
+
+    async def set_attention(
+        self, run_id: UUID, *, kind: str, payload: dict[str, object], retryable: bool
+    ) -> None:
+        self.attention[run_id] = (kind, payload, retryable)
 
 
 async def _stream_events(bus: PipelineEventBus, run_id: UUID, cursor: int | None) -> list[str]:
@@ -135,3 +143,36 @@ async def test_runner_emits_a_visible_topological_dag() -> None:
         ("extract", "done"),
     ]
     assert store.states[run_id] == "done"
+
+
+@pytest.mark.asyncio
+async def test_human_approval_parks_without_a_live_background_task() -> None:
+    """The approval stage is a durable intentional pause with approved UI copy."""
+
+    store = InMemoryPipelineStore()
+    bus = PipelineEventBus(store)
+    runner = PipelineRunner(
+        definition=PipelineDefinition((HumanApprovalStage(depends_on=()),)), store=store, bus=bus
+    )
+    run_id = uuid4()
+    await runner.create_run(run_id)
+
+    await runner.run(
+        run_id,
+        values={
+            "persisted_id": uuid4(),
+            "gate": GateResult(
+                state=GateState.NEEDS_REVIEW,
+                review_fields=(
+                    ReviewField(path="student_ref", confidence=0.6, reason="Low confidence"),
+                ),
+            ),
+        },
+    )
+
+    assert store.states[run_id] == "awaiting_approval"
+    assert store.attention[run_id][0] == "human_approval"
+    assert store.events[run_id][-1].detail == (
+        "Awaiting case-manager approval. Review the source-grounded IEP draft and any "
+        "highlighted fields before Bridgeline derives teacher obligations."
+    )
