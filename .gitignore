@@ -23,3 +23,4 @@ venv/
 # cc/02 data tooling
 .venv-synth/
 scripts/synthgen/__pycache__/
+.claude/
