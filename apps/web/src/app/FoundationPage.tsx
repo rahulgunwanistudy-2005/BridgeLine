@@ -25,7 +25,7 @@ export function FoundationPage(): React.JSX.Element {
           <p>Bridgeline carries every verified duty from its source page to the person responsible—and shows whether it actually arrived.</p>
           <div className="foundation-actions">
             <Link className="foundation-enter" to="/upload">Enter the product <ArrowRight size={16} /></Link>
-            <Link className="foundation-judge" to="/judge"><Play fill="currentColor" size={14} /> Start Judge Mode</Link>
+            <Link className="foundation-judge" to="/judge" viewTransition><Play fill="currentColor" size={14} /> Start Judge Mode</Link>
           </div>
         </aside>
 
