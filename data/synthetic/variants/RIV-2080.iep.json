@@ -6,61 +6,84 @@
   "accommodations": [
     {
       "id": "5e19fa41-fd16-5f6a-8c86-1ea943de1f0b",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
-      "confidence": 0.82,
+      "source_quote": "Provide a word bank for written-response items.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "47d9655c-eede-5831-a216-3230cf9be12a",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
+      "source_quote": "Give a two-minute warning before transitions.",
       "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "3da941d0-9897-5523-86e9-b2e46b537163",
       "text": "Do not require unplanned oral responses in front of the class.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during whole-class discussion",
+          "source_page": 2,
+          "source_quote": "during whole-class discussion",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "no unplanned oral responses in front of the class",
-      "confidence": 0.9,
+      "source_quote": "Do not require unplanned oral responses in front of the class.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "ebb0e319-30e3-5873-8a63-b67fbe2ea4ac",
       "text": "Break long assignments into smaller submitted parts.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "break long assignments into smaller parts",
-      "confidence": 0.85,
+      "source_quote": "Break long assignments into smaller submitted parts.",
+      "confidence": 0.9,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "7f04aa96-9f3f-5123-b77a-5f85f1d882f5",
-      "type": "Speech and language therapy",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "source_quote": "Specialized academic instruction (executive functioning): 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
       "confidence": 0.89,
       "reconciliation_status": null
     }
@@ -68,64 +91,64 @@
   "goals": [
     {
       "id": "7ba2f498-dba0-57b3-a46b-c278d4221fcc",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "b111bf8c-74e2-5a03-ba1d-120f627c6447",
       "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
       "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
       "measure": "Structured social observation",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "maintain a topic across three conversational turns",
-      "confidence": 0.87,
-      "reconciliation_status": null
-    },
-    {
-      "id": "b111bf8c-74e2-5a03-ba1d-120f627c6447",
-      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
-      "baseline": "Requests clarification in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "request clarification when she misses information",
-      "confidence": 0.9,
+      "source_page": 4,
+      "source_quote": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "d0d1cb49-573a-5f42-9d3f-fb9e4b8cc42d",
-      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
-      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a paragraph with a clear topic sentence and three details",
-      "confidence": 0.81,
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "a0fe11bb-9179-55cb-8282-ae944aeca85d",
-      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
-      "baseline": "Reads grade-level text at 80 words per minute.",
-      "target": "120 words per minute with 95% accuracy.",
-      "measure": "Oral reading fluency probe",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
-      "confidence": 0.81,
+      "source_page": 4,
+      "source_quote": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-01-14",
+    "annual_review": "2027-05-19",
     "triennial_reeval": "2028-09-15",
-    "last_progress_report": "2026-10-09"
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.97,
+    "disability_category": 0.94,
     "school_year": 0.99,
-    "annual_review": 0.92,
-    "triennial_reeval": 0.87,
+    "annual_review": 0.96,
+    "triennial_reeval": 0.9,
     "last_progress_report": 0.95
   },
   "extraction_meta": {

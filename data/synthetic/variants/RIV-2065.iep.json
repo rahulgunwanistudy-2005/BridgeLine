@@ -7,90 +7,144 @@
     {
       "id": "686aec51-6bc1-5a45-8aa0-b1f3adb460aa",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
-      "confidence": 0.96,
+      "source_quote": "Give a two-minute warning before transitions.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "76c792a6-fd60-5dbd-bc83-34d550b7f923",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.84,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "0632a2d6-1801-5967-baae-dcda47262e06",
       "text": "State task expectations explicitly and in writing.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "state task expectations explicitly and in writing",
-      "confidence": 0.81,
+      "source_quote": "State task expectations explicitly and in writing.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "d65ac17c-5d7e-5425-bfde-40f25c2d78b6",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.93,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "c3c13350-b7d5-5669-9bd7-68a9935f91d3",
       "text": "Provide 50% extended time on reading-heavy assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.94
+        },
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on reading-heavy assessments",
-      "confidence": 0.89,
+      "source_quote": "Provide 50% extended time on reading-heavy assessments.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "bb3f3826-d0cd-5efd-af07-3db1c7afef36",
       "text": "Provide visual supports and models for new tasks.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual supports and models for new tasks",
-      "confidence": 0.84,
+      "source_quote": "Provide visual supports and models for new tasks.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "0676c2a9-039c-5529-be7b-0e953060a822",
       "text": "Provide a checklist to break long assignments into steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "checklist to break long assignments into steps",
-      "confidence": 0.88,
+      "source_quote": "Provide a checklist to break long assignments into steps.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "7702994d-a985-59e7-a74b-8f39e037b409",
       "text": "Face the student when speaking and avoid covering the mouth.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "face the student when speaking",
-      "confidence": 0.89,
+      "source_quote": "Face the student when speaking and avoid covering the mouth.",
+      "confidence": 0.84,
       "reconciliation_status": null
     }
   ],
@@ -98,68 +152,68 @@
     {
       "id": "5c377a67-3fcb-5106-b475-c4fde49a7952",
       "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Unassigned",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.91,
+      "source_quote": "Specialized academic instruction: 150 minutes per week; 30 minutes, 5 times weekly; provider: Unassigned.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "c29c21c7-e28d-5d8c-b2f6-9d865aaa1d9a",
-      "type": "Speech and language therapy (social communication)",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
-      "confidence": 0.91,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.81,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "891646bd-0750-51cd-a6d3-13c66be8404a",
-      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
-      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Language sample",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "retell a short narrative with a beginning, middle, and end",
-      "confidence": 0.81,
+      "source_page": 4,
+      "source_quote": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "14ec1a04-99a7-57de-bd94-2e508758d03b",
-      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
-      "baseline": "Organizes materials in 3 of 10 days.",
-      "target": "8 of 10 days.",
-      "measure": "Teacher checklist",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a checklist to organize materials for each class",
-      "confidence": 0.88,
+      "source_page": 4,
+      "source_quote": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2026-10-27",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-09-25"
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-16"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.9,
+    "disability_category": 0.96,
     "school_year": 0.99,
-    "annual_review": 0.9,
+    "annual_review": 0.87,
     "triennial_reeval": 0.88,
-    "last_progress_report": 0.89
+    "last_progress_report": 0.9
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

@@ -7,63 +7,119 @@
     {
       "id": "61687b8c-1224-5142-9ca6-5a75789d506d",
       "text": "Read test directions and math word problems aloud on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "read test directions and math word problems aloud",
-      "confidence": 0.81,
+      "source_quote": "Read test directions and math word problems aloud on request.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "172abc21-e756-5e29-b818-9444ca51d7e7",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
-      "confidence": 0.9,
+      "source_quote": "Provide a word bank for written-response items.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "2caa91bc-54ce-582f-9081-06c2fef1eed4",
       "text": "Seat near the point of instruction and away from high-traffic areas.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "preferential seating near the point of instruction",
-      "confidence": 0.81,
+      "source_quote": "Seat near the point of instruction and away from high-traffic areas.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "f7edec67-aecc-570c-911d-a50efa84df62",
       "text": "Pair new vocabulary with visuals and definitions.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.91
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair new vocabulary with visuals and definitions",
-      "confidence": 0.8,
+      "source_quote": "Pair new vocabulary with visuals and definitions.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "c1f797d7-dd6a-53df-9cf9-81423a081c5a",
       "text": "Accept typed responses in place of extended handwriting.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.91
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "accept typed responses in place of extended handwriting",
-      "confidence": 0.81,
+      "source_quote": "Accept typed responses in place of extended handwriting.",
+      "confidence": 0.89,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "f193b29f-8dd9-5e77-aaad-5b54b0a2e9ab",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "5a8219da-b624-59a8-8ade-fd1244ee2061",
       "type": "Specialized academic instruction (reading)",
       "minutes_per_week": 150,
       "frequency": "30 minutes, 5 times weekly",
@@ -71,111 +127,98 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction reading 30 minutes 5 times weekly",
-      "confidence": 0.88,
-      "reconciliation_status": null
-    },
-    {
-      "id": "5a8219da-b624-59a8-8ade-fd1244ee2061",
-      "type": "Individual counseling",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "School counselor",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Individual counseling 30 minutes weekly",
-      "confidence": 0.8,
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "b0594da6-4770-5f72-9320-b6e9ad610145",
-      "type": "Speech and language therapy (social communication)",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
       "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
-      "confidence": 0.89,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.85,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "116552bd-9fbf-5169-8d1b-d9488d74e209",
-      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
-      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
+      "measure": "Work-completion log",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "sustain attention to an independent task for 10 minutes",
-      "confidence": 0.83,
+      "source_page": 4,
+      "source_quote": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "a339d720-a623-57dd-a987-bec61357c5ab",
-      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
-      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a paragraph with a clear topic sentence and three details",
-      "confidence": 0.87,
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "caae90e2-1793-5527-85c4-92c54e92963b",
-      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
-      "baseline": "Decodes multisyllabic words with 55% accuracy.",
-      "target": "85% accuracy on 4 of 5 consecutive probes.",
-      "measure": "Curriculum-based reading probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
-      "confidence": 0.85,
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "06ef5f7f-ca34-5dd5-9936-58d91a44c4e1",
-      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
-      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
-      "measure": "Language sample",
+      "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "retell a short narrative with a beginning, middle, and end",
-      "confidence": 0.82,
+      "source_page": 4,
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "feb48ac9-5f4a-54c0-a9a9-c56bfd6679dc",
-      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
-      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
-      "confidence": 0.92,
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "confidence": 0.9,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-01-14",
-    "triennial_reeval": "2028-12-04",
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-09-15",
     "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.97,
+    "disability_category": 0.94,
     "school_year": 0.99,
-    "annual_review": 0.87,
+    "annual_review": 0.93,
     "triennial_reeval": 0.9,
-    "last_progress_report": 0.87
+    "last_progress_report": 0.92
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

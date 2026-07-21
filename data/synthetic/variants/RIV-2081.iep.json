@@ -6,158 +6,216 @@
   "accommodations": [
     {
       "id": "c3b9f72d-1fe5-51ff-9ba0-42243ce519d6",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
-      "confidence": 0.84,
+      "source_quote": "Provide a word bank for written-response items.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "7d40ab18-a204-5aa1-95c6-1e3b9d4e4875",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.83
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.92,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "3606af82-8d5a-57c5-9f23-fcfdce848cfc",
-      "text": "Seat with a clear line of sight to the speaker's face.",
-      "applies_to": [
-        "all"
+      "text": "Seat with a clear line of sight to the face of the speaker.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "clear line of sight to the speaker's face",
-      "confidence": 0.85,
+      "source_quote": "Seat with a clear line of sight to the face of the speaker.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "f3072b6f-4c0d-5f5f-9a84-33c944cc2ec9",
       "text": "Allow scheduled sensory breaks of up to five minutes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during independent work",
+          "source_page": 2,
+          "source_quote": "during independent work",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "scheduled sensory breaks of up to five minutes",
-      "confidence": 0.9,
+      "source_quote": "Allow scheduled sensory breaks of up to five minutes.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "47e40296-36c5-5be6-82f1-099bde2ae126",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.94,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "2392eb16-6607-5cb9-bbb7-43018a282f68",
       "text": "Break multi-step directions into chunked, numbered steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "break multi-step directions into numbered steps",
-      "confidence": 0.96,
+      "source_quote": "Break multi-step directions into chunked, numbered steps.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "12fc756f-62f0-5f28-810a-389d088237d4",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
-      "confidence": 0.91,
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "5aef9aff-7ce7-505b-a17a-0e6da12bb494",
       "text": "Break long assignments into smaller submitted parts.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "break long assignments into smaller parts",
-      "confidence": 0.93,
+      "source_quote": "Break long assignments into smaller submitted parts.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "5e344120-2e74-5acc-a853-07af4656a537",
       "text": "Provide captions or a transcript for all audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for all audio and video media",
-      "confidence": 0.91,
+      "source_quote": "Provide captions or a transcript for all audio and video media.",
+      "confidence": 0.96,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "3808a70b-00d0-5e46-bbf3-1ab5daa67f55",
-      "type": "Occupational therapy",
+      "type": "Educational audiology consultation",
       "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Occupational therapist",
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
-      "confidence": 0.92,
+      "source_quote": "Educational audiology consultation: 30 minutes per week; 30 minutes, 1 time monthly; provider: Educational audiologist.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "728759aa-3cbd-5c9d-a856-067d08d890d4",
-      "type": "Deaf/hard-of-hearing itinerant support",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Teacher of the deaf and hard of hearing",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.79,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.95,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "10dccb14-171a-5a65-bcd9-3baded032af4",
-      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
-      "baseline": "Reads grade-level text at 80 words per minute.",
-      "target": "120 words per minute with 95% accuracy.",
-      "measure": "Oral reading fluency probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
-      "confidence": 0.82,
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "f0e46913-e21b-54a8-953f-bf88579662d0",
-      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
-      "baseline": "Decodes multisyllabic words with 55% accuracy.",
-      "target": "85% accuracy on 4 of 5 consecutive probes.",
-      "measure": "Curriculum-based reading probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
-      "confidence": 0.87,
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
@@ -167,24 +225,24 @@
       "target": "4 of 5 opportunities.",
       "measure": "Work-completion log",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
-      "confidence": 0.88,
+      "source_page": 4,
+      "source_quote": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "confidence": 0.82,
       "reconciliation_status": null
     }
   ],
   "dates": {
     "annual_review": "2027-02-11",
-    "triennial_reeval": "2028-12-04",
+    "triennial_reeval": "2029-01-22",
     "last_progress_report": "2026-10-16"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.97,
+    "disability_category": 0.95,
     "school_year": 0.99,
-    "annual_review": 0.96,
-    "triennial_reeval": 0.94,
-    "last_progress_report": 0.93
+    "annual_review": 0.95,
+    "triennial_reeval": 0.88,
+    "last_progress_report": 0.87
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

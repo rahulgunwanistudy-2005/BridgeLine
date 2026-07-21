@@ -6,7 +6,7 @@ The repetitive contract fields and stable IDs are filled by ``records.py`` so th
 is byte-stable. Each record is first-extraction: every reconciliation_status is null.
 
 Edge cases (see also district.STUDENTS notes):
-  - RIV-1001 A. Sharma  : extended-time applies_to all (finding b); Goal 2 (finding a)
+  - RIV-1001 A. Sharma  : extended-time applies across all classes (finding b); Goal 2 (finding a)
   - RIV-1002 M. Bell    : service whose delivery runs 20 min/wk short (finding c)
   - RIV-1003 S. Ramirez : one service with NO provider (Unassigned); triennial mid-semester
   - RIV-1004 E. Nakamura: already-overdue annual review (2026-10-30 < as_of 2026-11-13)
@@ -16,7 +16,7 @@ Edge cases (see also district.STUDENTS notes):
   - RIV-1012 O. (clean) : no progress report on file — last_progress_report is null with
                           field_confidences.last_progress_report = 0.0 (absent-field rule)
 
-Each record embeds field_confidences (schema v1.1): six 0.0–1.0 scores for the canonical
+Each schema-v1.2 record embeds field_confidences: six 0.0–1.0 scores for the canonical
 scalar/date fields. A null date scores 0.0.
 """
 
@@ -27,28 +27,52 @@ from typing import Any
 from synthgen.constants import SCHOOL_YEAR
 from synthgen.records import (
     UNASSIGNED_PROVIDER,
+    AccommodationScopeReference,
+    Scope,
     accommodation,
     field_confidences,
     goal,
     iep_record,
+    scope_reference,
     service,
 )
 
 
-def _acc(sref: str, key: str, text: str, applies_to: list[str], page: int, quote: str, conf: float):
-    return accommodation(sref, key, text=text, applies_to=applies_to, source_page=page,
-                         source_quote=quote, confidence=conf)
+def _refs(*entries: tuple[Scope, str, float]) -> list[AccommodationScopeReference]:
+    return [
+        scope_reference(
+            scope, ref, source_page=2, source_quote=ref, confidence=confidence
+        )
+        for scope, ref, confidence in entries
+    ]
 
 
-def _svc(sref, key, type, mins, freq, provider, start, end, page, quote, conf):
+def _acc(
+    sref: str,
+    key: str,
+    text: str,
+    refs: list[AccommodationScopeReference],
+    conf: float,
+) -> dict[str, Any]:
+    return accommodation(
+        sref,
+        key,
+        text=text,
+        applies_to_refs=refs,
+        source_page=2,
+        confidence=conf,
+    )
+
+
+def _svc(sref, key, type, mins, freq, provider, start, end, page, _quote, conf):
     return service(sref, key, type=type, minutes_per_week=mins, frequency=freq,
                    provider_role=provider, start=start, end=end, source_page=page,
-                   source_quote=quote, confidence=conf)
+                   confidence=conf)
 
 
-def _goal(sref, key, text, baseline, target, measure, cadence, page, quote, conf):
+def _goal(sref, key, text, baseline, target, measure, cadence, page, _quote, conf):
     return goal(sref, key, text=text, baseline=baseline, target=target, measure=measure,
-                progress_cadence=cadence, source_page=page, source_quote=quote, confidence=conf)
+                progress_cadence=cadence, source_page=page, confidence=conf)
 
 
 # ── RIV-1001  Aanya Sharma — Specific learning disability (findings a + b) ────
@@ -60,15 +84,15 @@ def _riv_1001() -> dict[str, Any]:
         school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "extended-time", "Provide 50% extended time on all classroom tests and quizzes.",
-                 ["all"], 2, "50% extended time on all classroom tests and quizzes", 0.95),
-            _acc(s, "reduced-distraction", "Administer assessments in a small-group, reduced-distraction setting.",
-                 ["context"], 2, "small-group, reduced-distraction setting for assessments", 0.9),
-            _acc(s, "text-to-speech", "Allow text-to-speech for grade-level reading passages.",
-                 ["subject"], 2, "text-to-speech for grade-level reading passages", 0.88),
+                 _refs(("all", "across all classes", 0.94)), 0.95),
+            _acc(s, "reduced-distraction", "Provide access to a reduced-distraction workspace.",
+                 _refs(("all", "across all classes", 0.89)), 0.9),
+            _acc(s, "text-to-speech", "Allow text-to-speech for instructional materials.",
+                 _refs(("all", "across all classes", 0.87)), 0.88),
             _acc(s, "chunked-directions", "Break multi-step directions into chunked, numbered steps.",
-                 ["subject", "context"], 2, "break multi-step directions into numbered steps", 0.86),
-            _acc(s, "word-bank", "Provide a word bank for written-response items in reading and history.",
-                 ["subject"], 2, "provide a word bank for written-response items", 0.83),
+                 _refs(("all", "across all classes", 0.84)), 0.86),
+            _acc(s, "word-bank", "Provide a word bank for written-response items.",
+                 _refs(("all", "across all classes", 0.82)), 0.83),
         ],
         services=[
             _svc(s, "sai-reading", "Specialized academic instruction (reading)", 150,
@@ -113,14 +137,14 @@ def _riv_1002() -> dict[str, Any]:
         disability_category="Autism",
         school_year=SCHOOL_YEAR,
         accommodations=[
-            _acc(s, "visual-schedule", "Provide a written or visual schedule of each period's activities.",
-                 ["all"], 2, "written or visual schedule of each period's activities", 0.93),
+            _acc(s, "visual-schedule", "Provide a written or visual schedule of activities for each period.",
+                 _refs(("all", "in all settings", 0.92)), 0.93),
             _acc(s, "advance-warning", "Give advance warning before transitions and changes in routine.",
-                 ["all"], 2, "advance warning before transitions and changes in routine", 0.9),
+                 _refs(("all", "across all classes", 0.9)), 0.9),
             _acc(s, "sensory-breaks", "Allow scheduled sensory breaks of up to five minutes.",
-                 ["context"], 2, "scheduled sensory breaks of up to five minutes", 0.88),
+                 _refs(("context", "during independent work", 0.86)), 0.88),
             _acc(s, "no-cold-call", "Do not require unplanned oral responses in front of the class.",
-                 ["context"], 2, "no unplanned oral responses in front of the class", 0.85),
+                 _refs(("context", "during whole-class discussion", 0.84)), 0.85),
         ],
         services=[
             # This mandate is 150 min/wk; the service log delivers ~130 → -20 min/wk variance.
@@ -165,11 +189,12 @@ def _riv_1003() -> dict[str, Any]:
         school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "extra-response-time", "Allow additional wait time for verbal responses.",
-                 ["all"], 2, "additional wait time for verbal responses", 0.9),
+                 _refs(("all", "across all classes", 0.89)), 0.9),
             _acc(s, "sentence-starters", "Provide sentence starters for oral presentations.",
-                 ["subject"], 2, "sentence starters for oral presentations", 0.86),
+                 _refs(("subject", "English", 0.85)), 0.86),
             _acc(s, "no-penalize-articulation", "Do not penalize articulation errors in graded oral work.",
-                 ["subject", "context"], 2, "do not penalize articulation errors in graded oral work", 0.84),
+                 _refs(("subject", "English", 0.82),
+                       ("context", "during oral presentations", 0.8)), 0.84),
         ],
         services=[
             _svc(s, "speech-therapy", "Speech and language therapy", 60,
@@ -215,15 +240,15 @@ def _riv_1004() -> dict[str, Any]:
         school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "extended-time", "Provide 50% extended time on tests and long assignments.",
-                 ["all"], 2, "50% extended time on tests and long assignments", 0.93),
+                 _refs(("subject", "all academic subjects", 0.51)), 0.93),
             _acc(s, "preferential-seating", "Seat near the point of instruction and away from high-traffic areas.",
-                 ["all"], 2, "preferential seating near the point of instruction", 0.91),
+                 _refs(("all", "in all settings", 0.9)), 0.91),
             _acc(s, "movement-breaks", "Permit brief movement breaks between tasks.",
-                 ["context"], 2, "brief movement breaks between tasks", 0.87),
+                 _refs(("context", "between classroom tasks", 0.86)), 0.87),
             _acc(s, "assignment-checklist", "Provide a checklist to break long assignments into steps.",
-                 ["subject", "context"], 2, "checklist to break long assignments into steps", 0.85),
+                 _refs(("context", "during long assignments", 0.84)), 0.85),
             _acc(s, "planner-check", "Check the daily planner for recorded homework before dismissal.",
-                 ["context"], 2, "check the daily planner before dismissal", 0.82),
+                 _refs(("context", "before dismissal", 0.8)), 0.82),
         ],
         services=[
             _svc(s, "sai-organization", "Specialized academic instruction (executive functioning)", 100,
@@ -264,15 +289,16 @@ def _riv_1005() -> dict[str, Any]:
         school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "fm-system", "Use the personal FM/DM listening system in every class.",
-                 ["all"], 2, "personal FM/DM listening system in every class", 0.94),
-            _acc(s, "preferential-seating", "Seat with a clear line of sight to the speaker's face.",
-                 ["all"], 2, "clear line of sight to the speaker's face", 0.92),
+                 _refs(("all", "across all classes", 0.93)), 0.94),
+            _acc(s, "preferential-seating", "Seat with a clear line of sight to the face of the speaker.",
+                 _refs(("all", "in all settings", 0.91)), 0.92),
             _acc(s, "captioned-media", "Provide captions or a transcript for all audio and video media.",
-                 ["all"], 2, "captions or a transcript for all audio and video media", 0.9),
+                 _refs(("all", "across all classes", 0.9)), 0.9),
             _acc(s, "visual-alerts", "Pair auditory alerts and directions with a visual cue.",
-                 ["context"], 2, "pair auditory alerts with a visual cue", 0.87),
+                 _refs(("context", "during verbal instruction", 0.86)), 0.87),
             _acc(s, "notetaker", "Provide a peer notetaker or copy of lecture notes.",
-                 ["subject", "context"], 2, "peer notetaker or copy of lecture notes", 0.84),
+                 _refs(("subject", "English", 0.83),
+                       ("subject", "World History", 0.82)), 0.84),
         ],
         services=[
             _svc(s, "dhh-itinerant", "Deaf/hard-of-hearing itinerant support", 60,
@@ -317,13 +343,15 @@ def _riv_1006() -> dict[str, Any]:
         school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "extended-time", "Provide 50% extended time on classroom assessments.",
-                 ["all"], 2, "50% extended time on classroom assessments", 0.93),
+                 _refs(("subject", "Mathematics", 0.91),
+                       ("subject", "Biology", 0.89)), 0.93),
             _acc(s, "calculator", "Allow a four-function calculator on non-calculation-skill tasks.",
-                 ["subject"], 2, "four-function calculator on non-calculation-skill tasks", 0.87),
+                 _refs(("subject", "Mathematics", 0.86)), 0.87),
             _acc(s, "graphic-organizer", "Provide graphic organizers for writing and note-taking.",
-                 ["subject", "context"], 2, "graphic organizers for writing and note-taking", 0.85),
+                 _refs(("subject", "English", 0.84),
+                       ("context", "during written assignments", 0.82)), 0.85),
             _acc(s, "read-aloud", "Read test directions and math word problems aloud on request.",
-                 ["context"], 2, "read test directions and math word problems aloud", 0.83),
+                 _refs(("context", "during testing", 0.81)), 0.83),
         ],
         services=[
             _svc(s, "sai-math", "Specialized academic instruction (mathematics)", 150,
@@ -361,11 +389,11 @@ def _riv_1007() -> dict[str, Any]:
         student_ref=s, disability_category="Autism", school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "visual-supports", "Provide visual supports and models for new tasks.",
-                 ["all"], 2, "visual supports and models for new tasks", 0.92),
+                 _refs(("all", "across all classes", 0.91)), 0.92),
             _acc(s, "transition-warning", "Give a two-minute warning before transitions.",
-                 ["all"], 2, "two-minute warning before transitions", 0.9),
+                 _refs(("all", "in all settings", 0.89)), 0.9),
             _acc(s, "quiet-space", "Allow access to a designated quiet space when overwhelmed.",
-                 ["context"], 2, "access to a designated quiet space when overwhelmed", 0.87),
+                 _refs(("context", "when overwhelmed", 0.86)), 0.87),
         ],
         services=[
             _svc(s, "sai", "Specialized academic instruction", 100,
@@ -404,11 +432,11 @@ def _riv_1008() -> dict[str, Any]:
         student_ref=s, disability_category="Other health impairment (ADHD)", school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "extended-time", "Provide 25% extended time on timed assessments.",
-                 ["all"], 2, "25% extended time on timed assessments", 0.9),
+                 _refs(("context", "during timed assessments", 0.89)), 0.9),
             _acc(s, "chunked-work", "Break long assignments into smaller submitted parts.",
-                 ["subject", "context"], 2, "break long assignments into smaller parts", 0.86),
+                 _refs(("context", "during long assignments", 0.84)), 0.86),
             _acc(s, "frequent-checkins", "Provide frequent check-ins for understanding.",
-                 ["context"], 2, "frequent check-ins for understanding", 0.84),
+                 _refs(("all", "across all classes", 0.83)), 0.84),
         ],
         services=[
             _svc(s, "sai", "Specialized academic instruction", 100,
@@ -443,11 +471,12 @@ def _riv_1009() -> dict[str, Any]:
         student_ref=s, disability_category="Speech or language impairment", school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "wait-time", "Allow additional wait time for verbal responses.",
-                 ["all"], 2, "additional wait time for verbal responses", 0.9),
+                 _refs(("all", "across all classes", 0.89)), 0.9),
             _acc(s, "visual-vocab", "Pair new vocabulary with visuals and definitions.",
-                 ["subject"], 2, "pair new vocabulary with visuals and definitions", 0.86),
+                 _refs(("subject", "English", 0.85),
+                       ("subject", "Biology", 0.83)), 0.86),
             _acc(s, "repeat-directions", "Repeat and rephrase spoken directions on request.",
-                 ["context"], 2, "repeat and rephrase spoken directions on request", 0.84),
+                 _refs(("context", "during verbal instruction", 0.82)), 0.84),
         ],
         services=[
             _svc(s, "speech", "Speech and language therapy", 60,
@@ -482,13 +511,16 @@ def _riv_1010() -> dict[str, Any]:
         student_ref=s, disability_category="Specific learning disability", school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "audiobooks", "Provide audio versions of grade-level texts.",
-                 ["subject"], 2, "audio versions of grade-level texts", 0.9),
+                 _refs(("subject", "English", 0.89)), 0.9),
             _acc(s, "spelling-not-graded", "Do not grade spelling on first-draft written work.",
-                 ["subject", "context"], 2, "do not grade spelling on first-draft written work", 0.86),
+                 _refs(("subject", "English", 0.84),
+                       ("context", "during written assignments", 0.82)), 0.86),
             _acc(s, "extended-time", "Provide 50% extended time on reading-heavy assessments.",
-                 ["all"], 2, "50% extended time on reading-heavy assessments", 0.92),
+                 _refs(("subject", "English", 0.9),
+                       ("context", "during testing", 0.88)), 0.92),
             _acc(s, "copy-of-notes", "Provide a copy of teacher notes.",
-                 ["context"], 2, "provide a copy of teacher notes", 0.83),
+                 _refs(("subject", "World History", 0.81),
+                       ("subject", "Biology", 0.8)), 0.83),
         ],
         services=[
             _svc(s, "sai-reading", "Specialized academic instruction (reading)", 150,
@@ -528,11 +560,11 @@ def _riv_1011() -> dict[str, Any]:
         student_ref=s, disability_category="Hearing impairment", school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "fm-system", "Use the personal FM/DM listening system in every class.",
-                 ["all"], 2, "personal FM/DM listening system in every class", 0.93),
+                 _refs(("all", "across all classes", 0.92)), 0.93),
             _acc(s, "captioned-media", "Provide captions or a transcript for audio and video media.",
-                 ["all"], 2, "captions or a transcript for audio and video media", 0.9),
+                 _refs(("all", "in all settings", 0.89)), 0.9),
             _acc(s, "face-speaker", "Face the student when speaking and avoid covering the mouth.",
-                 ["context"], 2, "face the student when speaking", 0.86),
+                 _refs(("context", "during verbal instruction", 0.84)), 0.86),
         ],
         services=[
             _svc(s, "dhh-itinerant", "Deaf/hard-of-hearing itinerant support", 60,
@@ -567,13 +599,14 @@ def _riv_1012() -> dict[str, Any]:
         student_ref=s, disability_category="Autism", school_year=SCHOOL_YEAR,
         accommodations=[
             _acc(s, "visual-schedule", "Provide a visual schedule for each class period.",
-                 ["all"], 2, "visual schedule for each class period", 0.92),
+                 _refs(("all", "across all classes", 0.91)), 0.92),
             _acc(s, "clear-expectations", "State task expectations explicitly and in writing.",
-                 ["all"], 2, "state task expectations explicitly and in writing", 0.89),
+                 _refs(("all", "in all settings", 0.88)), 0.89),
             _acc(s, "reduced-writing", "Accept typed responses in place of extended handwriting.",
-                 ["subject", "context"], 2, "accept typed responses in place of extended handwriting", 0.85),
+                 _refs(("subject", "English", 0.83),
+                       ("context", "during written assignments", 0.81)), 0.85),
             _acc(s, "sensory-breaks", "Allow brief scheduled sensory breaks.",
-                 ["context"], 2, "brief scheduled sensory breaks", 0.83),
+                 _refs(("context", "during independent work", 0.81)), 0.83),
         ],
         services=[
             _svc(s, "sai", "Specialized academic instruction", 100,

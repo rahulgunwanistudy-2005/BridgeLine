@@ -7,33 +7,51 @@
     {
       "id": "cd90d0bd-9d3f-5f42-8ffa-ce5f69071e31",
       "text": "Provide 50% extended time on all classroom tests and quizzes.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on all classroom tests and quizzes",
-      "confidence": 0.93,
+      "source_quote": "Provide 50% extended time on all classroom tests and quizzes.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "b4676310-78a6-50a2-8c75-148a9de966f5",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
-      "confidence": 0.78,
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "818be8d9-e0f7-5a0f-8c7c-4923df8ea137",
-      "text": "Allow text-to-speech for grade-level reading passages.",
-      "applies_to": [
-        "subject"
+      "text": "Allow text-to-speech for instructional materials.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "text-to-speech for grade-level reading passages",
+      "source_quote": "Allow text-to-speech for instructional materials.",
       "confidence": 0.93,
       "reconciliation_status": null
     }
@@ -41,32 +59,6 @@
   "services": [
     {
       "id": "cb256112-a0c2-584a-a18d-5244234a5518",
-      "type": "Educational audiology consultation",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time monthly",
-      "provider_role": "Educational audiologist",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Educational audiology consultation 30 minutes monthly",
-      "confidence": 0.92,
-      "reconciliation_status": null
-    },
-    {
-      "id": "0e28817e-fc06-532b-883e-da3a2baa11c7",
-      "type": "Language processing support (group)",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Unassigned",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
-      "confidence": 0.91,
-      "reconciliation_status": null
-    },
-    {
-      "id": "867a5164-be93-5376-8d0d-f0daf1c675c4",
       "type": "Specialized academic instruction (mathematics)",
       "minutes_per_week": 150,
       "frequency": "30 minutes, 5 times weekly",
@@ -74,73 +66,99 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
-      "confidence": 0.82,
+      "source_quote": "Specialized academic instruction (mathematics): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "0e28817e-fc06-532b-883e-da3a2baa11c7",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation: 30 minutes per week; 30 minutes, 1 time monthly; provider: Educational audiologist.",
+      "confidence": 0.85,
+      "reconciliation_status": null
+    },
+    {
+      "id": "867a5164-be93-5376-8d0d-f0daf1c675c4",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy (social communication): 30 minutes per week; 30 minutes, 1 time weekly; provider: Speech-language pathologist.",
+      "confidence": 0.9,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "e2783c5b-7e80-54a7-a2c6-09bc4f8e9500",
-      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.78,
-      "reconciliation_status": null
-    },
-    {
-      "id": "d7e78971-6409-5285-bfc8-c40621bd1bb5",
       "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
       "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
       "target": "4 of 5 samples.",
       "measure": "Writing work sample",
       "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a paragraph with a clear topic sentence and three details",
-      "confidence": 0.81,
+      "source_page": 4,
+      "source_quote": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "d7e78971-6409-5285-bfc8-c40621bd1bb5",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "0af0d576-f2fe-504b-9359-63827a01d128",
-      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
-      "baseline": "Identifies the main idea with 40% accuracy.",
-      "target": "80% accuracy across three consecutive assessments.",
-      "measure": "Reading comprehension work sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "identify the main idea and two supporting details with 80% accuracy",
-      "confidence": 0.8,
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "24718e91-c5e3-5ab3-8acf-3d1ebe55ada3",
-      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
-      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
       "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "organize a multi-paragraph response using an outline",
-      "confidence": 0.89,
+      "source_page": 4,
+      "source_quote": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "confidence": 0.88,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-03-09",
-    "triennial_reeval": "2026-11-18",
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-12-04",
     "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.93,
+    "disability_category": 0.96,
     "school_year": 0.99,
-    "annual_review": 0.94,
-    "triennial_reeval": 0.93,
-    "last_progress_report": 0.95
+    "annual_review": 0.86,
+    "triennial_reeval": 0.92,
+    "last_progress_report": 0.86
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

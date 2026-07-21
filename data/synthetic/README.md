@@ -29,12 +29,21 @@ on any day. The Fall 2026 semester runs 2026-08-17 → 2026-12-18.
 
 ## field_confidences is embedded in the record
 
-`IEPRecord.json` (schema v1.1) requires a top-level `field_confidences` object: six
+`IEPRecord.json` (schema v1.2) requires a top-level `field_confidences` object: six
 0.0–1.0 scores for the canonical scalar/date fields (`student_ref`, `disability_category`,
 `school_year`, `annual_review`, `triennial_reeval`, `last_progress_report`). A field whose
 value is absent scores 0.0 — e.g. RIV-1012 has `last_progress_report: null` with confidence
 0.0. Values are authored in `scripts/synthgen/ground_truth.py` and emitted inside each
 record; there are no separate sidecar files.
+
+## Source-grounded accommodation scopes
+
+Every accommodation carries one or more `applies_to_refs` copied from document language.
+The rendered form has a fixed four-page contract: accommodations on page 2, services on
+page 3, and goals on page 4. Verification extracts each clean PDF text layer and proves
+that every item and scope quote occurs verbatim on its declared page. RIV-1004 intentionally
+keeps `all academic subjects` as one low-confidence subject phrase so it routes to review;
+the generator does not invent a roster-derived subject expansion.
 
 ## The three scripted findings (STEP 2 — rules-engine acceptance fixtures)
 

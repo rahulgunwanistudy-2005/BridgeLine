@@ -7,50 +7,74 @@
     {
       "id": "753afc54-27c3-5865-bf44-99cefcf06217",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.84
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.85,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "2e771814-8444-5bef-a318-9c44b93356b9",
       "text": "Allow a four-function calculator on non-calculation-skill tasks.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "four-function calculator on non-calculation-skill tasks",
-      "confidence": 0.94,
+      "source_quote": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "a40e7aed-fb19-5651-8d55-11dcc4f4574a",
       "text": "Face the student when speaking and avoid covering the mouth.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "face the student when speaking",
-      "confidence": 0.95,
+      "source_quote": "Face the student when speaking and avoid covering the mouth.",
+      "confidence": 0.79,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "5d1310a7-8c30-58d9-9d76-522da6f5214f",
-      "type": "Speech and language therapy (social communication)",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
       "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
-      "confidence": 0.81,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
@@ -62,85 +86,85 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.81,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.79,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "032ab97f-2238-5cc3-9f2d-9536d57eec39",
-      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
-      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a paragraph with a clear topic sentence and three details",
-      "confidence": 0.89,
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "7464d5b6-a395-5f9e-ae32-21ac4d93bcfd",
-      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
-      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "sustain attention to an independent task for 10 minutes",
-      "confidence": 0.87,
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "c17e9c51-603d-5140-b810-451b9bd3506c",
-      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
-      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
-      "target": "3 of 4 structured opportunities.",
-      "measure": "Structured social observation",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a taught script to join a peer activity",
-      "confidence": 0.95,
+      "source_page": 4,
+      "source_quote": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "bc8f7748-a835-55c9-9b3f-c0728b342519",
-      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
-      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities across two weeks.",
-      "measure": "Teacher observation checklist",
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "independently begin a classroom task within two minutes",
-      "confidence": 0.92,
+      "source_page": 4,
+      "source_quote": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "7d363393-c141-583f-88b1-32dba028173b",
-      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
-      "baseline": "Writes two related sentences with inconsistent capitalization.",
-      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a five-sentence paragraph with a topic sentence",
-      "confidence": 0.96,
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "confidence": 0.85,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
-    "triennial_reeval": "2028-12-04",
-    "last_progress_report": "2026-09-25"
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.9,
+    "disability_category": 0.95,
     "school_year": 0.99,
-    "annual_review": 0.87,
-    "triennial_reeval": 0.84,
-    "last_progress_report": 0.95
+    "annual_review": 0.88,
+    "triennial_reeval": 0.92,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

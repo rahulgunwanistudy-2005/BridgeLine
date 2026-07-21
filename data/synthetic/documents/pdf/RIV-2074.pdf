@@ -4,7 +4,7 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R 12 0 R] /Count 4 >>
 endobj
 3 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
@@ -13,9 +13,10 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 5 0 obj
-<< /Length 6399 >>
+<< /Length 2728 >>
 stream
 BT 0.000 g /F2 15.00 Tf 54.00 724.00 Td (Riverside Demo School District) Tj ET
+BT 0.000 g /F1 9.00 Tf 506.00 724.00 Td (Page 1 of 4) Tj ET
 BT 0.000 g /F2 12.00 Tf 54.00 706.00 Td (Individualized Education Program \(IEP\)) Tj ET
 0.150 g 54.00 684.00 504.00 16.00 re f
 BT 1.000 g /F2 9.50 Tf 58.00 688.00 Td (CONFIDENTIAL - SYNTHETIC DEMO DATA - NOT A REAL STUDENT) Tj ET
@@ -32,134 +33,147 @@ BT 0.000 g /F1 10.00 Tf 202.00 598.00 Td (2026-2027) Tj ET
 BT 0.000 g /F2 10.00 Tf 62.00 584.00 Td (Eligibility:) Tj ET
 BT 0.000 g /F1 10.00 Tf 202.00 584.00 Td (Hearing impairment) Tj ET
 BT 0.000 g /F2 10.00 Tf 62.00 570.00 Td (Annual Review:) Tj ET
-BT 0.000 g /F1 10.00 Tf 202.00 570.00 Td (2027-02-11) Tj ET
+BT 0.000 g /F1 10.00 Tf 202.00 570.00 Td (2026-11-03) Tj ET
 BT 0.000 g /F2 10.00 Tf 62.00 556.00 Td (Triennial Reevaluation:) Tj ET
-BT 0.000 g /F1 10.00 Tf 202.00 556.00 Td (2029-03-30) Tj ET
+BT 0.000 g /F1 10.00 Tf 202.00 556.00 Td (2028-12-04) Tj ET
 BT 0.000 g /F2 10.00 Tf 62.00 542.00 Td (Last Progress Report:) Tj ET
-BT 0.000 g /F1 10.00 Tf 202.00 542.00 Td (2026-10-16) Tj ET
+BT 0.000 g /F1 10.00 Tf 202.00 542.00 Td (2026-09-25) Tj ET
 0 G 0.60 w 54.00 538.00 504.00 116.00 re S
 0.880 g 54.00 510.00 504.00 18.00 re f
 BT 0.000 g /F2 11.00 Tf 58.00 515.00 Td (Present Levels of Performance) Tj ET
-BT 0.000 g /F1 10.50 Tf 54.00 493.50 Td (Present levels are summarized from the student's current baselines: Defines grade-level vocabulary with) Tj ET
-BT 0.000 g /F1 10.50 Tf 54.00 479.50 Td (50% accuracy. Answers inferential questions with 50% accuracy.) Tj ET
-0.880 g 54.00 452.00 504.00 18.00 re f
-BT 0.000 g /F2 11.00 Tf 58.00 457.00 Td (Measurable Annual Goals) Tj ET
-BT 0.000 g /F2 10.50 Tf 54.00 435.00 Td (Goal 1) Tj ET
-BT 0.000 g /F1 10.00 Tf 62.00 422.00 Td (Layla will define grade-level academic vocabulary with 80% accuracy.) Tj ET
-BT 0.000 g /F2 10.00 Tf 62.00 408.00 Td (Baseline:) Tj ET
-BT 0.000 g /F1 10.00 Tf 174.00 408.00 Td (Defines grade-level vocabulary with 50% accuracy.) Tj ET
-BT 0.000 g /F2 10.00 Tf 62.00 394.00 Td (Target:) Tj ET
-BT 0.000 g /F1 10.00 Tf 174.00 394.00 Td (80% accuracy across three assessments.) Tj ET
-BT 0.000 g /F2 10.00 Tf 62.00 380.00 Td (Measure:) Tj ET
-BT 0.000 g /F1 10.00 Tf 174.00 380.00 Td (Vocabulary probe) Tj ET
-BT 0.000 g /F2 10.00 Tf 62.00 366.00 Td (Progress cadence:) Tj ET
-BT 0.000 g /F1 10.00 Tf 174.00 366.00 Td (Monthly) Tj ET
-BT 0.000 g /F2 10.50 Tf 54.00 345.00 Td (Goal 2) Tj ET
-BT 0.000 g /F1 10.00 Tf 62.00 332.00 Td (Jamal will answer inferential questions about a text with 80% accuracy.) Tj ET
-BT 0.000 g /F2 10.00 Tf 62.00 318.00 Td (Baseline:) Tj ET
-BT 0.000 g /F1 10.00 Tf 174.00 318.00 Td (Answers inferential questions with 50% accuracy.) Tj ET
-BT 0.000 g /F2 10.00 Tf 62.00 304.00 Td (Target:) Tj ET
-BT 0.000 g /F1 10.00 Tf 174.00 304.00 Td (80% accuracy across three assessments.) Tj ET
-BT 0.000 g /F2 10.00 Tf 62.00 290.00 Td (Measure:) Tj ET
-BT 0.000 g /F1 10.00 Tf 174.00 290.00 Td (Comprehension work sample) Tj ET
-BT 0.000 g /F2 10.00 Tf 62.00 276.00 Td (Progress cadence:) Tj ET
-BT 0.000 g /F1 10.00 Tf 174.00 276.00 Td (Every two weeks) Tj ET
-0.880 g 54.00 248.00 504.00 18.00 re f
-BT 0.000 g /F2 11.00 Tf 58.00 253.00 Td (Accommodations) Tj ET
-BT 0.000 g /F2 10.00 Tf 58.00 232.00 Td (-) Tj ET
-BT 0.000 g /F1 10.00 Tf 70.00 232.00 Td (Break long assignments into smaller submitted parts. \(applies to: specific subject, specific context\)) Tj ET
-BT 0.000 g /F2 10.00 Tf 58.00 218.00 Td (-) Tj ET
-BT 0.000 g /F1 10.00 Tf 70.00 218.00 Td (Provide sentence starters for oral presentations. \(applies to: specific subject\)) Tj ET
-BT 0.000 g /F2 10.00 Tf 58.00 204.00 Td (-) Tj ET
-BT 0.000 g /F1 10.00 Tf 70.00 204.00 Td (Provide a visual schedule for each class period. \(applies to: all classes\)) Tj ET
-BT 0.000 g /F2 10.00 Tf 58.00 190.00 Td (-) Tj ET
-BT 0.000 g /F1 10.00 Tf 70.00 190.00 Td (Do not require unplanned oral responses in front of the class. \(applies to: specific context\)) Tj ET
-BT 0.000 g /F2 10.00 Tf 58.00 176.00 Td (-) Tj ET
-BT 0.000 g /F1 10.00 Tf 70.00 176.00 Td (Allow access to a designated quiet space when overwhelmed. \(applies to: specific context\)) Tj ET
-BT 0.000 g /F2 10.00 Tf 58.00 162.00 Td (-) Tj ET
-BT 0.000 g /F1 10.00 Tf 70.00 162.00 Td (Provide 25% extended time on timed assessments. \(applies to: all classes\)) Tj ET
-BT 0.000 g /F2 10.00 Tf 58.00 148.00 Td (-) Tj ET
-BT 0.000 g /F1 10.00 Tf 70.00 148.00 Td (Provide 50% extended time on all classroom tests and quizzes. \(applies to: all classes\)) Tj ET
-BT 0.000 g /F2 10.00 Tf 58.00 134.00 Td (-) Tj ET
-BT 0.000 g /F1 10.00 Tf 70.00 134.00 Td (Give advance warning before transitions and changes in routine. \(applies to: all classes\)) Tj ET
-0.880 g 54.00 112.00 504.00 18.00 re f
-BT 0.000 g /F2 11.00 Tf 58.00 117.00 Td (Special Education and Related Services) Tj ET
-0.900 g 54.00 90.00 504.00 16.00 re f
-BT 0.000 g /F2 9.50 Tf 57.00 95.00 Td (Service) Tj ET
-BT 0.000 g /F2 9.50 Tf 225.00 95.00 Td (Min/wk) Tj ET
-BT 0.000 g /F2 9.50 Tf 277.00 95.00 Td (Frequency) Tj ET
-BT 0.000 g /F2 9.50 Tf 405.00 95.00 Td (Provider) Tj ET
-BT 0.000 g /F1 9.50 Tf 57.00 80.00 Td (Specialized academic instruction) Tj ET
-0.60 w 54.00 92.00 m 54.00 76.00 l S
-BT 0.000 g /F1 9.50 Tf 225.00 80.00 Td (100) Tj ET
-0.60 w 222.00 92.00 m 222.00 76.00 l S
-BT 0.000 g /F1 9.50 Tf 277.00 80.00 Td (50 minutes, 2 times weekly) Tj ET
-0.60 w 274.00 92.00 m 274.00 76.00 l S
-BT 0.000 g /F1 9.50 Tf 405.00 80.00 Td (Special education teacher) Tj ET
-0.60 w 402.00 92.00 m 402.00 76.00 l S
-0.60 w 558.00 92.00 m 558.00 76.00 l S
-0.60 w 54.00 76.00 m 558.00 76.00 l S
-BT 0.000 g /F1 9.50 Tf 57.00 64.00 Td (Speech and language therapy) Tj ET
-0.60 w 54.00 76.00 m 54.00 60.00 l S
-BT 0.000 g /F1 9.50 Tf 225.00 64.00 Td (60) Tj ET
-0.60 w 222.00 76.00 m 222.00 60.00 l S
-BT 0.000 g /F1 9.50 Tf 277.00 64.00 Td (30 minutes, 2 times weekly) Tj ET
-0.60 w 274.00 76.00 m 274.00 60.00 l S
-BT 0.000 g /F1 9.50 Tf 405.00 64.00 Td (Speech-language pathologist) Tj ET
-0.60 w 402.00 76.00 m 402.00 60.00 l S
-0.60 w 558.00 76.00 m 558.00 60.00 l S
-0.60 w 54.00 60.00 m 558.00 60.00 l S
+BT 0.000 g /F1 10.50 Tf 54.00 493.50 Td (Present levels are summarized from the student's current baselines: Decodes multisyllabic words with 55%) Tj ET
+BT 0.000 g /F1 10.50 Tf 54.00 479.50 Td (accuracy. Solves two-step equations with 40% accuracy.) Tj ET
+0.880 g 54.00 440.00 504.00 18.00 re f
+BT 0.000 g /F2 11.00 Tf 58.00 445.00 Td (Signatures) Tj ET
+BT 0.000 g /F1 9.50 Tf 54.00 424.50 Td (This synthetic IEP is provided for demonstration only.) Tj ET
+0.60 w 54.00 400.00 m 294.00 400.00 l S
+BT 0.000 g /F1 9.50 Tf 54.00 390.00 Td (Case Manager: Ms. Jordan Lee) Tj ET
+0.60 w 354.00 400.00 m 558.00 400.00 l S
+BT 0.000 g /F1 9.50 Tf 354.00 390.00 Td (Date) Tj ET
+0.60 w 54.00 370.00 m 294.00 370.00 l S
+BT 0.000 g /F1 9.50 Tf 54.00 360.00 Td (Parent/Guardian: \(synthetic\)) Tj ET
+0.60 w 354.00 370.00 m 558.00 370.00 l S
+BT 0.000 g /F1 9.50 Tf 354.00 360.00 Td (Date) Tj ET
+0.60 w 54.00 340.00 m 294.00 340.00 l S
+BT 0.000 g /F1 9.50 Tf 54.00 330.00 Td (LEA Representative: \(synthetic\)) Tj ET
+0.60 w 354.00 340.00 m 558.00 340.00 l S
+BT 0.000 g /F1 9.50 Tf 354.00 330.00 Td (Date) Tj ET
 endstream
 endobj
 6 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
 endobj
 7 0 obj
-<< /Length 1356 >>
+<< /Length 2173 >>
 stream
-BT 0.000 g /F1 9.50 Tf 57.00 728.00 Td (Speech and language therapy) Tj ET
-0.60 w 54.00 740.00 m 54.00 724.00 l S
-BT 0.000 g /F1 9.50 Tf 225.00 728.00 Td (60) Tj ET
-0.60 w 222.00 740.00 m 222.00 724.00 l S
-BT 0.000 g /F1 9.50 Tf 277.00 728.00 Td (30 minutes, 2 times weekly) Tj ET
-0.60 w 274.00 740.00 m 274.00 724.00 l S
-BT 0.000 g /F1 9.50 Tf 405.00 728.00 Td (Speech-language pathologist) Tj ET
-0.60 w 402.00 740.00 m 402.00 724.00 l S
-0.60 w 558.00 740.00 m 558.00 724.00 l S
-0.60 w 54.00 724.00 m 558.00 724.00 l S
-0.880 g 54.00 692.00 504.00 18.00 re f
-BT 0.000 g /F2 11.00 Tf 58.00 697.00 Td (Signatures) Tj ET
-BT 0.000 g /F1 9.50 Tf 54.00 676.50 Td (This synthetic IEP is provided for demonstration only.) Tj ET
-0.60 w 54.00 652.00 m 294.00 652.00 l S
-BT 0.000 g /F1 9.50 Tf 54.00 642.00 Td (Case Manager: Ms. Jordan Lee) Tj ET
-0.60 w 354.00 652.00 m 558.00 652.00 l S
-BT 0.000 g /F1 9.50 Tf 354.00 642.00 Td (Date) Tj ET
-0.60 w 54.00 622.00 m 294.00 622.00 l S
-BT 0.000 g /F1 9.50 Tf 54.00 612.00 Td (Parent/Guardian: \(synthetic\)) Tj ET
-0.60 w 354.00 622.00 m 558.00 622.00 l S
-BT 0.000 g /F1 9.50 Tf 354.00 612.00 Td (Date) Tj ET
-0.60 w 54.00 592.00 m 294.00 592.00 l S
-BT 0.000 g /F1 9.50 Tf 54.00 582.00 Td (LEA Representative: \(synthetic\)) Tj ET
-0.60 w 354.00 592.00 m 558.00 592.00 l S
-BT 0.000 g /F1 9.50 Tf 354.00 582.00 Td (Date) Tj ET
+BT 0.000 g /F2 9.00 Tf 54.00 728.00 Td (IEP - RIV-2074 \(RIV-2074\)) Tj ET
+BT 0.000 g /F1 9.00 Tf 506.00 728.00 Td (Page 2 of 4) Tj ET
+0.60 w 54.00 722.00 m 558.00 722.00 l S
+0.880 g 54.00 694.00 504.00 18.00 re f
+BT 0.000 g /F2 11.00 Tf 58.00 699.00 Td (Accommodations) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 678.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 678.00 Td (Break long assignments into smaller submitted parts.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 664.50 Td (Applicability: during long assignments.) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 646.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 646.00 Td (Provide sentence starters for oral presentations.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 632.50 Td (Applicability: English.) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 614.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 614.00 Td (Provide a visual schedule for each class period.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 600.50 Td (Applicability: across all classes.) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 582.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 582.00 Td (Do not require unplanned oral responses in front of the class.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 568.50 Td (Applicability: during whole-class discussion.) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 550.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 550.00 Td (Allow access to a designated quiet space when overwhelmed.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 536.50 Td (Applicability: when overwhelmed.) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 518.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 518.00 Td (Provide 25% extended time on timed assessments.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 504.50 Td (Applicability: during timed assessments.) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 486.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 486.00 Td (Provide 50% extended time on all classroom tests and quizzes.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 472.50 Td (Applicability: across all classes.) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 454.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 454.00 Td (Give advance warning before transitions and changes in routine.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 440.50 Td (Applicability: across all classes.) Tj ET
 endstream
 endobj
 8 0 obj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
 endobj
+9 0 obj
+<< /Length 1316 >>
+stream
+BT 0.000 g /F2 9.00 Tf 54.00 728.00 Td (IEP - RIV-2074 \(RIV-2074\)) Tj ET
+BT 0.000 g /F1 9.00 Tf 506.00 728.00 Td (Page 3 of 4) Tj ET
+0.60 w 54.00 722.00 m 558.00 722.00 l S
+0.880 g 54.00 694.00 504.00 18.00 re f
+BT 0.000 g /F2 11.00 Tf 58.00 699.00 Td (Special Education and Related Services) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 678.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 678.00 Td (Specialized academic instruction \(reading\): 150 minutes per week; 30 minutes, 5 times weekly; provider:) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 664.00 Td (Special education teacher.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 650.50 Td (Service dates: 2026-08-17 through 2027-05-28.) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 628.00 Td (-) Tj ET
+BT 0.000 g /F1 10.00 Tf 70.00 628.00 Td (Occupational therapy: 30 minutes per week; 30 minutes, 1 time weekly; provider: Occupational therapist.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 614.50 Td (Service dates: 2026-08-17 through 2027-05-28.) Tj ET
+BT 0.000 g /F2 10.00 Tf 58.00 592.00 Td (-) Tj ET
+BT 0.000 g /F2 10.00 Tf 70.00 592.00 Td (Language processing support \(group\): 60 minutes per week; 30 minutes, 2 times weekly; provider:) Tj ET
+BT 0.000 g /F2 10.00 Tf 70.00 578.00 Td (Unassigned.) Tj ET
+BT 0.000 g /F1 9.50 Tf 78.00 564.50 Td (Service dates: 2026-08-17 through 2027-05-28.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 1789 >>
+stream
+BT 0.000 g /F2 9.00 Tf 54.00 728.00 Td (IEP - RIV-2074 \(RIV-2074\)) Tj ET
+BT 0.000 g /F1 9.00 Tf 506.00 728.00 Td (Page 4 of 4) Tj ET
+0.60 w 54.00 722.00 m 558.00 722.00 l S
+0.880 g 54.00 694.00 504.00 18.00 re f
+BT 0.000 g /F2 11.00 Tf 58.00 699.00 Td (Measurable Annual Goals) Tj ET
+BT 0.000 g /F2 10.50 Tf 54.00 677.00 Td (Goal 1) Tj ET
+BT 0.000 g /F1 10.00 Tf 62.00 664.00 Td (Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.) Tj ET
+BT 0.000 g /F2 10.00 Tf 62.00 650.00 Td (Baseline:) Tj ET
+BT 0.000 g /F1 10.00 Tf 174.00 650.00 Td (Decodes multisyllabic words with 55% accuracy.) Tj ET
+BT 0.000 g /F2 10.00 Tf 62.00 636.00 Td (Target:) Tj ET
+BT 0.000 g /F1 10.00 Tf 174.00 636.00 Td (85% accuracy on 4 of 5 consecutive probes.) Tj ET
+BT 0.000 g /F2 10.00 Tf 62.00 622.00 Td (Measure:) Tj ET
+BT 0.000 g /F1 10.00 Tf 174.00 622.00 Td (Curriculum-based reading probe) Tj ET
+BT 0.000 g /F2 10.00 Tf 62.00 608.00 Td (Progress cadence:) Tj ET
+BT 0.000 g /F1 10.00 Tf 174.00 608.00 Td (Every two weeks) Tj ET
+BT 0.000 g /F2 10.50 Tf 54.00 587.00 Td (Goal 2) Tj ET
+BT 0.000 g /F1 10.00 Tf 62.00 574.00 Td (Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.) Tj ET
+BT 0.000 g /F2 10.00 Tf 62.00 560.00 Td (Baseline:) Tj ET
+BT 0.000 g /F1 10.00 Tf 174.00 560.00 Td (Solves two-step equations with 40% accuracy.) Tj ET
+BT 0.000 g /F2 10.00 Tf 62.00 546.00 Td (Target:) Tj ET
+BT 0.000 g /F1 10.00 Tf 174.00 546.00 Td (80% accuracy on 4 of 5 probes.) Tj ET
+BT 0.000 g /F2 10.00 Tf 62.00 532.00 Td (Measure:) Tj ET
+BT 0.000 g /F1 10.00 Tf 174.00 532.00 Td (Math curriculum-based probe) Tj ET
+BT 0.000 g /F2 10.00 Tf 62.00 518.00 Td (Progress cadence:) Tj ET
+BT 0.000 g /F1 10.00 Tf 174.00 518.00 Td (Every two weeks) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
+endobj
 xref
-0 9
+0 13
 0000000000 65535 f 
 0000000015 00000 n 
 0000000064 00000 n 
-0000000127 00000 n 
-0000000197 00000 n 
-0000000272 00000 n 
-0000006723 00000 n 
-0000006859 00000 n 
-0000008267 00000 n 
+0000000141 00000 n 
+0000000211 00000 n 
+0000000286 00000 n 
+0000003066 00000 n 
+0000003202 00000 n 
+0000005427 00000 n 
+0000005563 00000 n 
+0000006931 00000 n 
+0000007068 00000 n 
+0000008910 00000 n 
 trailer
-<< /Size 9 /Root 1 0 R >>
+<< /Size 13 /Root 1 0 R >>
 startxref
-8403
+9048
 %%EOF

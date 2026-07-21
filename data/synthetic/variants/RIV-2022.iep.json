@@ -7,145 +7,207 @@
     {
       "id": "0a4de2e0-4672-53b5-8f34-888fe97e09f2",
       "text": "Permit brief movement breaks between tasks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "between classroom tasks",
+          "source_page": 2,
+          "source_quote": "between classroom tasks",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief movement breaks between tasks",
-      "confidence": 0.86,
+      "source_quote": "Permit brief movement breaks between tasks.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "bb08c73c-fdda-586f-a6d1-872d88fe9271",
       "text": "Provide 50% extended time on reading-heavy assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.82
+        },
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on reading-heavy assessments",
-      "confidence": 0.93,
+      "source_quote": "Provide 50% extended time on reading-heavy assessments.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "3e03e606-3fcf-5295-9475-ec2635f26665",
       "text": "Give advance warning before transitions and changes in routine.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "advance warning before transitions and changes in routine",
-      "confidence": 0.84,
+      "source_quote": "Give advance warning before transitions and changes in routine.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "a21b526b-6888-5b54-a72e-508a863480dc",
       "text": "Seat near the point of instruction and away from high-traffic areas.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "preferential seating near the point of instruction",
-      "confidence": 0.81,
+      "source_quote": "Seat near the point of instruction and away from high-traffic areas.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "465bcc17-5583-5e3a-9b5a-b2fb8e4d1cec",
       "text": "Check the daily planner for recorded homework before dismissal.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "before dismissal",
+          "source_page": 2,
+          "source_quote": "before dismissal",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "check the daily planner before dismissal",
+      "source_quote": "Check the daily planner for recorded homework before dismissal.",
       "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "d6baad7f-3d8c-5423-9329-fba51656f684",
       "text": "Provide captions or a transcript for audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for audio and video media",
+      "source_quote": "Provide captions or a transcript for audio and video media.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "066a3f93-3448-5dc9-9538-0fa224373846",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
-      "confidence": 0.81,
+      "source_quote": "Provide a word bank for written-response items.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "e6df787f-2c3d-5f02-a526-548353277ee1",
       "text": "Provide a copy of teacher notes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "World History",
+          "source_page": 2,
+          "source_quote": "World History",
+          "confidence": 0.79
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a copy of teacher notes",
-      "confidence": 0.79,
+      "source_quote": "Provide a copy of teacher notes.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "604de0c1-e33c-55c9-9ddf-b080d5018abf",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.87,
+      "source_quote": "Educational audiology consultation: 30 minutes per week; 30 minutes, 1 time monthly; provider: Educational audiologist.",
+      "confidence": 0.82,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "4c52a5d7-53d1-505e-a6be-a73d3d8db388",
-      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
-      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "accept a change in routine using a coping strategy",
-      "confidence": 0.81,
+      "source_page": 4,
+      "source_quote": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "06fbcac7-5adb-54fa-8174-5c6ad7ed6dec",
-      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
-      "baseline": "Reads grade-level text at 80 words per minute.",
-      "target": "120 words per minute with 95% accuracy.",
-      "measure": "Oral reading fluency probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
-      "confidence": 0.91,
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-02-11",
+    "annual_review": "2027-04-22",
     "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-10-09"
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.92,
+    "disability_category": 0.97,
     "school_year": 0.99,
     "annual_review": 0.88,
-    "triennial_reeval": 0.93,
-    "last_progress_report": 0.86
+    "triennial_reeval": 0.89,
+    "last_progress_report": 0.87
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

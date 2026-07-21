@@ -7,145 +7,197 @@
     {
       "id": "cff1cce2-fd9e-5869-a7a8-8d9bfea0ee85",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.93,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "18c13146-cd24-5cfd-9a21-290ad3c23d2e",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
-      "confidence": 0.8,
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "69d6d0ac-d62b-5917-af29-82bc15ddb65d",
       "text": "Break long assignments into smaller submitted parts.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "break long assignments into smaller parts",
+      "source_quote": "Break long assignments into smaller submitted parts.",
       "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "657ff9aa-a315-5c2c-9b7f-8c7613f1450f",
       "text": "Allow brief scheduled sensory breaks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during independent work",
+          "source_page": 2,
+          "source_quote": "during independent work",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief scheduled sensory breaks",
+      "source_quote": "Allow brief scheduled sensory breaks.",
       "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "07d52d62-b8a6-5cdb-b698-db20995e9966",
       "text": "Read test directions and math word problems aloud on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "read test directions and math word problems aloud",
-      "confidence": 0.86,
+      "source_quote": "Read test directions and math word problems aloud on request.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "1c677ae9-e79c-51c3-9f20-c331cc099df6",
       "text": "Do not grade spelling on first-draft written work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.91
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not grade spelling on first-draft written work",
-      "confidence": 0.84,
+      "source_quote": "Do not grade spelling on first-draft written work.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "1b2d3186-dc60-5c70-ba7c-3d57497f8539",
       "text": "Break multi-step directions into chunked, numbered steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "break multi-step directions into numbered steps",
-      "confidence": 0.81,
+      "source_quote": "Break multi-step directions into chunked, numbered steps.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "444871df-5860-5315-91df-64b9597a3ef6",
       "text": "Permit brief movement breaks between tasks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "between classroom tasks",
+          "source_page": 2,
+          "source_quote": "between classroom tasks",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief movement breaks between tasks",
-      "confidence": 0.94,
+      "source_quote": "Permit brief movement breaks between tasks.",
+      "confidence": 0.97,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "81e97bd0-8696-503b-82b6-497ad7fb7e3c",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.89,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "e6499970-a23f-5c1b-b8aa-3f53380b3e1c",
-      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
-      "baseline": "Produces initial /r/ with 45% accuracy.",
-      "target": "80% accuracy in structured tasks across three sessions.",
-      "measure": "Speech probe",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "produce initial /r/ with 80% accuracy",
-      "confidence": 0.84,
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "97148896-f121-57c9-a3d2-4c84e7c60712",
-      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
-      "baseline": "Requests clarification in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "request clarification when she misses information",
-      "confidence": 0.88,
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "af36bfef-479b-571e-91c7-23cc7adfd139",
-      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
-      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
-      "confidence": 0.92,
+      "source_page": 4,
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
@@ -155,24 +207,24 @@
       "target": "80% accuracy on 4 of 5 probes.",
       "measure": "Math curriculum-based probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "solve two-step equations with 80% accuracy",
-      "confidence": 0.88,
+      "source_page": 4,
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "confidence": 0.8,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-02-11",
-    "triennial_reeval": "2029-03-30",
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2026-11-18",
     "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.98,
+    "disability_category": 0.91,
     "school_year": 0.99,
-    "annual_review": 0.89,
-    "triennial_reeval": 0.89,
-    "last_progress_report": 0.92
+    "annual_review": 0.94,
+    "triennial_reeval": 0.88,
+    "last_progress_report": 0.86
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

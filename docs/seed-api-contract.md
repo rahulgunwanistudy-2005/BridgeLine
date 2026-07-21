@@ -45,7 +45,7 @@ Body: { record: <IEPRecord, valid against packages/schemas/IEPRecord.json>,
         approve: true }
 Behavior: validate against the IEPRecord Pydantic model; upsert lineage by iep_record_id;
           if approve, mark is_current_approved. field_confidences is a required top-level
-          object inside record (schema v1.1) — no separate body field.
+          object inside record (schema v1.2) — no separate body field.
 Returns: { iep_record_id, id, created: bool }
 ```
 

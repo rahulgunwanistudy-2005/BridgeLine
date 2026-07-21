@@ -1,3 +1,117 @@
+# Task: cc/02c — Source-grounded accommodation scope references (schema v1.2)
+
+## Goal
+Regenerate all 12 canonical records, 88 variants, and 100 rendered documents with
+truthful `applies_to_refs`, preserving deterministic output and all three scripted
+findings—especially RIV-1001 extended time resolving to exactly six enrolled classes.
+
+## Territory
+- May edit: `scripts/`, `data/`, `harness/`, `docs/`, `apps/web/`.
+- Must not edit: `apps/api/bridgeline/`, `packages/schemas/`, or backend tests.
+- Backend/schema gaps discovered during validation will be reported for teammate filing,
+  not patched on this branch.
+
+## Source-quote/render synchronization design
+- Make the renderer use an explicit four-page form contract: page 1 student/present
+  levels, page 2 accommodations, page 3 services, page 4 goals/signatures. This makes
+  every authored `source_page` stable and truthful instead of depending on incidental
+  text wrapping (the current renderer emits two pages despite authored pages 2–4).
+- Store document phrases—not roster codes—in each scope reference. Render the same refs
+  into a deterministic `Applicability:` sentence on accommodation page 2: same-scope
+  refs are joined as alternatives, while subject and context clauses are joined as an
+  intersection. An `all` ref is rendered alone.
+- Treat the generated PDF text layer as the authority. Extend dataset verification to
+  render every canonical and variant record in memory, extract text per page with
+  PyMuPDF, normalize whitespace introduced by line wrapping, and assert every item-level
+  `source_quote` and every `applies_to_refs[*].source_quote` is a case-sensitive substring
+  of its declared page. A wrong quote or page must fail the build.
+- Keep item-level evidence equally truthful: accommodation and goal quotes will be exact
+  excerpts of their rendered text; service evidence will match the rendered service
+  wording. Variant evidence pages/quotes will be cloned or rebuilt from those same
+  canonical phrases rather than invented independently.
+
+## Steps
+- [x] Slice 0 — Baseline: run the Riverside acceptance test and current dataset verifier;
+      record the expected v1.2 validation failure and confirm no unrelated failures.
+- [x] Slice 1 — Contract builders: replace `applies_to` with typed `applies_to_refs` in
+      `scripts/synthgen/records.py`; add local semantic checks for non-empty refs,
+      exclusive `all`, and unique normalized `(scope, ref)` pairs without touching the
+      teammate-owned schema/backend.
+- [x] Slice 2 — Canonical records: author varied, truthful refs across all 12 records,
+      including genuine `all`, subject-only, context-only, a subject+context intersection,
+      and a same-subject-scope union. Encode document phrase `all academic subjects` as
+      one low-confidence (`~0.5`) subject ref—not an inferred roster expansion—so extraction
+      truthfully routes it through needs-review/unresolved-scope/alias resolution. Use varied
+      realistic per-ref confidence values elsewhere.
+- [x] Slice 3 — Renderer/evidence: render applicability wording on page 2 in standard PDF,
+      two-column PDF, and HTML; enforce the four-page standard PDF layout; add the
+      programmatic quote/page verifier and smoke-check all 12 canonical records.
+- [x] Slice 4 — Six-class demo gate: resolve RIV-1001 extended-time refs against subject
+      display names plus active enrollments, assert exactly six target classes, and assert
+      `accommodation_confirmations.csv` still contains exactly the expected 3 confirmed
+      and 3 unconfirmed class rows for the same stable accommodation ID.
+- [x] Slice 5 — Variants/regeneration: deep-copy/refresh scope refs in `variants.py`,
+      regenerate the full dataset (12 + 88 records, 100 documents, 5 hero scans), and
+      assert record/document/manifest counts.
+- [x] Slice 6 — Quality gates: validate all 100 JSON records against the current
+      `packages/schemas/IEPRecord.json`; validate v1.2 scope semantics; verify all rendered
+      evidence quotes/pages; confirm the Sharma Goal 2 conflict, extended-time 3-of-6,
+      and 20-min/week service findings; run compile/lint/relevant pytest.
+- [x] Slice 7 — Reproducibility/self-review: hash the full `data/synthetic` tree, rebuild
+      with the fixed seed, compare hashes byte-for-byte, inspect the complete diff, and
+      verify `rg` finds no retired `applies_to` key/identifier in `data/` or `scripts/`.
+
+## Risks / open questions
+- Teammate follow-up to file: `IEPRecord.json` requires the `applies_to_refs` property but
+  its array schema is missing basic, structured-output-compatible `minItems: 1`. Unlike
+  conditional `all` exclusivity and normalized duplicate constraints (deliberately kept in
+  Pydantic), this belongs in JSON Schema and also signals mandatory evidence to extraction.
+  Because schema is teammate territory, this branch will enforce all v1.2 semantics locally
+  and report the missing keyword without patching `packages/schemas/`.
+- PDF wrapping inserts line breaks into extracted text. Verification will normalize only
+  whitespace, not case or wording, so it still proves that quotes are verbatim.
+- Forced page boundaries must not overflow into a fifth page for the largest 9-accommodation
+  or 5-goal variant. Verification will assert exactly four clean pages for every record.
+- Degraded PDFs may intentionally have no reliable text layer. Quote verification will
+  run against each record's deterministic clean render before optional raster degradation.
+
+## Done criteria
+- [x] All 12 canonical and 88 variant records validate against current IEPRecord JSON Schema.
+- [x] Every record passes non-empty/exclusive/unique scope-reference semantic checks.
+- [x] Every item and scope-reference quote appears verbatim on its declared clean-PDF page.
+- [x] RIV-1001 extended time resolves to six classes and confirmations remain 3 of 6.
+- [x] All three scripted findings fire with their expected exact values.
+- [x] Exactly 88 variants and 100 manifest documents are regenerated; hero scans remain five.
+- [x] Two full fixed-seed builds produce identical `data/synthetic` bytes.
+- [x] No retired `applies_to` remains anywhere under `data/` or `scripts/`.
+- [x] Python compile, configured lint, relevant pytest, and self-review pass.
+
+## Review
+**Shipped:** typed v1.2 scope-reference builders and semantic guards; 46 deliberately
+authored canonical accommodations with document-language refs and varied confidence;
+RIV-1004 `all academic subjects` preserved as one subject ref at 0.51 confidence; fixed
+four-page clean form with student/page continuation headers and applicability wording in
+PDF, alternate two-column PDF, and HTML; 88 scope-aware variants; PDF-text evidence and
+on-disk semantic verification; six-class roster/confirmation consistency assertions; all
+100 records/PDFs and five hero scans regenerated.
+
+**Verified:** 100/100 JSON Schema-valid and scope-semantic-valid; 100/100 clean PDFs exactly
+four pages with every item/ref quote present case-sensitively on its declared page; all
+three findings fire (40% Goal-2 conflict, extended time 3/6, service −20 min/wk); untouched
+Riverside acceptance test passes; remaining backend suite passes 113 tests when the one
+uncollectable Hypothesis property-test module is excluded; ruff and py_compile clean;
+retired standalone `applies_to` absent from `data/` and `scripts/`; final full-tree rebuild
+hash stable at `0d7a5d9d5d9182f180ab19e4abdd1b814a87e607b1aab5db40e789cafb65547f`.
+Representative four-page and low-confidence-scope PDFs were rasterized and visually
+inspected with no clipping, overlap, or legibility defects.
+
+**Deferred/filed (teammate territory):** `IEPRecord.json` still needs `minItems: 1` on
+`applies_to_refs`; recorded in `docs/backend-followups.md`. Full API-suite collection is
+also currently blocked before tests run because the existing teammate-owned API venv lacks
+its declared dev dependency `hypothesis`; no backend environment or source was modified.
+
+---
+
 # Task: cc/02b — Embed field_confidences into the dataset (schema v1.1)
 
 ## Goal

@@ -87,9 +87,21 @@ def _build_one(i: int, pools: dict[str, list[dict[str, Any]]]) -> dict[str, Any]
 
     accommodations = []
     for j, src in enumerate(_pick(rng, pools["acc"], n_acc)):
+        references = [
+            {
+                **reference,
+                "source_page": 2,
+                "confidence": (
+                    reference["confidence"]
+                    if reference["ref"] == "all academic subjects"
+                    else round(rng.uniform(0.76, 0.96), 2)
+                ),
+            }
+            for reference in src["applies_to_refs"]
+        ]
         accommodations.append(accommodation(
-            ref, f"a{j}", text=src["text"], applies_to=list(src["applies_to"]),
-            source_page=2, source_quote=src["source_quote"],
+            ref, f"a{j}", text=src["text"], applies_to_refs=references,
+            source_page=2,
             confidence=round(rng.uniform(0.78, 0.97), 2)))
 
     services = []
@@ -99,14 +111,14 @@ def _build_one(i: int, pools: dict[str, list[dict[str, Any]]]) -> dict[str, Any]
             ref, f"svc{j}", type=src["type"], minutes_per_week=src["minutes_per_week"],
             frequency=src["frequency"], provider_role=provider,
             start="2026-08-17", end="2027-05-28", source_page=3,
-            source_quote=src["source_quote"], confidence=round(rng.uniform(0.78, 0.95), 2)))
+            confidence=round(rng.uniform(0.78, 0.95), 2)))
 
     goals = []
     for j, src in enumerate(_pick(rng, pools["gol"], n_gol)):
         goals.append(goal(
             ref, f"g{j}", text=src["text"], baseline=src["baseline"], target=src["target"],
             measure=src["measure"], progress_cadence=src["progress_cadence"],
-            source_page=3, source_quote=src["source_quote"],
+            source_page=4,
             confidence=round(rng.uniform(0.78, 0.96), 2)))
 
     annual, triennial, last_progress = _dates(rng)

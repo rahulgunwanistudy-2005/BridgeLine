@@ -7,170 +7,230 @@
     {
       "id": "a16726be-7578-5d5a-b3ef-479d6c7ddca7",
       "text": "Provide captions or a transcript for audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for audio and video media",
-      "confidence": 0.83,
+      "source_quote": "Provide captions or a transcript for audio and video media.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "cc9024df-d951-542a-873c-9a1c66384c94",
       "text": "Provide a checklist to break long assignments into steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "checklist to break long assignments into steps",
-      "confidence": 0.84,
+      "source_quote": "Provide a checklist to break long assignments into steps.",
+      "confidence": 0.96,
       "reconciliation_status": null
     },
     {
       "id": "22c1f8ab-bdd9-5001-9104-2cbb03e64e2f",
       "text": "Provide a copy of teacher notes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "World History",
+          "source_page": 2,
+          "source_quote": "World History",
+          "confidence": 0.81
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a copy of teacher notes",
+      "source_quote": "Provide a copy of teacher notes.",
       "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "3770b982-cfed-5c94-b3ec-4fc90e38b27a",
       "text": "Provide sentence starters for oral presentations.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "sentence starters for oral presentations",
-      "confidence": 0.96,
+      "source_quote": "Provide sentence starters for oral presentations.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "c6bd2229-4499-5662-9a89-b7dad38ea3ff",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
-      "confidence": 0.83,
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "0cd0f4bb-32ae-5880-84c4-81c707336ded",
       "text": "Allow brief scheduled sensory breaks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during independent work",
+          "source_page": 2,
+          "source_quote": "during independent work",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief scheduled sensory breaks",
-      "confidence": 0.88,
+      "source_quote": "Allow brief scheduled sensory breaks.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "e3b142ed-c13c-53b7-b0ac-b58495de6b77",
       "text": "Repeat and rephrase spoken directions on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "repeat and rephrase spoken directions on request",
-      "confidence": 0.82,
+      "source_quote": "Repeat and rephrase spoken directions on request.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "9b2d76f2-4c9c-57a5-988e-d75bb7304099",
-      "text": "Administer assessments in a small-group, reduced-distraction setting.",
-      "applies_to": [
-        "context"
+      "text": "Provide access to a reduced-distraction workspace.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "small-group, reduced-distraction setting for assessments",
-      "confidence": 0.91,
+      "source_quote": "Provide access to a reduced-distraction workspace.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "6f97869b-c2ba-5c7f-b1b4-4d484e3f1f06",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
-      "confidence": 0.89,
+      "source_quote": "Give a two-minute warning before transitions.",
+      "confidence": 0.85,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "148d2791-51e8-508d-871e-85efd4b2b28f",
-      "type": "Speech and language therapy (social communication)",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
-      "confidence": 0.89,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "0ca55904-d30b-5834-bb66-e43f7e51f514",
-      "type": "Occupational therapy",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Occupational therapist",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
-      "confidence": 0.93,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "a32ea69f-685c-5438-8a83-b65e543dec03",
-      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
       "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.84,
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "5ba8883c-aa91-515f-bbda-a3bc9151a999",
-      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
-      "baseline": "Solves two-step equations with 40% accuracy.",
-      "target": "80% accuracy on 4 of 5 probes.",
-      "measure": "Math curriculum-based probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "solve two-step equations with 80% accuracy",
-      "confidence": 0.88,
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "confidence": 0.96,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2026-10-27",
+    "annual_review": "2027-02-11",
     "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-10-09"
+    "last_progress_report": "2026-10-16"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.97,
+    "disability_category": 0.96,
     "school_year": 0.99,
     "annual_review": 0.92,
-    "triennial_reeval": 0.84,
-    "last_progress_report": 0.95
+    "triennial_reeval": 0.9,
+    "last_progress_report": 0.87
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

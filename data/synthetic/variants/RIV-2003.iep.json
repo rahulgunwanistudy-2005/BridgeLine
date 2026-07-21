@@ -7,117 +7,148 @@
     {
       "id": "7a3e6765-7a87-53f4-abc6-c3a57211d2de",
       "text": "Provide 50% extended time on classroom assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.86
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on classroom assessments",
-      "confidence": 0.87,
+      "source_quote": "Provide 50% extended time on classroom assessments.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "34d7ab2d-1ff1-50fd-87f0-657bd71fc6a0",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.79,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "6d2e0cd7-cc41-528e-8d33-75a353e4ed5f",
       "text": "Accept typed responses in place of extended handwriting.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.84
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "accept typed responses in place of extended handwriting",
-      "confidence": 0.95,
+      "source_quote": "Accept typed responses in place of extended handwriting.",
+      "confidence": 0.9,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "5cd68fb3-9fb5-5d30-9d5e-b61a73016409",
-      "type": "Deaf/hard-of-hearing itinerant support",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Teacher of the deaf and hard of hearing",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.86,
+      "source_quote": "Specialized academic instruction: 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "beceb0c3-f686-5d90-967c-dc4995f65a48",
-      "type": "Specialized academic instruction (executive functioning)",
+      "type": "Specialized academic instruction",
       "minutes_per_week": 100,
       "frequency": "50 minutes, 2 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
       "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "76a37c29-9ae6-515c-bee3-bb2a84056bc9",
-      "type": "Occupational therapy",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Occupational therapist",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
-      "confidence": 0.82,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.88,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "6844df09-304d-5b3e-8f82-b7dedf6f2cd8",
-      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
-      "baseline": "Organizes materials in 3 of 10 days.",
-      "target": "8 of 10 days.",
-      "measure": "Teacher checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a checklist to organize materials for each class",
-      "confidence": 0.89,
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "3bc2724d-7947-5cd3-94ef-8ce238639baf",
-      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
-      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
-      "target": "80% accuracy across three sessions.",
-      "measure": "Language sample",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use correct past-tense verbs with 80% accuracy",
-      "confidence": 0.83,
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "confidence": 0.84,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-02-11",
-    "triennial_reeval": "2026-11-18",
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2029-01-22",
     "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.94,
+    "disability_category": 0.97,
     "school_year": 0.99,
-    "annual_review": 0.93,
+    "annual_review": 0.88,
     "triennial_reeval": 0.93,
-    "last_progress_report": 0.94
+    "last_progress_report": 0.88
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

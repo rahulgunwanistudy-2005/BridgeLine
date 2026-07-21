@@ -7,111 +7,150 @@
     {
       "id": "d89a1c39-dcd0-5021-aacc-fa66c563ae93",
       "text": "Give advance warning before transitions and changes in routine.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "advance warning before transitions and changes in routine",
-      "confidence": 0.93,
+      "source_quote": "Give advance warning before transitions and changes in routine.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "10a76588-4b9e-54be-aba0-ca341ae9fac0",
       "text": "Provide a checklist to break long assignments into steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "checklist to break long assignments into steps",
-      "confidence": 0.91,
+      "source_quote": "Provide a checklist to break long assignments into steps.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "d80dc282-b9f5-5f8e-90f1-c8a6c61e0fe2",
       "text": "Break multi-step directions into chunked, numbered steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "break multi-step directions into numbered steps",
-      "confidence": 0.92,
+      "source_quote": "Break multi-step directions into chunked, numbered steps.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "5c88d797-cc8d-569f-8a91-b3d1cea7ae3b",
       "text": "Accept typed responses in place of extended handwriting.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.87
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "accept typed responses in place of extended handwriting",
-      "confidence": 0.81,
+      "source_quote": "Accept typed responses in place of extended handwriting.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "cdd0c181-b1b8-5a93-8be2-0eb815fcda3c",
-      "text": "Allow text-to-speech for grade-level reading passages.",
-      "applies_to": [
-        "subject"
+      "text": "Allow text-to-speech for instructional materials.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "text-to-speech for grade-level reading passages",
-      "confidence": 0.96,
+      "source_quote": "Allow text-to-speech for instructional materials.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "dcb10f75-8cdf-5694-a639-12434220964b",
       "text": "Do not require unplanned oral responses in front of the class.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during whole-class discussion",
+          "source_page": 2,
+          "source_quote": "during whole-class discussion",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "no unplanned oral responses in front of the class",
-      "confidence": 0.88,
+      "source_quote": "Do not require unplanned oral responses in front of the class.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "0d9b49e5-e4b6-50da-8074-a70285182c4c",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
+      "source_quote": "Give a two-minute warning before transitions.",
       "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "4d275ef9-9954-5228-89a7-dd1240b1ffb4",
       "text": "Provide captions or a transcript for all audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for all audio and video media",
-      "confidence": 0.79,
+      "source_quote": "Provide captions or a transcript for all audio and video media.",
+      "confidence": 0.88,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "39c826c1-b144-52d1-a258-57ff1843d674",
-      "type": "Deaf/hard-of-hearing itinerant support",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Teacher of the deaf and hard of hearing",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.87,
-      "reconciliation_status": null
-    },
-    {
-      "id": "f70fad8d-b129-53b3-8a4e-5c5c396d339f",
       "type": "Language processing support (group)",
       "minutes_per_week": 60,
       "frequency": "30 minutes, 2 times weekly",
@@ -119,73 +158,86 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
-      "confidence": 0.85,
+      "source_quote": "Language processing support (group): 60 minutes per week; 30 minutes, 2 times weekly; provider: Unassigned.",
+      "confidence": 0.9,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f70fad8d-b129-53b3-8a4e-5c5c396d339f",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Speech and language therapy (social communication): 30 minutes per week; 30 minutes, 1 time weekly; provider: Speech-language pathologist.",
+      "confidence": 0.93,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "0b3ac052-98a5-5d94-9a44-720be8f0fea7",
-      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
-      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
-      "confidence": 0.89,
+      "source_page": 4,
+      "source_quote": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "0651ea76-dbba-576f-9841-646a8c354a1a",
-      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
-      "baseline": "Identifies the main idea with 40% accuracy.",
-      "target": "80% accuracy across three consecutive assessments.",
-      "measure": "Reading comprehension work sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "identify the main idea and two supporting details with 80% accuracy",
-      "confidence": 0.86,
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "deba3f37-9805-5c48-b5fd-960f7470344b",
-      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
-      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
       "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
-      "confidence": 0.89,
+      "source_page": 4,
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "c50a5222-4972-5fe8-9e94-1620d671ba2c",
-      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
-      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
-      "target": "80% accuracy across three sessions.",
-      "measure": "Language sample",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use correct past-tense verbs with 80% accuracy",
-      "confidence": 0.81,
+      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "confidence": 0.91,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-05-19",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-16"
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.94,
+    "disability_category": 0.93,
     "school_year": 0.99,
-    "annual_review": 0.87,
-    "triennial_reeval": 0.87,
-    "last_progress_report": 0.92
+    "annual_review": 0.89,
+    "triennial_reeval": 0.93,
+    "last_progress_report": 0.86
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

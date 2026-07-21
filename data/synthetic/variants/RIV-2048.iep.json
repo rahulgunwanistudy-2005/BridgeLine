@@ -7,171 +7,213 @@
     {
       "id": "c0ad88d0-1b39-548b-9dae-93fba5c9a912",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.85,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "db7e055f-2bd9-51d5-95e4-eac4387dd10b",
       "text": "Seat near the point of instruction and away from high-traffic areas.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "preferential seating near the point of instruction",
-      "confidence": 0.87,
+      "source_quote": "Seat near the point of instruction and away from high-traffic areas.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "0a9d5916-4763-51b2-88d8-acac87f3f132",
       "text": "Provide sentence starters for oral presentations.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "sentence starters for oral presentations",
-      "confidence": 0.79,
+      "source_quote": "Provide sentence starters for oral presentations.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "576d8218-4fa3-51d6-9eb5-6b64b21d9437",
       "text": "Provide 25% extended time on timed assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during timed assessments",
+          "source_page": 2,
+          "source_quote": "during timed assessments",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "25% extended time on timed assessments",
-      "confidence": 0.84,
+      "source_quote": "Provide 25% extended time on timed assessments.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "bedac543-ed44-5742-ad0d-36003be048e0",
       "text": "Provide 50% extended time on all classroom tests and quizzes.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on all classroom tests and quizzes",
-      "confidence": 0.8,
+      "source_quote": "Provide 50% extended time on all classroom tests and quizzes.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "8137a1d3-1e8f-5506-87cc-a387b48a9e0d",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.9,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "4dea9be4-f5ef-5430-a04f-2415713b52b0",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.86,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.82,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "12bbd8e8-47ad-5ccd-9b0e-3db2bc03ff99",
-      "type": "Deaf/hard-of-hearing itinerant support",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Teacher of the deaf and hard of hearing",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.81,
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "76231eca-dbde-5325-8fda-dfc4b4ddf06d",
-      "type": "Occupational therapy",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Occupational therapist",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
-      "confidence": 0.9,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.85,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "63563db9-bd49-5031-864f-ab6917a62c27",
-      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
-      "baseline": "Produces initial /r/ with 45% accuracy.",
-      "target": "80% accuracy in structured tasks across three sessions.",
-      "measure": "Speech probe",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "produce initial /r/ with 80% accuracy",
-      "confidence": 0.86,
-      "reconciliation_status": null
-    },
-    {
-      "id": "8b3ad8c1-8bbb-56f8-bad4-1d62354cc1f2",
       "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
       "baseline": "Follows two-step directions in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
       "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
-      "confidence": 0.87,
+      "source_page": 4,
+      "source_quote": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "confidence": 0.81,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8b3ad8c1-8bbb-56f8-bad4-1d62354cc1f2",
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "076c5a00-7f9a-50b1-90db-e19ff17dfbe2",
-      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
-      "baseline": "Decodes multisyllabic words with 55% accuracy.",
-      "target": "85% accuracy on 4 of 5 consecutive probes.",
-      "measure": "Curriculum-based reading probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "7841e0d7-1c01-501e-8e01-ca7b534fa751",
-      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
-      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
-      "target": "80% accuracy across three sessions.",
-      "measure": "Language sample",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use correct past-tense verbs with 80% accuracy",
-      "confidence": 0.8,
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "confidence": 0.85,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-05-19",
-    "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-10-30"
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-16"
   },
   "field_confidences": {
     "student_ref": 0.99,
     "disability_category": 0.96,
     "school_year": 0.99,
-    "annual_review": 0.9,
-    "triennial_reeval": 0.88,
-    "last_progress_report": 0.9
+    "annual_review": 0.93,
+    "triennial_reeval": 0.92,
+    "last_progress_report": 0.85
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

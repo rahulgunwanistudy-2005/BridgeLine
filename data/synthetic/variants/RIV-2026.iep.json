@@ -7,197 +7,252 @@
     {
       "id": "12a15354-e607-5158-b0e6-14f17558f200",
       "text": "Allow a four-function calculator on non-calculation-skill tasks.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "four-function calculator on non-calculation-skill tasks",
-      "confidence": 0.83,
+      "source_quote": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "8e7ceecd-b411-525d-ab18-127fdb9c818f",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.9,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "c4c71e21-58bf-5169-8e3e-fcba930cf20a",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.86,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "68b4ebf0-aea8-5fcd-a5b2-8815107fcbb8",
       "text": "Provide a copy of teacher notes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "World History",
+          "source_page": 2,
+          "source_quote": "World History",
+          "confidence": 0.86
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a copy of teacher notes",
-      "confidence": 0.85,
+      "source_quote": "Provide a copy of teacher notes.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "8bd104b4-0d52-5c05-ba9b-4a83872ad25f",
       "text": "Provide graphic organizers for writing and note-taking.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.94
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "graphic organizers for writing and note-taking",
-      "confidence": 0.8,
+      "source_quote": "Provide graphic organizers for writing and note-taking.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "a652960b-3e97-5efd-a29b-cb709a8a8316",
       "text": "Provide 50% extended time on all classroom tests and quizzes.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on all classroom tests and quizzes",
-      "confidence": 0.95,
+      "source_quote": "Provide 50% extended time on all classroom tests and quizzes.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "f8f6e397-3b11-5933-83fe-ec30f6ed8cd7",
       "text": "Do not require unplanned oral responses in front of the class.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during whole-class discussion",
+          "source_page": 2,
+          "source_quote": "during whole-class discussion",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "no unplanned oral responses in front of the class",
-      "confidence": 0.88,
+      "source_quote": "Do not require unplanned oral responses in front of the class.",
+      "confidence": 0.82,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "81b700ac-321d-5a3d-8589-1b76fcad3840",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
       "provider_role": "Unassigned",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.82,
+      "source_quote": "Speech and language therapy (social communication): 30 minutes per week; 30 minutes, 1 time weekly; provider: Unassigned.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "2cfb8f3c-cab2-5284-9f35-136f6b94046f",
-      "type": "Specialized academic instruction (reading)",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c44e4096-415a-58b1-a456-8e49cb90aff4",
+      "type": "Specialized academic instruction",
       "minutes_per_week": 150,
       "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction reading 30 minutes 5 times weekly",
+      "source_quote": "Specialized academic instruction: 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
       "confidence": 0.84,
-      "reconciliation_status": null
-    },
-    {
-      "id": "c44e4096-415a-58b1-a456-8e49cb90aff4",
-      "type": "Language processing support (group)",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Unassigned",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
-      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "f261c26c-a2dc-5bdb-aeda-ab84862b67c3",
-      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
-      "baseline": "Answers inferential questions with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Comprehension work sample",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "answer inferential questions about a text with 80% accuracy",
-      "confidence": 0.94,
+      "source_page": 4,
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "172fff45-6c07-56e6-a28f-8180160960f8",
-      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
-      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
       "target": "4 of 5 samples.",
       "measure": "Writing work sample",
       "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a paragraph with a clear topic sentence and three details",
-      "confidence": 0.82,
+      "source_page": 4,
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "da1b2aff-b72d-5f4e-b5a8-475ab583928f",
-      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
-      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "organize a multi-paragraph response using an outline",
-      "confidence": 0.8,
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "4701a3a8-bc32-59d7-ab41-a93c53c75fe6",
-      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
-      "baseline": "Writes two related sentences with inconsistent capitalization.",
-      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a five-sentence paragraph with a topic sentence",
-      "confidence": 0.95,
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "86bfc9de-2427-547a-b5e9-8bad65f2d865",
-      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
-      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Language sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "retell a short narrative with a beginning, middle, and end",
-      "confidence": 0.84,
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "confidence": 0.85,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
-    "triennial_reeval": "2028-12-04",
-    "last_progress_report": "2026-10-16"
+    "annual_review": "2026-11-03",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.92,
+    "disability_category": 0.98,
     "school_year": 0.99,
     "annual_review": 0.95,
-    "triennial_reeval": 0.84,
-    "last_progress_report": 0.92
+    "triennial_reeval": 0.92,
+    "last_progress_report": 0.9
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

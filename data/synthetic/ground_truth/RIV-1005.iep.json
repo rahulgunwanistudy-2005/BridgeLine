@@ -7,56 +7,92 @@
     {
       "id": "fea1aaab-1190-5ba8-88ff-2c2082459b2b",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
+      "source_quote": "Use the personal FM/DM listening system in every class.",
       "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "760446e8-3de5-5a1c-82c7-58f8272eaf15",
-      "text": "Seat with a clear line of sight to the speaker's face.",
-      "applies_to": [
-        "all"
+      "text": "Seat with a clear line of sight to the face of the speaker.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "clear line of sight to the speaker's face",
+      "source_quote": "Seat with a clear line of sight to the face of the speaker.",
       "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "d6464128-2965-59e8-8a99-26e99af4a0b9",
       "text": "Provide captions or a transcript for all audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for all audio and video media",
+      "source_quote": "Provide captions or a transcript for all audio and video media.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "6f2bd1c2-d5a0-54b4-8104-922d5b4de9fb",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "15bff662-668c-54fc-ac86-0529e6d44738",
       "text": "Provide a peer notetaker or copy of lecture notes.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.83
+        },
+        {
+          "scope": "subject",
+          "ref": "World History",
+          "source_page": 2,
+          "source_quote": "World History",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "peer notetaker or copy of lecture notes",
+      "source_quote": "Provide a peer notetaker or copy of lecture notes.",
       "confidence": 0.84,
       "reconciliation_status": null
     }
@@ -71,7 +107,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
@@ -84,7 +120,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Educational audiology consultation 30 minutes monthly",
+      "source_quote": "Educational audiology consultation: 30 minutes per week; 30 minutes, 1 time monthly; provider: Educational audiologist.",
       "confidence": 0.83,
       "reconciliation_status": null
     }
@@ -98,7 +134,7 @@
       "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
       "source_page": 4,
-      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
+      "source_quote": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
       "confidence": 0.88,
       "reconciliation_status": null
     },
@@ -110,7 +146,7 @@
       "measure": "Vocabulary probe",
       "progress_cadence": "Monthly",
       "source_page": 4,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "source_quote": "Layla will define grade-level academic vocabulary with 80% accuracy.",
       "confidence": 0.85,
       "reconciliation_status": null
     }

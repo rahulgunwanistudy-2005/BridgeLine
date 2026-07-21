@@ -7,36 +7,59 @@
     {
       "id": "c64cbbb1-d245-5bef-88e3-ff49588d0e73",
       "text": "Break long assignments into smaller submitted parts.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "break long assignments into smaller parts",
-      "confidence": 0.88,
+      "source_quote": "Break long assignments into smaller submitted parts.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "07bbd487-60a0-549d-a6f1-1f1822163ca9",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.79
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.94,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.96,
       "reconciliation_status": null
     },
     {
       "id": "83dd84d2-f8d8-5173-bfee-ba134e29741f",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.81,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
@@ -50,49 +73,49 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
-      "confidence": 0.85,
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.89,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "8aa9a1be-0e9b-51cd-9883-50775867488f",
-      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
-      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
-      "target": "3 of 4 structured opportunities.",
-      "measure": "Structured social observation",
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a taught script to join a peer activity",
-      "confidence": 0.82,
+      "source_page": 4,
+      "source_quote": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "e5ce4405-ed77-57cc-8529-05c7c31193ad",
-      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
-      "baseline": "Organizes materials in 3 of 10 days.",
-      "target": "8 of 10 days.",
-      "measure": "Teacher checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a checklist to organize materials for each class",
-      "confidence": 0.89,
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-01-14",
+    "annual_review": "2027-02-11",
     "triennial_reeval": "2026-11-18",
-    "last_progress_report": "2026-09-25"
+    "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.95,
+    "disability_category": 0.96,
     "school_year": 0.99,
-    "annual_review": 0.9,
-    "triennial_reeval": 0.9,
-    "last_progress_report": 0.92
+    "annual_review": 0.91,
+    "triennial_reeval": 0.87,
+    "last_progress_report": 0.89
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

@@ -7,171 +7,236 @@
     {
       "id": "9b9e7a32-a9cb-5f31-a9dd-139f95026730",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
+      "source_quote": "Give a two-minute warning before transitions.",
       "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "c3023971-29d7-57ae-9f66-1a8d18879337",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.88
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.84,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "5105e5e7-f2fc-567d-a943-8009f0bc1c73",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
       "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "fdfeb6d2-54d1-59f7-8ca3-301bf3ea6d78",
       "text": "Provide captions or a transcript for all audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for all audio and video media",
-      "confidence": 0.8,
+      "source_quote": "Provide captions or a transcript for all audio and video media.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "b05de1b6-910f-578d-b566-86f9babb2041",
       "text": "Allow a four-function calculator on non-calculation-skill tasks.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "four-function calculator on non-calculation-skill tasks",
-      "confidence": 0.78,
+      "source_quote": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "e03ef2be-7281-572a-9e8b-9954c795d9df",
       "text": "Provide graphic organizers for writing and note-taking.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.85
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "graphic organizers for writing and note-taking",
-      "confidence": 0.92,
+      "source_quote": "Provide graphic organizers for writing and note-taking.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "5119045f-0231-5cd0-afb3-bdc3bb35d4df",
       "text": "Provide a checklist to break long assignments into steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "checklist to break long assignments into steps",
-      "confidence": 0.89,
+      "source_quote": "Provide a checklist to break long assignments into steps.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "46f98113-094c-5a27-b102-9f802430c056",
       "text": "Provide visual supports and models for new tasks.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual supports and models for new tasks",
-      "confidence": 0.96,
+      "source_quote": "Provide visual supports and models for new tasks.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "644c80f4-4b8e-515b-85de-bbeaebf8c224",
       "text": "Check the daily planner for recorded homework before dismissal.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "before dismissal",
+          "source_page": 2,
+          "source_quote": "before dismissal",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "check the daily planner before dismissal",
-      "confidence": 0.88,
+      "source_quote": "Check the daily planner for recorded homework before dismissal.",
+      "confidence": 0.83,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "e2de9a06-36f7-5b2e-af00-8fa218c67d6a",
-      "type": "Specialized academic instruction",
+      "type": "Specialized academic instruction (reading)",
       "minutes_per_week": 150,
       "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
-      "confidence": 0.79,
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "68d26c8a-1368-563d-82d6-3d7723f3e671",
-      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
-      "baseline": "Arrives with required materials in 3 of 10 class days.",
-      "target": "8 of 10 class days.",
-      "measure": "Teacher checklist",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "arrive to class with required materials in 8 of 10 class days",
-      "confidence": 0.9,
+      "source_page": 4,
+      "source_quote": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "3e5b837c-1576-5a47-9b66-809acdf6e9f0",
-      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
-      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "accept a change in routine using a coping strategy",
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Jamal will answer inferential questions about a text with 80% accuracy.",
       "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "13b3813e-e6ce-5173-813d-4126c79b3f2d",
-      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
-      "baseline": "Requests clarification in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "request clarification when she misses information",
-      "confidence": 0.83,
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
-    "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-10-30"
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.98,
+    "disability_category": 0.97,
     "school_year": 0.99,
-    "annual_review": 0.88,
-    "triennial_reeval": 0.87,
-    "last_progress_report": 0.94
+    "annual_review": 0.92,
+    "triennial_reeval": 0.91,
+    "last_progress_report": 0.92
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

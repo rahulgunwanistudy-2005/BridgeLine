@@ -7,183 +7,243 @@
     {
       "id": "5241356d-2907-58e1-a869-10631b629c42",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
-      "confidence": 0.95,
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
+      "confidence": 0.97,
       "reconciliation_status": null
     },
     {
       "id": "5ba5b09c-4738-58fd-b57c-12331fff9e86",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.78
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.97,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "820c6e40-1140-529b-8de9-a7259dad748c",
-      "text": "Provide a written or visual schedule of each period's activities.",
-      "applies_to": [
-        "all"
+      "text": "Provide a written or visual schedule of activities for each period.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "written or visual schedule of each period's activities",
-      "confidence": 0.8,
+      "source_quote": "Provide a written or visual schedule of activities for each period.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "e4234543-126b-5a92-b89c-2dee0d431644",
       "text": "Allow a four-function calculator on non-calculation-skill tasks.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "four-function calculator on non-calculation-skill tasks",
-      "confidence": 0.79,
+      "source_quote": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "e96d9ca5-5a76-580f-9b10-e13320fe2433",
       "text": "Provide frequent check-ins for understanding.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "frequent check-ins for understanding",
-      "confidence": 0.86,
+      "source_quote": "Provide frequent check-ins for understanding.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "a6495fd2-e581-5f24-a4f7-9608b105e807",
       "text": "Provide audio versions of grade-level texts.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "audio versions of grade-level texts",
-      "confidence": 0.92,
+      "source_quote": "Provide audio versions of grade-level texts.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "c557da66-4d13-5e93-969b-e1422b794f6c",
-      "text": "Allow text-to-speech for grade-level reading passages.",
-      "applies_to": [
-        "subject"
+      "text": "Allow text-to-speech for instructional materials.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "text-to-speech for grade-level reading passages",
-      "confidence": 0.95,
+      "source_quote": "Allow text-to-speech for instructional materials.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "b6767971-7fa4-5622-92fb-c8f21015d234",
       "text": "Provide captions or a transcript for audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for audio and video media",
-      "confidence": 0.79,
+      "source_quote": "Provide captions or a transcript for audio and video media.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "929e8e33-e6f7-5c66-955f-08a9390409f4",
       "text": "State task expectations explicitly and in writing.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "state task expectations explicitly and in writing",
-      "confidence": 0.78,
+      "source_quote": "State task expectations explicitly and in writing.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "61520c54-2c09-5037-afa4-79238d4b61d2",
-      "type": "Specialized academic instruction (mathematics)",
-      "minutes_per_week": 150,
-      "frequency": "30 minutes, 5 times weekly",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
-      "confidence": 0.8,
+      "source_quote": "Specialized academic instruction (executive functioning): 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "892347f3-cfd2-510d-b2b7-8263706c5d19",
-      "type": "Occupational therapy",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Occupational therapist",
+      "type": "Language processing support (group)",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Unassigned",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
-      "confidence": 0.93,
+      "source_quote": "Language processing support (group): 60 minutes per week; 30 minutes, 2 times weekly; provider: Unassigned.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "26125765-958d-5f5b-8146-fa773b5928ff",
-      "type": "Individual counseling",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "School counselor",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Individual counseling 30 minutes weekly",
-      "confidence": 0.93,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.84,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "bb0b2e2c-80d7-5e9c-b07f-025cb644d837",
-      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
-      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
+      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "accept a change in routine using a coping strategy",
-      "confidence": 0.82,
+      "measure": "Language sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "f5804686-b5c6-567e-b139-27f6c22b52c3",
-      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
-      "baseline": "Decodes multisyllabic words with 55% accuracy.",
-      "target": "85% accuracy on 4 of 5 consecutive probes.",
-      "measure": "Curriculum-based reading probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
-      "confidence": 0.81,
+      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "baseline": "Writes two related sentences with inconsistent capitalization.",
+      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "confidence": 0.93,
       "reconciliation_status": null
     }
   ],
   "dates": {
     "annual_review": "2027-05-19",
     "triennial_reeval": "2028-12-04",
-    "last_progress_report": "2026-10-09"
+    "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.95,
+    "disability_category": 0.93,
     "school_year": 0.99,
-    "annual_review": 0.9,
-    "triennial_reeval": 0.91,
-    "last_progress_report": 0.93
+    "annual_review": 0.86,
+    "triennial_reeval": 0.86,
+    "last_progress_report": 0.89
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

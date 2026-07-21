@@ -7,94 +7,149 @@
     {
       "id": "d1d925e2-995d-52d5-b974-bfcc70791227",
       "text": "Provide graphic organizers for writing and note-taking.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.84
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "graphic organizers for writing and note-taking",
-      "confidence": 0.85,
+      "source_quote": "Provide graphic organizers for writing and note-taking.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "2ef96846-d6ec-5bd1-8e8b-ac8cbb875767",
       "text": "Provide 50% extended time on classroom assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.81
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on classroom assessments",
-      "confidence": 0.94,
+      "source_quote": "Provide 50% extended time on classroom assessments.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "b762c847-bb41-5af2-9e84-56913a655651",
       "text": "Provide audio versions of grade-level texts.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "audio versions of grade-level texts",
-      "confidence": 0.91,
+      "source_quote": "Provide audio versions of grade-level texts.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "27a178f3-d4d4-5cac-97d6-ef651a9fe61a",
       "text": "Provide a visual schedule for each class period.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual schedule for each class period",
-      "confidence": 0.83,
+      "source_quote": "Provide a visual schedule for each class period.",
+      "confidence": 0.97,
       "reconciliation_status": null
     },
     {
       "id": "ffed9a8e-bec3-57b9-b7ab-3be17e4df0c0",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
-      "confidence": 0.82,
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "729375af-1f5e-5b9a-a24f-4f96ddeb57b9",
       "text": "Face the student when speaking and avoid covering the mouth.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "face the student when speaking",
-      "confidence": 0.84,
+      "source_quote": "Face the student when speaking and avoid covering the mouth.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "244fc4db-0dfe-54a5-a199-ae63e3e632ab",
       "text": "Seat near the point of instruction and away from high-traffic areas.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "preferential seating near the point of instruction",
-      "confidence": 0.88,
+      "source_quote": "Seat near the point of instruction and away from high-traffic areas.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "cddc5af5-1765-574c-b353-2d579d81368e",
-      "type": "Educational audiology consultation",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time monthly",
-      "provider_role": "Educational audiologist",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Educational audiology consultation 30 minutes monthly",
-      "confidence": 0.79,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
@@ -106,49 +161,49 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.84,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.91,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "d77e8f19-ad8c-521a-a7e7-7eae7acd01e6",
-      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
-      "baseline": "Reads grade-level text at 80 words per minute.",
-      "target": "120 words per minute with 95% accuracy.",
-      "measure": "Oral reading fluency probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
-      "confidence": 0.82,
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "20cf5b3e-90f3-5445-ba32-1df672a074b6",
-      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
-      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a paragraph with a clear topic sentence and three details",
-      "confidence": 0.87,
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-16"
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.96,
+    "disability_category": 0.95,
     "school_year": 0.99,
-    "annual_review": 0.93,
-    "triennial_reeval": 0.92,
-    "last_progress_report": 0.93
+    "annual_review": 0.91,
+    "triennial_reeval": 0.9,
+    "last_progress_report": 0.86
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

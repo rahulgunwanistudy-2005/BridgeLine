@@ -7,57 +7,100 @@
     {
       "id": "200d22e1-8977-5d38-9ead-bbf934417d22",
       "text": "Provide 50% extended time on classroom assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.87
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on classroom assessments",
-      "confidence": 0.89,
+      "source_quote": "Provide 50% extended time on classroom assessments.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "83a85a27-d27d-5e1f-9eba-6a83e7f7b785",
-      "text": "Seat with a clear line of sight to the speaker's face.",
-      "applies_to": [
-        "all"
+      "text": "Seat with a clear line of sight to the face of the speaker.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "clear line of sight to the speaker's face",
-      "confidence": 0.93,
+      "source_quote": "Seat with a clear line of sight to the face of the speaker.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "1e727bfa-5a0a-5bf3-9c69-3d1a8dea2581",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.83
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.86,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "69225741-00ce-53ae-ae01-b0713c7b3948",
       "text": "Check the daily planner for recorded homework before dismissal.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "before dismissal",
+          "source_page": 2,
+          "source_quote": "before dismissal",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "check the daily planner before dismissal",
-      "confidence": 0.92,
+      "source_quote": "Check the daily planner for recorded homework before dismissal.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "793a90ea-3c2d-5d18-b43d-36911867b174",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.8,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.88,
       "reconciliation_status": null
     }
   ],
@@ -71,86 +114,86 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.91,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "8e4ca1f9-049b-58b4-86bb-1864dbb4e263",
-      "type": "Deaf/hard-of-hearing itinerant support",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Teacher of the deaf and hard of hearing",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.81,
+      "source_quote": "Specialized academic instruction (mathematics): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.84,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "afa02ff6-76eb-5f88-887a-b7e3ed1b12ab",
-      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
-      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "produce three organized sentences on a topic",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
       "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "cb0ee9f7-6133-5888-b89f-f727fbf42e97",
-      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
-      "baseline": "Answers inferential questions with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Comprehension work sample",
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "answer inferential questions about a text with 80% accuracy",
-      "confidence": 0.83,
+      "source_page": 4,
+      "source_quote": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "f34950f4-66ee-59c1-a510-54033d15d4f1",
-      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
-      "baseline": "Reads grade-level text at 80 words per minute.",
-      "target": "120 words per minute with 95% accuracy.",
-      "measure": "Oral reading fluency probe",
+      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Language sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
-      "confidence": 0.91,
+      "source_page": 4,
+      "source_quote": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "752ed376-15b4-59d1-8f1c-b6f3efb428f8",
-      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
-      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
-      "target": "80% accuracy across three sessions.",
-      "measure": "Language sample",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use correct past-tense verbs with 80% accuracy",
-      "confidence": 0.84,
+      "source_page": 4,
+      "source_quote": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "confidence": 0.91,
       "reconciliation_status": null
     }
   ],
   "dates": {
     "annual_review": "2026-10-27",
-    "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-10-30"
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.91,
+    "disability_category": 0.98,
     "school_year": 0.99,
-    "annual_review": 0.94,
-    "triennial_reeval": 0.84,
-    "last_progress_report": 0.92
+    "annual_review": 0.85,
+    "triennial_reeval": 0.92,
+    "last_progress_report": 0.86
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

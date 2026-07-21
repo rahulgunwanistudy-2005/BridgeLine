@@ -6,134 +6,194 @@
   "accommodations": [
     {
       "id": "0b8363c1-ca13-58e3-b1c9-9a1b9fdaa6a8",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
-      "confidence": 0.81,
+      "source_quote": "Provide a word bank for written-response items.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "47260751-6dd7-5a9e-b69b-10a141c2c408",
       "text": "Give advance warning before transitions and changes in routine.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "advance warning before transitions and changes in routine",
-      "confidence": 0.89,
+      "source_quote": "Give advance warning before transitions and changes in routine.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "1e92685c-3e37-560e-bf8f-d63c095fde69",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.78
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.91,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "d3bac86e-fd26-57de-9b25-d07a3696ed11",
       "text": "Break multi-step directions into chunked, numbered steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "break multi-step directions into numbered steps",
-      "confidence": 0.84,
+      "source_quote": "Break multi-step directions into chunked, numbered steps.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "3b799cff-531c-59d9-8ffa-1a4d812eb5d8",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.8,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "1c5eb2a3-2f2c-59ee-8585-9a5cbd5acecc",
       "text": "Provide audio versions of grade-level texts.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "audio versions of grade-level texts",
-      "confidence": 0.93,
+      "source_quote": "Provide audio versions of grade-level texts.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "c87c7db2-5586-55bc-8eed-5f73cb1479c2",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.8,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "8f05d01f-af90-533c-9f10-abfef227e0e6",
       "text": "Provide 50% extended time on classroom assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.93
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on classroom assessments",
-      "confidence": 0.85,
+      "source_quote": "Provide 50% extended time on classroom assessments.",
+      "confidence": 0.86,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "b0aa0741-a083-50e9-84c7-eecdd57eef14",
-      "type": "Speech and language therapy (social communication)",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
       "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
-      "confidence": 0.83,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "02930b54-666c-5202-8e68-928263ddc329",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.79,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.91,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "3950dbbf-2d74-52ee-b56f-be1cea35b32f",
-      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
-      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Language sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "retell a short narrative with a beginning, middle, and end",
-      "confidence": 0.92,
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
@@ -143,36 +203,36 @@
       "target": "4 of 5 opportunities.",
       "measure": "Work-completion log",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
-      "confidence": 0.82,
+      "source_page": 4,
+      "source_quote": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "c60c0ea6-0b60-52ca-b50a-84a8e24ebf45",
-      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
-      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Structured social observation",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "maintain a topic across three conversational turns",
-      "confidence": 0.78,
+      "source_page": 4,
+      "source_quote": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "confidence": 0.96,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-02-11",
+    "annual_review": "2026-09-30",
     "triennial_reeval": "2028-09-15",
-    "last_progress_report": "2026-10-30"
+    "last_progress_report": "2026-10-16"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.97,
+    "disability_category": 0.96,
     "school_year": 0.99,
-    "annual_review": 0.85,
+    "annual_review": 0.93,
     "triennial_reeval": 0.9,
-    "last_progress_report": 0.93
+    "last_progress_report": 0.92
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

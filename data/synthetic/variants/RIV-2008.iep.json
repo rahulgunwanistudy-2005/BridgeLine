@@ -7,101 +7,132 @@
     {
       "id": "70c63afd-9079-5d2c-acb4-89e50f14fd6a",
       "text": "Provide 50% extended time on tests and long assignments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "all academic subjects",
+          "source_page": 2,
+          "source_quote": "all academic subjects",
+          "confidence": 0.51
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on tests and long assignments",
+      "source_quote": "Provide 50% extended time on tests and long assignments.",
       "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "507728ec-6b3a-5627-abd0-673b726e178b",
       "text": "Provide captions or a transcript for audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for audio and video media",
-      "confidence": 0.87,
+      "source_quote": "Provide captions or a transcript for audio and video media.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "2d16759e-b6fd-5d0f-8cd0-0ae096d130c7",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
-      "confidence": 0.91,
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "fbc077a1-4cba-5d9b-97b4-2bf3c4310a27",
       "text": "Provide 50% extended time on reading-heavy assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.91
+        },
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on reading-heavy assessments",
-      "confidence": 0.88,
+      "source_quote": "Provide 50% extended time on reading-heavy assessments.",
+      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "6f841683-00fb-5be9-81ba-ef052a31f100",
-      "type": "Educational audiology consultation",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time monthly",
-      "provider_role": "Educational audiologist",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Educational audiology consultation 30 minutes monthly",
-      "confidence": 0.95,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "66fc8b90-8981-59be-9f3b-cc9cd459ac44",
-      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
-      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Work-completion log",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
-      "confidence": 0.93,
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "b73922a5-fa0e-5460-8fb4-d87937fb2ce9",
-      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
-      "baseline": "Requests clarification in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "request clarification when she misses information",
-      "confidence": 0.85,
+      "source_page": 4,
+      "source_quote": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "confidence": 0.78,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2026-10-12",
-    "triennial_reeval": "2026-11-18",
-    "last_progress_report": "2026-10-16"
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.9,
+    "disability_category": 0.92,
     "school_year": 0.99,
-    "annual_review": 0.94,
-    "triennial_reeval": 0.84,
-    "last_progress_report": 0.89
+    "annual_review": 0.92,
+    "triennial_reeval": 0.94,
+    "last_progress_report": 0.94
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

@@ -7,171 +7,220 @@
     {
       "id": "9028f7cf-3223-5e01-8ffc-8fd1675815cf",
       "text": "Provide 50% extended time on classroom assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.8
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on classroom assessments",
-      "confidence": 0.82,
+      "source_quote": "Provide 50% extended time on classroom assessments.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "ef34f367-7b19-55e3-b472-6e2f73557bcd",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.91,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "ce7f698a-e866-5e78-9430-9162c607da2d",
-      "text": "Administer assessments in a small-group, reduced-distraction setting.",
-      "applies_to": [
-        "context"
+      "text": "Provide access to a reduced-distraction workspace.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "small-group, reduced-distraction setting for assessments",
+      "source_quote": "Provide access to a reduced-distraction workspace.",
       "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "cc91949d-0eb5-5380-ad81-5af34c284816",
       "text": "Provide a visual schedule for each class period.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual schedule for each class period",
-      "confidence": 0.86,
+      "source_quote": "Provide a visual schedule for each class period.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "c1774c85-bf3f-5849-9204-e074d3c997fc",
-      "text": "Provide a written or visual schedule of each period's activities.",
-      "applies_to": [
-        "all"
+      "text": "Provide a written or visual schedule of activities for each period.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "written or visual schedule of each period's activities",
-      "confidence": 0.79,
+      "source_quote": "Provide a written or visual schedule of activities for each period.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "dc8e3189-caa0-5392-8983-ddd7779ae839",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
-      "confidence": 0.95,
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "df819000-716c-54c9-8436-fe2605677423",
-      "text": "Seat with a clear line of sight to the speaker's face.",
-      "applies_to": [
-        "all"
+      "text": "Seat with a clear line of sight to the face of the speaker.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "clear line of sight to the speaker's face",
-      "confidence": 0.92,
+      "source_quote": "Seat with a clear line of sight to the face of the speaker.",
+      "confidence": 0.91,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "db54ab48-a58f-5ba6-99bb-07506a14ba7e",
-      "type": "Deaf/hard-of-hearing itinerant support",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Unassigned",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction (mathematics): 150 minutes per week; 30 minutes, 5 times weekly; provider: Unassigned.",
+      "confidence": 0.88,
+      "reconciliation_status": null
+    },
+    {
+      "id": "f35de69c-8f33-58d5-9e47-3a93108d453c",
+      "type": "Language processing support (group)",
       "minutes_per_week": 60,
       "frequency": "30 minutes, 2 times weekly",
       "provider_role": "Unassigned",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.94,
-      "reconciliation_status": null
-    },
-    {
-      "id": "f35de69c-8f33-58d5-9e47-3a93108d453c",
-      "type": "Educational audiology consultation",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time monthly",
-      "provider_role": "Educational audiologist",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Educational audiology consultation 30 minutes monthly",
-      "confidence": 0.88,
+      "source_quote": "Language processing support (group): 60 minutes per week; 30 minutes, 2 times weekly; provider: Unassigned.",
+      "confidence": 0.93,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "0ccdfa30-9e37-5e63-9882-10b5d469509e",
-      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
-      "baseline": "Solves two-step equations with 40% accuracy.",
-      "target": "80% accuracy on 4 of 5 probes.",
-      "measure": "Math curriculum-based probe",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "solve two-step equations with 80% accuracy",
-      "confidence": 0.93,
+      "source_page": 4,
+      "source_quote": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "c71809c7-8faf-5534-afb8-4a6696ef5c63",
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c0296a20-e651-5a84-b8e2-ef43f5521ddc",
       "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
       "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
       "measure": "Teacher observation",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "sustain attention to an independent task for 10 minutes",
-      "confidence": 0.83,
-      "reconciliation_status": null
-    },
-    {
-      "id": "c0296a20-e651-5a84-b8e2-ef43f5521ddc",
-      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
-      "baseline": "Requests clarification in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "request clarification when she misses information",
-      "confidence": 0.83,
+      "source_page": 4,
+      "source_quote": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "confidence": 0.96,
       "reconciliation_status": null
     },
     {
       "id": "0698ab63-ae4d-58ed-9ecb-e7ec1328d163",
-      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
-      "baseline": "Reads grade-level text at 80 words per minute.",
-      "target": "120 words per minute with 95% accuracy.",
-      "measure": "Oral reading fluency probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
-      "confidence": 0.88,
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-01-14",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-09"
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
     "disability_category": 0.93,
     "school_year": 0.99,
-    "annual_review": 0.96,
-    "triennial_reeval": 0.92,
-    "last_progress_report": 0.92
+    "annual_review": 0.86,
+    "triennial_reeval": 0.82,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

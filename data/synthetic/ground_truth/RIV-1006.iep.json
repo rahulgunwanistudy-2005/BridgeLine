@@ -7,45 +7,82 @@
     {
       "id": "9f380ec1-9057-502e-8221-a1c7c555d666",
       "text": "Provide 50% extended time on classroom assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.91
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on classroom assessments",
+      "source_quote": "Provide 50% extended time on classroom assessments.",
       "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "362f4198-3ec0-5839-93d1-87bcb1c628c1",
       "text": "Allow a four-function calculator on non-calculation-skill tasks.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "four-function calculator on non-calculation-skill tasks",
+      "source_quote": "Allow a four-function calculator on non-calculation-skill tasks.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "83b51a16-0a63-5009-9dae-07010dc58945",
       "text": "Provide graphic organizers for writing and note-taking.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.84
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "graphic organizers for writing and note-taking",
+      "source_quote": "Provide graphic organizers for writing and note-taking.",
       "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "c7feda7a-a9aa-5a0f-bfd5-2e485b910e1c",
       "text": "Read test directions and math word problems aloud on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "read test directions and math word problems aloud",
+      "source_quote": "Read test directions and math word problems aloud on request.",
       "confidence": 0.83,
       "reconciliation_status": null
     }
@@ -60,7 +97,7 @@
       "start": "2026-10-05",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
+      "source_quote": "Specialized academic instruction (mathematics): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
       "confidence": 0.9,
       "reconciliation_status": null
     }
@@ -74,7 +111,7 @@
       "measure": "Math curriculum-based probe",
       "progress_cadence": "Every two weeks",
       "source_page": 4,
-      "source_quote": "solve two-step equations with 80% accuracy",
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
       "confidence": 0.88,
       "reconciliation_status": null
     },
@@ -86,7 +123,7 @@
       "measure": "Writing work sample",
       "progress_cadence": "Monthly",
       "source_page": 4,
-      "source_quote": "write a paragraph with a clear topic sentence and three details",
+      "source_quote": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
       "confidence": 0.84,
       "reconciliation_status": null
     }
