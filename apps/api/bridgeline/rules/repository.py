@@ -1596,9 +1596,7 @@ def _obligation_set(
                 student_ref=approved.record.student_ref,
                 source_kind=ObligationSourceKind(row.source_kind),
                 source_ref=row.source_ref,
-                scope_provenance=[
-                    ObligationScopeProvenance.model_validate(item) for item in row.scope_provenance
-                ],
+                scope_provenance=_read_scope_provenance(row.scope_provenance),
                 rule_id=row.rule_id,
                 citation=row.citation,
                 action_text=row.action_text,
@@ -1610,3 +1608,16 @@ def _obligation_set(
             for row in rows
         ],
     )
+
+
+def _read_scope_provenance(
+    values: list[dict[str, JsonValue]],
+) -> list[ObligationScopeProvenance]:
+    """Restore JSON-backed scope values to the strict contract enum."""
+
+    return [
+        ObligationScopeProvenance.model_validate(
+            {**value, "scope": AccommodationScope(str(value["scope"]))}
+        )
+        for value in values
+    ]

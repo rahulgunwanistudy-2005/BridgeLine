@@ -148,11 +148,18 @@ class PipelineRunner:
                 detail=f"{stage.agent_label} is ready to begin.",
             )
 
-    async def run(self, run_id: UUID, *, values: dict[str, object] | None = None) -> None:
+    async def run(
+        self,
+        run_id: UUID,
+        *,
+        values: dict[str, object] | None = None,
+        start_stage: str | None = None,
+    ) -> None:
         """Run each current DAG node; real stage recovery is added in slice two."""
 
         ctx = PipelineContext(run_id=run_id, values={} if values is None else values)
-        for stage in self._definition.stages:
+        stages = self._stages_from(start_stage)
+        for stage in stages:
             await self._store.set_run_state(
                 run_id,
                 state="running",
@@ -189,7 +196,7 @@ class PipelineRunner:
                     progress=1.0,
                 )
                 return
-            is_last = stage is self._definition.stages[-1]
+            is_last = stage is stages[-1]
             await self._store.set_run_state(
                 run_id,
                 state="done" if is_last else "running",
@@ -205,11 +212,25 @@ class PipelineRunner:
                 progress=1.0,
             )
 
-    async def run_safely(self, run_id: UUID, *, values: dict[str, object] | None = None) -> None:
+    async def run_safely(
+        self,
+        run_id: UUID,
+        *,
+        values: dict[str, object] | None = None,
+        start_stage: str | None = None,
+    ) -> None:
         """Ensure a background-task failure is logged rather than disappearing."""
 
         try:
-            await self.run(run_id, values=values)
+            await self.run(run_id, values=values, start_stage=start_stage)
         except Exception:
             logger.exception("pipeline runner failed run_id=%s", run_id)
             raise
+
+    def _stages_from(self, start_stage: str | None) -> tuple[PipelineStage, ...]:
+        if start_stage is None:
+            return self._definition.stages
+        for index, stage in enumerate(self._definition.stages):
+            if stage.name == start_stage:
+                return self._definition.stages[index:]
+        raise ValueError(f"pipeline has no stage named {start_stage}")

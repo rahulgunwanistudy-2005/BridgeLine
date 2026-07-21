@@ -4,8 +4,12 @@ from __future__ import annotations
 
 import asyncio
 from dataclasses import dataclass, field
-from typing import cast
+from datetime import UTC, datetime
+from typing import Protocol, cast
 from uuid import UUID, uuid4
+from zoneinfo import ZoneInfo
+
+from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 
 from bridgeline.config import Settings
 from bridgeline.db.schemas import IEPRecord, PipelineState
@@ -26,6 +30,7 @@ from bridgeline.orchestrator.pipeline import (
     StageErrorPolicy,
     StagePaused,
 )
+from bridgeline.rules.repository import RulesRepository
 
 
 @dataclass(frozen=True, slots=True)
@@ -140,3 +145,43 @@ class HumanApprovalStage:
                 "review_fields": [field.model_dump(mode="json") for field in gate.review_fields],
             },
         )
+
+
+@dataclass(frozen=True, slots=True)
+class RulesStage:
+    """Derive and persist deterministic obligations only after explicit approval."""
+
+    session_factory: async_sessionmaker[AsyncSession]
+    school_timezone: str
+    name: str = "rules"
+    agent_label: str = "Compliance Rules Engine"
+    depends_on: tuple[str, ...] = ("human_approval",)
+    on_error: StageErrorPolicy = field(default_factory=StageErrorPolicy)
+
+    async def run(self, ctx: PipelineContext) -> StageCompleted:
+        lineage_id = cast(UUID, ctx.values["iep_record_id"])
+        generated_at = datetime.now(UTC)
+        async with self.session_factory() as session:
+            repository = RulesRepository(session)
+            result = await repository.derive_and_persist(
+                lineage_id,
+                generated_at=generated_at,
+                as_of=generated_at.astimezone(ZoneInfo(self.school_timezone)).date(),
+                derivation_run_id=ctx.run_id,
+            )
+        obligation_count = len(result.obligations)
+        return StageCompleted(
+            detail=(
+                f"Derived {obligation_count} deterministic obligation(s) from the approved IEP "
+                f"using rules version {result.rules_version}."
+            )
+        )
+
+
+class BriefFanOutStage(Protocol):
+    """Deferred cx/04 contract; intentionally excluded from the cx/03 runtime DAG."""
+
+    name: str
+    agent_label: str
+
+    async def run(self, ctx: PipelineContext) -> StageCompleted: ...

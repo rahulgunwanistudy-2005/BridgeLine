@@ -16,11 +16,13 @@ from bridgeline.db.models import (
     ScopeReferenceAlias,
     ServiceDelayReason,
 )
+from bridgeline.db.schemas import AccommodationScope
 from bridgeline.rules.repository import (
     InvalidScopeMappingActorError,
     InvalidServiceDelayReasonActorError,
     RulesRepository,
     _finding_transition_event,
+    _read_scope_provenance,
     _sync_deadline,
 )
 from bridgeline.rules.types import Deadline, DeadlineStatus, SourceKind
@@ -278,3 +280,19 @@ def test_deadline_rederivation_is_noop_until_state_changes() -> None:
     assert event is not None
     assert event.event_type == "deadline.recalculated"
     assert row.status == "overdue"
+
+
+def test_scope_provenance_restores_json_enum_values_to_strict_contracts() -> None:
+    provenance = _read_scope_provenance(
+        [
+            {
+                "scope": "all",
+                "ref": "All academic classes",
+                "source_page": 2,
+                "source_quote": "in all academic classes",
+                "confidence": 1.0,
+            }
+        ]
+    )
+
+    assert provenance[0].scope is AccommodationScope.ALL

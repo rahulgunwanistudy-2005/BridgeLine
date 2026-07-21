@@ -15,6 +15,7 @@ from bridgeline.orchestrator.stages import (
     ExtractStage,
     HumanApprovalStage,
     IngestStage,
+    RulesStage,
 )
 from bridgeline.orchestrator.store import SQLAlchemyPipelineStore
 
@@ -47,6 +48,30 @@ def get_pipeline_runner() -> PipelineRunner:
                 ExtractStage(settings=settings, gateway=gateway, store=ingest_store),
                 ConfidenceGateStage(settings=settings),
                 HumanApprovalStage(),
+                RulesStage(
+                    session_factory=async_session_factory,
+                    school_timezone=settings.school_timezone,
+                ),
+            )
+        ),
+        store=get_pipeline_store(),
+        bus=get_pipeline_bus(),
+    )
+
+
+@lru_cache
+def get_rules_pipeline_runner() -> PipelineRunner:
+    """Resume the deterministic post-approval suffix without requiring an LLM credential."""
+
+    settings = get_settings()
+    return PipelineRunner(
+        definition=PipelineDefinition(
+            (
+                RulesStage(
+                    session_factory=async_session_factory,
+                    school_timezone=settings.school_timezone,
+                    depends_on=(),
+                ),
             )
         ),
         store=get_pipeline_store(),

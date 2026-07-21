@@ -15,6 +15,7 @@ from bridgeline.orchestrator.bus import PipelineEventBus
 from bridgeline.orchestrator.composition import (
     get_pipeline_bus,
     get_pipeline_store,
+    get_rules_pipeline_runner,
     get_stub_pipeline_runner,
 )
 from bridgeline.orchestrator.pipeline import PipelineRunner
@@ -151,8 +152,10 @@ async def get_pipeline_run(
 async def approve_pipeline_run(
     run_id: UUID,
     request: ApprovalRequest,
+    background_tasks: BackgroundTasks,
     store: Annotated[SQLAlchemyPipelineStore, Depends(get_pipeline_store)],
     bus: Annotated[PipelineEventBus, Depends(get_pipeline_bus)],
+    runner: Annotated[PipelineRunner, Depends(get_rules_pipeline_runner)],
 ) -> ApprovalResponse:
     """Approve exactly one parked draft and make duplicate submissions harmless."""
 
@@ -161,7 +164,7 @@ async def approve_pipeline_run(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail="actor_ref is required"
         )
     try:
-        iep_record_id, idempotent = await store.approve(run_id)
+        iep_record_id, idempotent, run_state = await store.approve(run_id)
     except PipelineRunNotFoundError as error:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(error)) from error
     except PipelineDraftNotFoundError as error:
@@ -180,10 +183,16 @@ async def approve_pipeline_run(
             ),
             progress=1.0,
         )
+        background_tasks.add_task(
+            runner.run_safely,
+            run_id,
+            values={"iep_record_id": iep_record_id},
+            start_stage="rules",
+        )
     return ApprovalResponse(
         run_id=run_id,
         iep_record_id=iep_record_id,
-        state="done",
+        state=run_state,
         idempotent=idempotent,
     )
 

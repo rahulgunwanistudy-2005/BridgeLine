@@ -204,7 +204,7 @@ class SQLAlchemyPipelineStore:
             retryable=run.retryable,
         )
 
-    async def approve(self, run_id: UUID) -> tuple[UUID, bool]:
+    async def approve(self, run_id: UUID) -> tuple[UUID, bool, str]:
         """Atomically approve the parked draft; repeated submissions are no-ops."""
 
         now = datetime.now(UTC)
@@ -226,7 +226,7 @@ class SQLAlchemyPipelineStore:
             if draft is None:
                 raise PipelineDraftNotFoundError(f"pipeline run {run_id} has no persisted draft")
             if draft.approval_state == "approved":
-                return draft.iep_record_id, True
+                return draft.iep_record_id, True, run.state
             if run.state != "awaiting_approval" or run.attention_kind != "human_approval":
                 raise PipelineApprovalStateError(
                     "pipeline run is not awaiting case-manager approval"
@@ -247,14 +247,16 @@ class SQLAlchemyPipelineStore:
             draft.approval_state = "approved"
             draft.is_current_approved = True
             draft.approved_at = now
-            run.state = "done"
-            run.current_stage = "human_approval"
-            run.detail = "Case-manager approval recorded; the draft is ready for rules derivation."
+            run.state = "running"
+            run.current_stage = "rules"
+            run.detail = (
+                "Case-manager approval recorded; deterministic rules derivation is starting."
+            )
             run.attention_kind = None
             run.attention_payload = None
             run.retryable = False
-            run.completed_at = now
-            return draft.iep_record_id, False
+            run.completed_at = None
+            return draft.iep_record_id, False, run.state
 
 
 def _event_from_row(row: PipelineStatusEventRow) -> PipelineStatusEvent:
