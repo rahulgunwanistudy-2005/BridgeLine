@@ -55,7 +55,8 @@
   .transfer-sculpture { min-height: 29rem; }
   .transfer-object { inset: 2rem 0 5.5rem; transform: rotateX(-2deg) rotateY(-4deg); }
   .case-file-shell { left: 1%; width: 44%; }.source-sheet { left: 3%; width: 44%; height: 62%; padding: 0.75rem; }.source-sheet > p { margin-top: 1.5rem; font-size: 0.72rem; }.source-field-grid { display:none; }
-  .evidence-slip { left: 15%; width: 39%; padding: 0.55rem; }.evidence-slip strong { font-size: 0.67rem; }
+  .evidence-slip { top: 66%; left: 3%; width: 44%; padding: 0.55rem; }.evidence-slip strong { font-size: 0.67rem; }
+  .evidence-tether { top: 70%; left: 40%; width: 14%; }
   .verification-gate { left: 47%; width: 12%; }.gate-lock { width: 2.4rem; height: 2.4rem; }.citation-spine { left: 53%; width: 10%; height: 70%; }
   .responsibility-rack { top: 17%; width: 38%; height: 58%; }.rack-action { padding: 0.5rem; font-size: 0.5rem; }.responsibility-tab { grid-template-columns: 1.2rem 1fr auto; min-height: 2rem; }.responsibility-tab strong { font-size: 0.48rem; }.responsibility-tab::before { left:-2rem; width:2rem; }.rack-bracket { left:-2.1rem; }
   .transfer-readout { right: 0.5rem; bottom: 3.8rem; left: 0.5rem; grid-template-columns: auto 1fr; gap: 0.4rem; }.transfer-readout > strong { font-size: 0.58rem; text-align: right; }.transfer-meter { grid-column: 1 / -1; }.transfer-meter i { flex:1; }
