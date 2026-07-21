@@ -15,10 +15,10 @@
 .source-scope { margin-top: 0.8rem; border-left: 2px solid var(--bl-sand-peach); background: color-mix(in srgb, var(--bl-sand-peach) 32%, transparent); padding: 0.5rem; font-family: var(--bl-font-document); font-size: 0.72rem; }
 .source-field-grid { position: absolute; right: 1.35rem; bottom: 1.35rem; left: 1.35rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
 .source-field-grid i { height: 1.7rem; border: 1px solid var(--bl-warm-stone); }
-.evidence-slip { position: absolute; top: 36%; left: 22%; z-index: 6; display: grid; width: 31%; gap: 0.3rem; padding: 0.75rem 1rem; transform: translate3d(-2rem,0,1rem) rotateY(4deg); opacity: 0; border: 1px solid var(--bl-deep-moss); background: var(--bl-sand-peach); color: var(--bl-ink-green); box-shadow: 0 1rem 2rem color-mix(in srgb, var(--bl-ink-green) 18%, transparent); transition: transform 650ms cubic-bezier(.2,.8,.2,1), opacity 450ms ease; }
+.evidence-slip { position: absolute; top: 64%; left: 22%; z-index: 6; display: grid; width: 31%; gap: 0.3rem; padding: 0.75rem 1rem; transform: translate3d(-2rem,0,1rem) rotateY(4deg); opacity: 0; border: 1px solid var(--bl-deep-moss); background: var(--bl-sand-peach); color: var(--bl-ink-green); box-shadow: 0 1rem 2rem color-mix(in srgb, var(--bl-ink-green) 18%, transparent); transition: transform 650ms cubic-bezier(.2,.8,.2,1), opacity 450ms ease; }
 .evidence-slip span,.evidence-slip small { font-family: var(--bl-font-mono); font-size: 0.48rem; text-transform: uppercase; }
 .evidence-slip strong { font-family: var(--bl-font-document); font-size: 0.88rem; }
-.evidence-tether { position: absolute; top: 48%; left: 38%; z-index: 5; width: 18%; height: 1px; transform: translateZ(0.6rem) scaleX(0); transform-origin: left; background: var(--bl-deep-moss); transition: transform 500ms ease; }
+.evidence-tether { position: absolute; top: 71%; left: 38%; z-index: 5; width: 18%; height: 1px; transform: translateZ(0.6rem) scaleX(0); transform-origin: left; background: var(--bl-deep-moss); transition: transform 500ms ease; }
 .evidence-tether i { position: absolute; top: -0.2rem; width: 0.4rem; height: 0.4rem; transform: rotate(45deg); border: 1px solid var(--bl-deep-moss); background: var(--bl-paper-cream); }
 .evidence-tether i:nth-child(1) { left: 0; }.evidence-tether i:nth-child(2) { left: 48%; }.evidence-tether i:nth-child(3) { right: 0; }
 .verification-gate { position: absolute; top: 23%; left: 48%; z-index: 8; width: 11%; height: 48%; transform: translateZ(1.2rem) scaleY(0.6); opacity: 0; transition: opacity 450ms ease, transform 600ms cubic-bezier(.2,.8,.2,1); }
@@ -55,9 +55,11 @@
   .transfer-sculpture { min-height: 29rem; }
   .transfer-object { inset: 2rem 0 5.5rem; transform: rotateX(-2deg) rotateY(-4deg); }
   .case-file-shell { left: 1%; width: 44%; }.source-sheet { left: 3%; width: 44%; height: 62%; padding: 0.75rem; }.source-sheet > p { margin-top: 1.5rem; font-size: 0.72rem; }.source-field-grid { display:none; }
+  .case-file-shell > small { display:none; }
   .evidence-slip { top: 66%; left: 3%; width: 44%; padding: 0.55rem; }.evidence-slip strong { font-size: 0.67rem; }
   .evidence-tether { top: 70%; left: 40%; width: 14%; }
   .verification-gate { left: 47%; width: 12%; }.gate-lock { width: 2.4rem; height: 2.4rem; }.citation-spine { left: 53%; width: 10%; height: 70%; }
+  .citation-spine-title,.citation-spine strong,.citation-spine-path,.citation-spine small { display:none; }
   .responsibility-rack { top: 17%; width: 38%; height: 58%; }.rack-action { padding: 0.5rem; font-size: 0.5rem; }.responsibility-tab { grid-template-columns: 1.2rem 1fr auto; min-height: 2rem; }.responsibility-tab strong { font-size: 0.48rem; }.responsibility-tab::before { left:-2rem; width:2rem; }.rack-bracket { left:-2.1rem; }
   .transfer-readout { right: 0.5rem; bottom: 3.8rem; left: 0.5rem; grid-template-columns: auto 1fr; gap: 0.4rem; }.transfer-readout > strong { font-size: 0.58rem; text-align: right; }.transfer-meter { grid-column: 1 / -1; }.transfer-meter i { flex:1; }
   .transfer-stage-nav { right: 0; bottom: 0; left: 0; justify-content: flex-start; overflow-x: auto; padding-bottom: 0.25rem; }.transfer-stage-nav button { min-width: 4.1rem; justify-content: center; }.transfer-stage-nav button span { display:none; }
