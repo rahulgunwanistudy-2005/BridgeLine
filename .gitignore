@@ -24,3 +24,4 @@ venv/
 .venv-synth/
 scripts/synthgen/__pycache__/
 .claude/
+.vercel
