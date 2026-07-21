@@ -1,0 +1,42 @@
+:root {
+  --bl-deep-moss: #4c5540;
+  --bl-ink-green: #30382c;
+  --bl-cool-mineral: #e8ebe8;
+  --bl-paper-cream: #f6f3ea;
+  --bl-warm-stone: #c1baae;
+  --bl-sand-peach: #e3cfb0;
+  --bl-surface: color-mix(in srgb, var(--bl-paper-cream) 18%, white);
+
+  --bl-confirmed: #2c6e49;
+  --bl-review: #9a6a15;
+  --bl-finding: #a63a2e;
+
+  --bl-document-rule: color-mix(in srgb, var(--bl-warm-stone) 68%, white);
+  --bl-operational-border: color-mix(in srgb, var(--bl-deep-moss) 18%, white);
+  --bl-ink-muted: color-mix(in srgb, var(--bl-ink-green) 68%, white);
+  --bl-focus: var(--bl-deep-moss);
+
+  --bl-font-ui: "Public Sans", system-ui, sans-serif;
+  --bl-font-document: "Source Serif 4", Georgia, serif;
+  --bl-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --bl-radius-document: 0.125rem;
+  --bl-radius-operational: 0.5rem;
+  --bl-shadow-operational: 0 0.75rem 2rem color-mix(in srgb, var(--bl-ink-green) 9%, transparent);
+}
+
+@theme inline {
+  --color-deep-moss: var(--bl-deep-moss);
+  --color-ink-green: var(--bl-ink-green);
+  --color-cool-mineral: var(--bl-cool-mineral);
+  --color-paper-cream: var(--bl-paper-cream);
+  --color-warm-stone: var(--bl-warm-stone);
+  --color-sand-peach: var(--bl-sand-peach);
+  --color-surface: var(--bl-surface);
+  --color-confirmed: var(--bl-confirmed);
+  --color-review: var(--bl-review);
+  --color-finding: var(--bl-finding);
+  --font-sans: var(--bl-font-ui);
+  --font-serif: var(--bl-font-document);
+  --font-mono: var(--bl-font-mono);
+}

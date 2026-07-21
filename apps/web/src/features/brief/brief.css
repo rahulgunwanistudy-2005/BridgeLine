@@ -1,0 +1,130 @@
+.brief-shell {
+  width: min(100% - 2rem, 68rem);
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
+}
+
+.brief-toolbar,
+.brief-confirmation,
+.brief-confirmation-controls,
+.brief-primary-button,
+.brief-secondary-button {
+  display: flex;
+  align-items: center;
+}
+
+.brief-toolbar {
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.brief-kicker,
+.brief-wordmark {
+  font-family: var(--bl-font-mono);
+  font-size: 0.67rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.brief-paper {
+  overflow: hidden;
+  border: 1px solid var(--bl-warm-stone);
+  border-radius: var(--bl-radius-document);
+  background: var(--bl-paper-cream);
+  box-shadow: 0 1.25rem 3rem color-mix(in srgb, var(--bl-ink-green) 10%, transparent);
+}
+
+.brief-header {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  border-bottom: 1px solid var(--bl-warm-stone);
+}
+
+.brief-wordmark { display: flex; align-items: center; gap: 0.5rem; color: var(--bl-ink-muted); }
+.brief-header h1 { overflow-wrap: anywhere; margin: 2.5rem 0 0.35rem; font-family: var(--bl-font-document); font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1; letter-spacing: -0.03em; }
+.brief-header p { color: var(--bl-ink-muted); }
+
+.brief-meta { display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--bl-warm-stone); }
+.brief-meta div { padding: 0.8rem; border-right: 1px solid var(--bl-warm-stone); border-bottom: 1px solid var(--bl-warm-stone); }
+.brief-meta div:nth-child(even) { border-right: 0; }
+.brief-meta div:nth-last-child(-n+2) { border-bottom: 0; }
+.brief-meta dt { color: var(--bl-ink-muted); font-size: 0.7rem; }
+.brief-meta dd { margin-top: 0.2rem; font-family: var(--bl-font-mono); font-size: 0.8rem; font-weight: 600; }
+.brief-status { text-transform: capitalize; }
+.brief-status--confirmed { color: var(--bl-confirmed); }
+.brief-status--flagged { color: var(--bl-finding); }
+
+.brief-responsibility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.2rem 2rem;
+  background: color-mix(in srgb, var(--bl-sand-peach) 38%, var(--bl-paper-cream));
+  border-bottom: 1px solid var(--bl-warm-stone);
+}
+
+.brief-student { padding: 1.6rem 2rem 0; }
+.brief-student-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; padding-bottom: 0.8rem; border-bottom: 2px solid var(--bl-ink-green); }
+.brief-student-heading h2 { margin-top: 0.15rem; font-family: var(--bl-font-document); font-size: 1.65rem; }
+.brief-student-heading > span { font-family: var(--bl-font-mono); font-size: 0.72rem; color: var(--bl-ink-muted); }
+.brief-obligations { margin: 0; padding: 0; list-style: none; }
+.brief-obligation { display: grid; grid-template-columns: 2rem minmax(0, 1fr) auto; gap: 1rem; align-items: start; padding: 1.2rem 0; border-bottom: 1px solid var(--bl-warm-stone); }
+.brief-obligation-number { padding-top: 0.2rem; font-family: var(--bl-font-mono); font-size: 0.7rem; color: var(--bl-ink-muted); }
+.brief-exact-text { font-family: var(--bl-font-document); font-size: 1.05rem; line-height: 1.55; }
+.brief-practice { margin-top: 0.45rem; color: var(--bl-ink-muted); font-size: 0.82rem; line-height: 1.5; }
+.brief-practice strong { margin-right: 0.3rem; color: var(--bl-ink-green); }
+.brief-provenance { display: flex; flex-wrap: wrap; gap: 0.45rem 1rem; margin-top: 0.65rem; font-family: var(--bl-font-mono); font-size: 0.62rem; color: var(--bl-ink-muted); }
+.brief-footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem 2rem 1.25rem; font-family: var(--bl-font-mono); font-size: 0.58rem; color: var(--bl-ink-muted); }
+
+.brief-confirmation { align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; margin-top: 1rem; padding: 1.25rem; border: 1px solid var(--bl-operational-border); border-radius: var(--bl-radius-operational); background: var(--bl-surface); box-shadow: var(--bl-shadow-operational); }
+.brief-confirmation-controls { gap: 0.7rem; flex-wrap: wrap; }
+.brief-primary-button,
+.brief-secondary-button { justify-content: center; gap: 0.45rem; min-height: 2.6rem; border-radius: var(--bl-radius-operational); padding: 0.6rem 0.9rem; font-size: 0.82rem; font-weight: 600; }
+.brief-primary-button { border: 1px solid var(--bl-deep-moss); background: var(--bl-deep-moss); color: var(--bl-paper-cream); }
+.brief-secondary-button { border: 1px solid var(--bl-warm-stone); background: var(--bl-surface); color: var(--bl-ink-green); }
+.brief-primary-button:disabled,
+.brief-secondary-button:disabled { opacity: 0.5; cursor: not-allowed; }
+.brief-flag-form { flex: 1 0 100%; display: grid; gap: 0.6rem; padding-top: 1rem; border-top: 1px solid var(--bl-operational-border); }
+.brief-flag-form label { font-size: 0.8rem; font-weight: 600; }
+.brief-flag-form textarea { width: 100%; resize: vertical; border: 1px solid var(--bl-warm-stone); border-radius: var(--bl-radius-operational); background: var(--bl-paper-cream); padding: 0.8rem; }
+.brief-flag-form .brief-primary-button { justify-self: start; }
+.brief-error { flex-basis: 100%; color: var(--bl-finding); font-size: 0.8rem; }
+
+@media (max-width: 44rem) {
+  .brief-shell { width: min(100% - 1rem, 68rem); padding-top: 1rem; }
+  .brief-header { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.25rem; }
+  .brief-header h1 { margin-top: 1.5rem; }
+  .brief-responsibility { align-items: flex-start; flex-direction: column; gap: 1rem; padding: 1rem 1.25rem; }
+  .brief-student { padding: 1.25rem 1.25rem 0; }
+  .brief-obligation { grid-template-columns: 1.6rem minmax(0, 1fr); }
+  .brief-obligation > :last-child { grid-column: 2; }
+  .brief-obligation .citation-chip,
+  .brief-obligation .citation-chip__plate { width: 100%; }
+  .brief-footer { flex-direction: column; padding: 1rem 1.25rem; }
+  .brief-confirmation-controls,
+  .brief-confirmation-controls button { width: 100%; }
+  .brief-toolbar { align-items: flex-start; }
+  .brief-toolbar > div p:last-child { display: none; }
+}
+
+@media print {
+  @page { size: letter; margin: 0.35in; }
+  body { background: white !important; }
+  body > #root > div > header,
+  .brief-actions { display: none !important; }
+  .brief-shell { width: 100%; padding: 0; }
+  .brief-paper { border-color: var(--bl-warm-stone); box-shadow: none; }
+  .brief-header { padding: 0.25in; }
+  .brief-header h1 { margin-top: 0.25in; font-size: 26pt; }
+  .brief-responsibility { padding: 0.12in 0.25in; }
+  .brief-student { padding: 0.15in 0.25in 0; }
+  .brief-obligation { padding: 0.1in 0; break-inside: avoid; }
+  .brief-practice { font-size: 7.5pt; }
+  .brief-provenance { font-size: 5.8pt; }
+  .brief-footer { padding: 0.1in 0.25in; }
+}

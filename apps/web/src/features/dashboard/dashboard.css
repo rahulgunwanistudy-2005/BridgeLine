@@ -1,0 +1,10 @@
+@media (min-width: 1024px) {
+  .dashboard-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1.25fr) minmax(22rem, 0.75fr);
+  }
+}

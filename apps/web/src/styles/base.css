@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "./fonts.css";
+@import "./tokens.css";
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    min-width: 20rem;
+    color: var(--bl-ink-green);
+    background: var(--bl-cool-mineral);
+    font-family: var(--bl-font-ui);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-width: 20rem;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--bl-focus);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    color: var(--bl-ink-green);
+    background: var(--bl-sand-peach);
+  }
+}
+
+@utility font-tabular {
+  font-family: var(--bl-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+@media (max-width: 28rem) {
+  .citation-chip__plate > span:nth-child(2) {
+    gap: 0.25rem;
+    padding-right: 0.45rem;
+    padding-left: 0.55rem;
+  }
+
+  .citation-chip__clauses > span {
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

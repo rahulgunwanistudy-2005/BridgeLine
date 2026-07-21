@@ -1,0 +1,211 @@
+.pipeline-flow {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pipeline-stage-wrap {
+  position: relative;
+  min-width: 0;
+}
+
+.pipeline-stage-wrap:not(:last-child)::after {
+  position: absolute;
+  z-index: 0;
+  top: 4.25rem;
+  left: calc(100% - 0.15rem);
+  width: 1.05rem;
+  height: 1px;
+  content: "";
+  background: var(--bl-warm-stone);
+}
+
+.pipeline-stage {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 19rem;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--bl-operational-border);
+  border-radius: var(--bl-radius-operational);
+  background: var(--bl-surface);
+  box-shadow: var(--bl-shadow-operational);
+}
+
+.stage-index {
+  padding: 0.85rem 1rem 0;
+  color: var(--bl-ink-muted);
+  font-size: 0.65rem;
+}
+
+.stage-heading {
+  display: flex;
+  min-height: 4.4rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 1rem 0.9rem;
+}
+
+.stage-heading p {
+  margin: 0 0 0.25rem;
+  color: var(--bl-ink-muted);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.stage-heading h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.stage-mechanism {
+  position: relative;
+  height: 1.1rem;
+  overflow: hidden;
+  border-block: 1px solid var(--bl-operational-border);
+  background: var(--bl-cool-mineral);
+}
+
+.stage-track {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: var(--bl-warm-stone);
+}
+
+.stage-notch {
+  position: absolute;
+  z-index: 1;
+  top: 0.23rem;
+  left: 0.4rem;
+  width: 1.65rem;
+  height: 0.55rem;
+  border: 1px solid var(--bl-warm-stone);
+  background: var(--bl-surface);
+}
+
+.stage-detail {
+  flex: 1;
+  margin: 0;
+  padding: 1rem;
+  color: var(--bl-ink-muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.stage-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--bl-operational-border);
+  padding: 0.75rem 1rem;
+  color: var(--bl-ink-muted);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.pipeline-stage[data-state="running"] {
+  border-color: var(--bl-deep-moss);
+}
+
+.pipeline-stage[data-state="running"] .stage-heading svg,
+.pipeline-stage[data-state="running"] .stage-meta {
+  color: var(--bl-deep-moss);
+}
+
+.pipeline-stage[data-state="running"] .stage-notch {
+  border-color: var(--bl-deep-moss);
+  background: var(--bl-deep-moss);
+  animation: stage-ratchet 0.95s steps(4, end) infinite;
+}
+
+.pipeline-stage[data-state="done"] .stage-heading svg,
+.pipeline-stage[data-state="done"] .stage-meta {
+  color: var(--bl-confirmed);
+}
+
+.pipeline-stage[data-state="needs_review"] {
+  border-color: var(--bl-review);
+  background: color-mix(in srgb, var(--bl-sand-peach) 18%, var(--bl-surface));
+}
+
+.pipeline-stage[data-state="needs_review"] .stage-heading svg,
+.pipeline-stage[data-state="needs_review"] .stage-meta {
+  color: var(--bl-review);
+}
+
+.pipeline-stage[data-state="error"] .stage-heading svg,
+.pipeline-stage[data-state="error"] .stage-meta {
+  color: var(--bl-finding);
+}
+
+.parallel-lanes {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0 0.75rem 0.75rem;
+}
+
+.parallel-lane {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--bl-operational-border);
+  border-radius: 0.25rem;
+  padding: 0.35rem 0.45rem;
+  font-size: 0.61rem;
+}
+
+.lane-state {
+  width: 0.4rem;
+  height: 0.4rem;
+  transform: rotate(45deg);
+  border: 1px solid currentColor;
+}
+
+.parallel-lane[data-state="running"] {
+  color: var(--bl-deep-moss);
+}
+
+@keyframes stage-ratchet {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(100% + 6rem)); }
+}
+
+@media (max-width: 63.99rem) {
+  .pipeline-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .pipeline-stage {
+    min-height: 0;
+  }
+
+  .pipeline-stage-wrap:not(:last-child)::after {
+    top: calc(100% - 0.1rem);
+    left: 2.15rem;
+    width: 1px;
+    height: 0.95rem;
+  }
+
+  .stage-detail {
+    min-height: 4.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pipeline-stage[data-state="running"] .stage-notch {
+    animation: none;
+  }
+}

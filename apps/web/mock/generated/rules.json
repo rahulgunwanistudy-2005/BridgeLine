@@ -1,0 +1,65 @@
+{
+  "rules_version": "2026.07.20.5",
+  "rules": [
+    {
+      "id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.323",
+      "description": "The public agency must ensure the child's IEP is accessible to each regular education teacher, special education teacher, related services provider, and any other service provider responsible for its implementation."
+    },
+    {
+      "id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.323",
+      "description": "Each teacher and provider described in (d)(1) must be informed of his or her specific responsibilities related to implementing the child's IEP."
+    },
+    {
+      "id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.323",
+      "description": "Each teacher and provider described in (d)(1) must be informed of the specific accommodations, modifications, and supports that must be provided for the child in accordance with the IEP."
+    },
+    {
+      "id": "initial-iep-meeting-30-days",
+      "citation": "34 CFR §300.323(c)(1)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.323",
+      "description": "A meeting to develop an IEP for a child must be conducted within 30 days of a determination that the child needs special education and related services."
+    },
+    {
+      "id": "annual-review",
+      "citation": "34 CFR §300.324(b)(1)(i)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.324",
+      "description": "The public agency must ensure the IEP Team reviews the child's IEP periodically, but not less than annually, to determine whether the annual goals are being achieved."
+    },
+    {
+      "id": "triennial-reevaluation",
+      "citation": "34 CFR §300.303(b)(2)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.303",
+      "description": "A reevaluation must occur at least once every 3 years, unless the parent and the public agency agree that a reevaluation is unnecessary."
+    },
+    {
+      "id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.320",
+      "description": "The IEP must include a description of how the child's progress toward meeting annual goals will be measured, and when periodic progress reports will be provided."
+    },
+    {
+      "id": "services-statement",
+      "citation": "34 CFR §300.320(a)(4)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.320",
+      "description": "The IEP must include a statement of the special education and related services, supplementary aids and services, and program modifications to be provided, based on peer-reviewed research to the extent practicable."
+    },
+    {
+      "id": "services-without-delay",
+      "citation": "34 CFR §300.323(c)(2)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.323",
+      "description": "As soon as possible following development of the IEP, special education and related services must be made available to the child in accordance with the child's IEP."
+    },
+    {
+      "id": "iep-in-effect-start-of-year",
+      "citation": "34 CFR §300.323(a)",
+      "href": "https://www.law.cornell.edu/cfr/text/34/300.323",
+      "description": "At the beginning of each school year, the public agency must have an IEP in effect for each child with a disability within its jurisdiction."
+    }
+  ]
+}
