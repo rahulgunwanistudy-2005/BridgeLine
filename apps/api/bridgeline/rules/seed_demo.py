@@ -147,6 +147,7 @@ async def _seed_records(
         if row is None:
             run_id = UUID(f"60000000-0000-4000-8000-00000000000{index}")
             session.add(PipelineRun(id=run_id, state="done", detail="Hand-authored rules seed"))
+            await session.flush()
             record = _record(index, lineage, student.student_ref)
             row = IEPRecordRow(
                 id=row_id,
