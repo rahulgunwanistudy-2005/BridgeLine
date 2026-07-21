@@ -111,7 +111,7 @@ class SQLAlchemyPipelineStore:
             now = datetime.now(UTC)
             if state == "running" and run.started_at is None:
                 run.started_at = now
-            if state in {"done", "error"}:
+            if state in {"done", "error", "needs_review"}:
                 run.completed_at = now
 
     async def append_event(

@@ -50,6 +50,12 @@ class GeminiRequestError(GeminiGatewayError):
 class GeminiResponseError(GeminiGatewayError):
     """Raised when Gemini returns no valid instance of the requested schema."""
 
+    def __init__(self, message: str, *, raw_output: str | None = None) -> None:
+        """Preserve invalid model output for an explicit human-review decision."""
+
+        super().__init__(message)
+        self.raw_output = raw_output
+
 
 @dataclass(frozen=True, slots=True)
 class InlineImage:
@@ -200,7 +206,9 @@ class GeminiGateway:
         try:
             data = response_model.model_validate_json(raw_text)
         except ValidationError as exc:
-            raise GeminiResponseError("Gemini response failed local Pydantic validation") from exc
+            raise GeminiResponseError(
+                "Gemini response failed local Pydantic validation", raw_output=raw_text
+            ) from exc
 
         usage = self._usage(response.usage_metadata)
         logger.info(

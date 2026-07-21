@@ -9,6 +9,7 @@ from typing import Literal, Protocol
 from uuid import UUID
 
 from bridgeline.db.schemas import PipelineState
+from bridgeline.llm.client import GeminiRequestError, GeminiResponseError
 from bridgeline.orchestrator.bus import PipelineEventBus
 from bridgeline.orchestrator.store import PipelineStore
 
@@ -17,10 +18,11 @@ logger = logging.getLogger(__name__)
 
 @dataclass(frozen=True, slots=True)
 class StageErrorPolicy:
-    """Declared error behavior; later slices add review and retry policies."""
+    """Bounded, visible failure behavior for one independently observable stage."""
 
     retry_attempts: int = 0
-    terminal_state: PipelineState = PipelineState.ERROR
+    timeout_seconds: float | None = 120.0
+    terminal_state: PipelineState = PipelineState.NEEDS_REVIEW
 
 
 @dataclass(slots=True)
@@ -173,7 +175,14 @@ class PipelineRunner:
                 state=PipelineState.RUNNING,
                 detail=f"{stage.agent_label} is working.",
             )
-            result = await stage.run(ctx)
+            try:
+                async with asyncio.timeout(stage.on_error.timeout_seconds):
+                    result = await stage.run(ctx)
+            except asyncio.CancelledError:
+                raise
+            except Exception as error:
+                await self._record_stage_failure(run_id, stage, error)
+                return
             if isinstance(result, StagePaused):
                 await self._store.set_attention(
                     run_id,
@@ -227,6 +236,40 @@ class PipelineRunner:
             logger.exception("pipeline runner failed run_id=%s", run_id)
             raise
 
+    async def _record_stage_failure(
+        self, run_id: UUID, stage: PipelineStage, error: Exception
+    ) -> None:
+        """Persist an honest terminal attention state before surfacing a stage failure."""
+
+        attention_kind, payload, detail, retryable = _failure_attention(stage, error)
+        await self._store.set_attention(
+            run_id,
+            kind=attention_kind,
+            payload=payload,
+            retryable=retryable,
+        )
+        await self._store.set_run_state(
+            run_id,
+            state=stage.on_error.terminal_state.value,
+            stage=stage.name,
+            detail=detail,
+        )
+        await self._bus.emit(
+            run_id=run_id,
+            stage=stage.name,
+            agent_label=stage.agent_label,
+            state=stage.on_error.terminal_state,
+            detail=detail,
+            progress=1.0,
+        )
+        logger.warning(
+            "pipeline_stage_needs_review run_id=%s stage=%s failure_class=%s",
+            run_id,
+            stage.name,
+            attention_kind,
+            exc_info=error,
+        )
+
     def _stages_from(self, start_stage: str | None) -> tuple[PipelineStage, ...]:
         if start_stage is None:
             return self._definition.stages
@@ -234,3 +277,63 @@ class PipelineRunner:
             if stage.name == start_stage:
                 return self._definition.stages[index:]
         raise ValueError(f"pipeline has no stage named {start_stage}")
+
+
+def _failure_attention(
+    stage: PipelineStage, error: Exception
+) -> tuple[
+    Literal["model_uncertainty", "system_failure"], dict[str, object], str, bool
+]:
+    """Keep model uncertainty distinct from operational failures in the run contract."""
+
+    if isinstance(error, GeminiResponseError):
+        payload: dict[str, object] = {
+            "failure_class": "schema_validation",
+            "error_type": "gemini_response",
+        }
+        if error.raw_output is not None:
+            payload["raw_output"] = error.raw_output
+        return (
+            "model_uncertainty",
+            payload,
+            (
+                f"{stage.agent_label} returned a response that could not be validated. "
+                "Review the raw model output; no unvalidated result was accepted."
+            ),
+            True,
+        )
+    if isinstance(error, GeminiRequestError):
+        payload = {"failure_class": "provider_request", "error_type": "gemini_request"}
+        if error.status_code is not None:
+            payload["status_code"] = error.status_code
+        if error.status_code in {401, 403}:
+            detail = (
+                f"Gemini authentication failed while {stage.agent_label} was working. "
+                "No output was accepted or skipped. Restore the API credential, then retry "
+                "this run."
+            )
+        else:
+            detail = (
+                f"Gemini could not complete {stage.agent_label}. No output was accepted or "
+                "skipped. Restore service access, then retry this run."
+            )
+        return "system_failure", payload, detail, True
+    if isinstance(error, TimeoutError):
+        return (
+            "system_failure",
+            {"failure_class": "stage_timeout", "error_type": "timeout"},
+            (
+                f"{stage.agent_label} exceeded its time limit. No later stage was run; "
+                "review service health, then retry this run."
+            ),
+            True,
+        )
+    return (
+        "system_failure",
+        {"failure_class": "unexpected", "error_type": type(error).__name__},
+        (
+            f"{stage.agent_label} stopped unexpectedly. No later stage was run; "
+            "review the system failure, then retry this run."
+        ),
+        True,
+    )

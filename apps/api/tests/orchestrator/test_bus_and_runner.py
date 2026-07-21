@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import asyncio
+from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from uuid import UUID, uuid4
 
@@ -9,10 +11,14 @@ import pytest
 
 from bridgeline.db.schemas import PipelineState, PipelineStatusEvent
 from bridgeline.ingest.gate import GateResult, GateState, ReviewField
+from bridgeline.llm.client import GeminiRequestError, GeminiResponseError
 from bridgeline.orchestrator.bus import PipelineEventBus
 from bridgeline.orchestrator.pipeline import (
+    PipelineContext,
     PipelineDefinition,
     PipelineRunner,
+    StageCompleted,
+    StageErrorPolicy,
     StubStage,
 )
 from bridgeline.orchestrator.stages import HumanApprovalStage
@@ -74,6 +80,53 @@ class InMemoryPipelineStore:
         self, run_id: UUID, *, kind: str, payload: dict[str, object], retryable: bool
     ) -> None:
         self.attention[run_id] = (kind, payload, retryable)
+
+
+@dataclass(frozen=True, slots=True)
+class RevokedGeminiKeyStage:
+    """Chaos-test stage which simulates a credential revoked after an earlier stage finished."""
+
+    name: str = "extract"
+    agent_label: str = "Extraction Agent"
+    depends_on: tuple[str, ...] = ("ingest",)
+    on_error: StageErrorPolicy = field(default_factory=StageErrorPolicy)
+
+    async def run(self, ctx: PipelineContext) -> StageCompleted:
+        del ctx
+        raise GeminiRequestError("Gemini generateContent request failed", status_code=401)
+
+
+@dataclass(frozen=True, slots=True)
+class InvalidModelResponseStage:
+    """Proves schema validation failures preserve raw output for a human decision."""
+
+    name: str = "extract"
+    agent_label: str = "Extraction Agent"
+    depends_on: tuple[str, ...] = ()
+    on_error: StageErrorPolicy = field(default_factory=StageErrorPolicy)
+
+    async def run(self, ctx: PipelineContext) -> StageCompleted:
+        del ctx
+        raise GeminiResponseError(
+            "Gemini response failed local Pydantic validation", raw_output="{bad}"
+        )
+
+
+@dataclass(frozen=True, slots=True)
+class TimedOutStage:
+    """A stage whose timeout policy has an observable, bounded result."""
+
+    name: str = "extract"
+    agent_label: str = "Extraction Agent"
+    depends_on: tuple[str, ...] = ()
+    on_error: StageErrorPolicy = field(
+        default_factory=lambda: StageErrorPolicy(timeout_seconds=0.001)
+    )
+
+    async def run(self, ctx: PipelineContext) -> StageCompleted:
+        del ctx
+        await asyncio.sleep(1)
+        return StageCompleted(detail="unreachable")
 
 
 async def _stream_events(bus: PipelineEventBus, run_id: UUID, cursor: int | None) -> list[str]:
@@ -176,3 +229,94 @@ async def test_human_approval_parks_without_a_live_background_task() -> None:
         "Awaiting case-manager approval. Review the source-grounded IEP draft and any "
         "highlighted fields before Bridgeline derives teacher obligations."
     )
+
+
+@pytest.mark.asyncio
+async def test_revoked_gemini_key_mid_run_becomes_retryable_system_failure_on_sse() -> None:
+    """A 401 after Ingest is amber, terminal, and persisted before a client can resume."""
+
+    store = InMemoryPipelineStore()
+    bus = PipelineEventBus(store)
+    runner = PipelineRunner(
+        definition=PipelineDefinition(
+            (
+                StubStage(name="ingest", agent_label="Ingest Agent", delay_seconds=0),
+                RevokedGeminiKeyStage(),
+                StubStage(
+                    name="rules",
+                    agent_label="Compliance Rules Engine",
+                    depends_on=("extract",),
+                    delay_seconds=0,
+                ),
+            )
+        ),
+        store=store,
+        bus=bus,
+    )
+    run_id = uuid4()
+    await runner.create_run(run_id)
+
+    await runner.run_safely(run_id)
+
+    assert store.states[run_id] == "needs_review"
+    assert store.attention[run_id] == (
+        "system_failure",
+        {
+            "failure_class": "provider_request",
+            "error_type": "gemini_request",
+            "status_code": 401,
+        },
+        True,
+    )
+    assert [(event.stage, event.state.value) for event in store.events[run_id]] == [
+        ("ingest", "queued"),
+        ("extract", "queued"),
+        ("rules", "queued"),
+        ("ingest", "running"),
+        ("ingest", "done"),
+        ("extract", "running"),
+        ("extract", "needs_review"),
+    ]
+    resumed = await _stream_events(bus, run_id, 5)
+    assert len(resumed) == 2
+    assert "Gemini authentication failed" in resumed[-1]
+    assert "rules\"" not in resumed[-1]
+
+
+@pytest.mark.asyncio
+async def test_schema_validation_failure_is_model_uncertainty_with_raw_output() -> None:
+    store = InMemoryPipelineStore()
+    bus = PipelineEventBus(store)
+    runner = PipelineRunner(
+        definition=PipelineDefinition((InvalidModelResponseStage(),)), store=store, bus=bus
+    )
+    run_id = uuid4()
+    await runner.create_run(run_id)
+
+    await runner.run(run_id)
+
+    assert store.states[run_id] == "needs_review"
+    assert store.attention[run_id] == (
+        "model_uncertainty",
+        {
+            "failure_class": "schema_validation",
+            "error_type": "gemini_response",
+            "raw_output": "{bad}",
+        },
+        True,
+    )
+
+
+@pytest.mark.asyncio
+async def test_stage_timeout_becomes_retryable_system_failure() -> None:
+    store = InMemoryPipelineStore()
+    bus = PipelineEventBus(store)
+    runner = PipelineRunner(definition=PipelineDefinition((TimedOutStage(),)), store=store, bus=bus)
+    run_id = uuid4()
+    await runner.create_run(run_id)
+
+    await runner.run(run_id)
+
+    assert store.states[run_id] == "needs_review"
+    assert store.attention[run_id][0] == "system_failure"
+    assert store.attention[run_id][1]["failure_class"] == "stage_timeout"
