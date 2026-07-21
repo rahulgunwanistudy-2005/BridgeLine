@@ -1,0 +1,539 @@
+{
+  "student_ref": "RIV-1009",
+  "rules_version": "2026.07.20.5",
+  "obligation_count": 24,
+  "deadline_count": 2,
+  "finding_count": 16,
+  "obligations": [
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "14f6942d-1c67-5562-b05b-0c9fabfd796c",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Allow additional wait time for verbal responses."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "21c9ab5c-f3b6-5dcf-9cfe-b702773a4550",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Pair new vocabulary with visuals and definitions."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Implement this student's IEP responsibilities in Biology."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "RIV-1009",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "14f6942d-1c67-5562-b05b-0c9fabfd796c",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Allow additional wait time for verbal responses."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "21c9ab5c-f3b6-5dcf-9cfe-b702773a4550",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Pair new vocabulary with visuals and definitions."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Implement this student's IEP responsibilities in English."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "RIV-1009",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "14f6942d-1c67-5562-b05b-0c9fabfd796c",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Allow additional wait time for verbal responses."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Implement this student's IEP responsibilities in Art."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "RIV-1009",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "14f6942d-1c67-5562-b05b-0c9fabfd796c",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Allow additional wait time for verbal responses."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "21c9ab5c-f3b6-5dcf-9cfe-b702773a4550",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Pair new vocabulary with visuals and definitions."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Implement this student's IEP responsibilities in English."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "RIV-1009",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "14f6942d-1c67-5562-b05b-0c9fabfd796c",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Allow additional wait time for verbal responses."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Implement this student's IEP responsibilities in Mathematics."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "RIV-1009",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "14f6942d-1c67-5562-b05b-0c9fabfd796c",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Allow additional wait time for verbal responses."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Implement this student's IEP responsibilities in World History."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "RIV-1009",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "14f6942d-1c67-5562-b05b-0c9fabfd796c",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Allow additional wait time for verbal responses."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Implement this student's IEP responsibilities in Physical Education."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "e343f7e0-d882-50a4-bb75-5ab3f33c4e7c",
+      "context_ref": "RIV-1009",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    }
+  ],
+  "findings": [
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 60 minutes short",
+      "detail": "For the week of 2026-09-28, Speech and language therapy required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 60 minutes short",
+      "detail": "For the week of 2026-11-02, Speech and language therapy required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 48 minutes short",
+      "detail": "For the week of 2026-10-12, Speech and language therapy required 48 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 48.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -48.0,
+        "remaining_minutes": 48.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 60 minutes short",
+      "detail": "For the week of 2026-09-21, Speech and language therapy required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "triennial-reevaluation",
+      "finding_type": "calendar-coverage-missing",
+      "severity": "warning",
+      "title": "Deadline input requires review",
+      "detail": "The school calendar does not cover every required deadline and warning date.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "teacher-informed-accommodations",
+      "finding_type": "scope-reference-unresolved",
+      "severity": "warning",
+      "title": "Scope needs review: \"during verbal instruction\"",
+      "detail": "Scope reference \"during verbal instruction\" does not match the active roster.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 48 minutes short",
+      "detail": "For the week of 2026-09-07, Speech and language therapy required 48 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 48.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -48.0,
+        "remaining_minutes": 48.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 60 minutes short",
+      "detail": "For the week of 2026-10-19, Speech and language therapy required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "annual-review",
+      "finding_type": "calendar-coverage-missing",
+      "severity": "warning",
+      "title": "Deadline input requires review",
+      "detail": "The school calendar does not cover every required deadline and warning date.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "teacher-informed-responsibilities",
+      "finding_type": "service-provider-unassigned",
+      "severity": "warning",
+      "title": "No provider assigned for Speech and language therapy",
+      "detail": "Speech and language therapy requires a Speech-language pathologist, but no provider-of-record is assigned.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 60 minutes short",
+      "detail": "For the week of 2026-10-26, Speech and language therapy required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 60 minutes short",
+      "detail": "For the week of 2026-08-24, Speech and language therapy required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 48 minutes short",
+      "detail": "For the week of 2026-10-05, Speech and language therapy required 48 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 48.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -48.0,
+        "remaining_minutes": 48.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 60 minutes short",
+      "detail": "For the week of 2026-08-17, Speech and language therapy required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 60 minutes short",
+      "detail": "For the week of 2026-09-14, Speech and language therapy required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Speech and language therapy is 60 minutes short",
+      "detail": "For the week of 2026-08-31, Speech and language therapy required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    }
+  ],
+  "deadlines": [
+    {
+      "rule_id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "status": "overdue",
+      "description": "Provide a progress report for goal 16cb0258-aca1-5e37-81d8-d7a9c3914174.",
+      "legal_due_on": "2026-11-06"
+    },
+    {
+      "rule_id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "status": "due",
+      "description": "Provide a progress report for goal 965eb2c2-4a51-5f95-a003-996dea0f111e.",
+      "legal_due_on": "2026-11-13"
+    }
+  ]
+}

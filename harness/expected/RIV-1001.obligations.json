@@ -1,0 +1,838 @@
+{
+  "student_ref": "RIV-1001",
+  "rules_version": "2026.07.20.5",
+  "obligation_count": 49,
+  "deadline_count": 3,
+  "finding_count": 15,
+  "obligations": [
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "09dad245-1d1b-5a68-8a8f-93a937ef7dd8",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Break multi-step directions into chunked, numbered steps."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "260a9427-f927-560b-a65e-2869184296e0",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Allow text-to-speech for instructional materials."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "3b341238-caab-51d4-8b11-a3913e1fa7d7",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Provide 50% extended time on all classroom tests and quizzes."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "4a0f2f62-26d4-5afd-8c89-ff81f7191a79",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Provide a word bank for written-response items."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "c13c0665-e69c-55c6-9010-8ce00696a892",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Provide access to a reduced-distraction workspace."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Implement this student's IEP responsibilities in Biology."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "RIV-1001",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "09dad245-1d1b-5a68-8a8f-93a937ef7dd8",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Break multi-step directions into chunked, numbered steps."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "260a9427-f927-560b-a65e-2869184296e0",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Allow text-to-speech for instructional materials."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "3b341238-caab-51d4-8b11-a3913e1fa7d7",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide 50% extended time on all classroom tests and quizzes."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "4a0f2f62-26d4-5afd-8c89-ff81f7191a79",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide a word bank for written-response items."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "c13c0665-e69c-55c6-9010-8ce00696a892",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide access to a reduced-distraction workspace."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Implement this student's IEP responsibilities in English."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "RIV-1001",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "09dad245-1d1b-5a68-8a8f-93a937ef7dd8",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Break multi-step directions into chunked, numbered steps."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "260a9427-f927-560b-a65e-2869184296e0",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Allow text-to-speech for instructional materials."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "3b341238-caab-51d4-8b11-a3913e1fa7d7",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Provide 50% extended time on all classroom tests and quizzes."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "4a0f2f62-26d4-5afd-8c89-ff81f7191a79",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Provide a word bank for written-response items."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "c13c0665-e69c-55c6-9010-8ce00696a892",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Provide access to a reduced-distraction workspace."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Implement this student's IEP responsibilities in Art."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "RIV-1001",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "09dad245-1d1b-5a68-8a8f-93a937ef7dd8",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Break multi-step directions into chunked, numbered steps."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "260a9427-f927-560b-a65e-2869184296e0",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Allow text-to-speech for instructional materials."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "3b341238-caab-51d4-8b11-a3913e1fa7d7",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide 50% extended time on all classroom tests and quizzes."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "4a0f2f62-26d4-5afd-8c89-ff81f7191a79",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide a word bank for written-response items."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "c13c0665-e69c-55c6-9010-8ce00696a892",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide access to a reduced-distraction workspace."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Implement this student's IEP responsibilities in English."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "RIV-1001",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "09dad245-1d1b-5a68-8a8f-93a937ef7dd8",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Break multi-step directions into chunked, numbered steps."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "260a9427-f927-560b-a65e-2869184296e0",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Allow text-to-speech for instructional materials."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "3b341238-caab-51d4-8b11-a3913e1fa7d7",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Provide 50% extended time on all classroom tests and quizzes."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "4a0f2f62-26d4-5afd-8c89-ff81f7191a79",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Provide a word bank for written-response items."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "c13c0665-e69c-55c6-9010-8ce00696a892",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Provide access to a reduced-distraction workspace."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Implement this student's IEP responsibilities in Mathematics."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "RIV-1001",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "09dad245-1d1b-5a68-8a8f-93a937ef7dd8",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Break multi-step directions into chunked, numbered steps."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "260a9427-f927-560b-a65e-2869184296e0",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Allow text-to-speech for instructional materials."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "3b341238-caab-51d4-8b11-a3913e1fa7d7",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Provide 50% extended time on all classroom tests and quizzes."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "4a0f2f62-26d4-5afd-8c89-ff81f7191a79",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Provide a word bank for written-response items."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "c13c0665-e69c-55c6-9010-8ce00696a892",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Provide access to a reduced-distraction workspace."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Implement this student's IEP responsibilities in World History."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "RIV-1001",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "09dad245-1d1b-5a68-8a8f-93a937ef7dd8",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Break multi-step directions into chunked, numbered steps."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "260a9427-f927-560b-a65e-2869184296e0",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Allow text-to-speech for instructional materials."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "3b341238-caab-51d4-8b11-a3913e1fa7d7",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Provide 50% extended time on all classroom tests and quizzes."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "4a0f2f62-26d4-5afd-8c89-ff81f7191a79",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Provide a word bank for written-response items."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "c13c0665-e69c-55c6-9010-8ce00696a892",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Provide access to a reduced-distraction workspace."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Implement this student's IEP responsibilities in Physical Education."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "b6d11721-157e-5fc3-8c8b-ec6e8afac58d",
+      "context_ref": "RIV-1001",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    }
+  ],
+  "findings": [
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 150 minutes short",
+      "detail": "For the week of 2026-09-21, Specialized academic instruction (reading) required 150 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 150.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -150.0,
+        "remaining_minutes": 150.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 150 minutes short",
+      "detail": "For the week of 2026-10-26, Specialized academic instruction (reading) required 150 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 150.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -150.0,
+        "remaining_minutes": 150.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 150 minutes short",
+      "detail": "For the week of 2026-08-31, Specialized academic instruction (reading) required 150 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 150.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -150.0,
+        "remaining_minutes": 150.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 150 minutes short",
+      "detail": "For the week of 2026-08-24, Specialized academic instruction (reading) required 150 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 150.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -150.0,
+        "remaining_minutes": 150.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 150 minutes short",
+      "detail": "For the week of 2026-09-28, Specialized academic instruction (reading) required 150 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 150.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -150.0,
+        "remaining_minutes": 150.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 150 minutes short",
+      "detail": "For the week of 2026-10-19, Specialized academic instruction (reading) required 150 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 150.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -150.0,
+        "remaining_minutes": 150.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 120 minutes short",
+      "detail": "For the week of 2026-10-12, Specialized academic instruction (reading) required 120 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 120.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -120.0,
+        "remaining_minutes": 120.0
+      }
+    },
+    {
+      "rule_id": "annual-review",
+      "finding_type": "calendar-coverage-missing",
+      "severity": "warning",
+      "title": "Deadline input requires review",
+      "detail": "The school calendar does not cover every required deadline and warning date.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "triennial-reevaluation",
+      "finding_type": "calendar-coverage-missing",
+      "severity": "warning",
+      "title": "Deadline input requires review",
+      "detail": "The school calendar does not cover every required deadline and warning date.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "teacher-informed-responsibilities",
+      "finding_type": "service-provider-unassigned",
+      "severity": "warning",
+      "title": "No provider assigned for Specialized academic instruction (reading)",
+      "detail": "Specialized academic instruction (reading) requires a Special education teacher, but no provider-of-record is assigned.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 150 minutes short",
+      "detail": "For the week of 2026-08-17, Specialized academic instruction (reading) required 150 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 150.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -150.0,
+        "remaining_minutes": 150.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 120 minutes short",
+      "detail": "For the week of 2026-09-07, Specialized academic instruction (reading) required 120 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 120.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -120.0,
+        "remaining_minutes": 120.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 150 minutes short",
+      "detail": "For the week of 2026-09-14, Specialized academic instruction (reading) required 150 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 150.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -150.0,
+        "remaining_minutes": 150.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 120 minutes short",
+      "detail": "For the week of 2026-10-05, Specialized academic instruction (reading) required 120 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 120.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -120.0,
+        "remaining_minutes": 120.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction (reading) is 150 minutes short",
+      "detail": "For the week of 2026-11-02, Specialized academic instruction (reading) required 150 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 150,
+        "adjusted_expected_minutes": 150.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -150.0,
+        "remaining_minutes": 150.0
+      }
+    }
+  ],
+  "deadlines": [
+    {
+      "rule_id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "status": "due",
+      "description": "Provide a progress report for goal f216ce04-794d-5a26-bb0a-90cb2f110b82.",
+      "legal_due_on": "2026-11-13"
+    },
+    {
+      "rule_id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "status": "upcoming",
+      "description": "Provide a progress report for goal f585ab30-046d-5436-87c8-c420fc76a614.",
+      "legal_due_on": "2026-11-30"
+    },
+    {
+      "rule_id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "status": "due",
+      "description": "Provide a progress report for goal 4b1d6211-e0d5-5f48-abcd-de1671516402.",
+      "legal_due_on": "2026-11-13"
+    }
+  ]
+}
