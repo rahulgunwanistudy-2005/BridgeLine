@@ -1,0 +1,906 @@
+{
+  "student_ref": "RIV-1005",
+  "rules_version": "2026.07.20.5",
+  "obligation_count": 38,
+  "deadline_count": 3,
+  "finding_count": 28,
+  "obligations": [
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "760446e8-3de5-5a1c-82c7-58f8272eaf15",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Seat with a clear line of sight to the face of the speaker."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d6464128-2965-59e8-8a99-26e99af4a0b9",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Provide captions or a transcript for all audio and video media."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "fea1aaab-1190-5ba8-88ff-2c2082459b2b",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Use the personal FM/DM listening system in every class."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Implement this student's IEP responsibilities in Biology."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "RIV-1005",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "15bff662-668c-54fc-ac86-0529e6d44738",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide a peer notetaker or copy of lecture notes."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "760446e8-3de5-5a1c-82c7-58f8272eaf15",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Seat with a clear line of sight to the face of the speaker."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d6464128-2965-59e8-8a99-26e99af4a0b9",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide captions or a transcript for all audio and video media."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "fea1aaab-1190-5ba8-88ff-2c2082459b2b",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Use the personal FM/DM listening system in every class."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Implement this student's IEP responsibilities in English."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "RIV-1005",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "760446e8-3de5-5a1c-82c7-58f8272eaf15",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Seat with a clear line of sight to the face of the speaker."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d6464128-2965-59e8-8a99-26e99af4a0b9",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Provide captions or a transcript for all audio and video media."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "fea1aaab-1190-5ba8-88ff-2c2082459b2b",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Use the personal FM/DM listening system in every class."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Implement this student's IEP responsibilities in Art."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "RIV-1005",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "15bff662-668c-54fc-ac86-0529e6d44738",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide a peer notetaker or copy of lecture notes."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "760446e8-3de5-5a1c-82c7-58f8272eaf15",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Seat with a clear line of sight to the face of the speaker."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d6464128-2965-59e8-8a99-26e99af4a0b9",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide captions or a transcript for all audio and video media."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "fea1aaab-1190-5ba8-88ff-2c2082459b2b",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Use the personal FM/DM listening system in every class."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Implement this student's IEP responsibilities in English."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "RIV-1005",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "760446e8-3de5-5a1c-82c7-58f8272eaf15",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Seat with a clear line of sight to the face of the speaker."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d6464128-2965-59e8-8a99-26e99af4a0b9",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Provide captions or a transcript for all audio and video media."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "fea1aaab-1190-5ba8-88ff-2c2082459b2b",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Use the personal FM/DM listening system in every class."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Implement this student's IEP responsibilities in Mathematics."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "RIV-1005",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "15bff662-668c-54fc-ac86-0529e6d44738",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Provide a peer notetaker or copy of lecture notes."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "760446e8-3de5-5a1c-82c7-58f8272eaf15",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Seat with a clear line of sight to the face of the speaker."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d6464128-2965-59e8-8a99-26e99af4a0b9",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Provide captions or a transcript for all audio and video media."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "fea1aaab-1190-5ba8-88ff-2c2082459b2b",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Use the personal FM/DM listening system in every class."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Implement this student's IEP responsibilities in World History."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "RIV-1005",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "760446e8-3de5-5a1c-82c7-58f8272eaf15",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Seat with a clear line of sight to the face of the speaker."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d6464128-2965-59e8-8a99-26e99af4a0b9",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Provide captions or a transcript for all audio and video media."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "fea1aaab-1190-5ba8-88ff-2c2082459b2b",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Use the personal FM/DM listening system in every class."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Implement this student's IEP responsibilities in Physical Education."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "16564744-9dfd-513a-85d7-de797ef885e4",
+      "context_ref": "RIV-1005",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    }
+  ],
+  "findings": [
+    {
+      "rule_id": "triennial-reevaluation",
+      "finding_type": "calendar-coverage-missing",
+      "severity": "warning",
+      "title": "Deadline input requires review",
+      "detail": "The school calendar does not cover every required deadline and warning date.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "teacher-informed-responsibilities",
+      "finding_type": "service-provider-unassigned",
+      "severity": "warning",
+      "title": "No provider assigned for Deaf/hard-of-hearing itinerant support",
+      "detail": "Deaf/hard-of-hearing itinerant support requires a Teacher of the deaf and hard of hearing, but no provider-of-record is assigned.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 30 minutes short",
+      "detail": "For the week of 2026-08-24, Educational audiology consultation required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 60 minutes short",
+      "detail": "For the week of 2026-09-28, Deaf/hard-of-hearing itinerant support required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 30 minutes short",
+      "detail": "For the week of 2026-09-14, Educational audiology consultation required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "teacher-informed-accommodations",
+      "finding_type": "scope-reference-unresolved",
+      "severity": "warning",
+      "title": "Scope needs review: \"during verbal instruction\"",
+      "detail": "Scope reference \"during verbal instruction\" does not match the active roster.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 30 minutes short",
+      "detail": "For the week of 2026-11-02, Educational audiology consultation required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 60 minutes short",
+      "detail": "For the week of 2026-08-17, Deaf/hard-of-hearing itinerant support required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 48 minutes short",
+      "detail": "For the week of 2026-09-07, Deaf/hard-of-hearing itinerant support required 48 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 48.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -48.0,
+        "remaining_minutes": 48.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 24 minutes short",
+      "detail": "For the week of 2026-10-05, Educational audiology consultation required 24 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 24.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -24.0,
+        "remaining_minutes": 24.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 24 minutes short",
+      "detail": "For the week of 2026-09-07, Educational audiology consultation required 24 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 24.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -24.0,
+        "remaining_minutes": 24.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 30 minutes short",
+      "detail": "For the week of 2026-10-19, Educational audiology consultation required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 60 minutes short",
+      "detail": "For the week of 2026-08-31, Deaf/hard-of-hearing itinerant support required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 48 minutes short",
+      "detail": "For the week of 2026-10-05, Deaf/hard-of-hearing itinerant support required 48 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 48.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -48.0,
+        "remaining_minutes": 48.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 30 minutes short",
+      "detail": "For the week of 2026-10-26, Educational audiology consultation required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 60 minutes short",
+      "detail": "For the week of 2026-08-24, Deaf/hard-of-hearing itinerant support required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 30 minutes short",
+      "detail": "For the week of 2026-09-21, Educational audiology consultation required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 60 minutes short",
+      "detail": "For the week of 2026-10-26, Deaf/hard-of-hearing itinerant support required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 48 minutes short",
+      "detail": "For the week of 2026-10-12, Deaf/hard-of-hearing itinerant support required 48 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 48.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -48.0,
+        "remaining_minutes": 48.0
+      }
+    },
+    {
+      "rule_id": "teacher-informed-responsibilities",
+      "finding_type": "service-provider-unassigned",
+      "severity": "warning",
+      "title": "No provider assigned for Educational audiology consultation",
+      "detail": "Educational audiology consultation requires a Educational audiologist, but no provider-of-record is assigned.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 60 minutes short",
+      "detail": "For the week of 2026-09-21, Deaf/hard-of-hearing itinerant support required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 30 minutes short",
+      "detail": "For the week of 2026-08-17, Educational audiology consultation required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 60 minutes short",
+      "detail": "For the week of 2026-10-19, Deaf/hard-of-hearing itinerant support required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 30 minutes short",
+      "detail": "For the week of 2026-08-31, Educational audiology consultation required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 60 minutes short",
+      "detail": "For the week of 2026-11-02, Deaf/hard-of-hearing itinerant support required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Deaf/hard-of-hearing itinerant support is 60 minutes short",
+      "detail": "For the week of 2026-09-14, Deaf/hard-of-hearing itinerant support required 60 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 60,
+        "adjusted_expected_minutes": 60.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -60.0,
+        "remaining_minutes": 60.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 30 minutes short",
+      "detail": "For the week of 2026-09-28, Educational audiology consultation required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Educational audiology consultation is 24 minutes short",
+      "detail": "For the week of 2026-10-12, Educational audiology consultation required 24 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 24.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -24.0,
+        "remaining_minutes": 24.0
+      }
+    }
+  ],
+  "deadlines": [
+    {
+      "rule_id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "status": "overdue",
+      "description": "Provide a progress report for goal 95222a9d-17dd-51b9-ad8b-12cee48001f8.",
+      "legal_due_on": "2026-10-30"
+    },
+    {
+      "rule_id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "status": "upcoming",
+      "description": "Provide a progress report for goal 3fe3e62a-1288-5ee6-b0ef-99a974e2896a.",
+      "legal_due_on": "2026-11-16"
+    },
+    {
+      "rule_id": "annual-review",
+      "citation": "34 CFR §300.324(b)(1)(i)",
+      "status": "overdue",
+      "description": "Complete the annual IEP review.",
+      "legal_due_on": "2026-11-11"
+    }
+  ]
+}

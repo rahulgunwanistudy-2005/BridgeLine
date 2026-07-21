@@ -1,0 +1,98 @@
+name: Harness CI
+
+on:
+  pull_request:
+    paths:
+      - "harness/**"
+      - "data/synthetic/**"
+      - "apps/api/bridgeline/rules/**"
+      - ".github/workflows/harness-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "harness/**"
+      - "data/synthetic/**"
+      - "apps/api/bridgeline/rules/**"
+      - ".github/workflows/harness-ci.yml"
+  schedule:
+    - cron: "0 6 * * *"  # 6 AM UTC daily for extraction suite
+  workflow_dispatch:
+    inputs:
+      suite:
+        description: "Suite to run"
+        required: false
+        default: "all"
+        type: choice
+        options:
+          - rules
+          - acceptance
+          - extraction
+          - all
+
+permissions:
+  contents: read
+
+jobs:
+  fast-suites:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: apps/api/pyproject.toml
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e "./apps/api[dev]"
+
+      - name: Rules suite (Slice 1)
+        run: PYTHONPATH=apps/api:. python -m harness rules
+        if: >-
+          github.event_name != 'workflow_dispatch' ||
+          github.event.inputs.suite == 'rules' ||
+          github.event.inputs.suite == 'all'
+
+      - name: Acceptance suite (Slice 3)
+        run: PYTHONPATH=apps/api:. python -m harness acceptance
+        if: >-
+          github.event_name != 'workflow_dispatch' ||
+          github.event.inputs.suite == 'acceptance' ||
+          github.event.inputs.suite == 'all'
+
+      - name: Upload RESULTS.md
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: harness-results
+          path: harness/RESULTS.md
+          retention-days: 30
+
+  extraction:
+    if: >-
+      github.event_name == 'schedule' ||
+      (github.event_name == 'workflow_dispatch' &&
+       (github.event.inputs.suite == 'extraction' || github.event.inputs.suite == 'all'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: apps/api/pyproject.toml
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e "./apps/api[dev]"
+
+      - name: Extraction suite (Slice 2)
+        run: PYTHONPATH=apps/api:. python -m harness extraction
+        env:
+          HARNESS_API_URL: ${{ vars.HARNESS_API_URL || 'http://localhost:8000' }}
+
+      - name: Upload RESULTS.md
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: harness-extraction-results
+          path: harness/RESULTS.md
+          retention-days: 30

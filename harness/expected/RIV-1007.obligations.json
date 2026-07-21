@@ -1,0 +1,787 @@
+{
+  "student_ref": "RIV-1007",
+  "rules_version": "2026.07.20.5",
+  "obligation_count": 28,
+  "deadline_count": 2,
+  "finding_count": 29,
+  "obligations": [
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "11a86c34-9f73-583a-8fbc-9f7d2e458328",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Provide visual supports and models for new tasks."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d8dc3596-726e-58a1-9a2f-9ed3cd712930",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Give a two-minute warning before transitions."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "BIO-101",
+      "context_kind": "class",
+      "subject": "Biology",
+      "action_text": "Implement this student's IEP responsibilities in Biology."
+    },
+    {
+      "assignee_ref": "T-CHEN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "RIV-1007",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "11a86c34-9f73-583a-8fbc-9f7d2e458328",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide visual supports and models for new tasks."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d8dc3596-726e-58a1-9a2f-9ed3cd712930",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Give a two-minute warning before transitions."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Implement this student's IEP responsibilities in English."
+    },
+    {
+      "assignee_ref": "T-DELGADO",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "RIV-1007",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "11a86c34-9f73-583a-8fbc-9f7d2e458328",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Provide visual supports and models for new tasks."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d8dc3596-726e-58a1-9a2f-9ed3cd712930",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Give a two-minute warning before transitions."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "ART-101",
+      "context_kind": "class",
+      "subject": "Art",
+      "action_text": "Implement this student's IEP responsibilities in Art."
+    },
+    {
+      "assignee_ref": "T-FELDMAN",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "RIV-1007",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "11a86c34-9f73-583a-8fbc-9f7d2e458328",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Provide visual supports and models for new tasks."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d8dc3596-726e-58a1-9a2f-9ed3cd712930",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Give a two-minute warning before transitions."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "ENG-101",
+      "context_kind": "class",
+      "subject": "English",
+      "action_text": "Implement this student's IEP responsibilities in English."
+    },
+    {
+      "assignee_ref": "T-LEE",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "RIV-1007",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "11a86c34-9f73-583a-8fbc-9f7d2e458328",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Provide visual supports and models for new tasks."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d8dc3596-726e-58a1-9a2f-9ed3cd712930",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Give a two-minute warning before transitions."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "MTH-101",
+      "context_kind": "class",
+      "subject": "Mathematics",
+      "action_text": "Implement this student's IEP responsibilities in Mathematics."
+    },
+    {
+      "assignee_ref": "T-OKAFOR",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "RIV-1007",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "11a86c34-9f73-583a-8fbc-9f7d2e458328",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Provide visual supports and models for new tasks."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d8dc3596-726e-58a1-9a2f-9ed3cd712930",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Give a two-minute warning before transitions."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "HIS-101",
+      "context_kind": "class",
+      "subject": "World History",
+      "action_text": "Implement this student's IEP responsibilities in World History."
+    },
+    {
+      "assignee_ref": "T-PORTER",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "RIV-1007",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "11a86c34-9f73-583a-8fbc-9f7d2e458328",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Provide visual supports and models for new tasks."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-accommodations",
+      "citation": "34 CFR §300.323(d)(2)(ii)",
+      "source_kind": "accommodation",
+      "source_ref": "d8dc3596-726e-58a1-9a2f-9ed3cd712930",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Give a two-minute warning before transitions."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-informed-responsibilities",
+      "citation": "34 CFR §300.323(d)(2)(i)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "PE-101",
+      "context_kind": "class",
+      "subject": "Physical Education",
+      "action_text": "Implement this student's IEP responsibilities in Physical Education."
+    },
+    {
+      "assignee_ref": "T-RIVERA",
+      "assignee_kind": "teacher",
+      "rule_id": "teacher-access",
+      "citation": "34 CFR §300.323(d)(1)",
+      "source_kind": "iep_record",
+      "source_ref": "756bffef-7f69-5087-808a-7fa8670e152c",
+      "context_ref": "RIV-1007",
+      "context_kind": "student",
+      "subject": null,
+      "action_text": "Maintain access to this student's current approved IEP."
+    }
+  ],
+  "findings": [
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 30 minutes short",
+      "detail": "For the week of 2026-10-26, Occupational therapy required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 30 minutes short",
+      "detail": "For the week of 2026-09-28, Occupational therapy required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "teacher-informed-responsibilities",
+      "finding_type": "service-provider-unassigned",
+      "severity": "warning",
+      "title": "No provider assigned for Specialized academic instruction",
+      "detail": "Specialized academic instruction requires a Special education teacher, but no provider-of-record is assigned.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 100 minutes short",
+      "detail": "For the week of 2026-09-21, Specialized academic instruction required 100 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 100.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -100.0,
+        "remaining_minutes": 100.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 30 minutes short",
+      "detail": "For the week of 2026-09-21, Occupational therapy required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 100 minutes short",
+      "detail": "For the week of 2026-11-02, Specialized academic instruction required 100 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 100.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -100.0,
+        "remaining_minutes": 100.0
+      }
+    },
+    {
+      "rule_id": "teacher-informed-accommodations",
+      "finding_type": "scope-reference-unresolved",
+      "severity": "warning",
+      "title": "Scope needs review: \"when overwhelmed\"",
+      "detail": "Scope reference \"when overwhelmed\" does not match the active roster.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "triennial-reevaluation",
+      "finding_type": "calendar-coverage-missing",
+      "severity": "warning",
+      "title": "Deadline input requires review",
+      "detail": "The school calendar does not cover every required deadline and warning date.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 30 minutes short",
+      "detail": "For the week of 2026-11-02, Occupational therapy required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 100 minutes short",
+      "detail": "For the week of 2026-10-19, Specialized academic instruction required 100 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 100.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -100.0,
+        "remaining_minutes": 100.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 80 minutes short",
+      "detail": "For the week of 2026-10-05, Specialized academic instruction required 80 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 80.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -80.0,
+        "remaining_minutes": 80.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 100 minutes short",
+      "detail": "For the week of 2026-08-31, Specialized academic instruction required 100 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 100.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -100.0,
+        "remaining_minutes": 100.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 100 minutes short",
+      "detail": "For the week of 2026-09-14, Specialized academic instruction required 100 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 100.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -100.0,
+        "remaining_minutes": 100.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 24 minutes short",
+      "detail": "For the week of 2026-10-05, Occupational therapy required 24 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 24.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -24.0,
+        "remaining_minutes": 24.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 30 minutes short",
+      "detail": "For the week of 2026-08-31, Occupational therapy required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 80 minutes short",
+      "detail": "For the week of 2026-10-12, Specialized academic instruction required 80 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 80.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -80.0,
+        "remaining_minutes": 80.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 30 minutes short",
+      "detail": "For the week of 2026-10-19, Occupational therapy required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 100 minutes short",
+      "detail": "For the week of 2026-08-17, Specialized academic instruction required 100 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 100.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -100.0,
+        "remaining_minutes": 100.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 24 minutes short",
+      "detail": "For the week of 2026-10-12, Occupational therapy required 24 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 24.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -24.0,
+        "remaining_minutes": 24.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 100 minutes short",
+      "detail": "For the week of 2026-08-24, Specialized academic instruction required 100 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 100.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -100.0,
+        "remaining_minutes": 100.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 24 minutes short",
+      "detail": "For the week of 2026-09-07, Occupational therapy required 24 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 24.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -24.0,
+        "remaining_minutes": 24.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 100 minutes short",
+      "detail": "For the week of 2026-10-26, Specialized academic instruction required 100 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 100.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -100.0,
+        "remaining_minutes": 100.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 100 minutes short",
+      "detail": "For the week of 2026-09-28, Specialized academic instruction required 100 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 100.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -100.0,
+        "remaining_minutes": 100.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 30 minutes short",
+      "detail": "For the week of 2026-08-17, Occupational therapy required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "annual-review",
+      "finding_type": "calendar-coverage-missing",
+      "severity": "warning",
+      "title": "Deadline input requires review",
+      "detail": "The school calendar does not cover every required deadline and warning date.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "teacher-informed-responsibilities",
+      "finding_type": "service-provider-unassigned",
+      "severity": "warning",
+      "title": "No provider assigned for Occupational therapy",
+      "detail": "Occupational therapy requires a Occupational therapist, but no provider-of-record is assigned.",
+      "measurements": {}
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 30 minutes short",
+      "detail": "For the week of 2026-09-14, Occupational therapy required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Specialized academic instruction is 80 minutes short",
+      "detail": "For the week of 2026-09-07, Specialized academic instruction required 80 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 100,
+        "adjusted_expected_minutes": 80.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -80.0,
+        "remaining_minutes": 80.0
+      }
+    },
+    {
+      "rule_id": "services-statement",
+      "finding_type": "service-minute-variance",
+      "severity": "critical",
+      "title": "Occupational therapy is 30 minutes short",
+      "detail": "For the week of 2026-08-24, Occupational therapy required 30 adjusted minutes and has 0 credited minutes.",
+      "measurements": {
+        "mandated_minutes_per_week": 30,
+        "adjusted_expected_minutes": 30.0,
+        "delivered_minutes": 0,
+        "makeup_minutes": 0,
+        "credited_minutes": 0,
+        "variance_minutes": -30.0,
+        "remaining_minutes": 30.0
+      }
+    }
+  ],
+  "deadlines": [
+    {
+      "rule_id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "status": "upcoming",
+      "description": "Provide a progress report for goal 7cdd64af-77df-59f6-8c23-1028f3d555e6.",
+      "legal_due_on": "2026-11-16"
+    },
+    {
+      "rule_id": "progress-report-cadence",
+      "citation": "34 CFR §300.320(a)(3)",
+      "status": "overdue",
+      "description": "Provide a progress report for goal c976f9bf-bf9e-5f9b-b78f-89a8a8924aff.",
+      "legal_due_on": "2026-10-23"
+    }
+  ]
+}
