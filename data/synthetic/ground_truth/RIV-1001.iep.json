@@ -7,56 +7,85 @@
     {
       "id": "3b341238-caab-51d4-8b11-a3913e1fa7d7",
       "text": "Provide 50% extended time on all classroom tests and quizzes.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on all classroom tests and quizzes",
+      "source_quote": "Provide 50% extended time on all classroom tests and quizzes.",
       "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "c13c0665-e69c-55c6-9010-8ce00696a892",
-      "text": "Administer assessments in a small-group, reduced-distraction setting.",
-      "applies_to": [
-        "context"
+      "text": "Provide access to a reduced-distraction workspace.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "small-group, reduced-distraction setting for assessments",
+      "source_quote": "Provide access to a reduced-distraction workspace.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "260a9427-f927-560b-a65e-2869184296e0",
-      "text": "Allow text-to-speech for grade-level reading passages.",
-      "applies_to": [
-        "subject"
+      "text": "Allow text-to-speech for instructional materials.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "text-to-speech for grade-level reading passages",
+      "source_quote": "Allow text-to-speech for instructional materials.",
       "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "09dad245-1d1b-5a68-8a8f-93a937ef7dd8",
       "text": "Break multi-step directions into chunked, numbered steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "break multi-step directions into numbered steps",
+      "source_quote": "Break multi-step directions into chunked, numbered steps.",
       "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "4a0f2f62-26d4-5afd-8c89-ff81f7191a79",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
+      "source_quote": "Provide a word bank for written-response items.",
       "confidence": 0.83,
       "reconciliation_status": null
     }
@@ -71,7 +100,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
       "confidence": 0.92,
       "reconciliation_status": null
     }
@@ -85,7 +114,7 @@
       "measure": "Curriculum-based reading probe",
       "progress_cadence": "Every two weeks",
       "source_page": 4,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
@@ -97,7 +126,7 @@
       "measure": "Reading comprehension work sample",
       "progress_cadence": "Every two weeks",
       "source_page": 4,
-      "source_quote": "identify the main idea and two supporting details with 80% accuracy",
+      "source_quote": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
@@ -109,7 +138,7 @@
       "measure": "Writing work sample",
       "progress_cadence": "Monthly",
       "source_page": 4,
-      "source_quote": "write a five-sentence paragraph with a topic sentence",
+      "source_quote": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
       "confidence": 0.84,
       "reconciliation_status": null
     }

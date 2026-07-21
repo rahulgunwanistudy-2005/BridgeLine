@@ -6,129 +6,147 @@
   "accommodations": [
     {
       "id": "2d090154-302c-594f-afe4-eb88f07362a8",
-      "text": "Allow text-to-speech for grade-level reading passages.",
-      "applies_to": [
-        "subject"
+      "text": "Allow text-to-speech for instructional materials.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "text-to-speech for grade-level reading passages",
-      "confidence": 0.93,
+      "source_quote": "Allow text-to-speech for instructional materials.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "7379ba4c-3de8-549a-a366-3899f7d6cbbf",
       "text": "Allow scheduled sensory breaks of up to five minutes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during independent work",
+          "source_page": 2,
+          "source_quote": "during independent work",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "scheduled sensory breaks of up to five minutes",
-      "confidence": 0.82,
+      "source_quote": "Allow scheduled sensory breaks of up to five minutes.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "01079ab1-9832-5707-8348-18a1a4333e8d",
       "text": "Do not require unplanned oral responses in front of the class.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during whole-class discussion",
+          "source_page": 2,
+          "source_quote": "during whole-class discussion",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "no unplanned oral responses in front of the class",
-      "confidence": 0.87,
+      "source_quote": "Do not require unplanned oral responses in front of the class.",
+      "confidence": 0.91,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "bb73f768-bb75-5e5c-9c56-920c33124616",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
-      "provider_role": "Special education teacher",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.85,
-      "reconciliation_status": null
-    },
-    {
-      "id": "a25a1e17-0484-5494-9963-f98ef846663d",
-      "type": "Speech and language therapy (social communication)",
+      "type": "Individual counseling",
       "minutes_per_week": 30,
       "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Speech-language pathologist",
+      "provider_role": "School counselor",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "source_quote": "Individual counseling: 30 minutes per week; 30 minutes, 1 time weekly; provider: School counselor.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
     {
-      "id": "8a55c175-54ab-561f-af3a-b6734f73e3a8",
-      "type": "Specialized academic instruction",
+      "id": "a25a1e17-0484-5494-9963-f98ef846663d",
+      "type": "Specialized academic instruction (reading)",
       "minutes_per_week": 150,
       "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
       "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8a55c175-54ab-561f-af3a-b6734f73e3a8",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.8,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "0fc20472-6779-58e1-8c4f-6fd475514697",
-      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
-      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities across two weeks.",
-      "measure": "Teacher observation checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "independently begin a classroom task within two minutes",
-      "confidence": 0.8,
-      "reconciliation_status": null
-    },
-    {
-      "id": "4e84fd51-329d-54b7-8b3b-af597aa1d712",
-      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
-      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
-      "target": "3 of 4 structured opportunities.",
-      "measure": "Structured social observation",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a taught script to join a peer activity",
-      "confidence": 0.87,
-      "reconciliation_status": null
-    },
-    {
-      "id": "3ea7a941-a480-53ba-9bee-55a9823c4ccd",
       "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
       "baseline": "Writes two related sentences with inconsistent capitalization.",
       "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
       "measure": "Writing work sample",
       "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a five-sentence paragraph with a topic sentence",
+      "source_page": 4,
+      "source_quote": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "4e84fd51-329d-54b7-8b3b-af597aa1d712",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
       "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "3ea7a941-a480-53ba-9bee-55a9823c4ccd",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "confidence": 0.84,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
+    "annual_review": "2027-03-09",
     "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-10-16"
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.92,
+    "disability_category": 0.98,
     "school_year": 0.99,
-    "annual_review": 0.85,
-    "triennial_reeval": 0.92,
-    "last_progress_report": 0.86
+    "annual_review": 0.94,
+    "triennial_reeval": 0.88,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

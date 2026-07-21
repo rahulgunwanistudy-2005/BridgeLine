@@ -7,112 +7,156 @@
     {
       "id": "6685a3db-0a71-5fb0-8d4a-fb494adc49c7",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
-      "confidence": 0.91,
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "944b7a2f-867b-5f64-b287-03ca966bb093",
       "text": "Provide 50% extended time on reading-heavy assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.82
+        },
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on reading-heavy assessments",
-      "confidence": 0.8,
+      "source_quote": "Provide 50% extended time on reading-heavy assessments.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "c28fb325-2b4e-519d-b544-e9aff6a0f1ae",
-      "text": "Provide a written or visual schedule of each period's activities.",
-      "applies_to": [
-        "all"
+      "text": "Provide a written or visual schedule of activities for each period.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "written or visual schedule of each period's activities",
-      "confidence": 0.84,
+      "source_quote": "Provide a written or visual schedule of activities for each period.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "875aab18-75e8-54b9-bbfd-99e0702a41fb",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
-      "confidence": 0.83,
+      "source_quote": "Provide a word bank for written-response items.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "2043610e-cf4b-5e91-a09e-8a3d51cc82c6",
       "text": "Provide 50% extended time on classroom assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.83
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on classroom assessments",
-      "confidence": 0.87,
+      "source_quote": "Provide 50% extended time on classroom assessments.",
+      "confidence": 0.95,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "57b312c7-9d72-5aea-847f-eec2da5531a9",
-      "type": "Specialized academic instruction (mathematics)",
-      "minutes_per_week": 150,
-      "frequency": "30 minutes, 5 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
-      "confidence": 0.85,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.8,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "033e4192-d890-5d8c-aebd-8aeeef54fd67",
-      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
-      "baseline": "Organizes materials in 3 of 10 days.",
-      "target": "8 of 10 days.",
-      "measure": "Teacher checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a checklist to organize materials for each class",
-      "confidence": 0.79,
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "5eaa2e91-41ab-5d70-b96f-527c125a60fc",
-      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.8,
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-05-19",
-    "triennial_reeval": "2028-12-04",
-    "last_progress_report": "2026-09-25"
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.92,
+    "disability_category": 0.97,
     "school_year": 0.99,
-    "annual_review": 0.93,
-    "triennial_reeval": 0.9,
-    "last_progress_report": 0.91
+    "annual_review": 0.94,
+    "triennial_reeval": 0.93,
+    "last_progress_report": 0.95
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

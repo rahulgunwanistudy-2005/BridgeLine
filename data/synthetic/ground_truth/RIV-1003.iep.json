@@ -7,34 +7,58 @@
     {
       "id": "f3c13fa8-d88e-55e7-9421-fb6e2499d51f",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
+      "source_quote": "Allow additional wait time for verbal responses.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "8c94912f-fcfc-5766-99b4-91c3434ed647",
       "text": "Provide sentence starters for oral presentations.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "sentence starters for oral presentations",
+      "source_quote": "Provide sentence starters for oral presentations.",
       "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "7f44680f-8c1a-52f6-9eb9-774c980532b5",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.82
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
       "confidence": 0.84,
       "reconciliation_status": null
     }
@@ -49,7 +73,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
       "confidence": 0.91,
       "reconciliation_status": null
     },
@@ -62,7 +86,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
+      "source_quote": "Language processing support (group): 60 minutes per week; 30 minutes, 2 times weekly; provider: Unassigned.",
       "confidence": 0.72,
       "reconciliation_status": null
     }
@@ -76,7 +100,7 @@
       "measure": "Speech probe",
       "progress_cadence": "Weekly",
       "source_page": 4,
-      "source_quote": "produce initial /r/ with 80% accuracy",
+      "source_quote": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
@@ -88,7 +112,7 @@
       "measure": "Language sample",
       "progress_cadence": "Every two weeks",
       "source_page": 4,
-      "source_quote": "retell a short narrative with a beginning, middle, and end",
+      "source_quote": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
       "confidence": 0.86,
       "reconciliation_status": null
     }

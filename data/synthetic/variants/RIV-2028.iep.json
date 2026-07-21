@@ -7,56 +7,86 @@
     {
       "id": "8efab696-ef1b-514e-a535-496061142323",
       "text": "Give advance warning before transitions and changes in routine.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "advance warning before transitions and changes in routine",
-      "confidence": 0.95,
+      "source_quote": "Give advance warning before transitions and changes in routine.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "e111a709-f9a8-5739-99e9-4d83d4a97525",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.81,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.96,
       "reconciliation_status": null
     },
     {
       "id": "2d887d61-1464-5a35-9166-35b23c3a5821",
       "text": "Provide audio versions of grade-level texts.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "audio versions of grade-level texts",
-      "confidence": 0.83,
+      "source_quote": "Provide audio versions of grade-level texts.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "c222f000-b662-5f00-9368-366f283807bc",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.96,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "22008b5f-31b1-5470-a0d2-d121f54f96e5",
       "text": "Check the daily planner for recorded homework before dismissal.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "before dismissal",
+          "source_page": 2,
+          "source_quote": "before dismissal",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "check the daily planner before dismissal",
-      "confidence": 0.9,
+      "source_quote": "Check the daily planner for recorded homework before dismissal.",
+      "confidence": 0.81,
       "reconciliation_status": null
     }
   ],
@@ -70,74 +100,74 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.84,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "8cd7cda6-e427-5d98-8516-c731be69af51",
-      "type": "Speech and language therapy",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.86,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.85,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "f32d11ff-2c74-5bbd-9475-70cb11de6f82",
-      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
-      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
-      "target": "80% accuracy across three sessions.",
-      "measure": "Language sample",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use correct past-tense verbs with 80% accuracy",
-      "confidence": 0.86,
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "717bb389-ae39-59c5-b433-93465e4c4ba4",
-      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
-      "baseline": "Produces initial /r/ with 45% accuracy.",
-      "target": "80% accuracy in structured tasks across three sessions.",
-      "measure": "Speech probe",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "produce initial /r/ with 80% accuracy",
-      "confidence": 0.87,
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "faaf01c6-7b17-5a36-929a-e0c661e33baa",
-      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
-      "baseline": "Answers inferential questions with 50% accuracy.",
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
       "target": "80% accuracy across three assessments.",
-      "measure": "Comprehension work sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "answer inferential questions about a text with 80% accuracy",
-      "confidence": 0.94,
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "confidence": 0.82,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-03-09",
-    "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-10-30"
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-16"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.98,
+    "disability_category": 0.95,
     "school_year": 0.99,
     "annual_review": 0.87,
-    "triennial_reeval": 0.9,
-    "last_progress_report": 0.92
+    "triennial_reeval": 0.91,
+    "last_progress_report": 0.87
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

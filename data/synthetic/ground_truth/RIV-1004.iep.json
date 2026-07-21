@@ -7,56 +7,85 @@
     {
       "id": "5f7a5e25-10f4-5811-99cb-018574b68447",
       "text": "Provide 50% extended time on tests and long assignments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "all academic subjects",
+          "source_page": 2,
+          "source_quote": "all academic subjects",
+          "confidence": 0.51
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on tests and long assignments",
+      "source_quote": "Provide 50% extended time on tests and long assignments.",
       "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "f075e004-27ed-5d7d-bbb4-5427bc40dfb3",
       "text": "Seat near the point of instruction and away from high-traffic areas.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "preferential seating near the point of instruction",
+      "source_quote": "Seat near the point of instruction and away from high-traffic areas.",
       "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "9dbc3362-a057-5e5d-a732-154cc3b49261",
       "text": "Permit brief movement breaks between tasks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "between classroom tasks",
+          "source_page": 2,
+          "source_quote": "between classroom tasks",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief movement breaks between tasks",
+      "source_quote": "Permit brief movement breaks between tasks.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "9c47395b-27d0-59ca-8e4b-ddc1cd8c100b",
       "text": "Provide a checklist to break long assignments into steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "checklist to break long assignments into steps",
+      "source_quote": "Provide a checklist to break long assignments into steps.",
       "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "ff3fbc6b-44a8-52a3-8b58-2e1e2c1cc2aa",
       "text": "Check the daily planner for recorded homework before dismissal.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "before dismissal",
+          "source_page": 2,
+          "source_quote": "before dismissal",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "check the daily planner before dismissal",
+      "source_quote": "Check the daily planner for recorded homework before dismissal.",
       "confidence": 0.82,
       "reconciliation_status": null
     }
@@ -71,7 +100,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "source_quote": "Specialized academic instruction (executive functioning): 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
       "confidence": 0.89,
       "reconciliation_status": null
     }
@@ -85,7 +114,7 @@
       "measure": "Work-completion log",
       "progress_cadence": "Weekly",
       "source_page": 4,
-      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
+      "source_quote": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
       "confidence": 0.88,
       "reconciliation_status": null
     },
@@ -97,7 +126,7 @@
       "measure": "Teacher checklist",
       "progress_cadence": "Weekly",
       "source_page": 4,
-      "source_quote": "arrive to class with required materials in 8 of 10 class days",
+      "source_quote": "Ethan will arrive to class with required materials in 8 of 10 class days.",
       "confidence": 0.85,
       "reconciliation_status": null
     }

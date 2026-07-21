@@ -7,169 +7,229 @@
     {
       "id": "6f8604d1-c687-52df-86a9-0faa7e5bf896",
       "text": "Read test directions and math word problems aloud on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "read test directions and math word problems aloud",
-      "confidence": 0.89,
+      "source_quote": "Read test directions and math word problems aloud on request.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "dccc0203-b302-5e27-b3bc-a0e0deb937bb",
       "text": "State task expectations explicitly and in writing.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "state task expectations explicitly and in writing",
-      "confidence": 0.83,
+      "source_quote": "State task expectations explicitly and in writing.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "81d918c1-387a-5772-b122-4742f8d7278a",
       "text": "Pair new vocabulary with visuals and definitions.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.95
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair new vocabulary with visuals and definitions",
-      "confidence": 0.9,
+      "source_quote": "Pair new vocabulary with visuals and definitions.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "da3bb3b3-e939-56fd-b35f-f9428fb06be9",
-      "text": "Administer assessments in a small-group, reduced-distraction setting.",
-      "applies_to": [
-        "context"
+      "text": "Provide access to a reduced-distraction workspace.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "small-group, reduced-distraction setting for assessments",
-      "confidence": 0.94,
+      "source_quote": "Provide access to a reduced-distraction workspace.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "bc241400-360c-50f2-8a85-adae26b4a2a2",
-      "text": "Allow text-to-speech for grade-level reading passages.",
-      "applies_to": [
-        "subject"
+      "text": "Allow text-to-speech for instructional materials.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.76
+        }
       ],
       "source_page": 2,
-      "source_quote": "text-to-speech for grade-level reading passages",
-      "confidence": 0.96,
+      "source_quote": "Allow text-to-speech for instructional materials.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "b196b863-1713-5cb3-b18d-2238ca982d9f",
       "text": "Provide a checklist to break long assignments into steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "checklist to break long assignments into steps",
-      "confidence": 0.94,
+      "source_quote": "Provide a checklist to break long assignments into steps.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "a907c630-eaf5-534f-a420-6de9120e4d17",
       "text": "Provide 25% extended time on timed assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during timed assessments",
+          "source_page": 2,
+          "source_quote": "during timed assessments",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "25% extended time on timed assessments",
-      "confidence": 0.81,
+      "source_quote": "Provide 25% extended time on timed assessments.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "865cc7a5-1653-58d2-91bb-753e50b19562",
       "text": "Provide captions or a transcript for all audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for all audio and video media",
-      "confidence": 0.79,
+      "source_quote": "Provide captions or a transcript for all audio and video media.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "51401434-25a2-586c-a6ad-54a64b4972d6",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.79,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.84,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "7bb29c9f-e21c-55d8-ac95-107afbe66eac",
-      "type": "Specialized academic instruction (reading)",
-      "minutes_per_week": 150,
-      "frequency": "30 minutes, 5 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
-      "confidence": 0.87,
+      "source_quote": "Speech and language therapy (social communication): 30 minutes per week; 30 minutes, 1 time weekly; provider: Speech-language pathologist.",
+      "confidence": 0.83,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "776b9dc1-92e2-52aa-93cd-49bffc4e619b",
-      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
-      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "organize a multi-paragraph response using an outline",
-      "confidence": 0.85,
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "b15b184d-c536-5816-8490-8e8520049756",
-      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
-      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
-      "confidence": 0.94,
+      "source_page": 4,
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "7490945f-d009-55e1-8b2e-e3e2bc46c5e6",
-      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
-      "baseline": "Answers inferential questions with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Comprehension work sample",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "answer inferential questions about a text with 80% accuracy",
-      "confidence": 0.8,
+      "source_page": 4,
+      "source_quote": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "confidence": 0.83,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
-    "triennial_reeval": "2028-12-04",
-    "last_progress_report": "2026-10-16"
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.91,
+    "disability_category": 0.98,
     "school_year": 0.99,
-    "annual_review": 0.88,
-    "triennial_reeval": 0.88,
-    "last_progress_report": 0.85
+    "annual_review": 0.91,
+    "triennial_reeval": 0.82,
+    "last_progress_report": 0.91
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

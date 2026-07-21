@@ -7,104 +7,128 @@
     {
       "id": "c861dbf5-0737-57d9-a659-898f573c418a",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
-      "confidence": 0.84,
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "45d903ce-acc4-5ef7-8b64-79f3af75f2a1",
       "text": "Provide captions or a transcript for all audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for all audio and video media",
-      "confidence": 0.93,
+      "source_quote": "Provide captions or a transcript for all audio and video media.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "d1db6482-5a5d-5235-9ec5-316575a4d3ee",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.92
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.8,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.95,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "35972adf-d6e7-5fa7-9807-84506d805756",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.9,
+      "source_quote": "Specialized academic instruction (mathematics): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "a4e1a4dc-7118-5100-a8ad-cad749d061b2",
-      "type": "Speech and language therapy",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.9,
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "39e845ef-3359-5efb-8964-8f9f7332a767",
-      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.85,
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "f2302fb1-0392-5aec-9d52-f81916cdc400",
-      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
-      "baseline": "Decodes multisyllabic words with 55% accuracy.",
-      "target": "85% accuracy on 4 of 5 consecutive probes.",
-      "measure": "Curriculum-based reading probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
-      "confidence": 0.95,
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "confidence": 0.84,
       "reconciliation_status": null
     }
   ],
   "dates": {
     "annual_review": "2027-03-09",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-16"
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.97,
+    "disability_category": 0.91,
     "school_year": 0.99,
-    "annual_review": 0.89,
-    "triennial_reeval": 0.88,
-    "last_progress_report": 0.87
+    "annual_review": 0.92,
+    "triennial_reeval": 0.84,
+    "last_progress_report": 0.88
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

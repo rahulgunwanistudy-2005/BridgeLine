@@ -7,33 +7,51 @@
     {
       "id": "11a86c34-9f73-583a-8fbc-9f7d2e458328",
       "text": "Provide visual supports and models for new tasks.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual supports and models for new tasks",
+      "source_quote": "Provide visual supports and models for new tasks.",
       "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "d8dc3596-726e-58a1-9a2f-9ed3cd712930",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
+      "source_quote": "Give a two-minute warning before transitions.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "e08f1da9-c2cc-52dd-be3e-0c8a8547440e",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
       "confidence": 0.87,
       "reconciliation_status": null
     }
@@ -48,7 +66,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
@@ -61,7 +79,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
+      "source_quote": "Occupational therapy: 30 minutes per week; 30 minutes, 1 time weekly; provider: Occupational therapist.",
       "confidence": 0.86,
       "reconciliation_status": null
     }
@@ -75,7 +93,7 @@
       "measure": "Teacher observation",
       "progress_cadence": "Weekly",
       "source_page": 4,
-      "source_quote": "accept a change in routine using a coping strategy",
+      "source_quote": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
       "confidence": 0.88,
       "reconciliation_status": null
     },
@@ -87,7 +105,7 @@
       "measure": "Writing work sample",
       "progress_cadence": "Monthly",
       "source_page": 4,
-      "source_quote": "produce three organized sentences on a topic",
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
       "confidence": 0.85,
       "reconciliation_status": null
     }

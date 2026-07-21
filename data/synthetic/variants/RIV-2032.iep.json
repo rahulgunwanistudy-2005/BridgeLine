@@ -7,92 +7,122 @@
     {
       "id": "20376f40-6071-524d-bad7-4ab9ac3536b9",
       "text": "Do not grade spelling on first-draft written work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.83
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not grade spelling on first-draft written work",
-      "confidence": 0.84,
+      "source_quote": "Do not grade spelling on first-draft written work.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "7de62e32-22b8-5325-81c0-cc4be274dd86",
       "text": "Provide graphic organizers for writing and note-taking.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.84
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "graphic organizers for writing and note-taking",
-      "confidence": 0.96,
+      "source_quote": "Provide graphic organizers for writing and note-taking.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "713b52e5-9211-5146-a589-32de2fcf43fc",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.88,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "a5884c78-9f00-5de7-b77a-ab1c2d2e86f2",
-      "type": "Speech and language therapy",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.83,
+      "source_quote": "Occupational therapy: 30 minutes per week; 30 minutes, 1 time weekly; provider: Occupational therapist.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "ddbc33c5-c5ad-519e-b991-e1a68beea5e5",
-      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
-      "baseline": "Decodes multisyllabic words with 55% accuracy.",
-      "target": "85% accuracy on 4 of 5 consecutive probes.",
-      "measure": "Curriculum-based reading probe",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
-      "confidence": 0.94,
+      "source_page": 4,
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "f39e4301-7d8f-5638-aa23-0c0d63a0283c",
-      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
-      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
-      "confidence": 0.81,
+      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
+      "target": "3 of 4 structured opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-05-19",
-    "triennial_reeval": "2028-12-04",
+    "annual_review": "2027-03-09",
+    "triennial_reeval": "2026-11-18",
     "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.95,
+    "disability_category": 0.9,
     "school_year": 0.99,
-    "annual_review": 0.88,
-    "triennial_reeval": 0.88,
-    "last_progress_report": 0.85
+    "annual_review": 0.89,
+    "triennial_reeval": 0.91,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

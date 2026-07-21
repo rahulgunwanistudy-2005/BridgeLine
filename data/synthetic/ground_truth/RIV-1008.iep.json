@@ -7,34 +7,51 @@
     {
       "id": "fa209c27-6612-5ba7-ab7d-68e07318377d",
       "text": "Provide 25% extended time on timed assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during timed assessments",
+          "source_page": 2,
+          "source_quote": "during timed assessments",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "25% extended time on timed assessments",
+      "source_quote": "Provide 25% extended time on timed assessments.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "e01ae9d9-8614-5a65-9e3b-30ecc64f65f5",
       "text": "Break long assignments into smaller submitted parts.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "break long assignments into smaller parts",
+      "source_quote": "Break long assignments into smaller submitted parts.",
       "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "57b943be-d078-5edc-8c3a-28bcd9e9abbd",
       "text": "Provide frequent check-ins for understanding.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "frequent check-ins for understanding",
+      "source_quote": "Provide frequent check-ins for understanding.",
       "confidence": 0.84,
       "reconciliation_status": null
     }
@@ -49,7 +66,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
       "confidence": 0.89,
       "reconciliation_status": null
     }
@@ -63,7 +80,7 @@
       "measure": "Teacher observation",
       "progress_cadence": "Weekly",
       "source_page": 4,
-      "source_quote": "sustain attention to an independent task for 10 minutes",
+      "source_quote": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
@@ -75,7 +92,7 @@
       "measure": "Work sample",
       "progress_cadence": "Every two weeks",
       "source_page": 4,
-      "source_quote": "use a self-monitoring checklist to review work before submitting",
+      "source_quote": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
       "confidence": 0.85,
       "reconciliation_status": null
     }

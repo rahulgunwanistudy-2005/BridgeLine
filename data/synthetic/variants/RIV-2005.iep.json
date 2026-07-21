@@ -6,94 +6,142 @@
   "accommodations": [
     {
       "id": "a8934655-a25c-51b3-8a20-aa73bcaa4ffc",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
-      "confidence": 0.79,
+      "source_quote": "Provide a word bank for written-response items.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "6d45cdf5-fb79-50d6-9dc3-4da806728f24",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
-      "confidence": 0.91,
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "b52e3b60-0053-54ca-a45b-1f19a67c1ef5",
       "text": "Allow brief scheduled sensory breaks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during independent work",
+          "source_page": 2,
+          "source_quote": "during independent work",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief scheduled sensory breaks",
-      "confidence": 0.95,
+      "source_quote": "Allow brief scheduled sensory breaks.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "b366b02c-7628-5d6b-92a3-af4404244750",
       "text": "Permit brief movement breaks between tasks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "between classroom tasks",
+          "source_page": 2,
+          "source_quote": "between classroom tasks",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief movement breaks between tasks",
-      "confidence": 0.93,
+      "source_quote": "Permit brief movement breaks between tasks.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "8062f2d8-9589-5ea1-981f-498b2ab57d5a",
       "text": "Provide graphic organizers for writing and note-taking.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.93
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "graphic organizers for writing and note-taking",
+      "source_quote": "Provide graphic organizers for writing and note-taking.",
       "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "2b3d0d4f-e910-59e3-a140-9700a08e9881",
       "text": "Allow scheduled sensory breaks of up to five minutes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during independent work",
+          "source_page": 2,
+          "source_quote": "during independent work",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "scheduled sensory breaks of up to five minutes",
-      "confidence": 0.83,
+      "source_quote": "Allow scheduled sensory breaks of up to five minutes.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "d0b02453-a562-591a-a0b7-4f2a77fc181d",
       "text": "Face the student when speaking and avoid covering the mouth.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "face the student when speaking",
-      "confidence": 0.79,
+      "source_quote": "Face the student when speaking and avoid covering the mouth.",
+      "confidence": 0.95,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "1eefe24c-f5e5-5d5d-9e35-6d37094af1a3",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Speech and language therapy (social communication)",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "source_quote": "Speech and language therapy (social communication): 30 minutes per week; 30 minutes, 1 time weekly; provider: Speech-language pathologist.",
       "confidence": 0.92,
       "reconciliation_status": null
     },
@@ -106,22 +154,22 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.84,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.89,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "fdeaed15-c55b-50ab-85c9-b75580673d27",
-      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
-      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
-      "measure": "Language sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "retell a short narrative with a beginning, middle, and end",
-      "confidence": 0.95,
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
@@ -131,60 +179,60 @@
       "target": "80% accuracy across three assessments.",
       "measure": "Vocabulary probe",
       "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.87,
+      "source_page": 4,
+      "source_quote": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "a96fbff7-0c16-5d3e-bb83-2860d23bede1",
-      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
-      "baseline": "Reviews work before submitting in 1 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Work sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "use a self-monitoring checklist to review work before submitting",
-      "confidence": 0.88,
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "4eb83de5-d8a1-5223-b7f2-a1d8f4b5fea3",
-      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
-      "baseline": "Organizes materials in 3 of 10 days.",
-      "target": "8 of 10 days.",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
       "measure": "Teacher checklist",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a checklist to organize materials for each class",
-      "confidence": 0.92,
+      "source_page": 4,
+      "source_quote": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "a2f179db-3f12-53d6-bc2c-a09742fd26e2",
-      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
-      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities across two weeks.",
-      "measure": "Teacher observation checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "independently begin a classroom task within two minutes",
-      "confidence": 0.9,
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-02-11",
-    "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-09-25"
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.94,
+    "disability_category": 0.98,
     "school_year": 0.99,
-    "annual_review": 0.86,
-    "triennial_reeval": 0.92,
-    "last_progress_report": 0.87
+    "annual_review": 0.87,
+    "triennial_reeval": 0.93,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

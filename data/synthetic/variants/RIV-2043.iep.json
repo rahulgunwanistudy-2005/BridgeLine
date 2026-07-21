@@ -7,149 +7,192 @@
     {
       "id": "48701af8-7ac6-55e6-ae2b-726b50e193a8",
       "text": "Provide 50% extended time on reading-heavy assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.78
+        },
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on reading-heavy assessments",
-      "confidence": 0.8,
+      "source_quote": "Provide 50% extended time on reading-heavy assessments.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "8aad4c72-24ca-50de-b408-e30564e072c4",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.95
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.81,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "19721dd3-35e2-5a8a-8ce5-b42eb96235d1",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.84,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "d9b7038b-fe14-59d1-9877-811b17af725f",
       "text": "Read test directions and math word problems aloud on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "read test directions and math word problems aloud",
-      "confidence": 0.96,
+      "source_quote": "Read test directions and math word problems aloud on request.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "260c7d12-da8e-5dc4-a8b2-eb7e53f64dda",
       "text": "Provide visual supports and models for new tasks.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual supports and models for new tasks",
-      "confidence": 0.86,
+      "source_quote": "Provide visual supports and models for new tasks.",
+      "confidence": 0.85,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "7f3fe7b6-173f-5702-b294-e7cd8333bccb",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.88,
+      "source_quote": "Educational audiology consultation: 30 minutes per week; 30 minutes, 1 time monthly; provider: Educational audiologist.",
+      "confidence": 0.9,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "4d5c99aa-aef8-501d-9b0e-c749377d5773",
-      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
-      "baseline": "Reads grade-level text at 80 words per minute.",
-      "target": "120 words per minute with 95% accuracy.",
-      "measure": "Oral reading fluency probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "f5c8655a-5eec-53f4-9378-e2e7e8b6964f",
-      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
-      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Language sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "retell a short narrative with a beginning, middle, and end",
-      "confidence": 0.84,
+      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
+      "target": "3 of 4 structured opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "c5838339-b2e9-57df-8232-fa30e47668c9",
-      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
-      "baseline": "Decodes multisyllabic words with 55% accuracy.",
-      "target": "85% accuracy on 4 of 5 consecutive probes.",
-      "measure": "Curriculum-based reading probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
-      "confidence": 0.84,
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "0940d3f9-ae93-58ee-bfcc-3ba7ee6f60e6",
-      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
-      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
-      "confidence": 0.94,
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "57c14b05-1f73-5a9a-98b5-945e898fbe82",
-      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
-      "baseline": "Solves two-step equations with 40% accuracy.",
-      "target": "80% accuracy on 4 of 5 probes.",
-      "measure": "Math curriculum-based probe",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "solve two-step equations with 80% accuracy",
-      "confidence": 0.91,
+      "source_page": 4,
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "confidence": 0.84,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
+    "annual_review": "2026-10-12",
     "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-30"
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.91,
+    "disability_category": 0.96,
     "school_year": 0.99,
-    "annual_review": 0.92,
-    "triennial_reeval": 0.87,
-    "last_progress_report": 0.89
+    "annual_review": 0.85,
+    "triennial_reeval": 0.9,
+    "last_progress_report": 0.91
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

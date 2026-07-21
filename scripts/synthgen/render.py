@@ -14,6 +14,7 @@ from typing import Any
 from synthgen.constants import DISTRICT_NAME, SCHOOL_NAME
 from synthgen.district import STUDENTS
 from synthgen.pdf import PDF, wrap_text
+from synthgen.records import service_source_quote
 
 _LEFT = 54.0
 _RIGHT = 558.0
@@ -24,15 +25,30 @@ _LINE = 14.0
 
 _NAMES = {s["student_ref"]: s for s in STUDENTS}
 
-_SCOPE_LABEL = {"all": "all classes", "subject": "specific subject", "context": "specific context"}
-
-
 def _display_name(student_ref: str) -> str:
     return _NAMES.get(student_ref, {}).get("display_name", student_ref)
 
 
-def _scope(applies_to: list[str]) -> str:
-    return ", ".join(_SCOPE_LABEL.get(a, a) for a in applies_to)
+def _alternatives(values: list[str]) -> str:
+    if len(values) == 1:
+        return values[0]
+    if len(values) == 2:
+        return f"{values[0]} or {values[1]}"
+    return f"{', '.join(values[:-1])}, or {values[-1]}"
+
+
+def applicability_text(references: list[dict[str, Any]]) -> str:
+    """Render v1.2 union-within-scope/intersection-across-scopes semantics."""
+
+    all_references = [reference["ref"] for reference in references if reference["scope"] == "all"]
+    if all_references:
+        return all_references[0]
+    clauses = [
+        _alternatives([reference["ref"] for reference in references if reference["scope"] == scope])
+        for scope in ("subject", "context")
+        if any(reference["scope"] == scope for reference in references)
+    ]
+    return "; ".join(clauses)
 
 
 class _FormRenderer:
@@ -44,8 +60,24 @@ class _FormRenderer:
     # ── layout helpers ────────────────────────────────────────────────
     def _ensure(self, needed: float) -> None:
         if self.y + needed > _BOTTOM:
-            self.pdf.new_page()
-            self.y = _TOP
+            raise ValueError(
+                f"fixed four-page IEP layout overflow for {self.record['student_ref']}"
+            )
+
+    def _new_page(self, page_number: int) -> None:
+        self.pdf.new_page()
+        self.y = _TOP
+        student_ref = self.record["student_ref"]
+        self.pdf.text(
+            _LEFT,
+            self.y + 10,
+            f"IEP - {_display_name(student_ref)} ({student_ref})",
+            9,
+            bold=True,
+        )
+        self.pdf.text(_RIGHT - 52, self.y + 10, f"Page {page_number} of 4", 9)
+        self.pdf.line(_LEFT, self.y + 16, _RIGHT, self.y + 16)
+        self.y += 26
 
     def _gap(self, amount: float) -> None:
         self.y += amount
@@ -76,6 +108,7 @@ class _FormRenderer:
     # ── sections ──────────────────────────────────────────────────────
     def _header(self) -> None:
         self.pdf.text(_LEFT, self.y + 14, DISTRICT_NAME, 15, bold=True)
+        self.pdf.text(_RIGHT - 52, self.y + 14, "Page 1 of 4", 9)
         self.y += 20
         self.pdf.text(_LEFT, self.y + 12, "Individualized Education Program (IEP)", 12, bold=True)
         self.y += 18
@@ -126,41 +159,39 @@ class _FormRenderer:
     def _accommodations(self) -> None:
         self._heading("Accommodations")
         for a in self.record["accommodations"]:
-            self._ensure(_LINE * 2)
+            self._ensure(_LINE * 3)
             self.pdf.text(_LEFT + 4, self.y + 10, "-", 10, bold=True)
-            text = f"{a['text']}  (applies to: {_scope(a['applies_to'])})"
-            self._wrapped(text, 10, x=_LEFT + 16, width=_RIGHT - (_LEFT + 16))
+            self._wrapped(a["text"], 10, x=_LEFT + 16, width=_RIGHT - (_LEFT + 16))
+            self._wrapped(
+                f"Applicability: {applicability_text(a['applies_to_refs'])}.",
+                9.5,
+                x=_LEFT + 24,
+                width=_RIGHT - (_LEFT + 24),
+            )
+            self._gap(4)
 
     def _services(self) -> None:
         self._heading("Special Education and Related Services")
-        cols = [("Service", 168), ("Min/wk", 52), ("Frequency", 128), ("Provider", 156)]
-        x0 = _LEFT
-        # header row
-        self._ensure(_LINE * 2)
-        self.pdf.rect(x0, self.y, _WIDTH, _LINE + 2, fill_gray=0.9, stroke=False)
-        cx = x0
-        for name, w in cols:
-            self.pdf.text(cx + 3, self.y + 11, name, 9.5, bold=True)
-            cx += w
-        self.y += _LINE + 2
         for s in self.record["services"]:
-            provider = s["provider_role"]
-            values = [s["type"], str(s["minutes_per_week"]), s["frequency"], provider]
-            # compute wrapped lines per cell to size the row
-            wrapped = [wrap_text(v, 9.5, w - 6) for v, (_, w) in zip(values, cols)]
-            rows = max(len(w) for w in wrapped)
-            row_h = rows * (_LINE - 2) + 4
-            self._ensure(row_h)
-            cx = x0
-            for lines, (_, w) in zip(wrapped, cols):
-                for j, line in enumerate(lines):
-                    self.pdf.text(cx + 3, self.y + 10 + j * (_LINE - 2), line, 9.5,
-                                  bold=(provider == "Unassigned" and lines is wrapped[3]))
-                self.pdf.line(cx, self.y - 2, cx, self.y + row_h - 2)
-                cx += w
-            self.pdf.line(x0 + _WIDTH, self.y - 2, x0 + _WIDTH, self.y + row_h - 2)
-            self.pdf.line(x0, self.y + row_h - 2, x0 + _WIDTH, self.y + row_h - 2)
-            self.y += row_h
+            self._ensure(_LINE * 4)
+            self.pdf.text(_LEFT + 4, self.y + 10, "-", 10, bold=True)
+            source_text = service_source_quote(
+                s["type"], s["minutes_per_week"], s["frequency"], s["provider_role"]
+            )
+            self._wrapped(
+                source_text,
+                10,
+                x=_LEFT + 16,
+                width=_RIGHT - (_LEFT + 16),
+                bold=s["provider_role"] == "Unassigned",
+            )
+            self._wrapped(
+                f"Service dates: {s['start'] or 'Not stated'} through {s['end'] or 'Not stated'}.",
+                9.5,
+                x=_LEFT + 24,
+                width=_RIGHT - (_LEFT + 24),
+            )
+            self._gap(8)
 
     def _signatures(self) -> None:
         self.y += 12
@@ -180,10 +211,13 @@ class _FormRenderer:
         self._header()
         self._student_info()
         self._present_levels()
-        self._goals()
-        self._accommodations()
-        self._services()
         self._signatures()
+        self._new_page(2)
+        self._accommodations()
+        self._new_page(3)
+        self._services()
+        self._new_page(4)
+        self._goals()
         return self.pdf.build()
 
 
@@ -237,11 +271,13 @@ def render_two_column_pdf(record: dict[str, Any]) -> bytes:
                         ("", False)]
     right_blocks: list[tuple[str, bool]] = [("ACCOMMODATIONS", True), ("", False)]
     for a in r["accommodations"]:
-        right_blocks.append((f"- {a['text']} (applies to: {_scope(a['applies_to'])})", False))
+        right_blocks.append(
+            (f"- {a['text']} Applicability: {applicability_text(a['applies_to_refs'])}.", False)
+        )
     right_blocks += [("", False), ("SERVICES", True), ("", False)]
     for s in r["services"]:
         right_blocks.append(
-            (f"- {s['type']}: {s['minutes_per_week']} min/wk, {s['frequency']}, {s['provider_role']}",
+            (f"- {service_source_quote(s['type'], s['minutes_per_week'], s['frequency'], s['provider_role'])}",
              s["provider_role"] == "Unassigned"))
 
     column(left_x, left_w, left_blocks, body_top)
@@ -268,7 +304,8 @@ def render_html(record: dict[str, Any]) -> str:
             f"<table class='kv'>{rows([('Baseline', g['baseline']), ('Target', g['target']), ('Measure', g['measure']), ('Progress cadence', g['progress_cadence'])])}</table></div>"
         )
     acc_html = "".join(
-        f"<li>{esc(a['text'])} <span class='scope'>(applies to: {esc(_scope(a['applies_to']))})</span></li>"
+        f"<li>{esc(a['text'])} <span class='scope'>Applicability: "
+        f"{esc(applicability_text(a['applies_to_refs']))}.</span></li>"
         for a in r["accommodations"]
     )
     svc_rows = "".join(

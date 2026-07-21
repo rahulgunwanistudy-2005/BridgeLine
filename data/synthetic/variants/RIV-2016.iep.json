@@ -7,115 +7,144 @@
     {
       "id": "d94dd01c-75e3-5c4e-a1a0-156afd6dddf6",
       "text": "Permit brief movement breaks between tasks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "between classroom tasks",
+          "source_page": 2,
+          "source_quote": "between classroom tasks",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief movement breaks between tasks",
-      "confidence": 0.89,
+      "source_quote": "Permit brief movement breaks between tasks.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "bfb307ae-c1ba-5436-a872-3fc958337ef0",
       "text": "Break long assignments into smaller submitted parts.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "break long assignments into smaller parts",
-      "confidence": 0.8,
+      "source_quote": "Break long assignments into smaller submitted parts.",
+      "confidence": 0.96,
       "reconciliation_status": null
     },
     {
       "id": "5c5c003c-c2ca-52d9-9448-9913c043d114",
       "text": "Provide graphic organizers for writing and note-taking.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.86
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "graphic organizers for writing and note-taking",
+      "source_quote": "Provide graphic organizers for writing and note-taking.",
       "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "01cc275f-bcd7-5f40-bfea-9cc913cb1c0b",
       "text": "Read test directions and math word problems aloud on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "read test directions and math word problems aloud",
-      "confidence": 0.96,
+      "source_quote": "Read test directions and math word problems aloud on request.",
+      "confidence": 0.88,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "f1c3a4c8-e814-541d-bd8b-fe13c48eea3e",
-      "type": "Speech and language therapy (social communication)",
+      "type": "Occupational therapy",
       "minutes_per_week": 30,
       "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Speech-language pathologist",
+      "provider_role": "Occupational therapist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
-      "confidence": 0.88,
+      "source_quote": "Occupational therapy: 30 minutes per week; 30 minutes, 1 time weekly; provider: Occupational therapist.",
+      "confidence": 0.83,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "454a0ffe-d160-52c4-861f-0a7107260e08",
-      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
-      "baseline": "Writes two related sentences with inconsistent capitalization.",
-      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a five-sentence paragraph with a topic sentence",
-      "confidence": 0.88,
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "a9a1518a-92da-5320-9e27-f646b8fca5e1",
-      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
-      "baseline": "Requests clarification in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "request clarification when she misses information",
-      "confidence": 0.89,
+      "source_page": 4,
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "9096f2ae-a9aa-5743-8da7-fb5d7cc79192",
-      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
-      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Structured social observation",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "maintain a topic across three conversational turns",
-      "confidence": 0.83,
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "confidence": 0.79,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-05-19",
+    "annual_review": "2027-02-11",
     "triennial_reeval": "2028-09-15",
-    "last_progress_report": "2026-09-25"
+    "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.96,
+    "disability_category": 0.92,
     "school_year": 0.99,
-    "annual_review": 0.87,
-    "triennial_reeval": 0.83,
-    "last_progress_report": 0.95
+    "annual_review": 0.89,
+    "triennial_reeval": 0.87,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

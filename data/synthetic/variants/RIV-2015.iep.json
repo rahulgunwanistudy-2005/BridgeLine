@@ -7,68 +7,123 @@
     {
       "id": "2391a96c-adf7-59dc-a872-2d88268e5016",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.84
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.85,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "29720ca0-35d0-550e-90ac-f2c40119e3c8",
       "text": "Repeat and rephrase spoken directions on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "repeat and rephrase spoken directions on request",
-      "confidence": 0.88,
+      "source_quote": "Repeat and rephrase spoken directions on request.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "3811f5c8-496e-5dcb-9139-68354a332981",
       "text": "Do not grade spelling on first-draft written work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.88
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not grade spelling on first-draft written work",
-      "confidence": 0.83,
+      "source_quote": "Do not grade spelling on first-draft written work.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "469cab11-c6ea-57ff-8170-10b6c01be5b0",
       "text": "Pair new vocabulary with visuals and definitions.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.87
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair new vocabulary with visuals and definitions",
-      "confidence": 0.8,
+      "source_quote": "Pair new vocabulary with visuals and definitions.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "a23061e2-dd26-5973-98f2-31cd1f74ef29",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.86,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "7d164ca4-f8df-5fb8-ba1f-f241b21b91d6",
       "text": "Provide audio versions of grade-level texts.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "audio versions of grade-level texts",
+      "source_quote": "Provide audio versions of grade-level texts.",
       "confidence": 0.9,
       "reconciliation_status": null
     }
@@ -76,94 +131,94 @@
   "services": [
     {
       "id": "6867b272-9a83-589b-8782-d73961ae0159",
-      "type": "Occupational therapy",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Occupational therapist",
+      "type": "Language processing support (group)",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Unassigned",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
-      "confidence": 0.87,
+      "source_quote": "Language processing support (group): 60 minutes per week; 30 minutes, 2 times weekly; provider: Unassigned.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "64048bd5-062c-5def-9d24-21a9e2322ec1",
-      "type": "Speech and language therapy",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.89,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "7bf8ecaf-649a-54c7-85d7-9fafb41023cd",
-      "type": "Specialized academic instruction (mathematics)",
+      "type": "Specialized academic instruction",
       "minutes_per_week": 150,
       "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
-      "confidence": 0.89,
+      "source_quote": "Specialized academic instruction: 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.91,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "37f93f42-461d-57ae-b218-8d50a4ada265",
-      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
-      "baseline": "Produces initial /r/ with 45% accuracy.",
-      "target": "80% accuracy in structured tasks across three sessions.",
-      "measure": "Speech probe",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "produce initial /r/ with 80% accuracy",
-      "confidence": 0.89,
-      "reconciliation_status": null
-    },
-    {
-      "id": "239b2eb1-1584-5efd-9d35-946e9d80c287",
-      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
-      "baseline": "Answers inferential questions with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Comprehension work sample",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "answer inferential questions about a text with 80% accuracy",
+      "source_page": 4,
+      "source_quote": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
       "confidence": 0.96,
       "reconciliation_status": null
     },
     {
+      "id": "239b2eb1-1584-5efd-9d35-946e9d80c287",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "confidence": 0.93,
+      "reconciliation_status": null
+    },
+    {
       "id": "b6994710-5ec5-5d9b-8284-ac425b5b50fa",
-      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.9,
+      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
+      "target": "3 of 4 structured opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "confidence": 0.82,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-02-11",
-    "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-09-25"
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
     "disability_category": 0.95,
     "school_year": 0.99,
-    "annual_review": 0.91,
-    "triennial_reeval": 0.91,
-    "last_progress_report": 0.94
+    "annual_review": 0.87,
+    "triennial_reeval": 0.89,
+    "last_progress_report": 0.92
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

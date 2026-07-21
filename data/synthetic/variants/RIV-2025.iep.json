@@ -7,108 +7,194 @@
     {
       "id": "05ea440a-6478-57f5-9785-d21e87db12f6",
       "text": "Accept typed responses in place of extended handwriting.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.82
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "accept typed responses in place of extended handwriting",
-      "confidence": 0.84,
+      "source_quote": "Accept typed responses in place of extended handwriting.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "461d8e6a-683d-5417-88e5-d14875907e37",
       "text": "Provide a checklist to break long assignments into steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "checklist to break long assignments into steps",
-      "confidence": 0.89,
+      "source_quote": "Provide a checklist to break long assignments into steps.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "341aee5f-40fb-5865-85f3-6bea8e73ab41",
       "text": "Read test directions and math word problems aloud on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "read test directions and math word problems aloud",
-      "confidence": 0.8,
+      "source_quote": "Read test directions and math word problems aloud on request.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "5101f4a5-3d89-566f-a6a3-c16c29042e9c",
       "text": "Allow scheduled sensory breaks of up to five minutes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during independent work",
+          "source_page": 2,
+          "source_quote": "during independent work",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "scheduled sensory breaks of up to five minutes",
-      "confidence": 0.87,
+      "source_quote": "Allow scheduled sensory breaks of up to five minutes.",
+      "confidence": 0.96,
       "reconciliation_status": null
     },
     {
       "id": "864fcf11-c7c1-554c-a65b-46a4e8df1284",
       "text": "Pair new vocabulary with visuals and definitions.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.83
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair new vocabulary with visuals and definitions",
-      "confidence": 0.88,
+      "source_quote": "Pair new vocabulary with visuals and definitions.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "66004192-137b-5f22-9b87-659f367698ec",
       "text": "Provide audio versions of grade-level texts.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.96
+        }
       ],
       "source_page": 2,
-      "source_quote": "audio versions of grade-level texts",
-      "confidence": 0.94,
+      "source_quote": "Provide audio versions of grade-level texts.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "edb25024-b61c-5065-bad8-0ce92ec696d2",
       "text": "Do not require unplanned oral responses in front of the class.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during whole-class discussion",
+          "source_page": 2,
+          "source_quote": "during whole-class discussion",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "no unplanned oral responses in front of the class",
-      "confidence": 0.92,
+      "source_quote": "Do not require unplanned oral responses in front of the class.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "22416106-c320-577f-b540-631b5921ca91",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
-      "confidence": 0.93,
+      "source_quote": "Give a two-minute warning before transitions.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "1292f1e6-6dc6-5bfb-b811-2825cc11f732",
       "text": "Provide 50% extended time on reading-heavy assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.89
+        },
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on reading-heavy assessments",
-      "confidence": 0.96,
+      "source_quote": "Provide 50% extended time on reading-heavy assessments.",
+      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "898241fb-4779-5f54-a8d3-61b4f01280f9",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation: 30 minutes per week; 30 minutes, 1 time monthly; provider: Educational audiologist.",
+      "confidence": 0.83,
+      "reconciliation_status": null
+    },
+    {
+      "id": "540c92da-3850-54b2-b6b4-8c443e1558c1",
       "type": "Specialized academic instruction",
       "minutes_per_week": 100,
       "frequency": "50 minutes, 2 times weekly",
@@ -116,21 +202,8 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.92,
-      "reconciliation_status": null
-    },
-    {
-      "id": "540c92da-3850-54b2-b6b4-8c443e1558c1",
-      "type": "Speech and language therapy (social communication)",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Speech-language pathologist",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
-      "confidence": 0.93,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
@@ -142,49 +215,49 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.9,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "3ad57a51-8882-5c03-9b4a-801b736ba7d6",
-      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
-      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities across two weeks.",
-      "measure": "Teacher observation checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "independently begin a classroom task within two minutes",
+      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "baseline": "Writes two related sentences with inconsistent capitalization.",
+      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
       "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "66b2f6a0-32ea-5b77-a08f-e5b9be6ee2d5",
-      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
-      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
-      "confidence": 0.92,
+      "source_page": 4,
+      "source_quote": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "confidence": 0.8,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-05-19",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-30"
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.97,
+    "disability_category": 0.95,
     "school_year": 0.99,
-    "annual_review": 0.92,
+    "annual_review": 0.93,
     "triennial_reeval": 0.9,
-    "last_progress_report": 0.91
+    "last_progress_report": 0.88
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

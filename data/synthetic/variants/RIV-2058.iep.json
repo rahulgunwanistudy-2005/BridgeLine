@@ -7,106 +7,166 @@
     {
       "id": "fe87380e-b094-51d4-89a1-2d6689a61448",
       "text": "Provide a visual schedule for each class period.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual schedule for each class period",
-      "confidence": 0.88,
+      "source_quote": "Provide a visual schedule for each class period.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "1756c2d0-3876-5d4b-bd73-219f52db7836",
-      "text": "Administer assessments in a small-group, reduced-distraction setting.",
-      "applies_to": [
-        "context"
+      "text": "Provide access to a reduced-distraction workspace.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "small-group, reduced-distraction setting for assessments",
-      "confidence": 0.91,
+      "source_quote": "Provide access to a reduced-distraction workspace.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "2d26fa75-31ba-5b87-b11a-2d54c2e29825",
       "text": "Break multi-step directions into chunked, numbered steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "break multi-step directions into numbered steps",
-      "confidence": 0.96,
+      "source_quote": "Break multi-step directions into chunked, numbered steps.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "63e456e2-6461-5963-a036-99d625959759",
       "text": "Provide a copy of teacher notes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "World History",
+          "source_page": 2,
+          "source_quote": "World History",
+          "confidence": 0.95
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a copy of teacher notes",
-      "confidence": 0.81,
+      "source_quote": "Provide a copy of teacher notes.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "d239b092-0dcb-5e90-80df-5c65ec46e828",
       "text": "Allow a four-function calculator on non-calculation-skill tasks.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "four-function calculator on non-calculation-skill tasks",
-      "confidence": 0.95,
+      "source_quote": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "08ec0f93-c5ef-548f-beed-f12943165ea7",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.85,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "fe7015c0-4a57-5fa4-831e-08f6ef381792",
       "text": "Provide audio versions of grade-level texts.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "audio versions of grade-level texts",
-      "confidence": 0.96,
+      "source_quote": "Provide audio versions of grade-level texts.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "027f1df1-451a-5029-858a-9297e977fcb1",
       "text": "Accept typed responses in place of extended handwriting.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.79
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "accept typed responses in place of extended handwriting",
-      "confidence": 0.91,
+      "source_quote": "Accept typed responses in place of extended handwriting.",
+      "confidence": 0.97,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "ba52cc01-51ad-5edd-9168-de66fef70631",
-      "type": "Educational audiology consultation",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time monthly",
-      "provider_role": "Educational audiologist",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Educational audiology consultation 30 minutes monthly",
-      "confidence": 0.83,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
@@ -118,22 +178,22 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.78,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.86,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "a0b0ec8d-bd1a-5759-9324-12b7258c5497",
-      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.83,
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
@@ -143,24 +203,24 @@
       "target": "4 of 5 samples.",
       "measure": "Writing work sample",
       "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "produce three organized sentences on a topic",
-      "confidence": 0.88,
+      "source_page": 4,
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "confidence": 0.81,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2026-10-27",
-    "triennial_reeval": "2028-12-04",
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2026-11-18",
     "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.96,
+    "disability_category": 0.93,
     "school_year": 0.99,
-    "annual_review": 0.96,
-    "triennial_reeval": 0.93,
-    "last_progress_report": 0.86
+    "annual_review": 0.93,
+    "triennial_reeval": 0.84,
+    "last_progress_report": 0.92
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

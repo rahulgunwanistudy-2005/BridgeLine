@@ -7,173 +7,208 @@
     {
       "id": "5fdf8eb6-e1c9-56ea-9958-e0faf272819a",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
-      "confidence": 0.95,
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "fa3e5b19-cecf-5432-95b5-0fc426700df4",
       "text": "State task expectations explicitly and in writing.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "state task expectations explicitly and in writing",
-      "confidence": 0.85,
+      "source_quote": "State task expectations explicitly and in writing.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "c3938a33-140c-5d1f-92ed-f3ec1193e832",
       "text": "Break multi-step directions into chunked, numbered steps.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "break multi-step directions into numbered steps",
-      "confidence": 0.81,
+      "source_quote": "Break multi-step directions into chunked, numbered steps.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "ddc8fb1e-b0c1-5703-a035-142bb3efeb37",
       "text": "Provide frequent check-ins for understanding.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "frequent check-ins for understanding",
-      "confidence": 0.86,
+      "source_quote": "Provide frequent check-ins for understanding.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "c323d369-9e45-5643-8095-a0fb58100432",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.85
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
-      "confidence": 0.8,
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "b805bfc0-7789-5cbe-abfe-87f5e2a9288b",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.85,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.81,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "2b20ca4a-c5d6-5e5f-ab68-25ff690a0be2",
-      "type": "Specialized academic instruction (mathematics)",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.79,
+      "reconciliation_status": null
+    },
+    {
+      "id": "50a70832-5b9f-54fc-b842-a862f7ed1917",
+      "type": "Specialized academic instruction",
       "minutes_per_week": 150,
       "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction mathematics 30 minutes 5 times weekly",
-      "confidence": 0.86,
-      "reconciliation_status": null
-    },
-    {
-      "id": "50a70832-5b9f-54fc-b842-a862f7ed1917",
-      "type": "Educational audiology consultation",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time monthly",
-      "provider_role": "Educational audiologist",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Educational audiology consultation 30 minutes monthly",
-      "confidence": 0.92,
+      "source_quote": "Specialized academic instruction: 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.89,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "b50b98cf-fb4d-55aa-9662-cb35d62b3ba1",
-      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
-      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
-      "measure": "Work-completion log",
+      "measure": "Teacher observation",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
-      "confidence": 0.79,
+      "source_page": 4,
+      "source_quote": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "9c7b7cf1-5c52-5fdd-abb1-1167cc83b8db",
-      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
-      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Language sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "retell a short narrative with a beginning, middle, and end",
-      "confidence": 0.87,
+      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "b155d4a9-8b82-5e5b-92f4-6420a65df31c",
-      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
-      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
-      "target": "3 of 4 structured opportunities.",
-      "measure": "Structured social observation",
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a taught script to join a peer activity",
-      "confidence": 0.84,
-      "reconciliation_status": null
-    },
-    {
-      "id": "c8b97298-0d81-5f95-8c96-51efb3e35571",
-      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
-      "baseline": "Reads grade-level text at 80 words per minute.",
-      "target": "120 words per minute with 95% accuracy.",
-      "measure": "Oral reading fluency probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "source_page": 4,
+      "source_quote": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
     {
-      "id": "74768b13-16e9-5311-8b06-e899485d63d3",
+      "id": "c8b97298-0d81-5f95-8c96-51efb3e35571",
       "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
       "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
       "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
-      "confidence": 0.93,
+      "source_page": 4,
+      "source_quote": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "74768b13-16e9-5311-8b06-e899485d63d3",
+      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
+      "confidence": 0.91,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-01-14",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-30"
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2029-01-22",
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.95,
+    "disability_category": 0.94,
     "school_year": 0.99,
-    "annual_review": 0.92,
-    "triennial_reeval": 0.88,
-    "last_progress_report": 0.95
+    "annual_review": 0.86,
+    "triennial_reeval": 0.87,
+    "last_progress_report": 0.88
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

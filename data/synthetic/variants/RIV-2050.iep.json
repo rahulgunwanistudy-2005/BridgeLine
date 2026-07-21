@@ -7,103 +7,128 @@
     {
       "id": "e3cef7de-ec32-5f50-84ff-fa0fb7d6e9b2",
       "text": "Give advance warning before transitions and changes in routine.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "advance warning before transitions and changes in routine",
-      "confidence": 0.86,
+      "source_quote": "Give advance warning before transitions and changes in routine.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "ddf18cc3-872b-5076-beb5-31443d9ecec7",
       "text": "Face the student when speaking and avoid covering the mouth.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "face the student when speaking",
-      "confidence": 0.8,
+      "source_quote": "Face the student when speaking and avoid covering the mouth.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "21b88c6a-dfea-5d27-8068-cd1e8a996a74",
       "text": "Provide 50% extended time on classroom assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.83
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on classroom assessments",
-      "confidence": 0.91,
+      "source_quote": "Provide 50% extended time on classroom assessments.",
+      "confidence": 0.93,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "26c8ea2e-0eb7-5466-86a5-7d50bd3c6826",
-      "type": "Language processing support (group)",
+      "type": "Speech and language therapy",
       "minutes_per_week": 60,
       "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Unassigned",
+      "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Language processing support group 30 minutes twice weekly; provider TBD",
-      "confidence": 0.94,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "d25ce283-c449-5983-80ef-dadd379aca84",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.9,
+      "source_quote": "Educational audiology consultation: 30 minutes per week; 30 minutes, 1 time monthly; provider: Educational audiologist.",
+      "confidence": 0.86,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "151ee1ba-0a6e-5da3-af72-ca7704dc4719",
-      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.8,
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "cb9e24a5-6806-5605-b14d-c3aa9e939cc7",
-      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
-      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "organize a multi-paragraph response using an outline",
-      "confidence": 0.91,
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "confidence": 0.86,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
+    "annual_review": "2027-05-19",
     "triennial_reeval": "2028-09-15",
-    "last_progress_report": "2026-10-16"
+    "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.93,
+    "disability_category": 0.91,
     "school_year": 0.99,
-    "annual_review": 0.9,
-    "triennial_reeval": 0.87,
-    "last_progress_report": 0.91
+    "annual_review": 0.87,
+    "triennial_reeval": 0.83,
+    "last_progress_report": 0.95
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

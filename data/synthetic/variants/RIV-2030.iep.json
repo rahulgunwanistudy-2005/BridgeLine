@@ -7,138 +7,176 @@
     {
       "id": "2b69c276-caa2-5f06-8eff-db9ea1fb53fe",
       "text": "Face the student when speaking and avoid covering the mouth.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "face the student when speaking",
-      "confidence": 0.8,
+      "source_quote": "Face the student when speaking and avoid covering the mouth.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "fc764b79-7154-55e6-8235-d7e5a9b58232",
       "text": "Provide 50% extended time on classroom assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.89
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on classroom assessments",
+      "source_quote": "Provide 50% extended time on classroom assessments.",
       "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "3bea9d3e-1e70-5b6d-a1f5-4e2c2b4ad87c",
       "text": "Provide 50% extended time on reading-heavy assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.79
+        },
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on reading-heavy assessments",
-      "confidence": 0.9,
+      "source_quote": "Provide 50% extended time on reading-heavy assessments.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "222eca77-3a8d-5e9d-80bb-d049aa21377b",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
-      "confidence": 0.8,
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
+      "confidence": 0.9,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "c04ba30c-b9bd-51aa-995d-0ec48c3eb2ac",
-      "type": "Educational audiology consultation",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time monthly",
-      "provider_role": "Educational audiologist",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Educational audiology consultation 30 minutes monthly",
-      "confidence": 0.8,
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "569bea74-54cf-5bb4-88b9-eb17d31788f9",
-      "type": "Deaf/hard-of-hearing itinerant support",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Teacher of the deaf and hard of hearing",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.87,
+      "source_quote": "Occupational therapy: 30 minutes per week; 30 minutes, 1 time weekly; provider: Occupational therapist.",
+      "confidence": 0.84,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "427687af-6650-5a8e-ba22-c304249c5166",
-      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.89,
+      "text": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "baseline": "Maintains a topic for one turn in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "f51561a0-7d10-596a-bb24-230b5e5d8df4",
-      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
-      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "accept a change in routine using a coping strategy",
-      "confidence": 0.88,
+      "source_page": 4,
+      "source_quote": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "cf601e5a-6610-58da-b717-0fdaabc5d5d5",
-      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
-      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "text": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "baseline": "Requests clarification in 1 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
       "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "independently report FM system problems in 4 of 5 opportunities",
-      "confidence": 0.93,
+      "source_page": 4,
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "213b8ee4-ae62-5fcb-80de-cad643cdc7ca",
-      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
-      "baseline": "Solves two-step equations with 40% accuracy.",
-      "target": "80% accuracy on 4 of 5 probes.",
-      "measure": "Math curriculum-based probe",
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "solve two-step equations with 80% accuracy",
-      "confidence": 0.84,
+      "source_page": 4,
+      "source_quote": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "confidence": 0.79,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-03-09",
-    "triennial_reeval": "2026-11-18",
-    "last_progress_report": "2026-10-09"
+    "annual_review": "2027-05-19",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
     "disability_category": 0.95,
     "school_year": 0.99,
-    "annual_review": 0.92,
-    "triennial_reeval": 0.88,
-    "last_progress_report": 0.94
+    "annual_review": 0.85,
+    "triennial_reeval": 0.87,
+    "last_progress_report": 0.89
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

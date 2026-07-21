@@ -7,106 +7,180 @@
     {
       "id": "f0a7b990-b271-5629-a249-6c4b7a7b2ad3",
       "text": "Provide 50% extended time on all classroom tests and quizzes.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on all classroom tests and quizzes",
-      "confidence": 0.85,
+      "source_quote": "Provide 50% extended time on all classroom tests and quizzes.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "dde4ae32-30b9-5199-990f-5668ce95d187",
       "text": "Permit brief movement breaks between tasks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "between classroom tasks",
+          "source_page": 2,
+          "source_quote": "between classroom tasks",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief movement breaks between tasks",
-      "confidence": 0.78,
+      "source_quote": "Permit brief movement breaks between tasks.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "a39dd5e8-44ac-5839-b3bc-06a5feedc6fe",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
-      "confidence": 0.84,
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "85265f7a-60e7-5581-9445-a5218ad8a8fe",
       "text": "Provide a peer notetaker or copy of lecture notes.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.76
+        },
+        {
+          "scope": "subject",
+          "ref": "World History",
+          "source_page": 2,
+          "source_quote": "World History",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "peer notetaker or copy of lecture notes",
-      "confidence": 0.8,
+      "source_quote": "Provide a peer notetaker or copy of lecture notes.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "a3aedd00-ef3a-5488-9bec-b7341b2a5dd3",
       "text": "Provide graphic organizers for writing and note-taking.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.82
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "graphic organizers for writing and note-taking",
-      "confidence": 0.84,
+      "source_quote": "Provide graphic organizers for writing and note-taking.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "4a2096b9-77e1-5daa-a861-04c3ff7369b2",
       "text": "Provide a copy of teacher notes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "World History",
+          "source_page": 2,
+          "source_quote": "World History",
+          "confidence": 0.81
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a copy of teacher notes",
-      "confidence": 0.94,
+      "source_quote": "Provide a copy of teacher notes.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "c8fe46c9-1cce-5438-82b3-de17b4aa40c8",
-      "text": "Administer assessments in a small-group, reduced-distraction setting.",
-      "applies_to": [
-        "context"
+      "text": "Provide access to a reduced-distraction workspace.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "small-group, reduced-distraction setting for assessments",
-      "confidence": 0.78,
+      "source_quote": "Provide access to a reduced-distraction workspace.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "02b09ea4-ffbe-5a07-a070-4b89515222eb",
       "text": "Pair new vocabulary with visuals and definitions.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.84
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair new vocabulary with visuals and definitions",
-      "confidence": 0.92,
+      "source_quote": "Pair new vocabulary with visuals and definitions.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "df9f18e3-8636-5ea9-9528-ea925dc2ee20",
-      "type": "Specialized academic instruction (reading)",
-      "minutes_per_week": 150,
-      "frequency": "30 minutes, 5 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction reading 30 minutes 5 times weekly",
-      "confidence": 0.91,
+      "source_quote": "Individual counseling: 30 minutes per week; 30 minutes, 1 time weekly; provider: School counselor.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
@@ -118,49 +192,49 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.87,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "a855f291-6f47-5f2a-b4a3-0cbf97161265",
-      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
-      "baseline": "Organizes materials in 3 of 10 days.",
-      "target": "8 of 10 days.",
-      "measure": "Teacher checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a checklist to organize materials for each class",
-      "confidence": 0.82,
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "b7281d29-bbbb-5507-a915-e6f3cc1ff81d",
-      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
-      "baseline": "Arrives with required materials in 3 of 10 class days.",
-      "target": "8 of 10 class days.",
-      "measure": "Teacher checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "arrive to class with required materials in 8 of 10 class days",
-      "confidence": 0.91,
+      "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "baseline": "Reads grade-level text at 80 words per minute.",
+      "target": "120 words per minute with 95% accuracy.",
+      "measure": "Oral reading fluency probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
+      "confidence": 0.81,
       "reconciliation_status": null
     }
   ],
   "dates": {
     "annual_review": "2027-02-11",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-30"
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
     "disability_category": 0.95,
     "school_year": 0.99,
-    "annual_review": 0.9,
-    "triennial_reeval": 0.93,
-    "last_progress_report": 0.88
+    "annual_review": 0.89,
+    "triennial_reeval": 0.87,
+    "last_progress_report": 0.87
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

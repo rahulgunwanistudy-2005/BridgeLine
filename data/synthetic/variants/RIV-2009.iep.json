@@ -7,123 +7,173 @@
     {
       "id": "eb431837-b8f0-5d85-8324-207f2d9bfa41",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.92,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "f296d0f8-ae5e-5e18-9aa9-f4b43ed371db",
       "text": "Pair new vocabulary with visuals and definitions.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.87
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair new vocabulary with visuals and definitions",
-      "confidence": 0.91,
+      "source_quote": "Pair new vocabulary with visuals and definitions.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "d53e0607-704a-59c2-9834-562eeb7dd980",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
-      "confidence": 0.89,
+      "source_quote": "Give a two-minute warning before transitions.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "d8ddb3c9-31ea-552b-8107-c8e1af23714f",
       "text": "Provide 50% extended time on reading-heavy assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.96
+        },
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on reading-heavy assessments",
-      "confidence": 0.9,
+      "source_quote": "Provide 50% extended time on reading-heavy assessments.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "92b3a2a6-ace6-5901-9e6c-9672b13441ee",
       "text": "Read test directions and math word problems aloud on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "read test directions and math word problems aloud",
-      "confidence": 0.95,
+      "source_quote": "Read test directions and math word problems aloud on request.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "0b86c24e-a7ef-5d5c-bb9e-a1ef18fdf3e3",
-      "text": "Administer assessments in a small-group, reduced-distraction setting.",
-      "applies_to": [
-        "context"
+      "text": "Provide access to a reduced-distraction workspace.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "small-group, reduced-distraction setting for assessments",
-      "confidence": 0.93,
+      "source_quote": "Provide access to a reduced-distraction workspace.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "bf48d9fb-9299-5ccb-873b-5ee89046239a",
-      "type": "Occupational therapy",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Occupational therapist",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
-      "confidence": 0.95,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.9,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "b0ec0ccb-6796-56e1-8912-d58016a9faea",
-      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
-      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities across two weeks.",
-      "measure": "Teacher observation checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "independently begin a classroom task within two minutes",
-      "confidence": 0.81,
+      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Emma will define grade-level academic vocabulary with 80% accuracy.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "c2658ea0-ecdf-5424-a259-91d358e58aeb",
-      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
-      "baseline": "Decodes multisyllabic words with 55% accuracy.",
-      "target": "85% accuracy on 4 of 5 consecutive probes.",
-      "measure": "Curriculum-based reading probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
-      "confidence": 0.92,
+      "text": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "baseline": "Arrives with required materials in 3 of 10 class days.",
+      "target": "8 of 10 class days.",
+      "measure": "Teacher checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Ethan will arrive to class with required materials in 8 of 10 class days.",
+      "confidence": 0.83,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-03-09",
-    "triennial_reeval": "2028-12-04",
-    "last_progress_report": "2026-10-16"
+    "annual_review": "2027-02-11",
+    "triennial_reeval": "2028-09-15",
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.92,
+    "disability_category": 0.94,
     "school_year": 0.99,
-    "annual_review": 0.88,
-    "triennial_reeval": 0.92,
-    "last_progress_report": 0.87
+    "annual_review": 0.91,
+    "triennial_reeval": 0.89,
+    "last_progress_report": 0.9
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

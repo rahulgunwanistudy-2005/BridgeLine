@@ -7,164 +7,201 @@
     {
       "id": "0660e7c8-983c-5627-bc5c-c561d751a0ba",
       "text": "Do not require unplanned oral responses in front of the class.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during whole-class discussion",
+          "source_page": 2,
+          "source_quote": "during whole-class discussion",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "no unplanned oral responses in front of the class",
-      "confidence": 0.91,
+      "source_quote": "Do not require unplanned oral responses in front of the class.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "f1f5d0e4-261c-5856-9c09-a23a4a8161f3",
       "text": "Do not grade spelling on first-draft written work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.96
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not grade spelling on first-draft written work",
-      "confidence": 0.9,
+      "source_quote": "Do not grade spelling on first-draft written work.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "dda53516-67b7-56ef-9f60-a2f738c1390b",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
-      "confidence": 0.97,
+      "source_quote": "Provide a word bank for written-response items.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "e497fb72-ece2-579d-87cb-535da6846daa",
       "text": "Provide a copy of teacher notes.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "World History",
+          "source_page": 2,
+          "source_quote": "World History",
+          "confidence": 0.77
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a copy of teacher notes",
-      "confidence": 0.85,
+      "source_quote": "Provide a copy of teacher notes.",
+      "confidence": 0.86,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "a13adf3e-d847-5e73-a66a-fafebd4265e2",
-      "type": "Individual counseling",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "School counselor",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Individual counseling 30 minutes weekly",
-      "confidence": 0.79,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "a46b5b53-1c1f-53c4-b907-9ca5e85d6afe",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
-      "confidence": 0.82,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "a468c338-f3be-534a-a68e-228eb9cfd582",
-      "type": "Educational audiology consultation",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time monthly",
-      "provider_role": "Educational audiologist",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Educational audiology consultation 30 minutes monthly",
-      "confidence": 0.85,
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.79,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "28d4665e-1fca-5e7c-8d9d-169d6b0e712b",
-      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
-      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
-      "target": "4 of 5 opportunities across two weeks.",
-      "measure": "Teacher observation checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "independently begin a classroom task within two minutes",
-      "confidence": 0.93,
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "f2d686bd-55be-573a-8308-fc83d8565b3a",
-      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
-      "baseline": "Organizes materials in 3 of 10 days.",
-      "target": "8 of 10 days.",
-      "measure": "Teacher checklist",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a checklist to organize materials for each class",
-      "confidence": 0.83,
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "144cf4bd-6c33-5b06-b9f4-0d45e39dcc12",
-      "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
-      "baseline": "Follows two-step directions in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
-      "confidence": 0.92,
-      "reconciliation_status": null
-    },
-    {
-      "id": "02b0b830-c7f9-5228-b21a-319255a3276f",
       "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
       "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
       "measure": "Language sample",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "retell a short narrative with a beginning, middle, and end",
-      "confidence": 0.96,
+      "source_page": 4,
+      "source_quote": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "02b0b830-c7f9-5228-b21a-319255a3276f",
+      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "baseline": "Produces initial /r/ with 45% accuracy.",
+      "target": "80% accuracy in structured tasks across three sessions.",
+      "measure": "Speech probe",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "855d7e37-1033-5f18-99fe-8bd9a0a7ee11",
-      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
-      "baseline": "Solves two-step equations with 40% accuracy.",
-      "target": "80% accuracy on 4 of 5 probes.",
-      "measure": "Math curriculum-based probe",
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "solve two-step equations with 80% accuracy",
-      "confidence": 0.89,
+      "source_page": 4,
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "confidence": 0.92,
       "reconciliation_status": null
     }
   ],
   "dates": {
     "annual_review": "2027-02-11",
-    "triennial_reeval": "2028-12-04",
-    "last_progress_report": "2026-09-25"
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-30"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.93,
+    "disability_category": 0.92,
     "school_year": 0.99,
     "annual_review": 0.94,
-    "triennial_reeval": 0.88,
-    "last_progress_report": 0.85
+    "triennial_reeval": 0.86,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

@@ -61,7 +61,7 @@ manifest.json    index of all 100 documents
 
 ## Key decisions
 
-- **`field_confidences` is embedded in the IEPRecord** (schema v1.1). Each record carries a
+- **`field_confidences` is embedded in the IEPRecord** (schema v1.2). Each record carries a
   top-level `field_confidences` object with six 0.0–1.0 scores for the canonical scalar/date
   fields; an absent field scores 0.0 (RIV-1012 `last_progress_report` is null → 0.0). No
   separate sidecar files.
@@ -71,6 +71,9 @@ manifest.json    index of all 100 documents
   against this, not the wall clock, so the demo/harness reproduce on any day.
 - **Documents are clean vector PDFs (real text layer); messy scans are image-only** (no text
   layer) — genuinely scan-like for OCR.
+- **Source evidence is render-verified.** The clean form uses a fixed four-page contract
+  (accommodations page 2, services page 3, goals page 4), and verification extracts the PDF
+  text layer to confirm every item and scope quote appears verbatim on its declared page.
 
 ## Engineered findings (STEP 2)
 

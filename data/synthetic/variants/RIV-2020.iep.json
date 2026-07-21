@@ -7,77 +7,119 @@
     {
       "id": "6e863cf6-1d31-5e2f-b8c8-15a88b76e153",
       "text": "Permit brief movement breaks between tasks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "between classroom tasks",
+          "source_page": 2,
+          "source_quote": "between classroom tasks",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief movement breaks between tasks",
-      "confidence": 0.9,
+      "source_quote": "Permit brief movement breaks between tasks.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "de0d7b79-ca80-5c89-a306-78d22043b0b3",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.87,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "3a7a83a3-cbf8-5a7d-82d7-76b70122464e",
       "text": "Provide frequent check-ins for understanding.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "frequent check-ins for understanding",
-      "confidence": 0.85,
+      "source_quote": "Provide frequent check-ins for understanding.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "1b1a4572-1f27-5d52-a609-829cd1973c02",
       "text": "Face the student when speaking and avoid covering the mouth.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "face the student when speaking",
-      "confidence": 0.86,
+      "source_quote": "Face the student when speaking and avoid covering the mouth.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "f598385e-dfdd-5711-ae07-aa663bbfed02",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.94,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "3e9dfaef-af15-5fea-adfc-4191c576d03d",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
-      "confidence": 0.89,
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "fe924a68-444b-5e26-953e-9f9b8c22cd19",
       "text": "Do not require unplanned oral responses in front of the class.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during whole-class discussion",
+          "source_page": 2,
+          "source_quote": "during whole-class discussion",
+          "confidence": 0.96
+        }
       ],
       "source_page": 2,
-      "source_quote": "no unplanned oral responses in front of the class",
+      "source_quote": "Do not require unplanned oral responses in front of the class.",
       "confidence": 0.96,
       "reconciliation_status": null
     }
@@ -85,41 +127,41 @@
   "services": [
     {
       "id": "533783ac-5507-556f-b051-c26878cb1402",
-      "type": "Individual counseling",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "School counselor",
+      "type": "Specialized academic instruction (executive functioning)",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Individual counseling 30 minutes weekly",
-      "confidence": 0.95,
+      "source_quote": "Specialized academic instruction (executive functioning): 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "b2b49793-434e-57fc-bc88-60060f4bb950",
-      "type": "Deaf/hard-of-hearing itinerant support",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Teacher of the deaf and hard of hearing",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.94,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "2714e304-4e79-5de8-a2cc-8d6812273daa",
-      "type": "Occupational therapy",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Occupational therapist",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
-      "confidence": 0.81,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.79,
       "reconciliation_status": null
     }
   ],
@@ -131,48 +173,48 @@
       "target": "4 of 5 opportunities.",
       "measure": "Work-completion log",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
-      "confidence": 0.87,
+      "source_page": 4,
+      "source_quote": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "53ece188-3c03-51e0-a6df-e9bf63a8069e",
-      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
-      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a paragraph with a clear topic sentence and three details",
-      "confidence": 0.83,
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "a65cd08a-eb4b-54d7-a895-5b8ad3b967bd",
-      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
-      "baseline": "Produces initial /r/ with 45% accuracy.",
-      "target": "80% accuracy in structured tasks across three sessions.",
-      "measure": "Speech probe",
+      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "baseline": "Organizes materials in 3 of 10 days.",
+      "target": "8 of 10 days.",
+      "measure": "Teacher checklist",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "produce initial /r/ with 80% accuracy",
-      "confidence": 0.88,
+      "source_page": 4,
+      "source_quote": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
+      "confidence": 0.93,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
-    "triennial_reeval": "2026-11-18",
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2029-03-30",
     "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.93,
+    "disability_category": 0.96,
     "school_year": 0.99,
-    "annual_review": 0.92,
-    "triennial_reeval": 0.92,
-    "last_progress_report": 0.87
+    "annual_review": 0.87,
+    "triennial_reeval": 0.89,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

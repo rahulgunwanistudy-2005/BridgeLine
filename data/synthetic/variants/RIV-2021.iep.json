@@ -7,50 +7,67 @@
     {
       "id": "2018153d-8c13-5243-9c66-4eec0f973709",
       "text": "Break long assignments into smaller submitted parts.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "break long assignments into smaller parts",
-      "confidence": 0.91,
+      "source_quote": "Break long assignments into smaller submitted parts.",
+      "confidence": 0.82,
       "reconciliation_status": null
     },
     {
       "id": "10ffc4fe-e24c-59ab-82c3-f2c8601601a4",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
-      "confidence": 0.82,
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "bad18f88-101d-50a3-84aa-a8bebba7d436",
       "text": "Check the daily planner for recorded homework before dismissal.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "before dismissal",
+          "source_page": 2,
+          "source_quote": "before dismissal",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "check the daily planner before dismissal",
-      "confidence": 0.95,
+      "source_quote": "Check the daily planner for recorded homework before dismissal.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "f0ae6261-a529-583b-b6b5-171acf0f1685",
-      "type": "Specialized academic instruction (executive functioning)",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
+      "type": "Specialized academic instruction (mathematics)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
-      "confidence": 0.87,
+      "source_quote": "Specialized academic instruction (mathematics): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
@@ -62,98 +79,98 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
       "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "199a2952-a863-52be-b520-3ef9f50232be",
-      "type": "Speech and language therapy",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.78,
+      "source_quote": "Individual counseling: 30 minutes per week; 30 minutes, 1 time weekly; provider: School counselor.",
+      "confidence": 0.81,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "9babc8f4-ff5b-5e37-a895-93f7e4d08b97",
-      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
-      "baseline": "Solves two-step equations with 40% accuracy.",
-      "target": "80% accuracy on 4 of 5 probes.",
-      "measure": "Math curriculum-based probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "solve two-step equations with 80% accuracy",
-      "confidence": 0.79,
-      "reconciliation_status": null
-    },
-    {
-      "id": "900acba3-2006-5499-a385-c51a0f78a6d1",
-      "text": "Emma will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 55% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.79,
-      "reconciliation_status": null
-    },
-    {
-      "id": "1024127a-194a-5ab4-bc1b-a731a81c7383",
-      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
-      "baseline": "Produces initial /r/ with 45% accuracy.",
-      "target": "80% accuracy in structured tasks across three sessions.",
-      "measure": "Speech probe",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "produce initial /r/ with 80% accuracy",
-      "confidence": 0.94,
-      "reconciliation_status": null
-    },
-    {
-      "id": "94941c60-af8e-5169-a97a-f9c7343b6756",
       "text": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
       "baseline": "Reads grade-level text at 80 words per minute.",
       "target": "120 words per minute with 95% accuracy.",
       "measure": "Oral reading fluency probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "read grade-level text at 120 words per minute with 95% accuracy",
+      "source_page": 4,
+      "source_quote": "Jamal will read grade-level text at 120 words per minute with 95% accuracy.",
       "confidence": 0.92,
       "reconciliation_status": null
     },
     {
-      "id": "ae828e2f-3c03-5bd8-a013-13d1aa50bc2e",
+      "id": "900acba3-2006-5499-a385-c51a0f78a6d1",
       "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
       "baseline": "Decodes multisyllabic words with 55% accuracy.",
       "target": "85% accuracy on 4 of 5 consecutive probes.",
       "measure": "Curriculum-based reading probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
-      "confidence": 0.78,
+      "source_page": 4,
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "confidence": 0.8,
+      "reconciliation_status": null
+    },
+    {
+      "id": "1024127a-194a-5ab4-bc1b-a731a81c7383",
+      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "baseline": "Writes two related sentences with inconsistent capitalization.",
+      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
+      "id": "94941c60-af8e-5169-a97a-f9c7343b6756",
+      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Work-completion log",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "confidence": 0.89,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ae828e2f-3c03-5bd8-a013-13d1aa50bc2e",
+      "text": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "baseline": "Identifies the main idea with 40% accuracy.",
+      "target": "80% accuracy across three consecutive assessments.",
+      "measure": "Reading comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Given a grade-level text, Aanya will identify the main idea and two supporting details with 80% accuracy.",
+      "confidence": 0.81,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-02-11",
-    "triennial_reeval": "2029-03-30",
+    "annual_review": "2027-04-22",
+    "triennial_reeval": "2028-12-04",
     "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.95,
+    "disability_category": 0.98,
     "school_year": 0.99,
-    "annual_review": 0.95,
-    "triennial_reeval": 0.94,
-    "last_progress_report": 0.86
+    "annual_review": 0.96,
+    "triennial_reeval": 0.84,
+    "last_progress_report": 0.85
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

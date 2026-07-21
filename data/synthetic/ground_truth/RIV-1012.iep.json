@@ -7,45 +7,75 @@
     {
       "id": "78812268-1382-5bad-8be7-bdbcee8168c0",
       "text": "Provide a visual schedule for each class period.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual schedule for each class period",
+      "source_quote": "Provide a visual schedule for each class period.",
       "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "4f791a39-00eb-5dc7-8801-eaeae7ffe065",
       "text": "State task expectations explicitly and in writing.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.88
+        }
       ],
       "source_page": 2,
-      "source_quote": "state task expectations explicitly and in writing",
+      "source_quote": "State task expectations explicitly and in writing.",
       "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "b3e54a65-0e56-5431-81b9-58eeae83c7dd",
       "text": "Accept typed responses in place of extended handwriting.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.83
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "accept typed responses in place of extended handwriting",
+      "source_quote": "Accept typed responses in place of extended handwriting.",
       "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "b77d8b88-a183-532e-baeb-c4ee0ec3de12",
       "text": "Allow brief scheduled sensory breaks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during independent work",
+          "source_page": 2,
+          "source_quote": "during independent work",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief scheduled sensory breaks",
+      "source_quote": "Allow brief scheduled sensory breaks.",
       "confidence": 0.83,
       "reconciliation_status": null
     }
@@ -60,7 +90,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
@@ -73,7 +103,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy social communication 30 minutes weekly",
+      "source_quote": "Speech and language therapy (social communication): 30 minutes per week; 30 minutes, 1 time weekly; provider: Speech-language pathologist.",
       "confidence": 0.86,
       "reconciliation_status": null
     }
@@ -87,7 +117,7 @@
       "measure": "Structured social observation",
       "progress_cadence": "Weekly",
       "source_page": 4,
-      "source_quote": "maintain a topic across three conversational turns",
+      "source_quote": "Oscar will maintain a topic across three conversational turns in 4 of 5 opportunities.",
       "confidence": 0.87,
       "reconciliation_status": null
     },
@@ -99,7 +129,7 @@
       "measure": "Teacher checklist",
       "progress_cadence": "Weekly",
       "source_page": 4,
-      "source_quote": "use a checklist to organize materials for each class",
+      "source_quote": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
       "confidence": 0.84,
       "reconciliation_status": null
     }

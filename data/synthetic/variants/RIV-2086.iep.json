@@ -7,108 +7,169 @@
     {
       "id": "3074e4c5-3fbd-5391-a01a-5f598072dd7f",
       "text": "Provide captions or a transcript for all audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.81
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for all audio and video media",
-      "confidence": 0.83,
+      "source_quote": "Provide captions or a transcript for all audio and video media.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "6694ab70-dc0b-5a2d-8dcd-edd02de656d5",
       "text": "Provide frequent check-ins for understanding.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "frequent check-ins for understanding",
-      "confidence": 0.8,
+      "source_quote": "Provide frequent check-ins for understanding.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "1ea48557-a949-557f-8f72-ce25a826e2a8",
       "text": "Repeat and rephrase spoken directions on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "repeat and rephrase spoken directions on request",
-      "confidence": 0.93,
+      "source_quote": "Repeat and rephrase spoken directions on request.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "addaeaab-1cae-5959-a6a5-b2b28376afbe",
-      "text": "Seat with a clear line of sight to the speaker's face.",
-      "applies_to": [
-        "all"
+      "text": "Seat with a clear line of sight to the face of the speaker.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "clear line of sight to the speaker's face",
-      "confidence": 0.84,
+      "source_quote": "Seat with a clear line of sight to the face of the speaker.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "31aac2df-d057-5867-984a-f8f1956390ea",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
-      "confidence": 0.8,
+      "source_quote": "Allow additional wait time for verbal responses.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "5e41305c-5d97-5bb4-a1ab-ef69925b1048",
       "text": "Provide 50% extended time on tests and long assignments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "all academic subjects",
+          "source_page": 2,
+          "source_quote": "all academic subjects",
+          "confidence": 0.51
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on tests and long assignments",
-      "confidence": 0.81,
+      "source_quote": "Provide 50% extended time on tests and long assignments.",
+      "confidence": 0.95,
       "reconciliation_status": null
     },
     {
       "id": "710271c9-3220-5fb5-80c1-078ad805526b",
       "text": "Provide 25% extended time on timed assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during timed assessments",
+          "source_page": 2,
+          "source_quote": "during timed assessments",
+          "confidence": 0.93
+        }
       ],
       "source_page": 2,
-      "source_quote": "25% extended time on timed assessments",
-      "confidence": 0.88,
+      "source_quote": "Provide 25% extended time on timed assessments.",
+      "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "2ae91055-eeb9-51ae-942c-e6414af3ea45",
       "text": "Provide a visual schedule for each class period.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual schedule for each class period",
-      "confidence": 0.95,
+      "source_quote": "Provide a visual schedule for each class period.",
+      "confidence": 0.81,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "389d785d-0418-5dc3-8dc4-940af4f526bf",
-      "type": "Speech and language therapy",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.82,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "9defd08d-836a-542c-87ac-3449069c2b02",
+      "type": "Educational audiology consultation",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time monthly",
+      "provider_role": "Educational audiologist",
+      "start": "2026-08-17",
+      "end": "2027-05-28",
+      "source_page": 3,
+      "source_quote": "Educational audiology consultation: 30 minutes per week; 30 minutes, 1 time monthly; provider: Educational audiologist.",
+      "confidence": 0.86,
+      "reconciliation_status": null
+    },
+    {
+      "id": "8854bfb8-2806-5743-95ec-f314e88ff309",
       "type": "Speech and language therapy",
       "minutes_per_week": 60,
       "frequency": "30 minutes, 2 times weekly",
@@ -116,20 +177,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.89,
-      "reconciliation_status": null
-    },
-    {
-      "id": "8854bfb8-2806-5743-95ec-f314e88ff309",
-      "type": "Occupational therapy",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "Occupational therapist",
-      "start": "2026-08-17",
-      "end": "2027-05-28",
-      "source_page": 3,
-      "source_quote": "Occupational therapy 30 minutes weekly",
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
       "confidence": 0.89,
       "reconciliation_status": null
     }
@@ -137,77 +185,77 @@
   "goals": [
     {
       "id": "f812ae48-c535-5c88-a9ce-bda0264675ce",
-      "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
-      "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
+      "text": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "baseline": "Accepts a change in routine in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
-      "measure": "Work-completion log",
+      "measure": "Teacher observation",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
-      "confidence": 0.93,
+      "source_page": 4,
+      "source_quote": "Grace will accept a change in routine using a coping strategy in 4 of 5 opportunities.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "43fc87ee-ccdb-5b0c-a4bd-4bc5e19e4ffe",
-      "text": "Oscar will use a checklist to organize materials for each class in 8 of 10 days.",
-      "baseline": "Organizes materials in 3 of 10 days.",
-      "target": "8 of 10 days.",
-      "measure": "Teacher checklist",
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use a checklist to organize materials for each class",
-      "confidence": 0.9,
+      "source_page": 4,
+      "source_quote": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "c9e332c3-b712-5f75-a838-535b10bb0427",
-      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
-      "baseline": "Writes two related sentences with inconsistent capitalization.",
-      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a five-sentence paragraph with a topic sentence",
-      "confidence": 0.88,
+      "text": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "baseline": "Reports FM system problems with prompting in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Layla will independently report FM system problems to the teacher in 4 of 5 opportunities.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "1b8c4d06-71e5-587f-ac22-291a25eecb39",
-      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
-      "baseline": "Answers inferential questions with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Comprehension work sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "answer inferential questions about a text with 80% accuracy",
-      "confidence": 0.93,
+      "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "baseline": "Organizes a response without an outline in 2 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "8b01cb6b-f64d-5852-83bb-f797df9e8a1b",
-      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
-      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "text": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "baseline": "Retells a narrative with only a beginning in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "sustain attention to an independent task for 10 minutes",
-      "confidence": 0.82,
+      "measure": "Language sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Sofia will retell a short narrative with a beginning, middle, and end in 4 of 5 opportunities.",
+      "confidence": 0.93,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-02-11",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-30"
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2026-11-18",
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.93,
+    "disability_category": 0.98,
     "school_year": 0.99,
-    "annual_review": 0.86,
-    "triennial_reeval": 0.94,
-    "last_progress_report": 0.86
+    "annual_review": 0.91,
+    "triennial_reeval": 0.9,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

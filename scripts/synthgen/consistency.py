@@ -12,6 +12,8 @@ from typing import Any
 from synthgen.constants import AS_OF
 from synthgen.district import build_district
 from synthgen.ground_truth import build_records
+from synthgen.progress import SHARMA, SHARMA_EXTENDED_TIME_KEY, build_confirmations
+from synthgen.records import validate_scope_references
 
 
 def check_district_and_ground_truth() -> list[str]:
@@ -50,6 +52,17 @@ def check_district_and_ground_truth() -> list[str]:
                                     f"out of range 1..{page_count}")
                 if item["reconciliation_status"] is not None:
                     problems.append(f"{sref}: first extraction must have null reconciliation_status")
+                if kind == "accommodations":
+                    try:
+                        validate_scope_references(item["applies_to_refs"])
+                    except ValueError as exc:
+                        problems.append(f"{sref}: invalid accommodation scope: {exc}")
+                    for reference in item["applies_to_refs"]:
+                        if not (1 <= reference["source_page"] <= page_count):
+                            problems.append(
+                                f"{sref}: scope source_page {reference['source_page']} "
+                                f"out of range 1..{page_count}"
+                            )
 
     # 3. Global UUID uniqueness across all authored items.
     if len(all_ids) != len(set(all_ids)):
@@ -77,7 +90,102 @@ def check_district_and_ground_truth() -> list[str]:
     if len(late) != 1:
         problems.append(f"expected exactly 1 mid-semester enrollee, found {sorted(late)}")
 
+    # 8. Scope semantics and the scripted six-class distribution gate.
+    problems.extend(_check_scope_cases(records, district))
+
     return problems
+
+
+def _check_scope_cases(records: list[dict[str, Any]], district: dict[str, Any]) -> list[str]:
+    problems: list[str] = []
+    accommodations = [item for record in records for item in record["accommodations"]]
+    scopes = [{reference["scope"] for reference in item["applies_to_refs"]}
+              for item in accommodations]
+    if not any(scope_set == {"all"} for scope_set in scopes):
+        problems.append("no genuinely unconstrained all-scope accommodation")
+    if not any(scope_set == {"subject", "context"} for scope_set in scopes):
+        problems.append("no subject/context intersection accommodation")
+    if not any(
+        sum(reference["scope"] == "subject" for reference in item["applies_to_refs"]) > 1
+        for item in accommodations
+    ):
+        problems.append("no same-subject-scope union accommodation")
+
+    academic = [
+        reference
+        for item in accommodations
+        for reference in item["applies_to_refs"]
+        if reference["ref"] == "all academic subjects"
+    ]
+    if len(academic) != 1 or academic[0]["scope"] != "subject" or not (
+        0.45 <= academic[0]["confidence"] <= 0.55
+    ):
+        problems.append("all academic subjects must be one low-confidence subject reference")
+
+    sharma = next(record for record in records if record["student_ref"] == SHARMA)
+    extended_time_id = next(
+        item["id"]
+        for item in sharma["accommodations"]
+        if item["text"].startswith("Provide 50% extended time on all classroom tests")
+    )
+    extended_time = next(
+        item for item in sharma["accommodations"] if item["id"] == extended_time_id
+    )
+    resolved = _resolve_class_refs(SHARMA, extended_time["applies_to_refs"], district)
+    expected = {"ENG-101", "MTH-101", "BIO-101", "HIS-101", "PE-101", "ART-101"}
+    if resolved != expected:
+        problems.append(f"RIV-1001 extended time resolved to {sorted(resolved)}; expected 6 classes")
+
+    confirmations = [
+        row
+        for row in build_confirmations()
+        if row["student_ref"] == SHARMA
+        and row["accommodation_key"] == SHARMA_EXTENDED_TIME_KEY
+    ]
+    confirmation_classes = {row["class_ref"] for row in confirmations}
+    confirmed_classes = {row["class_ref"] for row in confirmations if row["confirmed"] == "true"}
+    if confirmation_classes != resolved or len(confirmations) != 6:
+        problems.append("RIV-1001 confirmation rows do not match the six resolved classes")
+    if confirmed_classes != {"ENG-101", "MTH-101", "BIO-101"}:
+        problems.append("RIV-1001 extended time is not confirmed in the expected 3 of 6 classes")
+    if any(row["accommodation_id"] != extended_time_id for row in confirmations):
+        problems.append("RIV-1001 confirmation rows do not carry the stable extended-time ID")
+    return problems
+
+
+def _resolve_class_refs(
+    student_ref: str,
+    references: list[dict[str, Any]],
+    district: dict[str, Any],
+) -> set[str]:
+    """Resolve document subject phrases for deterministic dataset consistency checks."""
+
+    enrolled = {
+        enrollment["class_ref"]
+        for enrollment in district["enrollments"]
+        if enrollment["student_ref"] == student_ref
+    }
+    if references[0]["scope"] == "all":
+        return enrolled
+    subject_refs = {
+        " ".join(reference["ref"].split()).casefold()
+        for reference in references
+        if reference["scope"] == "subject"
+    }
+    if not subject_refs:
+        return enrolled
+    subject_names = {
+        subject["subject_ref"]: subject["name"].casefold() for subject in district["subjects"]
+    }
+    resolved_subject_ids = {
+        subject_ref for subject_ref, name in subject_names.items() if name in subject_refs
+    }
+    return {
+        class_item["class_ref"]
+        for class_item in district["classes"]
+        if class_item["class_ref"] in enrolled
+        and class_item["subject_ref"] in resolved_subject_ids
+    }
 
 
 def _check_edge_cases(records: list[dict[str, Any]], holiday_dates: set[str]) -> list[str]:

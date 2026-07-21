@@ -7,33 +7,51 @@
     {
       "id": "53967799-88be-55f3-a72d-9ca519d81902",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
+      "source_quote": "Use the personal FM/DM listening system in every class.",
       "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "d1820183-0ac9-5eba-9813-0187aa62e4f6",
       "text": "Provide captions or a transcript for audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for audio and video media",
+      "source_quote": "Provide captions or a transcript for audio and video media.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "58947efe-6726-5f0f-851f-f610121b07d5",
       "text": "Face the student when speaking and avoid covering the mouth.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "face the student when speaking",
+      "source_quote": "Face the student when speaking and avoid covering the mouth.",
       "confidence": 0.86,
       "reconciliation_status": null
     }
@@ -48,7 +66,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
       "confidence": 0.9,
       "reconciliation_status": null
     }
@@ -62,7 +80,7 @@
       "measure": "Vocabulary probe",
       "progress_cadence": "Monthly",
       "source_page": 4,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
+      "source_quote": "Emma will define grade-level academic vocabulary with 80% accuracy.",
       "confidence": 0.88,
       "reconciliation_status": null
     },
@@ -74,7 +92,7 @@
       "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
       "source_page": 4,
-      "source_quote": "request clarification when she misses information",
+      "source_quote": "Emma will request clarification when she misses information in 4 of 5 opportunities.",
       "confidence": 0.85,
       "reconciliation_status": null
     }

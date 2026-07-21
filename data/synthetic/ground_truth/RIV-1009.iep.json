@@ -7,33 +7,58 @@
     {
       "id": "14f6942d-1c67-5562-b05b-0c9fabfd796c",
       "text": "Allow additional wait time for verbal responses.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "additional wait time for verbal responses",
+      "source_quote": "Allow additional wait time for verbal responses.",
       "confidence": 0.9,
       "reconciliation_status": null
     },
     {
       "id": "21c9ab5c-f3b6-5dcf-9cfe-b702773a4550",
       "text": "Pair new vocabulary with visuals and definitions.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.85
+        },
+        {
+          "scope": "subject",
+          "ref": "Biology",
+          "source_page": 2,
+          "source_quote": "Biology",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair new vocabulary with visuals and definitions",
+      "source_quote": "Pair new vocabulary with visuals and definitions.",
       "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "4e5724ef-d1fe-5e8f-94b4-f414ed1a3f11",
       "text": "Repeat and rephrase spoken directions on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.82
+        }
       ],
       "source_page": 2,
-      "source_quote": "repeat and rephrase spoken directions on request",
+      "source_quote": "Repeat and rephrase spoken directions on request.",
       "confidence": 0.84,
       "reconciliation_status": null
     }
@@ -48,7 +73,7 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
       "confidence": 0.91,
       "reconciliation_status": null
     }
@@ -62,7 +87,7 @@
       "measure": "Language sample",
       "progress_cadence": "Weekly",
       "source_page": 4,
-      "source_quote": "use correct past-tense verbs with 80% accuracy",
+      "source_quote": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
       "confidence": 0.89,
       "reconciliation_status": null
     },
@@ -74,7 +99,7 @@
       "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
       "source_page": 4,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
+      "source_quote": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
       "confidence": 0.86,
       "reconciliation_status": null
     }

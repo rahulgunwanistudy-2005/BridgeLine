@@ -7,137 +7,161 @@
     {
       "id": "98236c17-ac77-5f85-97bc-703669c6551b",
       "text": "Read test directions and math word problems aloud on request.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "read test directions and math word problems aloud",
-      "confidence": 0.92,
+      "source_quote": "Read test directions and math word problems aloud on request.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "7496bf63-2f58-5d49-a383-888a55cfc7fb",
       "text": "Pair auditory alerts and directions with a visual cue.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during verbal instruction",
+          "source_page": 2,
+          "source_quote": "during verbal instruction",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "pair auditory alerts with a visual cue",
+      "source_quote": "Pair auditory alerts and directions with a visual cue.",
       "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "389a5bab-713a-576a-a5d4-e8e4495bcc31",
       "text": "Use the personal FM/DM listening system in every class.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.87
+        }
       ],
       "source_page": 2,
-      "source_quote": "personal FM/DM listening system in every class",
-      "confidence": 0.8,
+      "source_quote": "Use the personal FM/DM listening system in every class.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "b1df08f1-6dbb-51bf-aa9e-473251fee65d",
-      "text": "Seat with a clear line of sight to the speaker's face.",
-      "applies_to": [
-        "all"
+      "text": "Seat with a clear line of sight to the face of the speaker.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "clear line of sight to the speaker's face",
-      "confidence": 0.83,
+      "source_quote": "Seat with a clear line of sight to the face of the speaker.",
+      "confidence": 0.97,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "2ba23650-fc2f-5f68-9faa-ffd33093bcfa",
-      "type": "Deaf/hard-of-hearing itinerant support",
+      "type": "Speech and language therapy",
       "minutes_per_week": 60,
       "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Teacher of the deaf and hard of hearing",
+      "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Deaf/hard-of-hearing itinerant support 30 minutes twice weekly",
-      "confidence": 0.87,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.8,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "e2543450-5eed-5644-a4dc-8ba01207c0cb",
-      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
-      "baseline": "Produces initial /r/ with 45% accuracy.",
-      "target": "80% accuracy in structured tasks across three sessions.",
-      "measure": "Speech probe",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "produce initial /r/ with 80% accuracy",
-      "confidence": 0.8,
+      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "baseline": "Reviews work before submitting in 1 of 5 samples.",
+      "target": "4 of 5 samples.",
+      "measure": "Work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "d9f744c9-6dd6-57e2-b11e-a9035a206f3c",
-      "text": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
-      "baseline": "Produces one sentence on a topic in 2 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "produce three organized sentences on a topic",
-      "confidence": 0.87,
-      "reconciliation_status": null
-    },
-    {
-      "id": "96662137-e510-5d46-a4ea-d5176b096f91",
       "text": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
       "baseline": "Organizes a response without an outline in 2 of 5 samples.",
       "target": "4 of 5 samples.",
       "measure": "Writing work sample",
       "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "organize a multi-paragraph response using an outline",
-      "confidence": 0.87,
+      "source_page": 4,
+      "source_quote": "Jamal will organize a multi-paragraph response using an outline in 4 of 5 samples.",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "96662137-e510-5d46-a4ea-d5176b096f91",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "confidence": 0.79,
       "reconciliation_status": null
     },
     {
       "id": "145ceeeb-3116-5b09-875e-5e91974334b3",
-      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
-      "baseline": "Answers inferential questions with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Comprehension work sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "answer inferential questions about a text with 80% accuracy",
-      "confidence": 0.8,
+      "text": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "baseline": "Joins a peer activity with adult prompting in 1 of 4 opportunities.",
+      "target": "3 of 4 structured opportunities.",
+      "measure": "Structured social observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will use a taught script to join a peer activity in 3 of 4 structured opportunities.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "953015f7-486b-5d3f-a632-51b431036efe",
-      "text": "Diego will write a paragraph with a clear topic sentence and three details in 4 of 5 samples.",
-      "baseline": "Writes a paragraph with a topic sentence in 1 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Writing work sample",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "write a paragraph with a clear topic sentence and three details",
-      "confidence": 0.85,
+      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
+      "target": "80% accuracy across three sessions.",
+      "measure": "Language sample",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
+      "confidence": 0.88,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-03-09",
+    "annual_review": "2027-02-11",
     "triennial_reeval": "2028-09-15",
     "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.94,
+    "disability_category": 0.96,
     "school_year": 0.99,
-    "annual_review": 0.91,
-    "triennial_reeval": 0.87,
-    "last_progress_report": 0.94
+    "annual_review": 0.88,
+    "triennial_reeval": 0.91,
+    "last_progress_report": 0.93
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

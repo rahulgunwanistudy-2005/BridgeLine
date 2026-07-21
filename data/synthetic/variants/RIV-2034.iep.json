@@ -7,116 +7,176 @@
     {
       "id": "499538b5-811f-59f2-8e87-0038b1ff6fa2",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
       "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "418ec720-102f-5a67-b19e-dff830da2e24",
-      "text": "Provide a word bank for written-response items in reading and history.",
-      "applies_to": [
-        "subject"
+      "text": "Provide a word bank for written-response items.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "provide a word bank for written-response items",
-      "confidence": 0.93,
+      "source_quote": "Provide a word bank for written-response items.",
+      "confidence": 0.91,
       "reconciliation_status": null
     },
     {
       "id": "890a0d91-1aa6-5938-8289-ad226c00a233",
       "text": "Provide audio versions of grade-level texts.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.8
+        }
       ],
       "source_page": 2,
-      "source_quote": "audio versions of grade-level texts",
-      "confidence": 0.92,
+      "source_quote": "Provide audio versions of grade-level texts.",
+      "confidence": 0.88,
       "reconciliation_status": null
     },
     {
       "id": "5d387c7c-1e53-5aeb-9d99-64a94b709ff8",
       "text": "Do not penalize articulation errors in graded oral work.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.91
+        },
+        {
+          "scope": "context",
+          "ref": "during oral presentations",
+          "source_page": 2,
+          "source_quote": "during oral presentations",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "do not penalize articulation errors in graded oral work",
-      "confidence": 0.91,
+      "source_quote": "Do not penalize articulation errors in graded oral work.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "8ef0c2b4-fdc0-58eb-b46c-0b8d7a8c2ba8",
       "text": "Allow brief scheduled sensory breaks.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during independent work",
+          "source_page": 2,
+          "source_quote": "during independent work",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "brief scheduled sensory breaks",
-      "confidence": 0.82,
+      "source_quote": "Allow brief scheduled sensory breaks.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "f472fa81-d50d-5838-b7cd-30b6b722fddc",
       "text": "Provide captions or a transcript for all audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for all audio and video media",
-      "confidence": 0.88,
+      "source_quote": "Provide captions or a transcript for all audio and video media.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "4ba741b6-3fb2-5dd2-813c-8987276b5df3",
       "text": "Provide 50% extended time on all classroom tests and quizzes.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.83
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on all classroom tests and quizzes",
-      "confidence": 0.92,
+      "source_quote": "Provide 50% extended time on all classroom tests and quizzes.",
+      "confidence": 0.96,
       "reconciliation_status": null
     },
     {
       "id": "5c1c7531-33f8-570b-8be6-4996ccb33f12",
       "text": "Provide captions or a transcript for audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.92
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for audio and video media",
-      "confidence": 0.91,
+      "source_quote": "Provide captions or a transcript for audio and video media.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "b1c0978b-e4b5-5341-ae84-1b444efa379e",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
-      "confidence": 0.93,
+      "source_quote": "Give a two-minute warning before transitions.",
+      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "c0f3c87c-7268-52fb-b43d-8c186a0769ef",
-      "type": "Individual counseling",
-      "minutes_per_week": 30,
-      "frequency": "30 minutes, 1 time weekly",
-      "provider_role": "School counselor",
+      "type": "Deaf/hard-of-hearing itinerant support",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Teacher of the deaf and hard of hearing",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Individual counseling 30 minutes weekly",
-      "confidence": 0.92,
+      "source_quote": "Deaf/hard-of-hearing itinerant support: 60 minutes per week; 30 minutes, 2 times weekly; provider: Teacher of the deaf and hard of hearing.",
+      "confidence": 0.93,
       "reconciliation_status": null
     },
     {
@@ -128,21 +188,21 @@
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
       "confidence": 0.93,
       "reconciliation_status": null
     },
     {
       "id": "0f2da0ff-5794-5e52-b95b-c204dcb83153",
-      "type": "Specialized academic instruction (reading)",
-      "minutes_per_week": 150,
-      "frequency": "30 minutes, 5 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Speech and language therapy",
+      "minutes_per_week": 60,
+      "frequency": "30 minutes, 2 times weekly",
+      "provider_role": "Speech-language pathologist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 30 minutes 5x weekly",
-      "confidence": 0.79,
+      "source_quote": "Speech and language therapy: 60 minutes per week; 30 minutes, 2 times weekly; provider: Speech-language pathologist.",
+      "confidence": 0.89,
       "reconciliation_status": null
     }
   ],
@@ -154,60 +214,60 @@
       "target": "4 of 5 samples.",
       "measure": "Writing work sample",
       "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "produce three organized sentences on a topic",
-      "confidence": 0.9,
-      "reconciliation_status": null
-    },
-    {
-      "id": "3abe0042-9460-5da8-81ae-fd5979f1e586",
-      "text": "Priya will use correct past-tense verbs in structured sentences with 80% accuracy.",
-      "baseline": "Uses correct past-tense verbs with 50% accuracy.",
-      "target": "80% accuracy across three sessions.",
-      "measure": "Language sample",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "use correct past-tense verbs with 80% accuracy",
+      "source_page": 4,
+      "source_quote": "Grace will produce three organized sentences on a topic in 4 of 5 samples.",
       "confidence": 0.93,
       "reconciliation_status": null
     },
     {
+      "id": "3abe0042-9460-5da8-81ae-fd5979f1e586",
+      "text": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "baseline": "Writes two related sentences with inconsistent capitalization.",
+      "target": "Five-sentence paragraph with topic sentence in 4 of 5 samples.",
+      "measure": "Writing work sample",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Aanya will write a five-sentence paragraph with a topic sentence and correct capitalization in 4 of 5 samples.",
+      "confidence": 0.87,
+      "reconciliation_status": null
+    },
+    {
       "id": "a678f8df-d1bc-591f-b316-17c79b2e358b",
-      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
-      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
-      "target": "4 of 5 opportunities.",
-      "measure": "Teacher observation",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "sustain attention to an independent task for 10 minutes",
-      "confidence": 0.84,
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "confidence": 0.87,
       "reconciliation_status": null
     },
     {
       "id": "448e4fdc-b74b-5142-9820-96f35294a99a",
-      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
-      "baseline": "Solves two-step equations with 40% accuracy.",
-      "target": "80% accuracy on 4 of 5 probes.",
-      "measure": "Math curriculum-based probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "solve two-step equations with 80% accuracy",
-      "confidence": 0.82,
+      "text": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "baseline": "Begins a task within two minutes in 1 of 5 opportunities.",
+      "target": "4 of 5 opportunities across two weeks.",
+      "measure": "Teacher observation checklist",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Marcus will independently begin a classroom task within two minutes of the direction in 4 of 5 opportunities.",
+      "confidence": 0.96,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
+    "annual_review": "2027-02-11",
     "triennial_reeval": "2026-11-18",
-    "last_progress_report": "2026-10-30"
+    "last_progress_report": "2026-10-16"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.91,
+    "disability_category": 0.94,
     "school_year": 0.99,
-    "annual_review": 0.86,
+    "annual_review": 0.92,
     "triennial_reeval": 0.83,
-    "last_progress_report": 0.91
+    "last_progress_report": 0.89
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

@@ -6,140 +6,170 @@
   "accommodations": [
     {
       "id": "73136fc9-f54a-5e86-acdf-087979aa3a95",
-      "text": "Seat with a clear line of sight to the speaker's face.",
-      "applies_to": [
-        "all"
+      "text": "Seat with a clear line of sight to the face of the speaker.",
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "clear line of sight to the speaker's face",
-      "confidence": 0.91,
+      "source_quote": "Seat with a clear line of sight to the face of the speaker.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "4e7f76fd-421e-5221-8a16-64114148b06b",
       "text": "Break long assignments into smaller submitted parts.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "break long assignments into smaller parts",
-      "confidence": 0.84,
+      "source_quote": "Break long assignments into smaller submitted parts.",
+      "confidence": 0.89,
       "reconciliation_status": null
     },
     {
       "id": "fcffbc7d-22c9-58af-88f4-6b6253085928",
       "text": "Provide 50% extended time on reading-heavy assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.95
+        },
+        {
+          "scope": "context",
+          "ref": "during testing",
+          "source_page": 2,
+          "source_quote": "during testing",
+          "confidence": 0.78
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on reading-heavy assessments",
-      "confidence": 0.81,
+      "source_quote": "Provide 50% extended time on reading-heavy assessments.",
+      "confidence": 0.92,
       "reconciliation_status": null
     },
     {
       "id": "4ced08fa-027d-5dad-b11f-a279f8364a1f",
       "text": "Give a two-minute warning before transitions.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "in all settings",
+          "source_page": 2,
+          "source_quote": "in all settings",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "two-minute warning before transitions",
-      "confidence": 0.89,
+      "source_quote": "Give a two-minute warning before transitions.",
+      "confidence": 0.78,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "be577bf2-c0ba-57c6-8398-27ab8bf7795c",
-      "type": "Specialized academic instruction",
+      "type": "Specialized academic instruction (reading)",
       "minutes_per_week": 150,
       "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 30 minutes 5 times weekly",
-      "confidence": 0.79,
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "1b8aebea-5c01-514b-865c-4acac97cacb1",
-      "type": "Speech and language therapy",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Specialized academic instruction",
+      "minutes_per_week": 100,
+      "frequency": "50 minutes, 2 times weekly",
+      "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.93,
+      "source_quote": "Specialized academic instruction: 100 minutes per week; 50 minutes, 2 times weekly; provider: Special education teacher.",
+      "confidence": 0.94,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "e03ac811-fc86-58d1-b2ca-55ef98cf4f37",
-      "text": "Sofia will produce /r/ in the initial position of words with 80% accuracy in structured tasks.",
-      "baseline": "Produces initial /r/ with 45% accuracy.",
-      "target": "80% accuracy in structured tasks across three sessions.",
-      "measure": "Speech probe",
-      "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "produce initial /r/ with 80% accuracy",
-      "confidence": 0.96,
+      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "baseline": "Answers inferential questions with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Comprehension work sample",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Jamal will answer inferential questions about a text with 80% accuracy.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "1dc80b30-e23f-5b14-98e2-410cde763dd1",
-      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
-      "baseline": "Decodes multisyllabic words with 55% accuracy.",
-      "target": "85% accuracy on 4 of 5 consecutive probes.",
-      "measure": "Curriculum-based reading probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "decode multisyllabic words with 85% accuracy",
-      "confidence": 0.91,
-      "reconciliation_status": null
-    },
-    {
-      "id": "ed102fc4-72df-520d-a545-e14baf82f6a8",
-      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
-      "baseline": "Solves two-step equations with 40% accuracy.",
-      "target": "80% accuracy on 4 of 5 probes.",
-      "measure": "Math curriculum-based probe",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "solve two-step equations with 80% accuracy",
-      "confidence": 0.88,
-      "reconciliation_status": null
-    },
-    {
-      "id": "79caf257-fb54-51d3-9ea5-f17c0b691101",
       "text": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
       "baseline": "Follows two-step directions in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
       "measure": "Teacher observation",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "follow two-step spoken directions in 4 of 5 opportunities",
-      "confidence": 0.82,
+      "source_page": 4,
+      "source_quote": "Priya will follow two-step spoken directions in 4 of 5 opportunities.",
+      "confidence": 0.94,
+      "reconciliation_status": null
+    },
+    {
+      "id": "ed102fc4-72df-520d-a545-e14baf82f6a8",
+      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
+      "target": "80% accuracy across three assessments.",
+      "measure": "Vocabulary probe",
+      "progress_cadence": "Monthly",
+      "source_page": 4,
+      "source_quote": "Layla will define grade-level academic vocabulary with 80% accuracy.",
+      "confidence": 0.84,
+      "reconciliation_status": null
+    },
+    {
+      "id": "79caf257-fb54-51d3-9ea5-f17c0b691101",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "confidence": 0.81,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-05-19",
-    "triennial_reeval": "2029-01-22",
-    "last_progress_report": "2026-10-30"
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-10-09"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.94,
+    "disability_category": 0.91,
     "school_year": 0.99,
-    "annual_review": 0.95,
-    "triennial_reeval": 0.86,
-    "last_progress_report": 0.87
+    "annual_review": 0.89,
+    "triennial_reeval": 0.82,
+    "last_progress_report": 0.91
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

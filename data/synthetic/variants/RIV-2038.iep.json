@@ -7,71 +7,107 @@
     {
       "id": "86e85195-ddff-5fbc-8a0f-9e1aa650c0d7",
       "text": "Allow a four-function calculator on non-calculation-skill tasks.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "Mathematics",
+          "source_page": 2,
+          "source_quote": "Mathematics",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "four-function calculator on non-calculation-skill tasks",
-      "confidence": 0.81,
+      "source_quote": "Allow a four-function calculator on non-calculation-skill tasks.",
+      "confidence": 0.78,
       "reconciliation_status": null
     },
     {
       "id": "2d0ad489-8bfd-536b-8993-5360671ee95c",
       "text": "Provide 50% extended time on tests and long assignments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "all academic subjects",
+          "source_page": 2,
+          "source_quote": "all academic subjects",
+          "confidence": 0.51
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on tests and long assignments",
-      "confidence": 0.78,
+      "source_quote": "Provide 50% extended time on tests and long assignments.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "65ed4b43-27b0-5c44-8415-fa4a87232830",
       "text": "Provide a visual schedule for each class period.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual schedule for each class period",
-      "confidence": 0.94,
+      "source_quote": "Provide a visual schedule for each class period.",
+      "confidence": 0.97,
       "reconciliation_status": null
     },
     {
       "id": "2902a067-9c7a-54ab-940e-100a5c2c38ed",
       "text": "Provide graphic organizers for writing and note-taking.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.94
+        },
+        {
+          "scope": "context",
+          "ref": "during written assignments",
+          "source_page": 2,
+          "source_quote": "during written assignments",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "graphic organizers for writing and note-taking",
-      "confidence": 0.92,
+      "source_quote": "Provide graphic organizers for writing and note-taking.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "76c44019-69bc-5db7-99cc-1287f72eb1ba",
       "text": "Provide captions or a transcript for all audio and video media.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.86
+        }
       ],
       "source_page": 2,
-      "source_quote": "captions or a transcript for all audio and video media",
-      "confidence": 0.97,
+      "source_quote": "Provide captions or a transcript for all audio and video media.",
+      "confidence": 0.82,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "81cde77a-6ab3-5c00-90d2-a124b8e45296",
-      "type": "Specialized academic instruction (executive functioning)",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
-      "provider_role": "Special education teacher",
+      "type": "Individual counseling",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "School counselor",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction executive functioning 50 minutes twice weekly",
+      "source_quote": "Individual counseling: 30 minutes per week; 30 minutes, 1 time weekly; provider: School counselor.",
       "confidence": 0.82,
       "reconciliation_status": null
     }
@@ -79,41 +115,41 @@
   "goals": [
     {
       "id": "02c70e17-4556-51ed-aa2c-e498a9501d9d",
-      "text": "Noah will use a self-monitoring checklist to review work before submitting in 4 of 5 samples.",
-      "baseline": "Reviews work before submitting in 1 of 5 samples.",
-      "target": "4 of 5 samples.",
-      "measure": "Work sample",
-      "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "use a self-monitoring checklist to review work before submitting",
-      "confidence": 0.82,
-      "reconciliation_status": null
-    },
-    {
-      "id": "c9d016ad-cf5a-541e-ba95-d310953d4225",
       "text": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
       "baseline": "Completes in-class assignments in 2 of 5 opportunities.",
       "target": "4 of 5 opportunities.",
       "measure": "Work-completion log",
       "progress_cadence": "Weekly",
-      "source_page": 3,
-      "source_quote": "complete and submit in-class assignments in 4 of 5 opportunities",
-      "confidence": 0.79,
+      "source_page": 4,
+      "source_quote": "Ethan will complete and submit in-class assignments in 4 of 5 opportunities without redirection.",
+      "confidence": 0.95,
+      "reconciliation_status": null
+    },
+    {
+      "id": "c9d016ad-cf5a-541e-ba95-d310953d4225",
+      "text": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "baseline": "Sustains attention for 3 minutes in 2 of 5 opportunities.",
+      "target": "4 of 5 opportunities.",
+      "measure": "Teacher observation",
+      "progress_cadence": "Weekly",
+      "source_page": 4,
+      "source_quote": "Noah will sustain attention to an independent task for 10 minutes in 4 of 5 opportunities.",
+      "confidence": 0.87,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-04-22",
-    "triennial_reeval": "2028-09-15",
-    "last_progress_report": "2026-09-25"
+    "annual_review": "2027-01-14",
+    "triennial_reeval": "2029-03-30",
+    "last_progress_report": "2026-10-16"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.97,
+    "disability_category": 0.92,
     "school_year": 0.99,
-    "annual_review": 0.93,
-    "triennial_reeval": 0.85,
-    "last_progress_report": 0.87
+    "annual_review": 0.87,
+    "triennial_reeval": 0.88,
+    "last_progress_report": 0.94
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

@@ -7,172 +7,219 @@
     {
       "id": "4c72eee4-6a95-5700-ad5f-20dfc9546554",
       "text": "Break long assignments into smaller submitted parts.",
-      "applies_to": [
-        "subject",
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during long assignments",
+          "source_page": 2,
+          "source_quote": "during long assignments",
+          "confidence": 0.89
+        }
       ],
       "source_page": 2,
-      "source_quote": "break long assignments into smaller parts",
-      "confidence": 0.9,
+      "source_quote": "Break long assignments into smaller submitted parts.",
+      "confidence": 0.85,
       "reconciliation_status": null
     },
     {
       "id": "a26020e9-4eaf-5dd1-856c-dbcb08a9b72d",
       "text": "Provide sentence starters for oral presentations.",
-      "applies_to": [
-        "subject"
+      "applies_to_refs": [
+        {
+          "scope": "subject",
+          "ref": "English",
+          "source_page": 2,
+          "source_quote": "English",
+          "confidence": 0.9
+        }
       ],
       "source_page": 2,
-      "source_quote": "sentence starters for oral presentations",
-      "confidence": 0.85,
+      "source_quote": "Provide sentence starters for oral presentations.",
+      "confidence": 0.83,
       "reconciliation_status": null
     },
     {
       "id": "56dd31f4-ce82-52bb-ae15-fce0f6d95cf2",
       "text": "Provide a visual schedule for each class period.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.95
+        }
       ],
       "source_page": 2,
-      "source_quote": "visual schedule for each class period",
-      "confidence": 0.91,
+      "source_quote": "Provide a visual schedule for each class period.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "2d16ec0a-bd14-507c-b06d-16749c52ca7f",
       "text": "Do not require unplanned oral responses in front of the class.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during whole-class discussion",
+          "source_page": 2,
+          "source_quote": "during whole-class discussion",
+          "confidence": 0.77
+        }
       ],
       "source_page": 2,
-      "source_quote": "no unplanned oral responses in front of the class",
-      "confidence": 0.83,
+      "source_quote": "Do not require unplanned oral responses in front of the class.",
+      "confidence": 0.86,
       "reconciliation_status": null
     },
     {
       "id": "19f70f96-3466-5c45-8917-e1671a95df23",
       "text": "Allow access to a designated quiet space when overwhelmed.",
-      "applies_to": [
-        "context"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "when overwhelmed",
+          "source_page": 2,
+          "source_quote": "when overwhelmed",
+          "confidence": 0.91
+        }
       ],
       "source_page": 2,
-      "source_quote": "access to a designated quiet space when overwhelmed",
+      "source_quote": "Allow access to a designated quiet space when overwhelmed.",
       "confidence": 0.96,
       "reconciliation_status": null
     },
     {
       "id": "db48acdf-634e-59f0-807b-402946bdbc45",
       "text": "Provide 25% extended time on timed assessments.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "context",
+          "ref": "during timed assessments",
+          "source_page": 2,
+          "source_quote": "during timed assessments",
+          "confidence": 0.84
+        }
       ],
       "source_page": 2,
-      "source_quote": "25% extended time on timed assessments",
-      "confidence": 0.84,
+      "source_quote": "Provide 25% extended time on timed assessments.",
+      "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "917845b7-3875-53f4-b0e7-fb5e1a147355",
       "text": "Provide 50% extended time on all classroom tests and quizzes.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.79
+        }
       ],
       "source_page": 2,
-      "source_quote": "50% extended time on all classroom tests and quizzes",
-      "confidence": 0.79,
+      "source_quote": "Provide 50% extended time on all classroom tests and quizzes.",
+      "confidence": 0.94,
       "reconciliation_status": null
     },
     {
       "id": "0ec4e3f3-1bd1-54ef-a3e1-4429c37ad0cd",
       "text": "Give advance warning before transitions and changes in routine.",
-      "applies_to": [
-        "all"
+      "applies_to_refs": [
+        {
+          "scope": "all",
+          "ref": "across all classes",
+          "source_page": 2,
+          "source_quote": "across all classes",
+          "confidence": 0.94
+        }
       ],
       "source_page": 2,
-      "source_quote": "advance warning before transitions and changes in routine",
-      "confidence": 0.86,
+      "source_quote": "Give advance warning before transitions and changes in routine.",
+      "confidence": 0.9,
       "reconciliation_status": null
     }
   ],
   "services": [
     {
       "id": "7b9d5fbb-a2dd-5e79-bff6-e5487160d84d",
-      "type": "Specialized academic instruction",
-      "minutes_per_week": 100,
-      "frequency": "50 minutes, 2 times weekly",
+      "type": "Specialized academic instruction (reading)",
+      "minutes_per_week": 150,
+      "frequency": "30 minutes, 5 times weekly",
       "provider_role": "Special education teacher",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Specialized academic instruction 50 minutes twice weekly",
+      "source_quote": "Specialized academic instruction (reading): 150 minutes per week; 30 minutes, 5 times weekly; provider: Special education teacher.",
       "confidence": 0.81,
       "reconciliation_status": null
     },
     {
       "id": "f2423a9c-db69-5b3e-a0be-cc1c4bef4b5a",
-      "type": "Speech and language therapy",
-      "minutes_per_week": 60,
-      "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "type": "Occupational therapy",
+      "minutes_per_week": 30,
+      "frequency": "30 minutes, 1 time weekly",
+      "provider_role": "Occupational therapist",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.81,
+      "source_quote": "Occupational therapy: 30 minutes per week; 30 minutes, 1 time weekly; provider: Occupational therapist.",
+      "confidence": 0.84,
       "reconciliation_status": null
     },
     {
       "id": "82db2e4d-9e35-5dad-bb19-8a6b577822c4",
-      "type": "Speech and language therapy",
+      "type": "Language processing support (group)",
       "minutes_per_week": 60,
       "frequency": "30 minutes, 2 times weekly",
-      "provider_role": "Speech-language pathologist",
+      "provider_role": "Unassigned",
       "start": "2026-08-17",
       "end": "2027-05-28",
       "source_page": 3,
-      "source_quote": "Speech and language therapy 30 minutes twice weekly",
-      "confidence": 0.92,
+      "source_quote": "Language processing support (group): 60 minutes per week; 30 minutes, 2 times weekly; provider: Unassigned.",
+      "confidence": 0.93,
       "reconciliation_status": null
     }
   ],
   "goals": [
     {
       "id": "fc3077f3-1edb-5d15-b2ea-191ed5b3e88e",
-      "text": "Layla will define grade-level academic vocabulary with 80% accuracy.",
-      "baseline": "Defines grade-level vocabulary with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Vocabulary probe",
-      "progress_cadence": "Monthly",
-      "source_page": 3,
-      "source_quote": "define grade-level academic vocabulary with 80% accuracy",
-      "confidence": 0.81,
+      "text": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "baseline": "Decodes multisyllabic words with 55% accuracy.",
+      "target": "85% accuracy on 4 of 5 consecutive probes.",
+      "measure": "Curriculum-based reading probe",
+      "progress_cadence": "Every two weeks",
+      "source_page": 4,
+      "source_quote": "Given a grade-level passage, Aanya will decode multisyllabic words with 85% accuracy on 4 of 5 probes.",
+      "confidence": 0.8,
       "reconciliation_status": null
     },
     {
       "id": "bc3e7da1-35d6-516a-93af-3a9277bbe1ff",
-      "text": "Jamal will answer inferential questions about a text with 80% accuracy.",
-      "baseline": "Answers inferential questions with 50% accuracy.",
-      "target": "80% accuracy across three assessments.",
-      "measure": "Comprehension work sample",
+      "text": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "baseline": "Solves two-step equations with 40% accuracy.",
+      "target": "80% accuracy on 4 of 5 probes.",
+      "measure": "Math curriculum-based probe",
       "progress_cadence": "Every two weeks",
-      "source_page": 3,
-      "source_quote": "answer inferential questions about a text with 80% accuracy",
-      "confidence": 0.89,
+      "source_page": 4,
+      "source_quote": "Diego will solve two-step equations with 80% accuracy on 4 of 5 probes.",
+      "confidence": 0.79,
       "reconciliation_status": null
     }
   ],
   "dates": {
-    "annual_review": "2027-02-11",
-    "triennial_reeval": "2029-03-30",
-    "last_progress_report": "2026-10-16"
+    "annual_review": "2026-11-03",
+    "triennial_reeval": "2028-12-04",
+    "last_progress_report": "2026-09-25"
   },
   "field_confidences": {
     "student_ref": 0.99,
-    "disability_category": 0.94,
+    "disability_category": 0.96,
     "school_year": 0.99,
-    "annual_review": 0.93,
-    "triennial_reeval": 0.86,
-    "last_progress_report": 0.91
+    "annual_review": 0.91,
+    "triennial_reeval": 0.87,
+    "last_progress_report": 0.95
   },
   "extraction_meta": {
     "model": "ground-truth/hand-authored-v1",

@@ -8,7 +8,7 @@ always None here: these are first extractions in each IEP lineage.
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, Literal, TypedDict
 
 from synthgen.constants import DATASET_EPOCH_ISO, GROUND_TRUTH_MODEL, stable_uuid
 
@@ -17,26 +17,86 @@ from synthgen.constants import DATASET_EPOCH_ISO, GROUND_TRUTH_MODEL, stable_uui
 # than null; the rules engine can detect it as a staffing gap.
 UNASSIGNED_PROVIDER = "Unassigned"
 
+Scope = Literal["subject", "context", "all"]
+
+
+class AccommodationScopeReference(TypedDict):
+    scope: Scope
+    ref: str
+    source_page: int
+    source_quote: str
+    confidence: float
+
+
+def scope_reference(
+    scope: Scope,
+    ref: str,
+    *,
+    source_page: int,
+    source_quote: str,
+    confidence: float,
+) -> AccommodationScopeReference:
+    """Build one source-grounded, document-language applicability reference."""
+
+    return {
+        "scope": scope,
+        "ref": ref,
+        "source_page": source_page,
+        "source_quote": source_quote,
+        "confidence": confidence,
+    }
+
+
+def _scope_match_key(reference: AccommodationScopeReference) -> tuple[str, str]:
+    normalized_ref = " ".join(reference["ref"].split()).casefold()
+    return reference["scope"], normalized_ref
+
+
+def validate_scope_references(references: list[AccommodationScopeReference]) -> None:
+    """Enforce v1.2 semantics that are intentionally stronger than the JSON Schema."""
+
+    if not references:
+        raise ValueError("applies_to_refs must contain at least one source reference")
+    if any(reference["scope"] == "all" for reference in references) and len(references) != 1:
+        raise ValueError("an all-scope reference must be the accommodation's only reference")
+    match_keys = [_scope_match_key(reference) for reference in references]
+    if len(match_keys) != len(set(match_keys)):
+        raise ValueError("duplicate normalized (scope, ref) pair in applies_to_refs")
+
 
 def accommodation(
     student_ref: str,
     key: str,
     *,
     text: str,
-    applies_to: list[str],
+    applies_to_refs: list[AccommodationScopeReference],
     source_page: int,
-    source_quote: str,
     confidence: float,
 ) -> dict[str, Any]:
+    validate_scope_references(applies_to_refs)
     return {
         "id": stable_uuid("accommodation", student_ref, key),
         "text": text,
-        "applies_to": applies_to,
+        "applies_to_refs": applies_to_refs,
         "source_page": source_page,
-        "source_quote": source_quote,
+        "source_quote": text,
         "confidence": confidence,
         "reconciliation_status": None,
     }
+
+
+def service_source_quote(
+    type: str,
+    minutes_per_week: int,
+    frequency: str,
+    provider_role: str,
+) -> str:
+    """Return the exact service sentence printed by the deterministic renderer."""
+
+    return (
+        f"{type}: {minutes_per_week} minutes per week; {frequency}; "
+        f"provider: {provider_role}."
+    )
 
 
 def service(
@@ -50,7 +110,6 @@ def service(
     start: str | None,
     end: str | None,
     source_page: int,
-    source_quote: str,
     confidence: float,
 ) -> dict[str, Any]:
     return {
@@ -62,7 +121,7 @@ def service(
         "start": start,
         "end": end,
         "source_page": source_page,
-        "source_quote": source_quote,
+        "source_quote": service_source_quote(type, minutes_per_week, frequency, provider_role),
         "confidence": confidence,
         "reconciliation_status": None,
     }
@@ -78,7 +137,6 @@ def goal(
     measure: str,
     progress_cadence: str,
     source_page: int,
-    source_quote: str,
     confidence: float,
 ) -> dict[str, Any]:
     return {
@@ -89,7 +147,7 @@ def goal(
         "measure": measure,
         "progress_cadence": progress_cadence,
         "source_page": source_page,
-        "source_quote": source_quote,
+        "source_quote": text,
         "confidence": confidence,
         "reconciliation_status": None,
     }
@@ -110,7 +168,7 @@ def iep_record(
     page_count: int,
     legibility_scores: list[float],
 ) -> dict[str, Any]:
-    """Assemble a full canonical IEPRecord (schema v1.1, field_confidences embedded)."""
+    """Assemble a full canonical IEPRecord (schema v1.2, field_confidences embedded)."""
 
     return {
         "iep_record_id": stable_uuid("iep", student_ref),
